@@ -19,17 +19,20 @@ export default {
             const req = await fetch(url, {
                 method: "POST",
                 headers: {
-                    'Content-Type': 'application/vnd.api+json',
+                    'Content-Type': 'application/json',
                     'x-accesstoken': process.env.VUE_APP_API_KEY,
                 },
                 body: char,
             }).then(function (response) {
+                if (!response.ok) {
+                    throw new Error(`Render request failed: ${response.status} ${response.statusText}`);
+                }
                 return response.blob();
             }).then(function (myBlob) {
                 var objectURL = URL.createObjectURL(myBlob);
                 self.img_src = objectURL;
             }).catch(function (error) {
-                console.log('There has been a problem with character fetch operation: ' + error.message);
+                console.error('There has been a problem with character fetch operation: ' + error.message);
             });
             localStorage.setItem('character', char);
         }
