@@ -14,11 +14,14 @@ export default {
     methods: {
         requestCharacter: async function () {
             const char = JSON.stringify(this.character)
-            const url = process.env.VUE_APP_API_URL + "&accesstoken=" + process.env.VUE_APP_API_KEY
+            const url = process.env.VUE_APP_API_URL
             const self = this;
             const req = await fetch(url, {
                 method: "POST",
-                headers: { 'Content-Type': 'application/vnd.api+json' },
+                headers: {
+                    'Content-Type': 'application/vnd.api+json',
+                    'x-accesstoken': process.env.VUE_APP_API_KEY,
+                },
                 body: char,
             }).then(function (response) {
                 return response.blob();
