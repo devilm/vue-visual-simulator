@@ -28,5 +28,7 @@
     "socialMedia": "Social Media",
     "mount": "Mount",
     "regularMount": "Job Mount",
-    "cashMount": "Cash Mount"
+    "cashMount": "Cash Mount",
+    "renderCharacterLoading": "Rendering character...",
+    "renderServiceWaking": "Render is taking longer than usual. The service may be starting up..."
 }
