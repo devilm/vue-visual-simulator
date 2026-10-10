@@ -8,7 +8,7 @@
                     <use xlink:href="#bootstrap" />
                 </svg>
             </a>
-            <span>&copy; {{ projectName }} 2022</span>
+            <span>&copy; {{ projectName }} 2026</span>
         </div>
 
         <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
