@@ -30,17 +30,21 @@ npm run build
 
 ### Build for GitHub Pages (`docs/`)
 ```
-npm run build:docs
+make build
 ```
+
+This creates the production build in `docs/`. The equivalent npm command is
+`npm run build:docs`.
 
 Then in GitHub repository settings:
 - Go to **Settings** -> **Pages**
 - Set **Build and deployment** source to **Deploy from a branch**
 - Select your branch (for example `main`) and folder `/docs`
 
-If your repository name is different from `vue-visual-simulator`, build with:
+If your repository name is different from `vue-visual-simulator`, pass it to
+make:
 ```
-GH_PAGES_REPO=<your-repo-name> npm run build:docs
+make build GH_PAGES_REPO=<your-repo-name>
 ```
 
 ### Customize configuration

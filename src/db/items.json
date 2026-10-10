@@ -104,7 +104,7 @@
     {
         "id": 20515,
         "garment": true,
-        "name": "Costume: Magic Circle",
+        "name": "Costume Magic Circle",
         "viewID": 0
     },
     {
@@ -116,25 +116,25 @@
     {
         "id": 20522,
         "garment": true,
-        "name": "Costume: Soul of Meow",
+        "name": "Costume Blessings of Soul",
         "viewID": 0
     },
     {
         "id": 480203,
         "garment": true,
-        "name": "의상 푸른 마법진",
+        "name": "Costume Blue Magic Circle",
         "viewID": 0
     },
     {
         "id": 20524,
         "garment": true,
-        "name": "Costume: Shining Angel Wings",
+        "name": "Costume Shining Angel Wing",
         "viewID": 37
     },
     {
         "id": 20537,
         "garment": true,
-        "name": "Costume: Falling Red Foliage",
+        "name": "Costume Falling Red Foliage",
         "viewID": 0
     },
     {
@@ -146,7 +146,7 @@
     {
         "id": 480131,
         "garment": true,
-        "name": "Costume: Swirling Flame",
+        "name": "Costume Swirling Flame",
         "viewID": 0
     },
     {
@@ -296,7 +296,7 @@
     {
         "id": 20506,
         "garment": true,
-        "name": "Costume: Invisible Cloak",
+        "name": "Costume Invisible Manteau",
         "viewID": 0
     },
     {
@@ -462,7 +462,7 @@
     {
         "id": 20765,
         "garment": true,
-        "name": "Costume: Archangel Wing",
+        "name": "Costume Archangel Wing",
         "viewID": 1
     },
     {
@@ -487,7 +487,7 @@
     {
         "id": 20764,
         "garment": true,
-        "name": "Costume: Fallen Angel Wing",
+        "name": "Costume Fallen Angel Wing",
         "viewID": 3
     },
     {
@@ -505,13 +505,13 @@
     {
         "id": 20737,
         "garment": true,
-        "name": "Costume: Kirin Wing",
+        "name": "Costume Kirin Wing",
         "viewID": 6
     },
     {
         "id": 20746,
         "garment": true,
-        "name": "Costume: Rudra\u0027s Grace",
+        "name": "Costume Rudra Wing",
         "viewID": 8
     },
     {
@@ -523,13 +523,13 @@
     {
         "id": 20761,
         "garment": true,
-        "name": "Costume: Happiness Wings",
+        "name": "Costume Happiness Wings",
         "viewID": 9
     },
     {
         "id": 20762,
         "garment": true,
-        "name": "Costume: Great Devil Wings",
+        "name": "Costume Great Devil Wing",
         "viewID": 10
     },
     {
@@ -577,13 +577,13 @@
     {
         "id": 20507,
         "garment": true,
-        "name": "Costume: Poring Bag",
+        "name": "Costume Poring Bag",
         "viewID": 16
     },
     {
         "id": 20509,
         "garment": true,
-        "name": "Costume: Wings of Uriel",
+        "name": "Costume Wings of Uriel",
         "viewID": 17
     },
     {
@@ -595,7 +595,7 @@
     {
         "id": 20510,
         "garment": true,
-        "name": "Costume: Sword Wings",
+        "name": "Costume Sword Wing",
         "viewID": 19
     },
     {
@@ -619,19 +619,19 @@
     {
         "id": 20513,
         "garment": true,
-        "name": "Costume: EXE Backpack",
+        "name": "Costume EXE Backpack",
         "viewID": 22
     },
     {
         "id": 20514,
         "garment": true,
-        "name": "Costume: Sword of Thanatos",
+        "name": "Costume Thanatos Sword",
         "viewID": 23
     },
     {
         "id": 20516,
         "garment": true,
-        "name": "Costume: Michael\u0027s Wings",
+        "name": "Costume Wings of Michael",
         "viewID": 24
     },
     {
@@ -643,13 +643,13 @@
     {
         "id": 20517,
         "garment": true,
-        "name": "Costume: Giant Meow Backpack",
+        "name": "Costume Giant Cat Bag",
         "viewID": 25
     },
     {
         "id": 20518,
         "garment": true,
-        "name": "Costume: Gerhard Von Devi Bag",
+        "name": "Costume Gerhard Von Devi Bag",
         "viewID": 27
     },
     {
@@ -679,7 +679,7 @@
     {
         "id": 20525,
         "garment": true,
-        "name": "Costume: Skarlet\u0027s Wing",
+        "name": "Costume Bloody Wing",
         "viewID": 33
     },
     {
@@ -691,19 +691,19 @@
     {
         "id": 20526,
         "garment": true,
-        "name": "의상 찬란한 파란 엔젤링 날개",
+        "name": "Costume Blue Angeling Wing",
         "viewID": 34
     },
     {
         "id": 20527,
         "garment": true,
-        "name": "Costume: Fly Like a Butterfly (P)",
+        "name": "Costume Pink Butterfly Wing",
         "viewID": 35
     },
     {
         "id": 20528,
         "garment": true,
-        "name": "의상 황금색 나비 날개",
+        "name": "Costume Gold Butterfly Wing",
         "viewID": 36
     },
     {
@@ -727,7 +727,7 @@
     {
         "id": 20573,
         "garment": true,
-        "name": "Essência Violeta",
+        "name": "Costume Violet Halo",
         "viewID": 39
     },
     {
@@ -757,7 +757,7 @@
     {
         "id": 20543,
         "garment": true,
-        "name": "Undead Poring Backpack",
+        "name": "Costume Halloween Pumpkin Bag",
         "viewID": 44
     },
     {
@@ -769,7 +769,7 @@
     {
         "id": 20545,
         "garment": true,
-        "name": "Costume: Christmas Wing",
+        "name": "Costume Christmas Tree",
         "viewID": 45
     },
     {
@@ -781,13 +781,13 @@
     {
         "id": 20546,
         "garment": true,
-        "name": "Costume: Back Ribbon Bell",
+        "name": "Costume Back Ribbon Bell",
         "viewID": 46
     },
     {
         "id": 20570,
         "garment": true,
-        "name": "Costume: Valentines Chocolate Backpack",
+        "name": "Costume Heart Chocolate Bag",
         "viewID": 47
     },
     {
@@ -799,7 +799,7 @@
     {
         "id": 20571,
         "garment": true,
-        "name": "Costume: Valkyrie Wings",
+        "name": "Costume Valkyrie Wings",
         "viewID": 48
     },
     {
@@ -811,7 +811,7 @@
     {
         "id": 20572,
         "garment": true,
-        "name": "Wings of Love",
+        "name": "Costume Wing of Heart",
         "viewID": 50
     },
     {
@@ -831,7 +831,7 @@
     {
         "id": 20575,
         "garment": true,
-        "name": "Costume: Backpack (Black)",
+        "name": "Costume Backpack (Black)",
         "viewID": 52
     },
     {
@@ -849,7 +849,7 @@
     {
         "id": 20577,
         "garment": true,
-        "name": "Costume: Cute Balloon Wing",
+        "name": "Costume Balloon Wing",
         "viewID": 54
     },
     {
@@ -897,19 +897,19 @@
     {
         "id": 20582,
         "garment": true,
-        "name": "Costume: Bear Backpack",
+        "name": "Costume Bear Backpack",
         "viewID": 60
     },
     {
         "id": 480069,
         "garment": true,
-        "name": "Costume: Angel Wings",
+        "name": "Costume Wavy Angel Wings",
         "viewID": 61
     },
     {
         "id": 20584,
         "garment": true,
-        "name": "Costume: Fox Tail",
+        "name": "Costume Big Fox Tail",
         "viewID": 62
     },
     {
@@ -921,7 +921,7 @@
     {
         "id": 20586,
         "garment": true,
-        "name": "Costume: Loli Ruri\u0027s Crescent",
+        "name": "Costume Loli Ruri\u0027s Crescent",
         "viewID": 64
     },
     {
@@ -940,19 +940,19 @@
     {
         "id": 20588,
         "garment": true,
-        "name": "Costume: Broom of Witch",
+        "name": "Costume Broom of Witch",
         "viewID": 65
     },
     {
         "id": 20589,
         "garment": true,
-        "name": "Costume: One Wing",
+        "name": "Costume Single Wing",
         "viewID": 66
     },
     {
         "id": 20590,
         "garment": true,
-        "name": "Costume: Evil Druid Cross",
+        "name": "Costume Evil Druid Cross",
         "viewID": 67
     },
     {
@@ -964,13 +964,13 @@
     {
         "id": 20591,
         "garment": true,
-        "name": "Costume: Bow on Back",
+        "name": "Costume Bow on Back",
         "viewID": 68
     },
     {
         "id": 480052,
         "garment": true,
-        "name": "Costume: Sakura Festival Ribbon",
+        "name": "Costume Blossom Festival Ribbon",
         "viewID": 69
     },
     {
@@ -982,7 +982,7 @@
     {
         "id": 20592,
         "garment": true,
-        "name": "Costume: Santa\u0027s Pocket",
+        "name": "Costume Santa\u0027s Pocket",
         "viewID": 70
     },
     {
@@ -994,13 +994,13 @@
     {
         "id": 20593,
         "garment": true,
-        "name": "Costume: Frozen Crystal Wings",
+        "name": "Costume Ice Wing",
         "viewID": 71
     },
     {
         "id": 480055,
         "garment": true,
-        "name": "Costume: Wavy Red Angel Wings",
+        "name": "Costume Wavy Rudra Angel Wings",
         "viewID": 72
     },
     {
@@ -1012,7 +1012,7 @@
     {
         "id": 480056,
         "garment": true,
-        "name": "의상 하늘하늘한 타락천사의 날개",
+        "name": "Costume Wavy Black Angel Wings",
         "viewID": 73
     },
     {
@@ -1024,7 +1024,7 @@
     {
         "id": 480058,
         "garment": true,
-        "name": "의상 하늘하늘한 황금천사의 날개",
+        "name": "Costume Wavy Golden Angel Wings",
         "viewID": 75
     },
     {
@@ -1036,13 +1036,13 @@
     {
         "id": 20594,
         "garment": true,
-        "name": "Costume: Big Ribbon Manteau",
+        "name": "Costume Big Ribbon Manteau",
         "viewID": 76
     },
     {
         "id": 20597,
         "garment": true,
-        "name": "Costume: Evil Scythe",
+        "name": "Costume Evil Scythe",
         "viewID": 79
     },
     {
@@ -1054,7 +1054,7 @@
     {
         "id": 20598,
         "garment": true,
-        "name": "Costume: Big Black Cat",
+        "name": "Costume Big Black Cat",
         "viewID": 80
     },
     {
@@ -1072,7 +1072,7 @@
     {
         "id": 20599,
         "garment": true,
-        "name": "Costume: Sakura Wings",
+        "name": "Costume Sakura Wing",
         "viewID": 83
     },
     {
@@ -1084,13 +1084,13 @@
     {
         "id": 20602,
         "garment": true,
-        "name": "Costume: Ace of Angel Wing (Sweet)",
+        "name": "Costume Sweet Valkyrie Wings",
         "viewID": 84
     },
     {
         "id": 20603,
         "garment": true,
-        "name": "Costume: Ulysses Wings",
+        "name": "Costume Ulysses Wings",
         "viewID": 85
     },
     {
@@ -1102,19 +1102,19 @@
     {
         "id": 20604,
         "garment": true,
-        "name": "Costume: Blessed Veil",
+        "name": "Costume Blessed Veil",
         "viewID": 86
     },
     {
         "id": 20605,
         "garment": true,
-        "name": "Costume: Leaf Umbrella",
+        "name": "Costume Leaf Umbrella",
         "viewID": 87
     },
     {
         "id": 480082,
         "garment": true,
-        "name": "Asas de Jegudiel",
+        "name": "Costume Sandalphon Wing",
         "viewID": 88
     },
     {
@@ -1144,7 +1144,7 @@
     {
         "id": 20607,
         "garment": true,
-        "name": "Costume: Baldr Wing",
+        "name": "Costume Golden Valkyrie Wings",
         "viewID": 91
     },
     {
@@ -1156,49 +1156,49 @@
     {
         "id": 20988,
         "garment": true,
-        "name": "Costume: Mechanical Butterfly",
+        "name": "Costume Mechanical Butterfly",
         "viewID": 92
     },
     {
         "id": 20989,
         "garment": true,
-        "name": "Costume: Mainspring Screw",
+        "name": "Costume Wind-up Screw",
         "viewID": 93
     },
     {
         "id": 20990,
         "garment": true,
-        "name": "Costume: Rotating Gears",
+        "name": "Costume Rotating Gears",
         "viewID": 0
     },
     {
         "id": 20992,
         "garment": true,
-        "name": "Costume: Fairy of Eden",
-        "viewID": 0
+        "name": "Costume New Year Fairy of Eden",
+        "viewID": 95
     },
     {
         "id": 480093,
         "garment": true,
-        "name": "Costume: Scepter",
+        "name": "Costume Scepter",
         "viewID": 97
     },
     {
         "id": 480095,
         "garment": true,
-        "name": "Costume: Giant White Rabbit",
+        "name": "Costume Giant White Rabbit",
         "viewID": 98
     },
     {
         "id": 480096,
         "garment": true,
-        "name": "Costume: Haori Coat",
+        "name": "Costume Haori Coat",
         "viewID": 99
     },
     {
         "id": 480097,
         "garment": true,
-        "name": "Costume: Snow Powder",
+        "name": "Costume Snow Powder",
         "viewID": 0
     },
     {
@@ -1210,7 +1210,7 @@
     {
         "id": 20613,
         "garment": true,
-        "name": "Costume: Wing of Spider",
+        "name": "Costume Spider Wing",
         "viewID": 101
     },
     {
@@ -1222,7 +1222,7 @@
     {
         "id": 20614,
         "garment": true,
-        "name": "Costume: Ultimate of Kiel Hyre",
+        "name": "Costume Ultimate Kiel Hyre\u0027s",
         "viewID": 102
     },
     {
@@ -1240,13 +1240,13 @@
     {
         "id": 480107,
         "garment": true,
-        "name": "Costume: Kings Twin Sword",
+        "name": "Costume Kings Twin Sword",
         "viewID": 104
     },
     {
         "id": 480111,
         "garment": true,
-        "name": "Flower Wings",
+        "name": "Costume Flower Wing",
         "viewID": 106
     },
     {
@@ -1264,19 +1264,19 @@
     {
         "id": 480117,
         "garment": true,
-        "name": "Costume: Electric Guitar Of Phen",
+        "name": "Costume Electric Guitar of Phen",
         "viewID": 108
     },
     {
         "id": 480126,
         "garment": true,
-        "name": "Costume: Giant Shark",
+        "name": "Costume Giant Shark",
         "viewID": 109
     },
     {
         "id": 480119,
         "garment": true,
-        "name": "Costume: Niflheim Key",
+        "name": "Costume Niflheim Key",
         "viewID": 110
     },
     {
@@ -1288,25 +1288,25 @@
     {
         "id": 480121,
         "garment": true,
-        "name": "Asas Orientais",
+        "name": "Costume Striking Mikoshi",
         "viewID": 111
     },
     {
         "id": 480122,
         "garment": true,
-        "name": "Costume: Samba Carnival Feather",
+        "name": "Costume Samba Carnival Feather",
         "viewID": 112
     },
     {
         "id": 480123,
         "garment": true,
-        "name": "Costume: Nydhog\u0027s Rumor",
+        "name": "Costume Nydhog\u0027s Rumor",
         "viewID": 113
     },
     {
         "id": 480118,
         "garment": true,
-        "name": "Costume: General Daehyon\u0027s Sword",
+        "name": "Costume General Daehyun Sword",
         "viewID": 114
     },
     {
@@ -1318,13 +1318,13 @@
     {
         "id": 480127,
         "garment": true,
-        "name": "Costume: Hooked Straw Hat",
+        "name": "Costume Hooked Straw Hat",
         "viewID": 115
     },
     {
         "id": 480129,
         "garment": true,
-        "name": "Costume: Triple Icecream",
+        "name": "Costume Triple Ice Cream",
         "viewID": 116
     },
     {
@@ -1372,19 +1372,19 @@
     {
         "id": 480158,
         "garment": true,
-        "name": "Costume: Lunatic Bag",
+        "name": "Costume Lunatic Bag",
         "viewID": 123
     },
     {
         "id": 480167,
         "garment": true,
-        "name": "Costume: Heart Stick Chocolate",
+        "name": "Costume Valentine Heart Stick Chocolate",
         "viewID": 124
     },
     {
         "id": 480169,
         "garment": true,
-        "name": "Costume: Diabolic Rock Guitar",
+        "name": "Costume Diabolic Guitar",
         "viewID": 125
     },
     {
@@ -1396,13 +1396,13 @@
     {
         "id": 480168,
         "garment": true,
-        "name": "Costume: Melody Wings",
+        "name": "Costume Melody Wings",
         "viewID": 126
     },
     {
         "id": 480176,
         "garment": true,
-        "name": "Costume: Blue Rose Garden",
+        "name": "Costume Blue Rose Garden",
         "viewID": 127
     },
     {
@@ -1414,7 +1414,7 @@
     {
         "id": 480181,
         "garment": true,
-        "name": "Costume: Pitaya Backpack",
+        "name": "Costume Dragon Backpack",
         "viewID": 129
     },
     {
@@ -1432,7 +1432,7 @@
     {
         "id": 20618,
         "garment": true,
-        "name": "Costume: Big Black Rabbit",
+        "name": "Costume Big Black Rabbit",
         "viewID": 133
     },
     {
@@ -1444,7 +1444,7 @@
     {
         "id": 480205,
         "garment": true,
-        "name": "Costume: Astra Blessing",
+        "name": "Costume Astra Blessing",
         "viewID": 0
     },
     {
@@ -1456,13 +1456,13 @@
     {
         "id": 480204,
         "garment": true,
-        "name": "Costume: Back Ribbon Bell (Blue)",
+        "name": "Costume Back Ribbon Bell (Blue)",
         "viewID": 135
     },
     {
         "id": 480207,
         "garment": true,
-        "name": "Costume: Traveler Bag",
+        "name": "Costume Traveller Bag",
         "viewID": 137
     },
     {
@@ -1487,7 +1487,7 @@
     {
         "id": 480221,
         "garment": true,
-        "name": "Costume: Ninetail\u0027s Tail",
+        "name": "Costume Nine Tails",
         "viewID": 145
     },
     {
@@ -1499,19 +1499,19 @@
     {
         "id": 480222,
         "garment": true,
-        "name": "Costume: Oriental Umbrella",
+        "name": "Costume Wagasa",
         "viewID": 146
     },
     {
         "id": 480223,
         "garment": true,
-        "name": "Costume: Muranyasa",
+        "name": "Costume Muramasa Blade",
         "viewID": 147
     },
     {
         "id": 480235,
         "garment": true,
-        "name": "Costume: Diabolic Friends",
+        "name": "Costume Diabolic Friends",
         "viewID": 148
     },
     {
@@ -1523,7 +1523,7 @@
     {
         "id": 20619,
         "garment": true,
-        "name": "Costume: Sun Emperor Wing",
+        "name": "Costume Phaya Ploeng Suriyan",
         "viewID": 150
     },
     {
@@ -1541,7 +1541,7 @@
     {
         "id": 480243,
         "garment": true,
-        "name": "Costume: Cinnamoroll Bag",
+        "name": "Costume Cinnamoroll Bag",
         "viewID": 152
     },
     {
@@ -1553,7 +1553,7 @@
     {
         "id": 480244,
         "garment": true,
-        "name": "Costume: Crown Cinnamoroll Bag",
+        "name": "Costume Crown Cinnamoroll Bag",
         "viewID": 153
     },
     {
@@ -1565,19 +1565,19 @@
     {
         "id": 480246,
         "garment": true,
-        "name": "Costume: Valkyrie Spear",
+        "name": "Costume Valkyrie Spear",
         "viewID": 154
     },
     {
         "id": 480247,
         "garment": true,
-        "name": "Costume: Giant Angeling",
+        "name": "Costume Giant Angeling Bag",
         "viewID": 155
     },
     {
         "id": 480252,
         "garment": true,
-        "name": "Costume: Mystery Wing",
+        "name": "Costume Mystic Wing",
         "viewID": 156
     },
     {
@@ -1607,19 +1607,19 @@
     {
         "id": 480280,
         "garment": true,
-        "name": "Costume: Big Ribbon Manteau (White)",
+        "name": "Costume Big Ribbon Manteau (White)",
         "viewID": 162
     },
     {
         "id": 480282,
         "garment": true,
-        "name": "Costume: Ancient Dragon\u0027s Magic Spear",
+        "name": "Costume Ancient Dragon Spear",
         "viewID": 163
     },
     {
         "id": 480288,
         "garment": true,
-        "name": "Costume: Dark Lord Cloak",
+        "name": "Costume Dark Lord Cloak",
         "viewID": 164
     },
     {
@@ -1631,19 +1631,19 @@
     {
         "id": 480289,
         "garment": true,
-        "name": "Costume: Moonlight Bell",
+        "name": "Costume Moonlight Bell",
         "viewID": 165
     },
     {
         "id": 480290,
         "garment": true,
-        "name": "Costume: Lord of Death Shield",
+        "name": "Costume Lord of Death Shield",
         "viewID": 166
     },
     {
         "id": 480295,
         "garment": true,
-        "name": "Costume: Sakura Branch",
+        "name": "Costume Spring Festival Sakura Branch",
         "viewID": 167
     },
     {
@@ -1661,13 +1661,13 @@
     {
         "id": 480297,
         "garment": true,
-        "name": "Costume: Love Bunny Cloak",
+        "name": "Costume Love Bunny Cloak",
         "viewID": 169
     },
     {
         "id": 480310,
         "garment": true,
-        "name": "Costume: Giant Mad Bunny",
+        "name": "Costume Giant Mad Bunny",
         "viewID": 172
     },
     {
@@ -1679,19 +1679,19 @@
     {
         "id": 20621,
         "garment": true,
-        "name": "Costume: Dark Lord Manteau",
+        "name": "Costume Dark Lord Manteau",
         "viewID": 175
     },
     {
         "id": 480315,
         "garment": true,
-        "name": "Costume: Skia\u0027s Sword: Milky",
+        "name": "Costume Skia\u0027s Sword",
         "viewID": 176
     },
     {
         "id": 480316,
         "garment": true,
-        "name": "Costume: Labrys Axe",
+        "name": "Costume Labrys",
         "viewID": 177
     },
     {
@@ -1704,13 +1704,13 @@
     {
         "id": 480320,
         "garment": true,
-        "name": "Costume: Aqua Fin Decoration",
+        "name": "Costume Songkran Aqua Fin Decoration",
         "viewID": 179
     },
     {
         "id": 480321,
         "garment": true,
-        "name": "Costume: Surf Board",
+        "name": "Costume Surf Board",
         "viewID": 180
     },
     {
@@ -10242,7 +10242,7 @@
     {
         "id": 480274,
         "bot": true,
-        "name": "의상 엔젤릭 롱(로얄 실버)",
+        "name": "Costume Angelic Long Hair (Royal Silver)",
         "viewID": 2331,
         "garment": true
     },
@@ -10423,427 +10423,595 @@
     {
         "id": 20626,
         "garment": true,
-        "name": "2023 ROS Winning Prize Manteau",
+        "name": "Costume Star Runner-Up Manteau",
         "viewID": 198
     },
     {
         "id": 420340,
         "garment": true,
-        "name": "Costume: Kitchen Car",
+        "name": "Costume Kitchen Car",
         "viewID": 2534
     },
     {
         "id": 420352,
         "garment": true,
-        "name": "의상 포링풀장",
+        "name": "Costume Pool",
         "viewID": 2566
     },
     {
         "id": 420384,
         "garment": true,
-        "name": "Costume: Commentary Booth",
+        "name": "Costume DJ Booth",
         "viewID": 2597
     },
     {
         "id": 420501,
         "garment": true,
-        "name": "의상 온천",
+        "name": "Costume Hot Spring",
         "viewID": 2684
     },
     {
         "id": 420516,
         "garment": true,
-        "name": "Costume: Forest Friends",
+        "name": "Costume Forest Friends",
         "viewID": 2699
     },
     {
         "id": 480059,
         "garment": true,
-        "name": "의상 하늘하늘한 잿빛 날개",
+        "name": "Costume Wavy Ash Gray Angel Wings",
         "viewID": 77
     },
     {
         "id": 480060,
         "garment": true,
-        "name": "의상 하늘하늘한 자연의 날개",
+        "name": "Costume Wavy Green Angel Wings",
         "viewID": 78
     },
     {
         "id": 480198,
         "garment": true,
-        "name": "Costume: 20th Anniversary Wings",
+        "name": "Costume Laurel Wing",
         "viewID": 136
     },
     {
         "id": 480199,
         "garment": true,
-        "name": "Costume: Wings of Astaroth",
+        "name": "Costume Wings of Helel",
         "viewID": 139
     },
     {
         "id": 480201,
         "garment": true,
-        "name": "Costume: Guardian Angel Wings",
+        "name": "Costume Guardian Angel Wings",
         "viewID": 138
     },
     {
         "id": 480202,
         "garment": true,
-        "name": "Costume: 20th Anniversary Fairy Wing",
+        "name": "Costume Guardian Fairy Wing",
         "viewID": 140
     },
     {
         "id": 480286,
         "garment": true,
-        "name": "의상 뱀신의 환영",
+        "name": "Costume Serpent Shadow",
         "viewID": 0
     },
     {
         "id": 480298,
         "garment": true,
-        "name": "Costume: Magic Circle in Wonderland",
+        "name": "Costume Magic Wonderland",
         "viewID": 0
     },
     {
         "id": 480318,
         "garment": true,
-        "name": "Costume: Divine Phoenix",
+        "name": "Costume Divine Phoenix",
         "viewID": 178
     },
     {
         "id": 480329,
         "garment": true,
-        "name": "ROS2023 C Phoenix Cloak",
+        "name": "Costume ROS 2023 Flames Coat",
         "viewID": 184
     },
     {
         "id": 480335,
         "garment": true,
-        "name": "Costume: Poring Surfboard",
+        "name": "Costume Poring Surfboard",
         "viewID": 186
     },
     {
         "id": 480336,
         "garment": true,
-        "name": "Costume: Summer Vacation of the Forest",
+        "name": "Costume Summer Vacation of the Forest",
         "viewID": 187
     },
     {
         "id": 480337,
         "garment": true,
-        "name": "Costume: Rifle",
+        "name": "Costume Wooden Toy Rifle",
         "viewID": 188
     },
     {
         "id": 480344,
         "garment": true,
-        "name": "Costume: Thornvine Crystal Scythe",
+        "name": "Costume Half Dragon Princess Scythe",
         "viewID": 189
     },
     {
         "id": 480360,
         "garment": true,
-        "name": "Costume: Giant Shuriken",
+        "name": "Costume Great Shuriken",
         "viewID": 190
     },
     {
         "id": 480361,
         "garment": true,
-        "name": "Costume: Four Soul\u0027s Dual Swords",
+        "name": "Costume Evil Dual Swords",
         "viewID": 191
     },
     {
         "id": 480362,
         "garment": true,
-        "name": "Costume: White Nine-Tailed Fox",
+        "name": "Costume White Nine Tails",
         "viewID": 192
     },
     {
         "id": 480376,
         "garment": true,
-        "name": "Costume: Rata Tail",
+        "name": "Costume Rata Tail",
         "viewID": 195
     },
     {
         "id": 480393,
         "garment": true,
-        "name": "Costume: Blue Moon Loli Ruri\u0027s Crescent Moon",
+        "name": "Costume Blue Moon Loli Ruri\u0027s Crescent Moon",
         "viewID": 199
     },
     {
         "id": 480405,
         "garment": true,
-        "name": "Costume: Santa Teddy Bear Doll Bag",
+        "name": "Costume Santa Teddy Bear Doll Bag",
         "viewID": 202
     },
     {
         "id": 480407,
         "garment": true,
-        "name": "Costume: Leticia Wing",
+        "name": "Costume Leticia\u0027s Wings",
         "viewID": 203
     },
     {
         "id": 480408,
         "garment": true,
-        "name": "Costume: Dragon Wing",
+        "name": "Costume Dragon Wings",
         "viewID": 204
     },
     {
         "id": 480419,
         "garment": true,
-        "name": "Costume: Cyber Sword",
+        "name": "Costume Cyber Sword",
         "viewID": 207
     },
     {
         "id": 480420,
         "garment": true,
-        "name": "Costume: Cyber Rifle",
+        "name": "Costume Cyber Rifle",
         "viewID": 208
     },
     {
         "id": 480429,
         "garment": true,
-        "name": "Costume: Cat Donut",
+        "name": "Costume Cat Donut",
         "viewID": 212
     },
     {
         "id": 480430,
         "garment": true,
-        "name": "Costume: Sakura Tree Rod",
+        "name": "Costume Senbon Zakura",
         "viewID": 213
     },
     {
         "id": 480433,
         "garment": true,
-        "name": "Costume: Twin Edge",
+        "name": "Costume Twin Edge",
         "viewID": 216
     },
     {
         "id": 480436,
         "garment": true,
-        "name": "Costume: Baphomet Scythe",
+        "name": "Costume Baphomet Scythe",
         "viewID": 217
     },
     {
         "id": 480437,
         "garment": true,
-        "name": "의상 히멜메즈의 검",
+        "name": "Costume Himmelmez Sword",
         "viewID": 218
     },
     {
         "id": 480438,
         "garment": true,
-        "name": "의상 커다란 보물상자",
+        "name": "Costume Big Treasure Chest",
         "viewID": 219
     },
     {
         "id": 480445,
         "garment": true,
-        "name": "Costume: Good Luck Tai-Zi",
+        "name": "Costume Good Luck Tai-Zi",
         "viewID": 221
     },
     {
         "id": 480450,
         "garment": true,
-        "name": "Costume: Honey Dipper",
+        "name": "Costume Honey Dipper",
         "viewID": 222
     },
     {
         "id": 480456,
         "garment": true,
-        "name": "Costume: Plant Outing Set",
+        "name": "Costume Razer Green Picnic Bag",
         "viewID": 223
     },
     {
         "id": 480457,
         "garment": true,
-        "name": "Costume: Aquarium",
+        "name": "Costume Galapago Aquarium",
         "viewID": 224
     },
     {
         "id": 480461,
         "garment": true,
-        "name": "Costume: Rag Doll Face Bag",
+        "name": "Costume Ragdoll Face Bag",
         "viewID": 228
     },
     {
         "id": 480470,
         "garment": true,
-        "name": "Costume: Summer Beach",
+        "name": "Costume Summer Beach",
         "viewID": 0
     },
     {
         "id": 480472,
         "garment": true,
-        "name": "의상 리본 토끼 가방",
+        "name": "Costume Big Ribbon Bunny",
         "viewID": 232
     },
     {
         "id": 480476,
         "garment": true,
-        "name": "의상 포링의 크림소다",
+        "name": "Costume Poring Cream Soda",
         "viewID": 234
     },
     {
         "id": 480487,
         "garment": true,
-        "name": "Costume: Cat Paw Bag",
+        "name": "Costume Paw Backpack",
         "viewID": 240
     },
     {
         "id": 480488,
         "garment": true,
-        "name": "의상 융케아의 뼈 날개",
+        "name": "Costume Wings Of Simulation Juncea",
         "viewID": 241
     },
     {
         "id": 480492,
         "garment": true,
-        "name": "의상 엘리스의 빗자루",
+        "name": "Costume Alice Broom",
         "viewID": 242
     },
     {
         "id": 480494,
         "garment": true,
-        "name": "의상 위스퍼 캔디 파우치",
+        "name": "Costume Halloween Candy Pouch",
         "viewID": 2579
     },
     {
         "id": 480501,
         "garment": true,
-        "name": "의상 홀리데이 프레젠트",
+        "name": "Costume Popcorn Bucket",
         "viewID": 244
     },
     {
         "id": 480503,
         "garment": true,
-        "name": "Costume: Stella Gratia",
+        "name": "Costume Stella Gratia",
         "viewID": 248
     },
     {
         "id": 480517,
         "garment": true,
-        "name": "Costume: Dragon Warrior Cloak",
+        "name": "Costume The Dragon Warrior\u0027s Manteau \u0026 Staff",
         "viewID": 254
     },
     {
         "id": 480523,
         "garment": true,
-        "name": "의상 천칭 날개",
+        "name": "Costume Libra Wings",
         "viewID": 256
     },
     {
         "id": 480559,
         "garment": true,
-        "name": "의상 구마몬 인형",
+        "name": "Costume Kumamon Doll",
         "viewID": 262
     },
     {
         "id": 480566,
         "garment": true,
-        "name": "의상 불사 군주의 날개",
+        "name": "Costume Wings of the Immortal Lord",
         "viewID": 259
     },
     {
         "id": 480582,
         "garment": true,
-        "name": "의상 포링 3색 경단",
+        "name": "Costume Three Poring Dango",
         "viewID": 266
     },
     {
         "id": 480595,
         "garment": true,
-        "name": "Costume: Toothless Wings",
+        "name": "Costume Toothless Wings",
         "viewID": 268
     },
     {
         "id": 480596,
         "garment": true,
-        "name": "Costume: Toothless Hood",
+        "name": "Costume Toothless Hood",
         "viewID": 2696
     },
     {
         "id": 480603,
         "garment": true,
-        "name": "의상 별하늘 만년필",
+        "name": "Costume Starrysky Fountainpen",
         "viewID": 270
     },
     {
         "id": 480627,
         "garment": true,
-        "name": "의상 ROS 우승 로브",
+        "name": "Costume ROS 2025 Champion Coat",
         "viewID": 282
     },
     {
         "id": 480630,
         "garment": true,
-        "name": "의상 기계요정 날개",
+        "name": "Costume Mechanical Fairy Wing",
         "viewID": 284
     },
     {
         "id": 480631,
         "garment": true,
-        "name": "의상 명탐정의 돋보기",
+        "name": "Costume Detective’s Magnifying Glass",
         "viewID": 285
     },
     {
         "id": 480632,
         "garment": true,
-        "name": "의상 악몽의 매드바니",
+        "name": "Costume Mad Bunny Nightmare",
         "viewID": 286
     },
     {
         "id": 480642,
         "garment": true,
-        "name": "의상 신의 사자",
+        "name": "Costume Celestial Messenger",
         "viewID": 287
     },
     {
         "id": 480658,
         "garment": true,
-        "name": "의상 아케이넘 코르부스",
+        "name": "Costume Arcanum Corvus Corax",
         "viewID": 289
     },
     {
         "id": 480664,
         "garment": true,
-        "name": "Costume: Cursed Serpent",
+        "name": "Costume Cursed Serpent",
         "viewID": 291
     },
     {
         "id": 480666,
         "garment": true,
-        "name": "Costume: Tris Sword",
+        "name": "Costume Herosria Sword",
         "viewID": 293
     },
     {
         "id": 480818,
         "garment": true,
-        "name": "Costume: Baby Shark Bag",
+        "name": "Costume Baby Shark Bag",
         "viewID": 308
     },
     {
         "id": 480819,
         "garment": true,
-        "name": "Costume: Mommy Shark Bag",
+        "name": "Costume Mommy Shark Bag",
         "viewID": 309
     },
     {
         "id": 480820,
         "garment": true,
-        "name": "Costume: Daddy Shark Bag",
+        "name": "Costume Daddy Shark Bag",
         "viewID": 310
     },
     {
         "id": 480821,
         "garment": true,
-        "name": "Costume: Grandma Shark Bag",
+        "name": "Costume Grandma Shark Bag",
         "viewID": 311
     },
     {
         "id": 480822,
         "garment": true,
-        "name": "Costume: Grandpa Shark Bag",
+        "name": "Costume Grandpa Shark Bag",
         "viewID": 312
+    },
+    {
+        "id": 400171,
+        "garment": true,
+        "name": "Costume Angel Feather",
+        "viewID": 18
+    },
+    {
+        "id": 480772,
+        "garment": true,
+        "name": "Costume Angel\u0027s Gift",
+        "viewID": 302
+    },
+    {
+        "id": 480608,
+        "garment": true,
+        "name": "Costume Beelzebub\u0027s Wings",
+        "viewID": 271
+    },
+    {
+        "id": 480485,
+        "garment": true,
+        "name": "Costume Call of the Deep Sea Octopus",
+        "viewID": 238
+    },
+    {
+        "id": 410287,
+        "garment": true,
+        "name": "Costume Cosmic Connection",
+        "viewID": 0
+    },
+    {
+        "id": 480648,
+        "garment": true,
+        "name": "Costume Crimson Niflheim Bloom",
+        "viewID": 288
+    },
+    {
+        "id": 420855,
+        "garment": true,
+        "name": "Costume Cultivation Pod",
+        "viewID": 2844
+    },
+    {
+        "id": 480541,
+        "garment": true,
+        "name": "Costume Demi Freyja Wings",
+        "viewID": 258
+    },
+    {
+        "id": 480609,
+        "garment": true,
+        "name": "Costume Dimensional Sword",
+        "viewID": 273
+    },
+    {
+        "id": 480748,
+        "garment": true,
+        "name": "Costume Doram Hammer",
+        "viewID": 301
+    },
+    {
+        "id": 480458,
+        "garment": true,
+        "name": "Costume Fallen Heaven Lost Wing",
+        "viewID": 225
+    },
+    {
+        "id": 480717,
+        "garment": true,
+        "name": "Costume Giant Chained Bear Back",
+        "viewID": 297
+    },
+    {
+        "id": 480591,
+        "garment": true,
+        "name": "Costume Glutton Cerberus",
+        "viewID": 267
+    },
+    {
+        "id": 20985,
+        "garment": true,
+        "name": "Costume Gourd Bottle",
+        "viewID": 82
+    },
+    {
+        "id": 420597,
+        "garment": true,
+        "name": "Costume Halloween Pumpkin",
+        "viewID": 2747
+    },
+    {
+        "id": 480747,
+        "garment": true,
+        "name": "Costume Knight Order Sword \u0026 Shield",
+        "viewID": 300
+    },
+    {
+        "id": 480555,
+        "garment": true,
+        "name": "Costume Lapine Wing",
+        "viewID": 260
+    },
+    {
+        "id": 480780,
+        "garment": true,
+        "name": "Costume Nine-Tailed Fox of Blazing Crimson Flames",
+        "viewID": 304
+    },
+    {
+        "id": 480863,
+        "garment": true,
+        "name": "Costume Panda Bamboo",
+        "viewID": 318
+    },
+    {
+        "id": 480525,
+        "garment": true,
+        "name": "Costume Pitaya Garden Parfait",
+        "viewID": 257
+    },
+    {
+        "id": 480659,
+        "garment": true,
+        "name": "Costume Popcorn Bucket (Potion)",
+        "viewID": 290
+    },
+    {
+        "id": 480305,
+        "garment": true,
+        "name": "Costume Pope Doll",
+        "viewID": 171
+    },
+    {
+        "id": 480560,
+        "garment": true,
+        "name": "Costume Resurrection Bow",
+        "viewID": 263
+    },
+    {
+        "id": 480725,
+        "garment": true,
+        "name": "Costume Sixth Sense Satan",
+        "viewID": 299
+    },
+    {
+        "id": 480287,
+        "garment": true,
+        "name": "Costume Skia Doll",
+        "viewID": 170
+    },
+    {
+        "id": 20630,
+        "garment": true,
+        "name": "Costume Sorcerer Cape",
+        "viewID": 280
+    },
+    {
+        "id": 480057,
+        "garment": true,
+        "name": "Costume Wavy Orange Angel Wings",
+        "viewID": 74
+    },
+    {
+        "id": 480377,
+        "garment": true,
+        "name": "Costume White Cat Doll",
+        "viewID": 196
     }
 ]
