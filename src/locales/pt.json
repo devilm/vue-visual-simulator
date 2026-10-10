@@ -28,7 +28,5 @@
     "socialMedia": "Midias Sociais",
     "mount": "Montaria",
     "regularMount": "Montaria de Classe",
-    "cashMount": "Montaria de Cash",
-    "renderCharacterLoading": "Renderizando personagem...",
-    "renderServiceWaking": "A renderização está demorando mais que o normal. O serviço pode estar iniciando..."
+    "cashMount": "Montaria de Cash"
 }
