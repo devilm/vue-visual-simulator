@@ -6214,8 +6214,7 @@
         "id": 20407,
         "bot": true,
         "name": "Costume Test Subject Aura (Red)",
-        "viewID": 1418,
-        "effect": "subject_aura"
+        "viewID": 1418
     },
     {
         "id": 20408,

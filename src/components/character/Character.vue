@@ -89,12 +89,20 @@ export default {
         ...mapState({
             character: state => state.character,
         }),
+        renderKey() {
+            return JSON.stringify({
+                character: this.character,
+                equippedItemIds: [
+                    this.$store.state.headgear_top_item,
+                    this.$store.state.headgear_mid_item,
+                    this.$store.state.headgear_bottom_item,
+                    this.$store.state.garment_item,
+                ].map((item) => item?.id),
+            })
+        },
     },
     watch: {
-        '$store.state.character': {
-            deep: true,
-            handler: 'requestCharacter'
-        }
+        renderKey: 'requestCharacter',
     },
 }
 </script>
