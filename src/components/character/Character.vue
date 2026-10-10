@@ -6,15 +6,39 @@
 import { mapState } from 'vuex'
 import itemsJson from '../../db/items.json';
 
+const renderCacheName = "character-renders-v1";
+
+async function getRenderCacheKey(url, payload) {
+    if (
+        typeof caches === "undefined" ||
+        !window.crypto ||
+        !window.crypto.subtle
+    ) {
+        return null;
+    }
+
+    const data = new TextEncoder().encode(`${url}\n${payload}`);
+    const digest = await window.crypto.subtle.digest("SHA-256", data);
+    const hash = Array.from(new Uint8Array(digest))
+        .map((byte) => byte.toString(16).padStart(2, "0"))
+        .join("");
+
+    return new Request(
+        `${window.location.origin}/__character-render-cache__/${hash}`
+    );
+}
+
 export default {
     name: "Character",
     data() {
         return {
-            img_src: ""
+            img_src: "",
+            renderRequestId: 0,
         }
     },
     methods: {
         requestCharacter: async function (characterState = this.character) {
+            const renderRequestId = ++this.renderRequestId;
             const character = JSON.stringify(characterState)
             const equippedViewIds = new Set(
                 [...characterState.headgear, characterState.garment].map(Number)
@@ -71,17 +95,56 @@ export default {
 
             try {
                 let image
+                let cacheKey
+
                 try {
-                    image = await requestRender()
-                } catch {
-                    const healthUrl = `${new URL(url).origin}/health`
-                    const healthResponse = await fetch(healthUrl)
-                    if (!healthResponse.ok) {
-                        throw new Error(`Renderer health check failed: ${healthResponse.status} ${healthResponse.statusText}`)
+                    cacheKey = await getRenderCacheKey(url, payload)
+                    if (cacheKey) {
+                        const cache = await caches.open(renderCacheName)
+                        const cachedResponse = await cache.match(cacheKey)
+                        if (cachedResponse) {
+                            image = await cachedResponse.blob()
+                        }
                     }
-                    image = await requestRender()
+                } catch (error) {
+                    console.warn("Unable to read character render cache:", error)
                 }
-                this.img_src = URL.createObjectURL(image)
+
+                if (!image) {
+                    try {
+                        image = await requestRender()
+                    } catch {
+                        const healthUrl = `${new URL(url).origin}/health`
+                        const healthResponse = await fetch(healthUrl)
+                        if (!healthResponse.ok) {
+                            throw new Error(`Renderer health check failed: ${healthResponse.status} ${healthResponse.statusText}`)
+                        }
+                        image = await requestRender()
+                    }
+
+                    if (cacheKey) {
+                        try {
+                            const cache = await caches.open(renderCacheName)
+                            await cache.put(
+                                cacheKey,
+                                new Response(image, {
+                                    headers: image.type
+                                        ? { "Content-Type": image.type }
+                                        : {},
+                                })
+                            )
+                        } catch (error) {
+                            console.warn("Unable to save character render cache:", error)
+                        }
+                    }
+                }
+
+                if (renderRequestId === this.renderRequestId) {
+                    if (this.img_src.startsWith("blob:")) {
+                        URL.revokeObjectURL(this.img_src)
+                    }
+                    this.img_src = URL.createObjectURL(image)
+                }
             } catch (error) {
                 console.error('There has been a problem with character fetch operation: ' + error.message);
             }
