@@ -40,6 +40,22 @@ export default {
                     id: 3,
                     name: 'green'
                 },
+                {
+                    id: 4,
+                    name: 'palette 4'
+                },
+                {
+                    id: 5,
+                    name: 'palette 5'
+                },
+                {
+                    id: 6,
+                    name: 'palette 6'
+                },
+                {
+                    id: 7,
+                    name: 'palette 7'
+                },
             ],
         }
     }, methods: {
