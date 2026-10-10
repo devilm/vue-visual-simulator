@@ -98,7 +98,8 @@
         "id": 20519,
         "garment": true,
         "name": "Aura de Folhas de Outono",
-        "viewID": 0
+        "viewID": 0,
+        "effect": "나뭇잎_완성"
     },
     {
         "id": 31091,
@@ -134,25 +135,29 @@
         "id": 20524,
         "garment": true,
         "name": "Costume Shining Angel Wing",
-        "viewID": 37
+        "viewID": 37,
+        "effect": "천사날개깃털"
     },
     {
         "id": 20537,
         "garment": true,
         "name": "Costume Falling Red Foliage",
-        "viewID": 0
+        "viewID": 0,
+        "effect": "단풍"
     },
     {
         "id": 20535,
         "garment": true,
         "name": "Costume: Digital Space",
-        "viewID": 0
+        "viewID": 0,
+        "effect": "digital_space"
     },
     {
         "id": 480131,
         "garment": true,
         "name": "Costume Swirling Flame",
-        "viewID": 0
+        "viewID": 0,
+        "effect": "화염진"
     },
     {
         "id": 19603,
@@ -391,7 +396,8 @@
         "id": 20240,
         "bot": true,
         "name": "Costume Gift Of Snow",
-        "viewID": 0
+        "viewID": 0,
+        "effect": "ef_snow"
     },
     {
         "id": 20062,
@@ -478,7 +484,8 @@
         "id": 20765,
         "garment": true,
         "name": "Costume Archangel Wing",
-        "viewID": 1
+        "viewID": 1,
+        "effect": "천사날개"
     },
     {
         "top": true,
@@ -503,7 +510,8 @@
         "id": 20764,
         "garment": true,
         "name": "Costume Fallen Angel Wing",
-        "viewID": 3
+        "viewID": 3,
+        "effect": "천사날개"
     },
     {
         "id": 20727,
@@ -731,7 +739,8 @@
         "id": 19529,
         "top": true,
         "name": "Costume Angel Wing",
-        "viewID": 38
+        "viewID": 38,
+        "effect": "천사날개"
     },
     {
         "id": 19731,
@@ -815,7 +824,8 @@
         "id": 20571,
         "garment": true,
         "name": "Costume Valkyrie Wings",
-        "viewID": 48
+        "viewID": 48,
+        "effect": "valkyrie_wing"
     },
     {
         "id": 19636,
@@ -1088,7 +1098,8 @@
         "id": 20599,
         "garment": true,
         "name": "Costume Sakura Wing",
-        "viewID": 83
+        "viewID": 83,
+        "effect": "sakura01"
     },
     {
         "id": 19734,
@@ -1100,7 +1111,8 @@
         "id": 20602,
         "garment": true,
         "name": "Costume Sweet Valkyrie Wings",
-        "viewID": 84
+        "viewID": 84,
+        "effect": "valkyrie_wing"
     },
     {
         "id": 20603,
@@ -1160,7 +1172,8 @@
         "id": 20607,
         "garment": true,
         "name": "Costume Golden Valkyrie Wings",
-        "viewID": 91
+        "viewID": 91,
+        "effect": "valkyrie_wing"
     },
     {
         "id": 20142,
@@ -1214,7 +1227,8 @@
         "id": 480097,
         "garment": true,
         "name": "Costume Snow Powder",
-        "viewID": 0
+        "viewID": 0,
+        "effect": "ef_snow"
     },
     {
         "id": 19735,
@@ -1659,7 +1673,8 @@
         "id": 480295,
         "garment": true,
         "name": "Costume Spring Festival Sakura Branch",
-        "viewID": 167
+        "viewID": 167,
+        "effect": "sakura01"
     },
     {
         "id": 20224,
@@ -6199,7 +6214,8 @@
         "id": 20407,
         "bot": true,
         "name": "Costume Test Subject Aura (Red)",
-        "viewID": 1418
+        "viewID": 1418,
+        "effect": "subject_aura"
     },
     {
         "id": 20408,
@@ -7504,7 +7520,8 @@
         "id": 31390,
         "top": true,
         "name": "Costume Let It Snow",
-        "viewID": 1690
+        "viewID": 1690,
+        "effect": "ef_snow"
     },
     {
         "id": 31395,
@@ -8008,7 +8025,8 @@
         "id": 31580,
         "mid": true,
         "name": "Costume Autumn Taste",
-        "viewID": 1792
+        "viewID": 1792,
+        "effect": "단풍"
     },
     {
         "id": 31584,
@@ -9394,7 +9412,8 @@
         "id": 410051,
         "mid": true,
         "name": "Costume Falling Snow",
-        "viewID": 2080
+        "viewID": 2080,
+        "effect": "ef_snow"
     },
     {
         "id": 410055,
@@ -12230,7 +12249,8 @@
         "id": 410363,
         "mid": true,
         "name": "Costume Aura of Ghost Ship",
-        "viewID": 0
+        "viewID": 0,
+        "effect": "c_aura_of_ghost_s"
     },
     {
         "id": 436007,
@@ -12261,7 +12281,8 @@
         "id": 400149,
         "mid": true,
         "name": "Costume Black Thunder",
-        "viewID": 0
+        "viewID": 0,
+        "effect": "black_thunder"
     },
     {
         "id": 410278,

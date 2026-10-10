@@ -19,9 +19,26 @@ export default {
             const equippedViewIds = new Set(
                 [...this.character.headgear, this.character.garment].map(Number)
             )
-            const effect = itemsJson.find(
-                (item) => item.effect && equippedViewIds.has(Number(item.viewID))
-            )?.effect
+            const equippedItemIds = new Set(
+                [
+                    this.$store.state.headgear_top_item,
+                    this.$store.state.headgear_mid_item,
+                    this.$store.state.headgear_bottom_item,
+                    this.$store.state.garment_item,
+                ]
+                    .map((item) => Number(item?.id))
+                    .filter(Boolean)
+            )
+            const effect =
+                itemsJson.find(
+                    (item) => item.effect && equippedItemIds.has(Number(item.id))
+                )?.effect ||
+                itemsJson.find(
+                    (item) =>
+                        item.effect &&
+                        Number(item.viewID) !== 0 &&
+                        equippedViewIds.has(Number(item.viewID))
+                )?.effect
             const payload = JSON.stringify({
                 job: this.character.job,
                 action: this.character.action,
