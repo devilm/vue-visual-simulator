@@ -484,8 +484,7 @@
         "id": 20765,
         "garment": true,
         "name": "Costume Archangel Wing",
-        "viewID": 1,
-        "effect": "천사날개"
+        "viewID": 1
     },
     {
         "top": true,
@@ -1673,8 +1672,7 @@
         "id": 480295,
         "garment": true,
         "name": "Costume Spring Festival Sakura Branch",
-        "viewID": 167,
-        "effect": "sakura01"
+        "viewID": 167
     },
     {
         "id": 20224,
