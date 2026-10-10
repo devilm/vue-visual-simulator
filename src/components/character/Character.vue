@@ -14,10 +14,10 @@ export default {
         }
     },
     methods: {
-        requestCharacter: async function () {
-            const character = JSON.stringify(this.character)
+        requestCharacter: async function (characterState = this.character) {
+            const character = JSON.stringify(characterState)
             const equippedViewIds = new Set(
-                [...this.character.headgear, this.character.garment].map(Number)
+                [...characterState.headgear, characterState.garment].map(Number)
             )
             const equippedItemIds = new Set(
                 [
@@ -40,17 +40,17 @@ export default {
                         equippedViewIds.has(Number(item.viewID))
                 )?.effect
             const payload = JSON.stringify({
-                job: this.character.job,
-                action: this.character.action,
-                headgear: this.character.headgear.filter((viewId) => Number(viewId) !== 0),
-                garment: this.character.garment,
+                job: characterState.job,
+                action: characterState.action,
+                headgear: characterState.headgear.filter((viewId) => Number(viewId) !== 0),
+                garment: characterState.garment,
                 weapon: 2,
-                head: this.character.head,
-                headPalette: this.character.headPalette,
-                bodyPalette: this.character.bodyPalette,
-                outfit: this.character.outfit,
-                gender: this.character.gender,
-                headdir: this.character.headdir,
+                head: characterState.head,
+                headPalette: characterState.headPalette,
+                bodyPalette: characterState.bodyPalette,
+                outfit: characterState.outfit,
+                gender: characterState.gender,
+                headdir: characterState.headdir,
                 ...(effect ? { effect } : {}),
             })
             const url = process.env.VUE_APP_API_URL
@@ -105,7 +105,12 @@ export default {
         },
     },
     watch: {
-        renderKey: 'requestCharacter',
+        renderKey: {
+            handler() {
+                this.requestCharacter(this.character)
+            },
+            immediate: true,
+        },
     },
 }
 </script>

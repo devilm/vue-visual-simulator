@@ -319,9 +319,11 @@ export default {
     RegularMountCheckbox,
     CashMountCheckbox,
   },
+  created() {
+    this.loadLocalStorage();
+  },
   mounted() {
     document.title = "Ragnarok Online Visual Simulator";
-    this.loadLocalStorage();
     this.activeTooltip();
     this.updatePanelUrls();
 
