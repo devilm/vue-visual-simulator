@@ -233,7 +233,7 @@
     {
         "id": 19604,
         "bot": true,
-        "name": "Máscara Invisível",
+        "name": "Costume Invisible Mask",
         "viewID": 0
     },
     {
@@ -372,8 +372,8 @@
     {
         "id": 20285,
         "bot": true,
-        "name": "Aura de Amatsu",
-        "viewID": 0
+        "name": "Costume Blossom Fluttering",
+        "viewID": 1331
     },
     {
         "id": 20439,
@@ -390,7 +390,7 @@
     {
         "id": 20240,
         "bot": true,
-        "name": "Flocos de Neve",
+        "name": "Costume Gift Of Snow",
         "viewID": 0
     },
     {
@@ -408,8 +408,8 @@
     {
         "id": 31316,
         "bot": true,
-        "name": "Revoada de Borboletas",
-        "viewID": 0
+        "name": "Costume Black Swallowtail Wings",
+        "viewID": 1665
     },
     {
         "id": 440008,
@@ -471,8 +471,8 @@
     {
         "id": 20344,
         "bot": true,
-        "name": "Balões de Festa",
-        "viewID": 0
+        "name": "Costume Happy Balloon",
+        "viewID": 1289
     },
     {
         "id": 20765,
@@ -876,7 +876,7 @@
     {
         "id": 19552,
         "bot": true,
-        "name": "Flor de Plástico",
+        "name": "Costume Centimental Flower",
         "viewID": 56
     },
     {
@@ -1731,7 +1731,7 @@
     {
         "id": 19553,
         "bot": true,
-        "name": "Disfarce do Assassino",
+        "name": "Costume Assassin Mask",
         "viewID": 180
     },
     {
@@ -1755,7 +1755,7 @@
     {
         "id": 19785,
         "bot": true,
-        "name": "Pão de Forma Sem Casca",
+        "name": "Costume Crunch Toast",
         "viewID": 188
     },
     {
@@ -2323,7 +2323,7 @@
     {
         "id": 19605,
         "bot": true,
-        "name": "Lenço do Fora da Lei",
+        "name": "Costume Gang Scarf",
         "viewID": 369
     },
     {
@@ -2487,7 +2487,7 @@
     {
         "id": 19683,
         "bot": true,
-        "name": "Pirulito Azedinho",
+        "name": "Costume Sweet Candy",
         "viewID": 414
     },
     {
@@ -2939,7 +2939,7 @@
     {
         "id": 19726,
         "bot": true,
-        "name": "Rosa da Sedução",
+        "name": "Costume Scarlet Rose",
         "viewID": 534
     },
     {
@@ -3063,7 +3063,7 @@
     {
         "id": 19952,
         "bot": true,
-        "name": "Goma de Mascar Visual",
+        "name": "Costume Bubble Gum in Mouth",
         "viewID": 572
     },
     {
@@ -3480,13 +3480,13 @@
     {
         "id": 19513,
         "bot": true,
-        "name": "Bico de Galinha",
+        "name": "Costume Chicken Beak",
         "viewID": 699
     },
     {
         "id": 19514,
         "bot": true,
-        "name": "Bigode de Vassoura",
+        "name": "Costume Charlie Beard",
         "viewID": 700
     },
     {
@@ -3732,7 +3732,7 @@
     {
         "id": 20169,
         "bot": true,
-        "name": "Linguitirinha",
+        "name": "Costume Long Tongue",
         "viewID": 773
     },
     {
@@ -3867,7 +3867,7 @@
     {
         "id": 20313,
         "bot": true,
-        "name": "CD Labial",
+        "name": "Costume CD in Mouth",
         "viewID": 815
     },
     {
@@ -3885,7 +3885,7 @@
     {
         "id": 20043,
         "bot": true,
-        "name": "Galho de Cerejeiras",
+        "name": "Costume Red Cherry Blossom",
         "viewID": 823
     },
     {
@@ -4089,7 +4089,7 @@
     {
         "id": 19992,
         "bot": true,
-        "name": "Hálito Gelado",
+        "name": "Costume Chilly Breath",
         "viewID": 885
     },
     {
@@ -4662,7 +4662,7 @@
     {
         "id": 20034,
         "bot": true,
-        "name": "Familiar de Estimação",
+        "name": "Costume Jack Castle Bat",
         "viewID": 1041
     },
     {
@@ -4704,7 +4704,7 @@
     {
         "id": 19817,
         "bot": true,
-        "name": "Sopro do Ifrit",
+        "name": "Costume Dragon Breath",
         "viewID": 1050
     },
     {
@@ -4716,7 +4716,7 @@
     {
         "id": 31319,
         "bot": true,
-        "name": "Leque Festivo",
+        "name": "[Rental] Costume Midsummer Fan",
         "viewID": 1051
     },
     {
@@ -4765,7 +4765,7 @@
     {
         "id": 20035,
         "bot": true,
-        "name": "Rosa Celeste",
+        "name": "Costume Miracle Blue Rose",
         "viewID": 1064
     },
     {
@@ -4956,7 +4956,7 @@
     {
         "id": 31134,
         "bot": true,
-        "name": "Maritaca Faladeira",
+        "name": "Costume Chatty Parrot",
         "viewID": 1116
     },
     {
@@ -4980,7 +4980,7 @@
     {
         "id": 31162,
         "bot": true,
-        "name": "Espuma Mágica",
+        "name": "Costume Shaving Foam",
         "viewID": 1129
     },
     {
@@ -5100,7 +5100,7 @@
     {
         "id": 31593,
         "bot": true,
-        "name": "Lenço do Deserto",
+        "name": "Costume Yellow Scarf",
         "viewID": 1170
     },
     {
@@ -5198,7 +5198,7 @@
     {
         "id": 20015,
         "bot": true,
-        "name": "Barba Charmosa",
+        "name": "Costume Lincoln Moustache",
         "viewID": 1205
     },
     {
@@ -5337,7 +5337,7 @@
     {
         "id": 20071,
         "bot": true,
-        "name": "Filhotinho de Worg",
+        "name": "Costume Baby Wolf In Mouth",
         "viewID": 1235
     },
     {
@@ -5561,6 +5561,7 @@
     },
     {
         "id": 20195,
+        "bot": true,
         "mid": true,
         "name": "Costume Scratching Cat",
         "viewID": 1292
@@ -5835,7 +5836,7 @@
     {
         "id": 20315,
         "bot": true,
-        "name": "Visor Holográfico",
+        "name": "Costume Analyze Eye",
         "viewID": 1351
     },
     {
@@ -5871,7 +5872,7 @@
     {
         "id": 20349,
         "bot": true,
-        "name": "Meu Amigo Pingu",
+        "name": "Costume FlyingGalapago",
         "viewID": 1358
     },
     {
@@ -6197,7 +6198,7 @@
     {
         "id": 20407,
         "bot": true,
-        "name": "Aura da Fúria",
+        "name": "Costume Test Subject Aura (Red)",
         "viewID": 1418
     },
     {
@@ -6278,13 +6279,13 @@
     {
         "id": 20425,
         "bot": true,
-        "name": "Balão Angelical Sinistro",
+        "name": "Costume Angeling Balloon",
         "viewID": 1435
     },
     {
         "id": 20426,
         "bot": true,
-        "name": "Balão Fantasmágorico Sinistro",
+        "name": "Costume Grade 11 Balloon",
         "viewID": 1436
     },
     {
@@ -6332,25 +6333,25 @@
     {
         "id": 20440,
         "bot": true,
-        "name": "Laço com Guizo",
+        "name": "Costume Tone Of Gold",
         "viewID": 1447
     },
     {
         "id": 20441,
         "bot": true,
-        "name": "Cachecol com Laço",
+        "name": "Costume Large Ribbon Muffler (Red)",
         "viewID": 1448
     },
     {
         "id": 20798,
         "bot": true,
-        "name": "Traje do Ceifeiro",
+        "name": "Costume Reaper's Grace",
         "viewID": 1450
     },
     {
         "id": 20448,
         "bot": true,
-        "name": "Dobra de Água",
+        "name": "Costume Cons Of Water",
         "viewID": 1451
     },
     {
@@ -6404,7 +6405,7 @@
     {
         "id": 20457,
         "bot": true,
-        "name": "Penas Coloridas de Brasilis",
+        "name": "Costume Feather Fluttering",
         "viewID": 1461
     },
     {
@@ -6424,7 +6425,7 @@
     {
         "id": 20462,
         "bot": true,
-        "name": "Capa com Capuz de Gatinho",
+        "name": "Costume Cat Ears Cape",
         "viewID": 1464
     },
     {
@@ -6460,14 +6461,14 @@
     {
         "id": 20487,
         "bot": true,
-        "name": "Valsa da Primavera",
+        "name": "Costume Floral Waltz",
         "viewID": 1473
     },
     {
         "id": 31479,
         "bot": true,
-        "name": "Projeção do Infinito",
-        "viewID": 1473
+        "name": "Costume Many Stars",
+        "viewID": 1729
     },
     {
         "id": 20488,
@@ -6490,7 +6491,7 @@
     {
         "id": 20492,
         "bot": true,
-        "name": "Cantoria",
+        "name": "Costume Whistle",
         "viewID": 1478
     },
     {
@@ -6545,7 +6546,7 @@
     {
         "id": 31386,
         "bot": true,
-        "name": "Orbes Místicos",
+        "name": "Costume Survive Orb",
         "viewID": 1488
     },
     {
@@ -6622,13 +6623,13 @@
     {
         "id": 31055,
         "bot": true,
-        "name": "Sopra-Poring de Sabão",
+        "name": "Costume Poring Soap Pipe",
         "viewID": 1499
     },
     {
         "id": 31057,
         "bot": true,
-        "name": "Cachecol Preto do Eremes",
+        "name": "Costume Eremes Scarf (Black)",
         "viewID": 1501
     },
     {
@@ -6640,49 +6641,49 @@
     {
         "id": 31063,
         "bot": true,
-        "name": "Coque Oceano",
+        "name": "Costume Hair Bun(Blue)",
         "viewID": 1503
     },
     {
         "id": 31064,
         "bot": true,
-        "name": "Coque Labareda",
+        "name": "Costume Hair Bun(Red)",
         "viewID": 1504
     },
     {
         "id": 31065,
         "bot": true,
-        "name": "Coque Áureo",
+        "name": "Costume Hair Bun(Yellow)",
         "viewID": 1505
     },
     {
         "id": 31066,
         "bot": true,
-        "name": "Coque Primavera",
+        "name": "Costume Hair Bun(Green)",
         "viewID": 1506
     },
     {
         "id": 31067,
         "bot": true,
-        "name": "Coque Trevoso",
+        "name": "Costume Hair Bun(Black)",
         "viewID": 1507
     },
     {
         "id": 31068,
         "bot": true,
-        "name": "Coque Puro",
+        "name": "Costume Hair Bun(White)",
         "viewID": 1508
     },
     {
         "id": 31069,
         "bot": true,
-        "name": "Coque Castanho",
+        "name": "Costume Hair Bun(Brown)",
         "viewID": 1509
     },
     {
         "id": 31070,
         "bot": true,
-        "name": "Coque Místico",
+        "name": "Costume Hair Bun(Purple)",
         "viewID": 1510
     },
     {
@@ -6838,7 +6839,7 @@
     {
         "id": 31121,
         "bot": true,
-        "name": "Estola do Demônio",
+        "name": "Costume Stall of Bat",
         "viewID": 1549
     },
     {
@@ -6904,7 +6905,7 @@
     {
         "id": 31432,
         "bot": true,
-        "name": "Seixos Polares",
+        "name": "Costume Luwmin Ice",
         "viewID": 1562
     },
     {
@@ -6940,7 +6941,7 @@
     {
         "id": 31844,
         "bot": true,
-        "name": "Lenço do Disfarce",
+        "name": "Costume Mob Scarf",
         "viewID": 1568
     },
     {
@@ -6952,7 +6953,7 @@
     {
         "id": 31164,
         "bot": true,
-        "name": "Xale do Xerloque",
+        "name": "Costume Brown Stall",
         "viewID": 1572
     },
     {
@@ -6996,7 +6997,7 @@
     {
         "id": 31178,
         "bot": true,
-        "name": "Cachecol em Chamas",
+        "name": "Costume Flame Muffler",
         "viewID": 1579
     },
     {
@@ -7050,7 +7051,7 @@
     {
         "id": 31189,
         "bot": true,
-        "name": "Capa Vermelha de Gatinho",
+        "name": "Costume Red Cat Ears Cape",
         "viewID": 1591
     },
     {
@@ -7292,7 +7293,7 @@
     {
         "id": 31251,
         "bot": true,
-        "name": "Boca de Gatinho",
+        "name": "Costume Cat Mouth",
         "viewID": 1637
     },
     {
@@ -7310,7 +7311,7 @@
     {
         "id": 31261,
         "bot": true,
-        "name": "Limonada Azedinha",
+        "name": "Costume Soda In Mouth",
         "viewID": 1643
     },
     {
@@ -7340,7 +7341,7 @@
     {
         "id": 31569,
         "bot": true,
-        "name": "Fones de Última Geração",
+        "name": "Costume: Open Air Headset",
         "viewID": 1655
     },
     {
@@ -7358,7 +7359,7 @@
     {
         "id": 31300,
         "bot": true,
-        "name": "Gatchecol",
+        "name": "Costume Warm Cat Muffler",
         "viewID": 1657
     },
     {
@@ -7388,13 +7389,13 @@
     {
         "id": 31315,
         "bot": true,
-        "name": "Estola Angelical",
+        "name": "Costume Stall of Angel",
         "viewID": 1664
     },
     {
         "id": 31305,
         "bot": true,
-        "name": "Angeling de Estimação",
+        "name": "Costume Walking Poring",
         "viewID": 1666
     },
     {
@@ -7460,7 +7461,7 @@
     {
         "id": 31381,
         "bot": true,
-        "name": "Gola Diabólica",
+        "name": "Costume Diabolic Lapel",
         "viewID": 1681
     },
     {
@@ -7508,7 +7509,7 @@
     {
         "id": 31395,
         "bot": true,
-        "name": "Conhecimento Flutuante",
+        "name": "Costume Book Of Magic",
         "viewID": 1691
     },
     {
@@ -7544,7 +7545,7 @@
     {
         "id": 420046,
         "bot": true,
-        "name": "Manta Digníssima",
+        "name": "Costume Royal Mantle",
         "viewID": 1697
     },
     {
@@ -7597,8 +7598,9 @@
     },
     {
         "id": 31438,
+        "bot": true,
         "top": true,
-        "name": "Capa Angelical",
+        "name": "Costume Fluffy Angel Cape",
         "viewID": 1706
     },
     {
@@ -7658,7 +7660,7 @@
     {
         "id": 31453,
         "bot": true,
-        "name": "Cachecol Marrom com Laço",
+        "name": "Costume Large Ribbon Muffler (Black)",
         "viewID": 1716
     },
     {
@@ -7677,7 +7679,7 @@
     {
         "id": 31460,
         "bot": true,
-        "name": "Lanternas da Serenidade",
+        "name": "Costume Sky Lantern",
         "viewID": 1720
     },
     {
@@ -7701,7 +7703,7 @@
     {
         "id": 31473,
         "bot": true,
-        "name": "Marcas do Envergonhado",
+        "name": "Costume Tipsy",
         "viewID": 1724
     },
     {
@@ -7785,7 +7787,7 @@
     {
         "id": 31498,
         "bot": true,
-        "name": "Elefante Bumbo",
+        "name": "Costume Elephangel",
         "viewID": 1745
     },
     {
@@ -7809,7 +7811,7 @@
     {
         "id": 31510,
         "bot": true,
-        "name": "Peruca Curta de Gatinho",
+        "name": "Costume Cat Ear Short",
         "viewID": 1752
     },
     {
@@ -7863,7 +7865,7 @@
     {
         "id": 31625,
         "bot": true,
-        "name": "Cachecol Celestial",
+        "name": "Costume Protect Cloth",
         "viewID": 1761
     },
     {
@@ -7899,7 +7901,7 @@
     {
         "id": 31533,
         "bot": true,
-        "name": "Gatchecol da Sorte",
+        "name": "Costume Warm Black Cat Muffler",
         "viewID": 1771
     },
     {
@@ -7917,7 +7919,7 @@
     {
         "id": 31545,
         "bot": true,
-        "name": "Cachecol Azul do Eremes",
+        "name": "Costume Eremes Scarf (Blue)",
         "viewID": 1776
     },
     {
@@ -7963,7 +7965,7 @@
     {
         "id": 31566,
         "bot": true,
-        "name": "Estola das Divindades",
+        "name": "Costume Stole of Dominion",
         "viewID": 1784
     },
     {
@@ -7981,7 +7983,7 @@
     {
         "id": 31572,
         "bot": true,
-        "name": "Auréolas Digitais",
+        "name": "Costume Mobile Pursuit System",
         "viewID": 1788
     },
     {
@@ -7999,7 +8001,7 @@
     {
         "id": 31575,
         "bot": true,
-        "name": "Peruca Turquesa de Waifu",
+        "name": "Costume Electric Two Sides Up Hair",
         "viewID": 1791
     },
     {
@@ -8011,7 +8013,7 @@
     {
         "id": 31584,
         "bot": true,
-        "name": "Cachecol de Marin",
+        "name": "Costume Marin's Muffler",
         "viewID": 1795
     },
     {
@@ -8023,7 +8025,7 @@
     {
         "id": 31586,
         "bot": true,
-        "name": "Cachecol de Poporing",
+        "name": "Costume Poporing Muffler",
         "viewID": 1797
     },
     {
@@ -8096,7 +8098,7 @@
     {
         "id": 31611,
         "bot": true,
-        "name": "Manto do Riso Macabro",
+        "name": "Costume Dark Snake Lord Stole",
         "viewID": 1810
     },
     {
@@ -8120,7 +8122,7 @@
     {
         "id": 31616,
         "bot": true,
-        "name": "Carneiro Dorminhoco",
+        "name": "Costume Sleep Sheep",
         "viewID": 1814
     },
     {
@@ -8156,7 +8158,7 @@
     {
         "id": 31626,
         "bot": true,
-        "name": "Asas dos Querubins",
+        "name": "Costume Fluffy Wings",
         "viewID": 1826
     },
     {
@@ -8336,7 +8338,7 @@
     {
         "id": 31670,
         "bot": true,
-        "name": "Peruca de Miyabi",
+        "name": "Costume Miyabi Doll Hair",
         "viewID": 1864
     },
     {
@@ -8348,7 +8350,7 @@
     {
         "id": 31672,
         "bot": true,
-        "name": "Peruca de Nereida",
+        "name": "Costume Mermaid Wig",
         "viewID": 1866
     },
     {
@@ -8379,7 +8381,7 @@
     {
         "id": 31684,
         "bot": true,
-        "name": "Peruca Kururinpa",
+        "name": "Costume Kururinpa Tails",
         "viewID": 1873
     },
     {
@@ -8409,7 +8411,7 @@
     {
         "id": 31698,
         "bot": true,
-        "name": "Chapéuzinho Carmesinho",
+        "name": "Costume Red Riding Hood",
         "viewID": 1879
     },
     {
@@ -8475,7 +8477,7 @@
     {
         "id": 31729,
         "bot": true,
-        "name": "Flores Poéticas",
+        "name": "Costume Flower Shower",
         "viewID": 1893
     },
     {
@@ -8493,7 +8495,7 @@
     {
         "id": 31731,
         "bot": true,
-        "name": "Guloseimas Encantadas",
+        "name": "Costume Snack Party",
         "viewID": 1896
     },
     {
@@ -8565,7 +8567,7 @@
     {
         "id": 31797,
         "bot": true,
-        "name": "Peruca de Shih Tzu",
+        "name": "Costume Shih Tzu Hair",
         "viewID": 1921
     },
     {
@@ -8577,7 +8579,7 @@
     {
         "id": 31803,
         "bot": true,
-        "name": "Dobra do Vento",
+        "name": "Costume Aura of Tornado",
         "viewID": 1924
     },
     {
@@ -8589,7 +8591,7 @@
     {
         "id": 31816,
         "bot": true,
-        "name": "Coelhos Celestiais",
+        "name": "Costume Three Rabbits Ribbon",
         "viewID": 1926
     },
     {
@@ -8601,7 +8603,7 @@
     {
         "id": 31819,
         "bot": true,
-        "name": "Cabeça Invisível",
+        "name": "Costume Dullahan Mask",
         "viewID": 1931
     },
     {
@@ -8619,13 +8621,13 @@
     {
         "id": 31827,
         "bot": true,
-        "name": "Capuz Durumagi",
+        "name": "Costume Durumagi",
         "viewID": 1936
     },
     {
         "id": 31831,
         "bot": true,
-        "name": "Manto do Disfarce",
+        "name": "Costume Disguise Overcoat",
         "viewID": 1937
     },
     {
@@ -8829,49 +8831,49 @@
     {
         "id": 31874,
         "bot": true,
-        "name": "Peruca de Safira",
+        "name": "Costume Himmelmez Hair (Navy)",
         "viewID": 1972
     },
     {
         "id": 31875,
         "bot": true,
-        "name": "Peruca de Ouro",
+        "name": "Costume Himmelmez Hair (Cream)",
         "viewID": 1973
     },
     {
         "id": 31876,
         "bot": true,
-        "name": "Peruca de Prata",
+        "name": "Costume Himmelmez Hair (Pearl)",
         "viewID": 1974
     },
     {
         "id": 31877,
         "bot": true,
-        "name": "Peruca de Quartzo Rosa",
+        "name": "Costume Himmelmez Hair (Taro)",
         "viewID": 1975
     },
     {
         "id": 31878,
         "bot": true,
-        "name": "Peruca de Rubi",
+        "name": "Costume Himmelmez Hair (Rose)",
         "viewID": 1976
     },
     {
         "id": 31879,
         "bot": true,
-        "name": "Peruca de Esmeralda",
+        "name": "Costume Himmelmez Hair (Lime)",
         "viewID": 1977
     },
     {
         "id": 31880,
         "bot": true,
-        "name": "Peruca de Turmalina",
+        "name": "Costume Himmelmez Hair (Charcoal)",
         "viewID": 1978
     },
     {
         "id": 31881,
         "bot": true,
-        "name": "Peruca de Jaspe",
+        "name": "Costume Himmelmez Hair (Milk Tea)",
         "viewID": 1979
     },
     {
@@ -8885,13 +8887,13 @@
     {
         "id": 31887,
         "bot": true,
-        "name": "Cachecol de Seda",
+        "name": "Costume Pure Love Muffler",
         "viewID": 1981
     },
     {
         "id": 31885,
         "bot": true,
-        "name": "Dobra de Terra",
+        "name": "Costume Cons of Earth",
         "viewID": 1982
     },
     {
@@ -8921,7 +8923,7 @@
     {
         "id": 31916,
         "bot": true,
-        "name": "Gravata Chique",
+        "name": "Costume Frill Tie",
         "viewID": 1988
     },
     {
@@ -9013,13 +9015,13 @@
     {
         "id": 31932,
         "bot": true,
-        "name": "Gravata-Paletó",
+        "name": "Costume Suit Lapel",
         "viewID": 2002
     },
     {
         "id": 31933,
         "bot": true,
-        "name": "Peruca de Miyabi Rosa",
+        "name": "C Light Purple Miyabi Doll Hair",
         "viewID": 2003
     },
     {
@@ -9067,7 +9069,7 @@
     {
         "id": 31954,
         "bot": true,
-        "name": "Coleira do Vassalo",
+        "name": "Costume Vassalage Necklace",
         "viewID": 2018
     },
     {
@@ -9079,13 +9081,13 @@
     {
         "id": 420010,
         "bot": true,
-        "name": "Aura da Escuridão",
+        "name": "Costume Cons of Darkness",
         "viewID": 2020
     },
     {
         "id": 420025,
         "bot": true,
-        "name": "Olho Gigante",
+        "name": "Costume One Eyed Jack",
         "viewID": 2023
     },
     {
@@ -9109,7 +9111,7 @@
     {
         "id": 420014,
         "bot": true,
-        "name": "Peruca de Animação",
+        "name": "Costume Japanese Hair",
         "viewID": 2027
     },
     {
@@ -9295,7 +9297,7 @@
     {
         "id": 420047,
         "bot": true,
-        "name": "Capa de Cavaleiro",
+        "name": "Costume Honorable Knight's Cloak",
         "viewID": 2059
     },
     {
@@ -9307,7 +9309,7 @@
     {
         "id": 31957,
         "bot": true,
-        "name": "Aura Venenosa",
+        "name": "Costume Cons of Poison",
         "viewID": 2061
     },
     {
@@ -9355,7 +9357,7 @@
     {
         "id": 31966,
         "bot": true,
-        "name": "Cabeleira Branca",
+        "name": "Costume Wave Hair(White)",
         "viewID": 2069
     },
     {
@@ -9367,19 +9369,19 @@
     {
         "id": 31968,
         "bot": true,
-        "name": "Peruca Castanho Claro",
+        "name": "Costume Ponytail Hair (Black)",
         "viewID": 2071
     },
     {
         "id": 31969,
         "bot": true,
-        "name": "Peruca Lilás",
+        "name": "Costume Ponytail Hair (Light Purple)",
         "viewID": 2072
     },
     {
         "id": 31971,
         "bot": true,
-        "name": "Peruca Branca",
+        "name": "Costume Ponytail Hair (White)",
         "viewID": 2074
     },
     {
@@ -9464,13 +9466,13 @@
     {
         "id": 420053,
         "bot": true,
-        "name": "Sombra de Deviruchi",
+        "name": "Costume Shadow Devil",
         "viewID": 2096
     },
     {
         "id": 420054,
         "bot": true,
-        "name": "Cachecol de Fumacento",
+        "name": "Costume Smokie Muffler",
         "viewID": 2097
     },
     {
@@ -9488,37 +9490,37 @@
     {
         "id": 420057,
         "bot": true,
-        "name": "Peruca Ruiva",
+        "name": "Costume Ponytail Hair (Red)",
         "viewID": 2106
     },
     {
         "id": 420058,
         "bot": true,
-        "name": "Peruca Loira",
+        "name": "Costume Ponytail Hair (Yellow)",
         "viewID": 2107
     },
     {
         "id": 420059,
         "bot": true,
-        "name": "Peruca Azul",
+        "name": "Costume Ponytail Hair (Blue)",
         "viewID": 2108
     },
     {
         "id": 420060,
         "bot": true,
-        "name": "Peruca Verde",
+        "name": "Costume Ponytail Hair (Green)",
         "viewID": 2109
     },
     {
         "id": 420061,
         "bot": true,
-        "name": "Peruca Rosa",
+        "name": "Costume Ponytail Hair (Pink)",
         "viewID": 2110
     },
     {
         "id": 420062,
         "bot": true,
-        "name": "Peruca Roxa",
+        "name": "Costume Ponytail Hair (Purple)",
         "viewID": 2111
     },
     {
@@ -9584,7 +9586,7 @@
     {
         "id": 420027,
         "bot": true,
-        "name": "Peruca de Sereia",
+        "name": "Costume Fish Bone Hair",
         "viewID": 2139
     },
     {
@@ -9616,7 +9618,7 @@
     {
         "id": 420077,
         "bot": true,
-        "name": "Rastro de Gatinho",
+        "name": "Costume Cat Footprints",
         "viewID": 2150
     },
     {
@@ -9634,13 +9636,13 @@
     {
         "id": 31975,
         "bot": true,
-        "name": "Batata Quente",
+        "name": "Costume Sweet Potato In Mouth",
         "viewID": 2154
     },
     {
         "id": 420079,
         "bot": true,
-        "name": "Peruca com Mechas",
+        "name": "Costume Inner Color Long",
         "viewID": 2155
     },
     {
@@ -9694,7 +9696,7 @@
     {
         "id": 420088,
         "bot": true,
-        "name": "Anjinho do Amor",
+        "name": "Costume Heart Angel",
         "viewID": 2170
     },
     {
@@ -9850,7 +9852,7 @@
     {
         "id": 420104,
         "bot": true,
-        "name": "Cabelos Longos Azulados",
+        "name": "Costume Wild Long Hair",
         "viewID": 2206
     },
     {
@@ -9880,43 +9882,43 @@
     {
         "id": 420114,
         "bot": true,
-        "name": "Penteado Estiloso Verde",
+        "name": "Costume Side Roll Pony (Green)",
         "viewID": 2229
     },
     {
         "id": 420115,
         "bot": true,
-        "name": "Penteado Estiloso Castanho",
+        "name": "Costume Side Roll Pony (Brown)",
         "viewID": 2230
     },
     {
         "id": 420116,
         "bot": true,
-        "name": "Penteado Estiloso Rosa",
+        "name": "Costume Side Roll Pony (Pink)",
         "viewID": 2231
     },
     {
         "id": 420117,
         "bot": true,
-        "name": "Penteado Estiloso Roxo",
+        "name": "Costume Side Roll Pony (Purple)",
         "viewID": 2232
     },
     {
         "id": 420118,
         "bot": true,
-        "name": "Penteado Estiloso Ruivo",
+        "name": "Costume Side Roll Pony (Red)",
         "viewID": 2233
     },
     {
         "id": 420119,
         "bot": true,
-        "name": "Penteado Estiloso Branco",
+        "name": "Costume Side Roll Pony (White)",
         "viewID": 2234
     },
     {
         "id": 420120,
         "bot": true,
-        "name": "Penteado Estiloso Loiro",
+        "name": "Costume Side Roll Pony (Yellow)",
         "viewID": 2235
     },
     {
@@ -10006,7 +10008,7 @@
     {
         "id": 420140,
         "bot": true,
-        "name": "Peruca de Alpha",
+        "name": "Costume Alpha Long Pony",
         "viewID": 2253
     },
     {
@@ -10048,19 +10050,19 @@
     {
         "id": 420162,
         "bot": true,
-        "name": "Peruca Preta Estelar",
+        "name": "Costume Starlight Ribbon Twin",
         "viewID": 2270
     },
     {
         "id": 420161,
         "bot": true,
-        "name": "Peruca Rosa Estelar",
+        "name": "Costume Starry Long Wave",
         "viewID": 2271
     },
     {
         "id": 420163,
         "bot": true,
-        "name": "Cachecol de Corvo",
+        "name": "Costume Protect Cloth (Black)",
         "viewID": 2272
     },
     {
@@ -10084,7 +10086,7 @@
     {
         "id": 420211,
         "bot": true,
-        "name": "Ovelha Dorminhoca",
+        "name": "Costume Red Sleep Sheep",
         "viewID": 2277
     },
     {
@@ -10096,7 +10098,7 @@
     {
         "id": 420165,
         "bot": true,
-        "name": "Tenda Preciosa",
+        "name": "Costume Tent",
         "viewID": 2279
     },
     {
@@ -10187,7 +10189,7 @@
     {
         "id": 490242,
         "bot": true,
-        "name": "Cabelo de Valquíria",
+        "name": "Costume Valkyrie Hair",
         "viewID": 2311
     },
     {
@@ -10217,7 +10219,7 @@
     {
         "id": 420181,
         "bot": true,
-        "name": "Ombreira de Brinaranha",
+        "name": "Costume Eis Spinne",
         "viewID": 2317
     },
     {
@@ -10279,7 +10281,7 @@
     {
         "id": 420192,
         "bot": true,
-        "name": "Raposa Albina",
+        "name": "Costume White Fox Friendly",
         "viewID": 2335
     },
     {
@@ -10297,7 +10299,7 @@
     {
         "id": 420195,
         "bot": true,
-        "name": "Balões de Poring",
+        "name": "Costume Poooooring Balloon",
         "viewID": 2345
     },
     {
@@ -10393,7 +10395,7 @@
     {
         "id": 420221,
         "bot": true,
-        "name": "Peruca de Skia",
+        "name": "Costume Skia Hairstyle",
         "viewID": 2389
     },
     {
@@ -11040,6 +11042,7 @@
     },
     {
         "id": 440014,
+        "bot": true,
         "mid": true,
         "top": true,
         "name": "Costume 1st Runner\u00a0Up of ROS 2024",
@@ -11047,6 +11050,7 @@
     },
     {
         "id": 440015,
+        "bot": true,
         "mid": true,
         "top": true,
         "name": "Costume 2nd Runner Up of ROS 2024",
@@ -11054,6 +11058,7 @@
     },
     {
         "id": 440016,
+        "bot": true,
         "mid": true,
         "top": true,
         "name": "Costume 3rd Runner Up of ROS 2024",
@@ -11224,6 +11229,7 @@
     },
     {
         "id": 19850,
+        "bot": true,
         "mid": true,
         "top": true,
         "name": "Costume Bongun Hat",
@@ -11315,6 +11321,7 @@
     },
     {
         "id": 440012,
+        "bot": true,
         "mid": true,
         "top": true,
         "name": "Costume Dr. Eggman Mask",
@@ -11418,6 +11425,7 @@
     },
     {
         "id": 19838,
+        "bot": true,
         "mid": true,
         "top": true,
         "name": "Costume Fox Hat",
@@ -11467,6 +11475,7 @@
     },
     {
         "id": 440043,
+        "bot": true,
         "mid": true,
         "top": true,
         "name": "Costume Golden Baseball Cap",
@@ -11516,6 +11525,7 @@
     },
     {
         "id": 440018,
+        "bot": true,
         "mid": true,
         "top": true,
         "name": "Costume Helm of Galaxia",
@@ -11541,6 +11551,7 @@
     },
     {
         "id": 20102,
+        "bot": true,
         "mid": true,
         "top": true,
         "name": "Costume Horse King",
@@ -11739,6 +11750,7 @@
     },
     {
         "id": 19689,
+        "bot": true,
         "mid": true,
         "top": true,
         "name": "Costume Outfit Ati Atihan",
@@ -11963,6 +11975,7 @@
     },
     {
         "id": 20152,
+        "bot": true,
         "mid": true,
         "top": true,
         "name": "Costume Straw Rice Bag",
@@ -11994,6 +12007,7 @@
     },
     {
         "id": 440013,
+        "bot": true,
         "mid": true,
         "top": true,
         "name": "Costume The Winner of ROS 2024",
@@ -12062,6 +12076,7 @@
     },
     {
         "id": 19610,
+        "bot": true,
         "mid": true,
         "top": true,
         "name": "Costume Whisper Mask",
@@ -12219,6 +12234,7 @@
     },
     {
         "id": 436007,
+        "bot": true,
         "mid": true,
         "name": "Costume Awin Winter Headgear",
         "viewID": 2143
@@ -12327,6 +12343,7 @@
     },
     {
         "id": 31207,
+        "bot": true,
         "mid": true,
         "name": "Costume Dokkebi Mask",
         "viewID": 689
@@ -12447,6 +12464,7 @@
     },
     {
         "id": 436008,
+        "bot": true,
         "mid": true,
         "name": "Costume Hwa Ho Jom Jong",
         "viewID": 2216
@@ -12495,6 +12513,7 @@
     },
     {
         "id": 19615,
+        "bot": true,
         "mid": true,
         "name": "Costume Loki Mask",
         "viewID": 346
@@ -12537,6 +12556,7 @@
     },
     {
         "id": 21206,
+        "bot": true,
         "mid": true,
         "name": "Costume Nut Cracker",
         "viewID": 1991
@@ -12585,6 +12605,7 @@
     },
     {
         "id": 436006,
+        "bot": true,
         "mid": true,
         "name": "Costume Rgan Disguise Tool",
         "viewID": 2144
@@ -12627,6 +12648,7 @@
     },
     {
         "id": 436010,
+        "bot": true,
         "mid": true,
         "name": "Costume Spiding",
         "viewID": 2315
@@ -12645,6 +12667,7 @@
     },
     {
         "id": 31030,
+        "bot": true,
         "mid": true,
         "name": "Costume Tiger Face",
         "viewID": 483
@@ -12702,5 +12725,749 @@
         "mid": true,
         "name": "Costume Yin Yang Earring",
         "viewID": 744
+    },
+    {
+        "id": 20305,
+        "bot": true,
+        "name": "C Netty Heart Bubble Gum",
+        "viewID": 720
+    },
+    {
+        "id": 420385,
+        "bot": true,
+        "name": "Costume Adventure's Map",
+        "viewID": 2598
+    },
+    {
+        "id": 420033,
+        "bot": true,
+        "name": "Costume Airy Twin Tails (White)",
+        "viewID": 2028
+    },
+    {
+        "id": 420337,
+        "bot": true,
+        "name": "Costume Ancient Runes",
+        "viewID": 0
+    },
+    {
+        "id": 420346,
+        "bot": true,
+        "name": "Costume Angel Berry Wig",
+        "viewID": 2549
+    },
+    {
+        "id": 31422,
+        "bot": true,
+        "name": "Costume Angeling Bubble",
+        "viewID": 976
+    },
+    {
+        "id": 420382,
+        "bot": true,
+        "name": "Costume Atokwe Poenitentia",
+        "viewID": 2594
+    },
+    {
+        "id": 420371,
+        "bot": true,
+        "name": "Costume Aura of Amon Ra",
+        "viewID": 2094
+    },
+    {
+        "id": 420512,
+        "bot": true,
+        "name": "Costume Aurora On Clouds",
+        "viewID": 0
+    },
+    {
+        "id": 420357,
+        "bot": true,
+        "name": "Costume Baby Seal",
+        "viewID": 2570
+    },
+    {
+        "id": 420360,
+        "bot": true,
+        "name": "Costume Bell Cat Hair",
+        "viewID": 2573
+    },
+    {
+        "id": 400148,
+        "bot": true,
+        "name": "Costume Black Dragon Style",
+        "viewID": 2115
+    },
+    {
+        "id": 420421,
+        "bot": true,
+        "name": "Costume Blue Cat Ears Cape",
+        "viewID": 2522
+    },
+    {
+        "id": 420349,
+        "bot": true,
+        "name": "Costume Blue Sunbed",
+        "viewID": 2562
+    },
+    {
+        "id": 420344,
+        "bot": true,
+        "name": "Costume Book of Sorcery",
+        "viewID": 2327
+    },
+    {
+        "id": 420319,
+        "bot": true,
+        "name": "Costume Card Board Box",
+        "viewID": 450
+    },
+    {
+        "id": 420303,
+        "bot": true,
+        "name": "Costume Chaos Emerald",
+        "viewID": 2434
+    },
+    {
+        "id": 420353,
+        "bot": true,
+        "name": "Costume Charisma Extension Twin",
+        "viewID": 2567
+    },
+    {
+        "id": 420500,
+        "bot": true,
+        "name": "Costume Cherry Blossoms Long Twin Tail",
+        "viewID": 2683
+    },
+    {
+        "id": 420219,
+        "bot": true,
+        "name": "Costume Come On Melon",
+        "viewID": 2382
+    },
+    {
+        "id": 420152,
+        "bot": true,
+        "name": "Costume Cons of Light and Dark",
+        "viewID": 2273
+    },
+    {
+        "id": 480469,
+        "bot": true,
+        "name": "Costume Cons of White and Red",
+        "viewID": 2576
+    },
+    {
+        "id": 420222,
+        "bot": true,
+        "name": "Costume Consecrate Fides Aureola",
+        "viewID": 2396
+    },
+    {
+        "id": 31951,
+        "bot": true,
+        "name": "Costume Cute White Cat",
+        "viewID": 1980
+    },
+    {
+        "id": 480783,
+        "bot": true,
+        "name": "Costume Dark Knight Cloak",
+        "viewID": 2732
+    },
+    {
+        "id": 400427,
+        "bot": true,
+        "name": "Costume Demi Freyja Hair",
+        "viewID": 2360
+    },
+    {
+        "id": 420063,
+        "bot": true,
+        "name": "Costume Desert Scarf",
+        "viewID": 363
+    },
+    {
+        "id": 420552,
+        "bot": true,
+        "name": "Costume Divine Invitation",
+        "viewID": 0
+    },
+    {
+        "id": 420731,
+        "bot": true,
+        "name": "Costume Dr.Nambu's Emergency Transmission",
+        "viewID": 0
+    },
+    {
+        "id": 420702,
+        "bot": true,
+        "name": "Costume Eclipse Muffler",
+        "viewID": 2688
+    },
+    {
+        "id": 420358,
+        "bot": true,
+        "name": "Costume Experimental Spirit",
+        "viewID": 2664
+    },
+    {
+        "id": 31374,
+        "bot": true,
+        "name": "Costume Explosion Gum",
+        "viewID": 1414
+    },
+    {
+        "id": 31304,
+        "bot": true,
+        "name": "Costume Fan of Summer",
+        "viewID": 1051
+    },
+    {
+        "id": 420729,
+        "bot": true,
+        "name": "Costume Farewell, Gatchaman!",
+        "viewID": 2802
+    },
+    {
+        "id": 420351,
+        "bot": true,
+        "name": "Costume Farm House Clouds",
+        "viewID": 383
+    },
+    {
+        "id": 420571,
+        "bot": true,
+        "name": "Costume Feather Blonde Hair",
+        "viewID": 2735
+    },
+    {
+        "id": 420570,
+        "bot": true,
+        "name": "Costume Feather Two-Tone Hair",
+        "viewID": 2734
+    },
+    {
+        "id": 420383,
+        "bot": true,
+        "name": "Costume Festa Rainbow Hair",
+        "viewID": 2596
+    },
+    {
+        "id": 420234,
+        "bot": true,
+        "name": "Costume Festival Stall",
+        "viewID": 2412
+    },
+    {
+        "id": 420439,
+        "bot": true,
+        "name": "Costume Food Truck",
+        "viewID": 2660
+    },
+    {
+        "id": 20192,
+        "bot": true,
+        "name": "Costume Foxtail",
+        "viewID": 1058
+    },
+    {
+        "id": 420730,
+        "bot": true,
+        "name": "Costume Gatchaman, Move Out!",
+        "viewID": 2803
+    },
+    {
+        "id": 19692,
+        "bot": true,
+        "name": "Costume Gentleman's Pipe",
+        "viewID": 383
+    },
+    {
+        "id": 420078,
+        "bot": true,
+        "name": "Costume Ghost Bat",
+        "viewID": 2093
+    },
+    {
+        "id": 420350,
+        "bot": true,
+        "name": "Costume Green Sunbed",
+        "viewID": 2563
+    },
+    {
+        "id": 420430,
+        "bot": true,
+        "name": "Costume Guardian's Letter",
+        "viewID": 0
+    },
+    {
+        "id": 420429,
+        "bot": true,
+        "name": "Costume Guide's Letter",
+        "viewID": 0
+    },
+    {
+        "id": 420282,
+        "bot": true,
+        "name": "Costume Guillotine Cross Hair (Black)",
+        "viewID": 2460
+    },
+    {
+        "id": 420280,
+        "bot": true,
+        "name": "Costume Guillotine Cross Hair (Blue)",
+        "viewID": 2458
+    },
+    {
+        "id": 420277,
+        "bot": true,
+        "name": "Costume Guillotine Cross Hair (Mint)",
+        "viewID": 2455
+    },
+    {
+        "id": 420279,
+        "bot": true,
+        "name": "Costume Guillotine Cross Hair (Pink)",
+        "viewID": 2457
+    },
+    {
+        "id": 420281,
+        "bot": true,
+        "name": "Costume Guillotine Cross Hair (Purple)",
+        "viewID": 2459
+    },
+    {
+        "id": 420284,
+        "bot": true,
+        "name": "Costume Guillotine Cross Hair (Red)",
+        "viewID": 2462
+    },
+    {
+        "id": 420283,
+        "bot": true,
+        "name": "Costume Guillotine Cross Hair (White)",
+        "viewID": 2461
+    },
+    {
+        "id": 420278,
+        "bot": true,
+        "name": "Costume Guillotine Cross Hair (Yellow)",
+        "viewID": 2456
+    },
+    {
+        "id": 420255,
+        "bot": true,
+        "name": "Costume Guillotine Cross Low Pony",
+        "viewID": 2435
+    },
+    {
+        "id": 420423,
+        "bot": true,
+        "name": "Costume Ink Painting (Day)",
+        "viewID": 0
+    },
+    {
+        "id": 420424,
+        "bot": true,
+        "name": "Costume Ink Painting (Night)",
+        "viewID": 0
+    },
+    {
+        "id": 420204,
+        "bot": true,
+        "name": "Costume Juncea Wig",
+        "viewID": 2361
+    },
+    {
+        "id": 420338,
+        "bot": true,
+        "name": "Costume Lazy Cat Luke",
+        "viewID": 0
+    },
+    {
+        "id": 420069,
+        "bot": true,
+        "name": "Costume Lord of Royals",
+        "viewID": 2128
+    },
+    {
+        "id": 31454,
+        "bot": true,
+        "name": "Costume Love Feeling",
+        "viewID": 1717
+    },
+    {
+        "id": 420427,
+        "bot": true,
+        "name": "Costume Lunatic Igloo",
+        "viewID": 2648
+    },
+    {
+        "id": 31693,
+        "bot": true,
+        "name": "Costume Lunatic Muffler",
+        "viewID": 1732
+    },
+    {
+        "id": 420159,
+        "bot": true,
+        "name": "Costume Magic Card",
+        "viewID": 2264
+    },
+    {
+        "id": 420595,
+        "bot": true,
+        "name": "Costume Medjed Cloth",
+        "viewID": 2745
+    },
+    {
+        "id": 420508,
+        "bot": true,
+        "name": "Costume Midgard Insignia",
+        "viewID": 2691
+    },
+    {
+        "id": 420875,
+        "bot": true,
+        "name": "Costume Moon Bow Hair",
+        "viewID": 2851
+    },
+    {
+        "id": 420321,
+        "bot": true,
+        "name": "Costume Neon Half Long",
+        "viewID": 2508
+    },
+    {
+        "id": 410280,
+        "bot": true,
+        "name": "Costume Niflheim Night Sky",
+        "viewID": 0
+    },
+    {
+        "id": 420304,
+        "bot": true,
+        "name": "Costume Night Sky of Lutie",
+        "viewID": 0
+    },
+    {
+        "id": 420576,
+        "bot": true,
+        "name": "Costume Nightmare Chain",
+        "viewID": 0
+    },
+    {
+        "id": 400767,
+        "bot": true,
+        "name": "Costume Oriental Style Wig",
+        "viewID": 2661
+    },
+    {
+        "id": 420511,
+        "bot": true,
+        "name": "Costume Over Cloud",
+        "viewID": 0
+    },
+    {
+        "id": 31428,
+        "bot": true,
+        "name": "Costume Panda Balloon",
+        "viewID": 1115
+    },
+    {
+        "id": 31970,
+        "bot": true,
+        "name": "Costume Ponytail Hair (Brown)",
+        "viewID": 2073
+    },
+    {
+        "id": 31237,
+        "bot": true,
+        "name": "Costume Pope Ribbon",
+        "viewID": 1474
+    },
+    {
+        "id": 420774,
+        "bot": true,
+        "name": "Costume Poporing Soap Pipe",
+        "viewID": 2753
+    },
+    {
+        "id": 31257,
+        "bot": true,
+        "name": "Costume Poring Jars Of Clay",
+        "viewID": 1634
+    },
+    {
+        "id": 410265,
+        "bot": true,
+        "name": "Costume Power Ring Drop",
+        "viewID": 2432
+    },
+    {
+        "id": 31972,
+        "bot": true,
+        "name": "Costume Purificatory Mask",
+        "viewID": 8
+    },
+    {
+        "id": 420067,
+        "bot": true,
+        "name": "Costume Rabbit Pigtails",
+        "viewID": 2124
+    },
+    {
+        "id": 420410,
+        "bot": true,
+        "name": "Costume Ranger Wolf Shorts (Black)",
+        "viewID": 2627
+    },
+    {
+        "id": 420408,
+        "bot": true,
+        "name": "Costume Ranger Wolf Shorts (Blue)",
+        "viewID": 2625
+    },
+    {
+        "id": 420405,
+        "bot": true,
+        "name": "Costume Ranger Wolf Shorts (Blue-Green)",
+        "viewID": 2622
+    },
+    {
+        "id": 420409,
+        "bot": true,
+        "name": "Costume Ranger Wolf Shorts (Purple)",
+        "viewID": 2626
+    },
+    {
+        "id": 420412,
+        "bot": true,
+        "name": "Costume Ranger Wolf Shorts (Red-Brown)",
+        "viewID": 2629
+    },
+    {
+        "id": 420407,
+        "bot": true,
+        "name": "Costume Ranger Wolf Shorts (Sakura)",
+        "viewID": 2624
+    },
+    {
+        "id": 420411,
+        "bot": true,
+        "name": "Costume Ranger Wolf Shorts (White)",
+        "viewID": 2628
+    },
+    {
+        "id": 420406,
+        "bot": true,
+        "name": "Costume Ranger Wolf Shorts (Yellow)",
+        "viewID": 2623
+    },
+    {
+        "id": 420602,
+        "bot": true,
+        "name": "Costume Red Bat",
+        "viewID": 2439
+    },
+    {
+        "id": 420642,
+        "bot": true,
+        "name": "Costume Red Open Air Headset",
+        "viewID": 2716
+    },
+    {
+        "id": 420440,
+        "bot": true,
+        "name": "Costume Rigel Hair",
+        "viewID": 2666
+    },
+    {
+        "id": 420111,
+        "bot": true,
+        "name": "Costume Rocking Short",
+        "viewID": 2225
+    },
+    {
+        "id": 20223,
+        "bot": true,
+        "name": "Costume Romantic Leaf",
+        "viewID": 57
+    },
+    {
+        "id": 420293,
+        "bot": true,
+        "name": "Costume Sleek Half-Up",
+        "viewID": 2471
+    },
+    {
+        "id": 420298,
+        "bot": true,
+        "name": "Costume Sleek Half-Up (Black)",
+        "viewID": 2476
+    },
+    {
+        "id": 420295,
+        "bot": true,
+        "name": "Costume Sleek Half-Up (Blossom Pink)",
+        "viewID": 2473
+    },
+    {
+        "id": 420300,
+        "bot": true,
+        "name": "Costume Sleek Half-Up (Brown)",
+        "viewID": 2478
+    },
+    {
+        "id": 420297,
+        "bot": true,
+        "name": "Costume Sleek Half-Up (Purple)",
+        "viewID": 2475
+    },
+    {
+        "id": 420296,
+        "bot": true,
+        "name": "Costume Sleek Half-Up (Sky Bule)",
+        "viewID": 2474
+    },
+    {
+        "id": 420299,
+        "bot": true,
+        "name": "Costume Sleek Half-Up (White)",
+        "viewID": 2477
+    },
+    {
+        "id": 420294,
+        "bot": true,
+        "name": "Costume Sleek Half-Up (Yellow)",
+        "viewID": 2472
+    },
+    {
+        "id": 420618,
+        "bot": true,
+        "name": "Costume Solid State Recognition",
+        "viewID": 2751
+    },
+    {
+        "id": 420743,
+        "bot": true,
+        "name": "Costume Spirit Cat",
+        "viewID": 2811
+    },
+    {
+        "id": 31296,
+        "bot": true,
+        "name": "Costume Strawberry In Mouth",
+        "viewID": 861
+    },
+    {
+        "id": 420241,
+        "bot": true,
+        "name": "Costume Temari Candy Hair",
+        "viewID": 2418
+    },
+    {
+        "id": 31470,
+        "bot": true,
+        "name": "Costume Tengu Scroll",
+        "viewID": 1445
+    },
+    {
+        "id": 420727,
+        "bot": true,
+        "name": "Costume Thick Braided Pigtails Hairstyle",
+        "viewID": 2794
+    },
+    {
+        "id": 410440,
+        "bot": true,
+        "name": "Costume Toothless Doll",
+        "viewID": 2693
+    },
+    {
+        "id": 31695,
+        "bot": true,
+        "name": "Costume Tree Sprout",
+        "viewID": 848
+    },
+    {
+        "id": 420240,
+        "bot": true,
+        "name": "Costume Tsunade's Scroll",
+        "viewID": 1090
+    },
+    {
+        "id": 420072,
+        "bot": true,
+        "name": "Costume Twin Braids (White)",
+        "viewID": 2131
+    },
+    {
+        "id": 420525,
+        "bot": true,
+        "name": "Costume Twin Milky Way",
+        "viewID": 2707
+    },
+    {
+        "id": 420367,
+        "bot": true,
+        "name": "Costume Whisper Cloth",
+        "viewID": 2578
+    },
+    {
+        "id": 420264,
+        "bot": true,
+        "name": "Costume White Cat Ear Wig",
+        "viewID": 2440
+    },
+    {
+        "id": 400757,
+        "bot": true,
+        "name": "Costume White Fox Hood Twin Tail",
+        "viewID": 2646
+    },
+    {
+        "id": 420426,
+        "bot": true,
+        "name": "Costume White Fox Twin Tail",
+        "viewID": 2647
+    },
+    {
+        "id": 420044,
+        "bot": true,
+        "name": "Costume White Sailor Collar",
+        "viewID": 2141
+    },
+    {
+        "id": 420201,
+        "bot": true,
+        "name": "Costume White Serpent Hair",
+        "viewID": 2354
+    },
+    {
+        "id": 31583,
+        "bot": true,
+        "name": "Costume Will O the Wisp",
+        "viewID": 880
+    },
+    {
+        "id": 420747,
+        "bot": true,
+        "name": "Costume Wishing Sky Lantern",
+        "viewID": 947
+    },
+    {
+        "id": 19391,
+        "bot": true,
+        "name": "Eyes of Illusion",
+        "viewID": 1779
+    },
+    {
+        "id": 19207,
+        "bot": true,
+        "name": "Pecopeco Hairband",
+        "viewID": 314
     }
 ]
