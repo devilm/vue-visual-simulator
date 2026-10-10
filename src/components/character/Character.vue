@@ -2,7 +2,7 @@
     <div class="character-render position-relative d-inline-block">
         <img :src="img_src" alt="character" />
         <div
-            v-if="isLoading && !img_src"
+            v-if="isLoading"
             class="position-absolute top-50 start-50 translate-middle bg-light bg-opacity-75 rounded shadow-sm p-2 d-flex align-items-center gap-2 text-nowrap"
             role="status"
             aria-live="polite"
@@ -41,13 +41,10 @@ export default {
                 effect: "c_eye_of_necromancer",
             })
             const url = process.env.VUE_APP_API_URL
-            this.isLoading = false
+            this.isLoading = true
             this.isWakingUp = false
             const wakingTimer = setTimeout(() => {
-                if (requestId === this.requestId) {
-                    this.isLoading = true
-                    this.isWakingUp = true
-                }
+                if (requestId === this.requestId) this.isWakingUp = true
             }, 1500)
 
             try {
