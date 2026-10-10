@@ -3,7 +3,7 @@
         <img :src="img_src" alt="character" />
         <div
             v-if="isLoading && !img_src"
-            class="mt-2 bg-light bg-opacity-75 rounded shadow-sm p-2 d-flex align-items-center gap-2 text-nowrap"
+            class="position-absolute top-50 start-50 translate-middle bg-light bg-opacity-75 rounded shadow-sm p-2 d-flex align-items-center gap-2 text-nowrap"
             role="status"
             aria-live="polite"
         >
@@ -48,7 +48,7 @@ export default {
                     this.isLoading = true
                     this.isWakingUp = true
                 }
-            }, 10000)
+            }, 1500)
 
             try {
                 const response = await fetch(url, {
