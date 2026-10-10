@@ -26,25 +26,37 @@ export default {
                 effect: "c_eye_of_necromancer",
             })
             const url = process.env.VUE_APP_API_URL
-            const self = this;
-            const req = await fetch(url, {
-                method: "POST",
-                headers: {
-                    'Content-Type': 'application/json',
-                    'x-accesstoken': process.env.VUE_APP_API_KEY,
-                },
-                body: payload,
-            }).then(function (response) {
+            const requestRender = async function () {
+                const response = await fetch(url, {
+                    method: "POST",
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'x-accesstoken': process.env.VUE_APP_API_KEY,
+                    },
+                    body: payload,
+                })
                 if (!response.ok) {
                     throw new Error(`Render request failed: ${response.status} ${response.statusText}`);
                 }
                 return response.blob();
-            }).then(function (myBlob) {
-                var objectURL = URL.createObjectURL(myBlob);
-                self.img_src = objectURL;
-            }).catch(function (error) {
+            }
+
+            try {
+                let image
+                try {
+                    image = await requestRender()
+                } catch {
+                    const healthUrl = `${new URL(url).origin}/health`
+                    const healthResponse = await fetch(healthUrl)
+                    if (!healthResponse.ok) {
+                        throw new Error(`Renderer health check failed: ${healthResponse.status} ${healthResponse.statusText}`)
+                    }
+                    image = await requestRender()
+                }
+                this.img_src = URL.createObjectURL(image)
+            } catch (error) {
                 console.error('There has been a problem with character fetch operation: ' + error.message);
-            });
+            }
             localStorage.setItem('character', character);
         }
     },
