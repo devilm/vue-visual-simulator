@@ -115,15 +115,47 @@
             <div class="col-md-6"><hr /></div>
             <div class="col-md-3"></div>
           </div>
-          <div class="card col-md-12">
-            <div class="card-body">
-              <a
-                href="https://github.com/alisonrag/vue-visual-simulator/graphs/contributors"
-              >
-                <img
-                v-lazy="{ src: 'https://contrib.rocks/image?repo=alisonrag/vue-visual-simulator', delay: 250 }"
-                />
-              </a>
+          <div class="row g-4">
+            <div class="col-md-7">
+              <div class="card h-100">
+                <div class="card-body text-center">
+                  <h2 class="h4">{{ $t("originalTeam") }}</h2>
+                  <p>{{ $t("originalTeamCredit") }}</p>
+                  <a
+                    href="https://github.com/alisonrag/vue-visual-simulator/graphs/contributors"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      class="img-fluid"
+                      v-lazy="{
+                        src: 'https://contrib.rocks/image?repo=alisonrag/vue-visual-simulator',
+                        delay: 250,
+                      }"
+                      alt="Original project contributors"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div class="card h-100">
+                <div
+                  class="card-body d-flex flex-column align-items-center justify-content-center text-center"
+                >
+                  <h2 class="h4">{{ $t("continuedDevelopment") }}</h2>
+                  <p>{{ $t("continuedDevelopmentCredit") }}</p>
+                  <a
+                    class="btn btn-outline-primary"
+                    href="https://github.com/devilm/vue-visual-simulator"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fa-brands fa-github"></i>
+                    devilm
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -140,7 +172,7 @@
             <div class="col-md-12">
               <h2>
                 <a
-                  href="https://github.com/alisonrag/vue-visual-simulator"
+                  href="https://github.com/devilm/vue-visual-simulator"
                   target="_blank"
                   ><i class="fa-brands fa-github"></i
                 ></a>
