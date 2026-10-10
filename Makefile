@@ -3,5 +3,13 @@
 GH_PAGES_REPO ?= vue-visual-simulator
 export GH_PAGES_REPO
 
+ifeq ($(OS),Windows_NT)
+NODEJS_DIR ?= C:/Program Files/nodejs
+export PATH := $(NODEJS_DIR);$(PATH)
+NPM ?= npm.cmd
+else
+NPM ?= npm
+endif
+
 build:
-	npm run build:docs
+	$(NPM) run build:docs
