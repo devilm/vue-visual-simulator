@@ -1,13 +1,16 @@
 <template>
-  <select class="form-select language_select" @change="switchLocale($event)">
+  <select
+    class="form-select language_select"
+    :value="current_language"
+    @change="switchLocale($event)"
+  >
     <option
       v-for="locale in locales"
       :value="locale"
       :key="locale"
-      :selected="locale == current_language"
       class="language_option"
     >
-      {{ locale }}
+      {{ locale.toUpperCase() }}
     </option>
   </select>
 </template>
@@ -20,25 +23,35 @@ export default {
   },
   methods: {
     switchLocale(event) {
-      let locale = event.target.value;
+      const locale = event.target.value;
       if (this.$i18n.locale !== locale) {
         this.$i18n.locale = locale;
-        localStorage.setItem("current_language", locale);
       }
+      this.current_language = locale;
+      localStorage.setItem("current_language", locale);
     },
     loadLanguageFromLocalStorage: function () {
-      let language = localStorage.getItem("current_language");
+      const savedLanguage = localStorage.getItem("current_language");
+      const defaultLanguage = process.env.VUE_APP_I18N_LOCALE || "th";
+      const language = this.locales.includes(savedLanguage)
+        ? savedLanguage
+        : this.locales.includes(defaultLanguage)
+          ? defaultLanguage
+          : this.locales[0];
 
-      if (language != null && this.$i18n.locale !== language) {
-        this.current_language = language;
+      this.current_language = language;
+      if (this.$i18n.locale !== language) {
         this.$i18n.locale = language;
+      }
+      if (savedLanguage !== language) {
+        localStorage.setItem("current_language", language);
       }
     },
   },
   data() {
     return {
       locales: process.env.VUE_APP_I18N_SUPPORTED_LOCALE.split(","),
-      current_language: "en",
+      current_language: process.env.VUE_APP_I18N_LOCALE || "th",
     };
   },
 };

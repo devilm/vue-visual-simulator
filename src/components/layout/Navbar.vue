@@ -20,11 +20,6 @@
           <li class="nav-item mx-2">
             <router-link to="/" class="nav-link">{{ $t("home") }}</router-link>
           </li>
-          <li class="nav-item mx-2">
-            <router-link to="/about" class="nav-link">{{
-              $t("about")
-            }}</router-link>
-          </li>
         </ul>
         <ul>
           <li class="navbar-nav ms-auto mb-2 mb-lg-0">
