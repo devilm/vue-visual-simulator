@@ -4,6 +4,8 @@
 
 <script>
 import { mapState } from 'vuex'
+import itemsJson from '../../db/items.json';
+
 export default {
     name: "Character",
     data() {
@@ -14,6 +16,12 @@ export default {
     methods: {
         requestCharacter: async function () {
             const character = JSON.stringify(this.character)
+            const equippedViewIds = new Set(
+                [...this.character.headgear, this.character.garment].map(Number)
+            )
+            const effect = itemsJson.find(
+                (item) => item.effect && equippedViewIds.has(Number(item.viewID))
+            )?.effect
             const payload = JSON.stringify({
                 job: this.character.job,
                 action: this.character.action,
@@ -23,7 +31,7 @@ export default {
                 head: this.character.head,
                 gender: this.character.gender,
                 headdir: this.character.headdir,
-                effect: "c_eye_of_necromancer",
+                ...(effect ? { effect } : {}),
             })
             const url = process.env.VUE_APP_API_URL
             const requestRender = async function () {

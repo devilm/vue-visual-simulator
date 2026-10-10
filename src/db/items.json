@@ -12382,7 +12382,8 @@
         "id": 410576,
         "mid": true,
         "name": "Costume Eye of Necromancer",
-        "viewID": 2809
+        "viewID": 2809,
+        "effect": "c_eye_of_necromancer"
     },
     {
         "id": 410353,
