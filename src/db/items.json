@@ -15,7 +15,7 @@
     {
         "id": 20552,
         "garment": true,
-        "name": "Aura Verde do Iniciante",
+        "name": "Costume: Green Energy",
         "viewID": 0
     },
     {
@@ -42,7 +42,7 @@
     {
         "id": 19576,
         "top": true,
-        "name": "Chapéu da Proteção Divina",
+        "name": "Costume: Pope Doll",
         "viewID": 0
     },
     {
@@ -55,13 +55,13 @@
     {
         "id": 20950,
         "garment": true,
-        "name": "Aura Alaranjada",
+        "name": "Costume: 175LV Sura Orange",
         "viewID": 0
     },
     {
         "id": 20554,
         "garment": true,
-        "name": "Aura Invernal do Iniciante",
+        "name": "Costume: Aura of Sanctity",
         "viewID": 0
     },
     {
@@ -73,19 +73,19 @@
     {
         "id": 19602,
         "top": true,
-        "name": "Chapéu Invisível",
+        "name": "Costume Invisible Cap",
         "viewID": 0
     },
     {
         "id": 20547,
         "garment": true,
-        "name": "Mil e Uma Assombrações",
+        "name": "Costume: Whisper\u0027s Blessing",
         "viewID": 0
     },
     {
         "id": 20538,
         "garment": true,
-        "name": "Círculo Arco-íris",
+        "name": "Costume: Magic Circle Rainbow",
         "viewID": 0
     },
     {
@@ -97,14 +97,14 @@
     {
         "id": 20519,
         "garment": true,
-        "name": "Aura de Folhas de Outono",
+        "name": "Costume: Full Bloom Cherry Tree",
         "viewID": 0,
         "effect": "나뭇잎_완성"
     },
     {
         "id": 31091,
         "top": true,
-        "name": "Chuva Dourada",
+        "name": "Costume: Show Me The Zeny",
         "viewID": 0
     },
     {
@@ -116,7 +116,7 @@
     {
         "id": 24422,
         "garment": true,
-        "name": "Aura Laranja do Iniciante",
+        "name": "Costume: Fury Energy",
         "viewID": 0
     },
     {
@@ -162,19 +162,19 @@
     {
         "id": 19603,
         "mid": true,
-        "name": "Óculos Invisíveis",
+        "name": "Costume Invisible Sunglasses",
         "viewID": 0
     },
     {
         "id": 20555,
         "garment": true,
-        "name": "Aura Prateada do Iniciante",
+        "name": "Costume: Silver Energy",
         "viewID": 0
     },
     {
         "id": 20565,
         "garment": true,
-        "name": "Aura Trovejante",
+        "name": "Costume: Aura of Thunder",
         "viewID": 0
     },
     {
@@ -207,7 +207,7 @@
     {
         "id": 20566,
         "garment": true,
-        "name": "Aura Argêntea",
+        "name": "Costume: Silver Aura",
         "viewID": 0
     },
     {
@@ -220,19 +220,19 @@
     {
         "id": 19917,
         "top": true,
-        "name": "Chapéu de Abóbora Iluminado",
+        "name": "Costume: Gloomy Pumpkin Hat",
         "viewID": 0
     },
     {
         "id": 20568,
         "garment": true,
-        "name": "Aura Dourada",
+        "name": "Costume: Gold Aura",
         "viewID": 0
     },
     {
         "id": 20583,
         "garment": true,
-        "name": "Estrela Guia",
+        "name": "[衣装] イリュージョンクリスタル",
         "viewID": 0
     },
     {
@@ -244,7 +244,7 @@
     {
         "id": 20562,
         "garment": true,
-        "name": "Aura Azul",
+        "name": "Costume: Light Blue Aura",
         "viewID": 0
     },
     {
@@ -257,13 +257,13 @@
     {
         "id": 20611,
         "garment": true,
-        "name": "Aura Cinza",
+        "name": "Costume: Gray Aura",
         "viewID": 0
     },
     {
         "id": 20557,
         "garment": true,
-        "name": "Aura Dourada do Iniciante",
+        "name": "Costume: Gold Energy",
         "viewID": 0
     },
     {
@@ -283,19 +283,19 @@
     {
         "id": 20610,
         "garment": true,
-        "name": "Aura Cinza do Iniciante",
+        "name": "Costume Gray Energy",
         "viewID": 0
     },
     {
         "id": 20608,
         "garment": true,
-        "name": "Aura Anil do Iniciante",
+        "name": "Costume Midnight Blue Energy",
         "viewID": 0
     },
     {
         "id": 20609,
         "garment": true,
-        "name": "Aura Anil",
+        "name": "Costume: Dark Blue Aura",
         "viewID": 0
     },
     {
@@ -334,31 +334,31 @@
     {
         "id": 31435,
         "top": true,
-        "name": "Gorro de Tricô Hipster",
+        "name": "Costume: Magician Knit Hat",
         "viewID": 0
     },
     {
         "id": 31289,
         "bot": true,
-        "name": "Asinhas Estilosas (Baixo)",
+        "name": "[衣装] 保護する者の黒い翼(下段)",
         "viewID": 0
     },
     {
         "id": 31264,
         "bot": true,
-        "name": "Asinhas Elegantes (Baixo)",
+        "name": "[衣装] 保護する者の翼(下段)",
         "viewID": 0
     },
     {
         "id": 20202,
         "bot": true,
-        "name": "Balão de Deviruchi",
+        "name": "Costume: Deviruchi Balloon",
         "viewID": 0
     },
     {
         "id": 480296,
         "garment": true,
-        "name": "Fragrância de Rosas",
+        "name": "Costume: Sakura Fubuki",
         "viewID": 0
     },
     {
@@ -408,7 +408,7 @@
     {
         "id": 31199,
         "bot": true,
-        "name": "Cavanhaque Bifurcado",
+        "name": "Costume: Weird Beard",
         "viewID": 0
     },
     {
@@ -420,19 +420,19 @@
     {
         "id": 440008,
         "top": true,
-        "name": "Grande Mestre",
+        "name": "[衣装] Master",
         "viewID": 0
     },
     {
         "id": 5914,
         "bot": true,
-        "name": "Aura Esplêndida",
+        "name": "Costume Flutter Butterfly Wings",
         "viewID": 0
     },
     {
         "id": 20346,
         "top": true,
-        "name": "Chapéu de Batedor",
+        "name": "[衣装] たれパーメットタートル",
         "viewID": 0
     },
     {
@@ -444,12 +444,12 @@
     {
         "id": 19944,
         "top": true,
-        "name": "Fadinha Angelical",
+        "name": "[衣装] 勝利の女神（紫）",
         "viewID": 0
     },
     {
         "mid": true,
-        "name": "Máscara de Lude",
+        "name": "Costume: Lude Mask",
         "id": 19918,
         "bot": true,
         "viewID": 0
@@ -457,7 +457,7 @@
     {
         "top": true,
         "mid": true,
-        "name": "Máscara de Sussurro Assustador",
+        "name": "Costume: Adv Whisper Mask",
         "id": 19920,
         "bot": true,
         "viewID": 0
@@ -489,20 +489,20 @@
     {
         "top": true,
         "mid": true,
-        "name": "Óculos de Aviação",
+        "name": "Costume: Archangel Wing",
         "id": 19578,
         "viewID": 1
     },
     {
         "id": 20512,
         "garment": true,
-        "name": "Mochila de Caça",
+        "name": "Costume: Heroic Backpack",
         "viewID": 2
     },
     {
         "id": 20521,
         "garment": true,
-        "name": "Miau-chila de Bichano Preto",
+        "name": "Costume: Black Cat Backpack",
         "viewID": 2
     },
     {
@@ -515,13 +515,13 @@
     {
         "id": 20727,
         "garment": true,
-        "name": "Asas Douradas da Justiça",
+        "name": "Costume: Brilliant Golden Wings",
         "viewID": 5
     },
     {
         "id": 20203,
         "top": true,
-        "name": "Bandana para Testa",
+        "name": "Costume: Bandana",
         "viewID": 6
     },
     {
@@ -539,7 +539,7 @@
     {
         "id": 19634,
         "bot": true,
-        "name": "Máscara de Segurança",
+        "name": "Medical Mask",
         "viewID": 8
     },
     {
@@ -557,7 +557,7 @@
     {
         "id": 20501,
         "garment": true,
-        "name": "Asas Mecanizadas",
+        "name": "Costume: Mechanic Wing",
         "viewID": 11
     },
     {
@@ -569,31 +569,31 @@
     {
         "id": 20502,
         "garment": true,
-        "name": "Asa de Morcego Mutante",
+        "name": "Costume: Devil Wings",
         "viewID": 12
     },
     {
         "id": 31487,
         "mid": true,
-        "name": "Tapa-Olho Pirata",
+        "name": "Costume Eye Bandage",
         "viewID": 13
     },
     {
         "id": 20504,
         "garment": true,
-        "name": "Asas da Sarakura",
+        "name": "Costume: Pink Cupid Wing",
         "viewID": 14
     },
     {
         "id": 20505,
         "garment": true,
-        "name": "Asas de Quero",
+        "name": "Costume: Blue Cupid Wing",
         "viewID": 15
     },
     {
         "id": 19625,
         "top": true,
-        "name": "Orelhas Lunares",
+        "name": "Costume: Bunny Band",
         "viewID": 15
     },
     {
@@ -623,7 +623,7 @@
     {
         "id": 20587,
         "garment": true,
-        "name": "Asas da Justiça",
+        "name": "Costume Light Darkness Wing",
         "viewID": 20
     },
     {
@@ -635,7 +635,7 @@
     {
         "id": 20511,
         "garment": true,
-        "name": "Asas Azuis de Fada",
+        "name": "Costume: Blue Fairy Wings",
         "viewID": 21
     },
     {
@@ -659,7 +659,7 @@
     {
         "id": 19783,
         "bot": true,
-        "name": "Bigode Grosso",
+        "name": "Costume: Grampa Beard",
         "viewID": 25
     },
     {
@@ -677,7 +677,7 @@
     {
         "id": 31155,
         "mid": true,
-        "name": "Óculos de Nerd",
+        "name": "Costume: Geek Glasses",
         "viewID": 27
     },
     {
@@ -689,13 +689,13 @@
     {
         "id": 19720,
         "top": true,
-        "name": "Chapéu de Oportunista",
+        "name": "[衣装] オールドスターロマンス",
         "viewID": 31
     },
     {
         "id": 20180,
         "top": true,
-        "name": "Chapéu de Faroeste",
+        "name": "Costume: Western Grace",
         "viewID": 32
     },
     {
@@ -707,7 +707,7 @@
     {
         "id": 19719,
         "top": true,
-        "name": "Pequena Coroa",
+        "name": "Costume: Coronet",
         "viewID": 33
     },
     {
@@ -731,7 +731,7 @@
     {
         "id": 20530,
         "garment": true,
-        "name": "Asas de Gabriel",
+        "name": "의상 가브리엘의 날개",
         "viewID": 37
     },
     {
@@ -743,7 +743,7 @@
     {
         "id": 19731,
         "top": true,
-        "name": "Asas Demoníacas",
+        "name": "Costume: Evil Wing",
         "viewID": 39
     },
     {
@@ -10469,7 +10469,13 @@
     },
     {
         "id": 420352,
-        "garment": true,
+        "bot": true,
+        "name": "Costume Poring Pool",
+        "viewID": 2566
+    },
+    {
+        "id": 420352,
+        "bot": true,
         "name": "Costume Pool",
         "viewID": 2566
     },
@@ -13487,5 +13493,11 @@
         "bot": true,
         "name": "Pecopeco Hairband",
         "viewID": 314
+    },
+    {
+        "id": 410083,
+        "mid": true,
+        "name": "Costume: Scuba Mask",
+        "viewID": 400
     }
 ]
