@@ -10,7 +10,7 @@
         class="img-item"
         :class="{
           'item-selected': parseInt(item.id) == $store.state.headgear_top_item.id,
-          'item-disabled': parseInt(item.viewID) == 0,
+          'item-disabled': Number(item.viewID) === 0 && !item.effect && !item.texture,
         }"
         :viewID="item.viewID"
         data-bs-toggle="tooltip"

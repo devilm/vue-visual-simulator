@@ -63,6 +63,22 @@ export default {
                         Number(item.viewID) !== 0 &&
                         equippedViewIds.has(Number(item.viewID))
                 )?.effect
+            const textureItem =
+                itemsJson.find(
+                    (item) =>
+                        (item.texture ||
+                            item.textureOffsetX != null ||
+                            item.textureOffsetY != null) &&
+                        equippedItemIds.has(Number(item.id))
+                ) ||
+                itemsJson.find(
+                    (item) =>
+                        (item.texture ||
+                            item.textureOffsetX != null ||
+                            item.textureOffsetY != null) &&
+                        Number(item.viewID) !== 0 &&
+                        equippedViewIds.has(Number(item.viewID))
+                )
             const payload = JSON.stringify({
                 job: characterState.job,
                 action: characterState.action,
@@ -76,6 +92,13 @@ export default {
                 gender: characterState.gender,
                 headdir: characterState.headdir,
                 ...(effect ? { effect } : {}),
+                ...(textureItem?.texture ? { texture: textureItem.texture } : {}),
+                ...(textureItem?.textureOffsetX != null
+                    ? { textureOffsetX: textureItem.textureOffsetX }
+                    : {}),
+                ...(textureItem?.textureOffsetY != null
+                    ? { textureOffsetY: textureItem.textureOffsetY }
+                    : {}),
             })
             const url = process.env.VUE_APP_API_URL
             const requestRender = async function () {

@@ -151,7 +151,9 @@
         "garment": true,
         "name": "Costume Swirling Flame",
         "viewID": 0,
-        "effect": "화염진"
+        "texture": "\\texture\\effect\\c_swirling_flame\\vortexf2.str",
+        "textureOffsetX": -4,
+        "textureOffsetY": 40
     },
     {
         "id": 19603,
@@ -9466,7 +9468,10 @@
         "id": 410081,
         "mid": true,
         "name": "Costume Released Ground",
-        "viewID": 2136
+        "viewID": 2136,
+        "texture": "\\texture\\effect\\c_released_ground\\ki.str",
+        "textureOffsetX": -4,
+        "textureOffsetY": 50
     },
     {
         "id": 410082,
@@ -12429,7 +12434,8 @@
         "id": 410368,
         "mid": true,
         "name": "Costume Permafrost Oblivion",
-        "viewID": 2595
+        "viewID": 0,
+        "effect": "perm_frost_oblivion"
     },
     {
         "id": 410636,
@@ -12735,7 +12741,10 @@
         "id": 480783,
         "bot": true,
         "name": "Costume Dark Knight Cloak",
-        "viewID": 2732
+        "viewID": 2732,
+        "texture": "\\texture\\effect\\efst_c_dark_lord_cloak\\darklordcloak.str",
+        "textureOffsetX": -4,
+        "textureOffsetY": 50
     },
     {
         "id": 400427,
@@ -13340,5 +13349,14 @@
         "garment": true,
         "name": "Costume Poring Tube",
         "viewID": 235
+    },
+    {
+        "id": 480866,
+        "garment": true,
+        "name": "Costume ROS 2026 Champion Radiance",
+        "viewID": 0,
+        "texture": "\\texture\\effect\\efst_ros_2026_1st\\mc1_3.str",
+        "textureOffsetX": -4,
+        "textureOffsetY": 50
     }
 ]
