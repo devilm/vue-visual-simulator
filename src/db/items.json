@@ -7,34 +7,30 @@
     },
     {
         "id": 20551,
-        "top": true,
         "garment": true,
         "name": "Costume Light Blue Energy",
         "viewID": 0
     },
     {
         "id": 20552,
-        "garment": true,
+        "top": true,
         "name": "Costume: Green Energy",
         "viewID": 0
     },
     {
         "id": 20550,
-        "top": true,
         "garment": true,
         "name": "Costume Aura of Violet",
         "viewID": 0
     },
     {
         "id": 20549,
-        "top": true,
         "garment": true,
         "name": "Costume Aura of the Sea Glow",
         "viewID": 0
     },
     {
         "id": 20548,
-        "top": true,
         "garment": true,
         "name": "Costume Popping Poring Aura",
         "viewID": 0
@@ -47,7 +43,6 @@
     },
     {
         "id": 20553,
-        "top": true,
         "garment": true,
         "name": "Costume Aura of Pink",
         "viewID": 0
@@ -60,7 +55,7 @@
     },
     {
         "id": 20554,
-        "garment": true,
+        "top": true,
         "name": "Costume: Aura of Sanctity",
         "viewID": 0
     },
@@ -79,7 +74,7 @@
     {
         "id": 20547,
         "garment": true,
-        "name": "Costume: Whisper\u0027s Blessing",
+        "name": "Costume: Whisper's Blessing",
         "viewID": 0
     },
     {
@@ -115,7 +110,6 @@
     },
     {
         "id": 24422,
-        "garment": true,
         "name": "Costume: Fury Energy",
         "viewID": 0
     },
@@ -167,13 +161,13 @@
     },
     {
         "id": 20555,
-        "garment": true,
+        "top": true,
         "name": "Costume: Silver Energy",
         "viewID": 0
     },
     {
         "id": 20565,
-        "garment": true,
+        "top": true,
         "name": "Costume: Aura of Thunder",
         "viewID": 0
     },
@@ -185,34 +179,30 @@
     },
     {
         "id": 20601,
-        "top": true,
         "garment": true,
         "name": "Costume Aura of Red",
         "viewID": 0
     },
     {
         "id": 20564,
-        "top": true,
         "garment": true,
         "name": "Costume Aura of Flamingo",
         "viewID": 0
     },
     {
         "id": 20563,
-        "top": true,
         "garment": true,
         "name": "Aura of Razer (3rd Anniversary)",
         "viewID": 0
     },
     {
         "id": 20566,
-        "garment": true,
+        "top": true,
         "name": "Costume: Silver Aura",
         "viewID": 0
     },
     {
         "id": 20567,
-        "top": true,
         "garment": true,
         "name": "Costume Aura of Darkness",
         "viewID": 0
@@ -225,7 +215,7 @@
     },
     {
         "id": 20568,
-        "garment": true,
+        "top": true,
         "name": "Costume: Gold Aura",
         "viewID": 0
     },
@@ -243,13 +233,12 @@
     },
     {
         "id": 20562,
-        "garment": true,
+        "top": true,
         "name": "Costume: Light Blue Aura",
         "viewID": 0
     },
     {
         "id": 20560,
-        "top": true,
         "garment": true,
         "name": "Costume Aura of the Depths",
         "viewID": 0
@@ -262,20 +251,18 @@
     },
     {
         "id": 20557,
-        "garment": true,
+        "top": true,
         "name": "Costume: Gold Energy",
         "viewID": 0
     },
     {
         "id": 20556,
-        "top": true,
         "garment": true,
         "name": "Costume Aura of Night",
         "viewID": 0
     },
     {
         "id": 20561,
-        "top": true,
         "garment": true,
         "name": "Costume Aura of Orchid",
         "viewID": 0
@@ -300,14 +287,12 @@
     },
     {
         "id": 20559,
-        "top": true,
         "garment": true,
         "name": "Costume Aura of Scarlet",
         "viewID": 0
     },
     {
         "id": 20558,
-        "top": true,
         "garment": true,
         "name": "Costume Aura of Yellow Green",
         "viewID": 0
@@ -320,7 +305,6 @@
     },
     {
         "id": 20569,
-        "top": true,
         "garment": true,
         "name": "Costume Aura of Shamrock",
         "viewID": 0
@@ -362,10 +346,10 @@
         "viewID": 0
     },
     {
+        "id": 20393,
         "top": true,
         "mid": true,
         "name": "Costume Dip Schmidt Helm",
-        "id": 20393,
         "viewID": 634
     },
     {
@@ -448,18 +432,15 @@
         "viewID": 0
     },
     {
-        "mid": true,
-        "name": "Costume: Lude Mask",
         "id": 19918,
         "bot": true,
+        "name": "Costume: Lude Mask",
         "viewID": 0
     },
     {
-        "top": true,
-        "mid": true,
-        "name": "Costume: Adv Whisper Mask",
         "id": 19920,
         "bot": true,
+        "name": "Costume: Adv Whisper Mask",
         "viewID": 0
     },
     {
@@ -487,10 +468,10 @@
         "viewID": 1
     },
     {
+        "id": 19578,
         "top": true,
         "mid": true,
         "name": "Costume: Archangel Wing",
-        "id": 19578,
         "viewID": 1
     },
     {
@@ -767,7 +748,7 @@
     {
         "id": 20541,
         "garment": true,
-        "name": "Asas Etéreas",
+        "name": "Costume Angel's Ribbon Wings",
         "viewID": 42
     },
     {
@@ -785,7 +766,7 @@
     {
         "id": 19790,
         "top": true,
-        "name": "Véu de Matrimônio",
+        "name": "Costume: Wedding Veil",
         "viewID": 44
     },
     {
@@ -815,7 +796,7 @@
     {
         "id": 20161,
         "top": true,
-        "name": "Chapéu da Guarda de Prontera",
+        "name": "Costume: A Military Cap Of A Knight",
         "viewID": 48
     },
     {
@@ -828,7 +809,7 @@
     {
         "id": 19636,
         "bot": true,
-        "name": "Nariz de Pierrot",
+        "name": "Costume: Clown Nose",
         "viewID": 49
     },
     {
@@ -840,15 +821,12 @@
     {
         "id": 20574,
         "garment": true,
-        "name": "Mochila do Aluno Rebelde",
+        "name": "Costume: Backpack (Red)",
         "viewID": 51
     },
     {
-        "top": true,
-        "mid": true,
-        "name": "Chapéu de Tubarão",
         "id": 440000,
-        "bot": true,
+        "name": "Costume Shark Hat",
         "viewID": 51
     },
     {
@@ -860,13 +838,13 @@
     {
         "id": 20576,
         "garment": true,
-        "name": "Garfo do Glutão",
+        "name": "Costume: Cat Fork",
         "viewID": 53
     },
     {
         "id": 19528,
         "bot": true,
-        "name": "Bevor de Plástico",
+        "name": "Costume Iron Cane",
         "viewID": 53
     },
     {
@@ -878,7 +856,7 @@
     {
         "id": 31737,
         "garment": true,
-        "name": "Asas de Lúcifer",
+        "name": "Costume Wings of Lucifer",
         "viewID": 55
     },
     {
@@ -890,19 +868,19 @@
     {
         "id": 20578,
         "garment": true,
-        "name": "Asas de Raquel",
+        "name": "Costume Wing of Raguel",
         "viewID": 56
     },
     {
         "id": 20579,
         "garment": true,
-        "name": "Asas de Raphael",
+        "name": "Costume Raphael's Wings",
         "viewID": 57
     },
     {
         "id": 20987,
         "garment": true,
-        "name": "Mochila de Angeling",
+        "name": "Costume: Piglering Bag",
         "viewID": 58
     },
     {
@@ -914,7 +892,7 @@
     {
         "id": 20581,
         "garment": true,
-        "name": "Mochila Militar",
+        "name": "Costume Soldier Backpack",
         "viewID": 59
     },
     {
@@ -938,26 +916,25 @@
     {
         "id": 20585,
         "garment": true,
-        "name": "Mochilurso",
+        "name": "Costume: Brown Bear Bag",
         "viewID": 63
     },
     {
         "id": 20586,
         "garment": true,
-        "name": "Costume Loli Ruri\u0027s Crescent",
+        "name": "Costume Loli Ruri's Crescent",
         "viewID": 64
     },
     {
         "id": 19637,
         "top": true,
-        "name": "Chapéu de Ambulatório",
+        "name": "Costume: Nurse Cap",
         "viewID": 64
     },
     {
-        "mid": true,
-        "name": "Sr. Sorriso",
         "id": 19638,
         "bot": true,
+        "name": "[Costume] Mr. Smile",
         "viewID": 65
     },
     {
@@ -999,19 +976,19 @@
     {
         "id": 19941,
         "top": true,
-        "name": "Protetores de Ouvido",
+        "name": "Costume: Ear Muffs",
         "viewID": 70
     },
     {
         "id": 20592,
         "garment": true,
-        "name": "Costume Santa\u0027s Pocket",
+        "name": "Costume Santa's Pocket",
         "viewID": 70
     },
     {
         "id": 19939,
         "top": true,
-        "name": "Chifres de Cervo",
+        "name": "Costume: Antlers",
         "viewID": 71
     },
     {
@@ -1053,7 +1030,7 @@
     {
         "id": 19913,
         "top": true,
-        "name": "Chapéu de Esterco",
+        "name": "Costume: Poo Poo Hat",
         "viewID": 76
     },
     {
@@ -1070,8 +1047,8 @@
     },
     {
         "id": 20059,
-        "mid": true,
-        "name": "Máscara de Soldagem",
+        "bot": true,
+        "name": "[Costume] Welding Mask",
         "viewID": 79
     },
     {
@@ -1083,13 +1060,13 @@
     {
         "id": 20596,
         "garment": true,
-        "name": "Mochila Zipper",
+        "name": "Costume: Black Bear Backpack",
         "viewID": 81
     },
     {
         "id": 480071,
         "garment": true,
-        "name": "Recipiente das Areias",
+        "name": "Costume: Calabash",
         "viewID": 82
     },
     {
@@ -1102,7 +1079,7 @@
     {
         "id": 19734,
         "mid": true,
-        "name": "Amplificador Ocular",
+        "name": "Costume: Binoculars",
         "viewID": 83
     },
     {
@@ -1145,25 +1122,25 @@
     {
         "id": 31711,
         "top": true,
-        "name": "Coroa de Reis",
+        "name": "Costume: Jewel Crown",
         "viewID": 88
     },
     {
         "id": 19865,
         "top": true,
-        "name": "Coroa de Bufão",
+        "name": "Costume: Joker Jester",
         "viewID": 89
     },
     {
         "id": 20612,
         "garment": true,
-        "name": "Escudo de Oridecon",
+        "name": "Costume Ten Guardian Shield",
         "viewID": 90
     },
     {
         "id": 31712,
         "bot": true,
-        "name": "Respirador",
+        "name": "Costume: Oxygen Mask",
         "viewID": 90
     },
     {
@@ -1243,13 +1220,13 @@
     {
         "id": 19545,
         "top": true,
-        "name": "Costume Boy\u0027s Cap",
+        "name": "Costume Boy's Cap",
         "viewID": 102
     },
     {
         "id": 20614,
         "garment": true,
-        "name": "Costume Ultimate Kiel Hyre\u0027s",
+        "name": "Costume Ultimate Kiel Hyre's",
         "viewID": 102
     },
     {
@@ -1261,7 +1238,7 @@
     {
         "id": 480108,
         "garment": true,
-        "name": "Cesta de Porings",
+        "name": "Costume: Poring Basket",
         "viewID": 103
     },
     {
@@ -1309,7 +1286,7 @@
     {
         "id": 20472,
         "top": true,
-        "name": "Elmo do Anjo",
+        "name": "Costume Angel's Helmet",
         "viewID": 110
     },
     {
@@ -1327,7 +1304,7 @@
     {
         "id": 480123,
         "garment": true,
-        "name": "Costume Nydhog\u0027s Rumor",
+        "name": "Costume Nydhog's Rumor",
         "viewID": 113
     },
     {
@@ -1357,37 +1334,37 @@
     {
         "id": 480130,
         "garment": true,
-        "name": "Raguaraná",
+        "name": "Costume: Beer Server",
         "viewID": 117
     },
     {
         "id": 20348,
         "top": true,
-        "name": "Chapéu de Veraneio",
+        "name": "의상 나들이 모자",
         "viewID": 117
     },
     {
         "id": 20304,
         "top": true,
-        "name": "Touca de Fumacento",
+        "name": "의상 너구리 모자",
         "viewID": 118
     },
     {
         "id": 480137,
         "garment": true,
-        "name": "Mochila de Filir",
+        "name": "Costume: Filir Bag",
         "viewID": 118
     },
     {
         "id": 480152,
         "garment": true,
-        "name": "Talheres do Comilão",
+        "name": "Costume: Fork Spoon Set",
         "viewID": 121
     },
     {
         "id": 480155,
         "garment": true,
-        "name": "Capa de Herói",
+        "name": "Costume National Flag",
         "viewID": 122
     },
     {
@@ -1434,8 +1411,8 @@
     },
     {
         "id": 480177,
-        "bot": true,
-        "name": "Buquê Gigantesco",
+        "garment": true,
+        "name": "Costume: Clutch Bouquet",
         "viewID": 128
     },
     {
@@ -1447,13 +1424,13 @@
     {
         "id": 480187,
         "garment": true,
-        "name": "Laçarote de Casamento",
+        "name": "Costume: Wedding Ribbon",
         "viewID": 130
     },
     {
         "id": 480189,
         "garment": true,
-        "name": "Asas Amaldiçoadas de Valquíria",
+        "name": "Costume: Valkyrie Curse Bright",
         "viewID": 131
     },
     {
@@ -1465,7 +1442,7 @@
     {
         "id": 20207,
         "top": true,
-        "name": "Bandana Listrada",
+        "name": "Costume: Striped Hairband",
         "viewID": 133
     },
     {
@@ -1477,7 +1454,7 @@
     {
         "id": 31713,
         "top": true,
-        "name": "Chapéu de Casca",
+        "name": "Costume: Mystical Fruit Hat",
         "viewID": 134
     },
     {
@@ -1499,16 +1476,16 @@
         "viewID": 138
     },
     {
+        "id": 19840,
         "top": true,
         "mid": true,
         "name": "Costume Helm Of Sun",
-        "id": 19840,
         "viewID": 138
     },
     {
         "id": 19851,
         "top": true,
-        "name": "Touca de Ursinho",
+        "name": "Costume: Teddybear Hat",
         "viewID": 143
     },
     {
@@ -1544,7 +1521,7 @@
     {
         "id": 480236,
         "garment": true,
-        "name": "Grimório Mágico Antigo",
+        "name": "Costume: Book of Soyga",
         "viewID": 149
     },
     {
@@ -1556,13 +1533,13 @@
     {
         "id": 19862,
         "top": true,
-        "name": "Chifres de Succubus",
+        "name": "Costume: Succubus Horn",
         "viewID": 150
     },
     {
         "id": 20330,
         "top": true,
-        "name": "Chapéu de Solita",
+        "name": "Costume: Sombrero",
         "viewID": 151
     },
     {
@@ -1586,7 +1563,7 @@
     {
         "id": 19618,
         "top": true,
-        "name": "Máscara de Nove Caudas",
+        "name": "Costume: Kitsune Mask",
         "viewID": 153
     },
     {
@@ -1610,7 +1587,7 @@
     {
         "id": 480237,
         "garment": true,
-        "name": "Katanas do Mestre Tengu",
+        "name": "C Tengu's Katana",
         "viewID": 158
     },
     {
@@ -1622,13 +1599,13 @@
     {
         "id": 19582,
         "top": true,
-        "name": "Chapéu do Vaqueiro Izael",
+        "name": "[衣装] カウボーイハット",
         "viewID": 159
     },
     {
         "id": 480279,
         "garment": true,
-        "name": "Seringa Gigante",
+        "name": "Costume: Poring Syringe",
         "viewID": 161
     },
     {
@@ -1652,7 +1629,7 @@
     {
         "id": 20454,
         "top": true,
-        "name": "Rainha das Serpentes",
+        "name": "Costume: Crown of Ancient Queen",
         "viewID": 164
     },
     {
@@ -1676,13 +1653,13 @@
     {
         "id": 20224,
         "top": true,
-        "name": "Laço Vermelho Delicado",
+        "name": "Costume: Red Ribbon",
         "viewID": 167
     },
     {
         "id": 19931,
         "top": true,
-        "name": "Fumacento Dorminhoco",
+        "name": "Costume: Lazy Raccoon",
         "viewID": 168
     },
     {
@@ -1700,7 +1677,7 @@
     {
         "id": 480311,
         "garment": true,
-        "name": "Chave Gigante da Kachua",
+        "name": "Costume: Kachua's Lucky Key",
         "viewID": 173
     },
     {
@@ -1712,7 +1689,7 @@
     {
         "id": 480315,
         "garment": true,
-        "name": "Costume Skia\u0027s Sword",
+        "name": "Costume Skia's Sword",
         "viewID": 176
     },
     {
@@ -1722,10 +1699,10 @@
         "viewID": 177
     },
     {
+        "id": 20385,
         "top": true,
         "mid": true,
-        "name": "Elmo do Herói",
-        "id": 20385,
+        "name": "Costume: Helmet of Orc Hero",
         "viewID": 178
     },
     {
@@ -1749,19 +1726,18 @@
     {
         "id": 19679,
         "mid": true,
-        "name": "Cara de Espanto",
+        "name": "Costume: Blank Eyes",
         "viewID": 185
     },
     {
         "id": 410011,
         "mid": true,
-        "name": "Venda Sombrosa",
+        "name": "Costume Dark Blinkers",
         "viewID": 187
     },
     {
         "id": 5329,
-        "mid": true,
-        "name": "Venda Legítima da Takius",
+        "name": "Dark Blindfold",
         "viewID": 187
     },
     {
@@ -1773,13 +1749,13 @@
     {
         "id": 19738,
         "top": true,
-        "name": "Chapéu do Xerloque",
+        "name": "Costume: Renown Detective's Cap",
         "viewID": 189
     },
     {
         "id": 20054,
         "bot": true,
-        "name": "Chupeta de Neném",
+        "name": "Costume: Baby Pacifier",
         "viewID": 191
     },
     {
@@ -1791,7 +1767,7 @@
     {
         "id": 19614,
         "top": true,
-        "name": "Supervisual de Aprendiz",
+        "name": "[衣装] スーパーノービス帽",
         "viewID": 193
     },
     {
@@ -1803,29 +1779,27 @@
     {
         "id": 19617,
         "top": true,
-        "name": "Orelhas de Filhote",
+        "name": "Costume: Puppy Headband",
         "viewID": 199
     },
     {
+        "id": 20244,
         "top": true,
         "mid": true,
-        "name": "Disfarce de Jirtas",
-        "id": 20244,
+        "name": "[Costume] Zealotus Mask",
         "viewID": 200
     },
     {
+        "id": 20194,
         "top": true,
         "mid": true,
-        "name": "Traje de Leão",
-        "id": 20194,
+        "name": "[衣装] 獅子王の兜",
         "viewID": 202
     },
     {
-        "top": true,
-        "mid": true,
-        "name": "Elmo Antigo",
         "id": 440004,
         "bot": true,
+        "name": "[衣装] クローズヘルメット",
         "viewID": 203
     },
     {
@@ -1837,7 +1811,7 @@
     {
         "id": 31570,
         "mid": true,
-        "name": "Visor Futurista",
+        "name": "Costume: Cyclops Visor",
         "viewID": 207
     },
     {
@@ -1849,20 +1823,20 @@
     {
         "id": 19640,
         "top": true,
-        "name": "Lacinho Charmoso",
+        "name": "[衣装] かわいいリボン",
         "viewID": 211
     },
     {
+        "id": 19555,
         "top": true,
         "mid": true,
-        "name": "Elmo da Lua Crescente",
-        "id": 19555,
+        "name": "Costume: Crescent Helm",
         "viewID": 213
     },
     {
         "id": 20498,
         "top": true,
-        "name": "Elefante Fofinho",
+        "name": "Costume: Elephant Hat",
         "viewID": 215
     },
     {
@@ -1874,26 +1848,26 @@
     {
         "id": 19681,
         "top": true,
-        "name": "Tiara Prateada",
+        "name": "Costume: Silver Tiara",
         "viewID": 218
     },
     {
         "id": 19908,
         "top": true,
-        "name": "Chapéu do Bobo da Corte",
+        "name": "Costume: National Flag Hat",
         "viewID": 219
     },
     {
+        "id": 19612,
         "top": true,
         "mid": true,
-        "name": "Fones Audio-Poring",
-        "id": 19612,
+        "name": "의상 음표 헤드폰",
         "viewID": 220
     },
     {
         "id": 19773,
         "top": true,
-        "name": "Presilha de Angeling",
+        "name": "Costume: Angeling Hairpin",
         "viewID": 222
     },
     {
@@ -1911,27 +1885,26 @@
     {
         "id": 31036,
         "top": true,
-        "name": "Chapéu de Ministro",
+        "name": "Costume Satto Hat",
         "viewID": 227
     },
     {
-        "mid": true,
-        "name": "Costume Hahoe Mask",
         "id": 19554,
         "bot": true,
+        "name": "Costume Hahoe Mask",
         "viewID": 230
     },
     {
+        "id": 21300,
         "top": true,
         "mid": true,
-        "name": "Máscara do Guarda Leão",
-        "id": 21300,
+        "name": "의상 사자탈",
         "viewID": 231
     },
     {
         "id": 19880,
         "top": true,
-        "name": "Tiara Estelar",
+        "name": "Costume: Gold Tiara",
         "viewID": 232
     },
     {
@@ -1943,13 +1916,13 @@
     {
         "id": 19594,
         "top": true,
-        "name": "Chapéu de Girassol",
+        "name": "[衣装] 装飾用ジオグラファー",
         "viewID": 238
     },
     {
         "id": 19590,
         "top": true,
-        "name": "Laços da Paixão",
+        "name": "Costume: Twin Red Ribbon",
         "viewID": 239
     },
     {
@@ -1961,19 +1934,19 @@
     {
         "id": 19523,
         "top": true,
-        "name": "Pequeno Laço Verde",
+        "name": "Costume: Green Ribbon",
         "viewID": 244
     },
     {
         "id": 19878,
         "top": true,
-        "name": "Coelho de Pano",
+        "name": "Costume: Drooping Bunny",
         "viewID": 249
     },
     {
         "id": 20187,
         "top": true,
-        "name": "Tiara de Fricca",
+        "name": "[衣装] フリッグのサークレット",
         "viewID": 251
     },
     {
@@ -1984,68 +1957,68 @@
     },
     {
         "id": 19680,
-        "mid": true,
-        "name": "Máscara da Criança Travessa",
+        "bot": true,
+        "name": "Costume: Tongue Mask",
         "viewID": 253
     },
     {
         "id": 20188,
         "top": true,
-        "name": "Faixa de Morpheus",
+        "name": "[衣装] モルフェウスの頭巾",
         "viewID": 256
     },
     {
         "id": 19784,
         "top": true,
-        "name": "Gálea da Morrigane",
+        "name": "Costume: Morrigane's Helm",
         "viewID": 257
     },
     {
         "id": 20189,
         "top": true,
-        "name": "Égide de Goibne",
+        "name": "[衣装] ゴヴニュの兜",
         "viewID": 258
     },
     {
         "id": 19541,
         "bot": true,
-        "name": "Flor Amável Branca",
+        "name": "Costume: Romantic White Flower",
         "viewID": 259
     },
     {
         "id": 19749,
         "top": true,
-        "name": "Auréola Dourada",
+        "name": "Costume: Gold Spirit Chain",
         "viewID": 260
     },
     {
         "id": 19774,
         "top": true,
-        "name": "Coroa do Imperador",
+        "name": "Costume: Emperor Wreath J",
         "viewID": 261
     },
     {
         "id": 19589,
         "top": true,
-        "name": "Fallen Angel\u0027s beloning",
+        "name": "Fallen Angel's beloning",
         "viewID": 907
     },
     {
         "id": 19627,
         "top": true,
-        "name": "Tiara Satélite",
+        "name": "Costume: Satellite Hairband",
         "viewID": 266
     },
     {
         "id": 19879,
         "top": true,
-        "name": "Orelhas Fabulosas",
+        "name": "Costume: Black Bunny Band",
         "viewID": 267
     },
     {
         "id": 31556,
         "top": true,
-        "name": "Touca de Raposa",
+        "name": "[衣装] 月夜花帽(上段)",
         "viewID": 268
     },
     {
@@ -2069,31 +2042,31 @@
     {
         "id": 31809,
         "top": true,
-        "name": "Mestre Arcanista Vermelho",
+        "name": "[Costume] Red Wizard Hat",
         "viewID": 282
     },
     {
         "id": 31394,
         "top": true,
-        "name": "Chapéu Mágico",
+        "name": "Costume: White Wizard Hat",
         "viewID": 283
     },
     {
         "id": 31119,
         "top": true,
-        "name": "Chapéu Cone Arcano",
+        "name": "Costume: Blue Magician Hat",
         "viewID": 285
     },
     {
         "id": 31610,
         "top": true,
-        "name": "Mestre Arcanista Amarelo",
+        "name": "Costume: Yellow Wizardry Hat",
         "viewID": 286
     },
     {
         "id": 19802,
         "top": true,
-        "name": "Nove Caudas Dorminhoca",
+        "name": "Costume: Drooping Nine Tail",
         "viewID": 296
     },
     {
@@ -2111,32 +2084,32 @@
     {
         "id": 19693,
         "top": true,
-        "name": "Porings Triplo",
+        "name": "Costume: Triple Poring Hat",
         "viewID": 299
     },
     {
         "id": 19677,
         "top": true,
-        "name": "Auréola Espiritual",
+        "name": "Costume: Soulless Wing",
         "viewID": 301
     },
     {
         "id": 19684,
         "top": true,
-        "name": "Peruca do Visual Carnavalesco",
+        "name": "Costume: Happy Wig",
         "viewID": 305
     },
     {
+        "id": 19775,
         "top": true,
         "mid": true,
-        "name": "Peruca Maravilinda",
-        "id": 19775,
+        "name": "Costume: Marvelous Wig",
         "viewID": 307
     },
     {
         "id": 19822,
         "top": true,
-        "name": "Bandana da Mecânica",
+        "name": "Costume: Yellow Bandana",
         "viewID": 309
     },
     {
@@ -2166,38 +2139,37 @@
     {
         "id": 20009,
         "top": true,
-        "name": "Crânio Ancião",
+        "name": "[衣装] 龍の骸骨",
         "viewID": 319
     },
     {
         "id": 20007,
         "top": true,
-        "name": "Elmo de Tyr",
+        "name": "[衣装] 角兜",
         "viewID": 322
     },
     {
         "id": 420070,
         "bot": true,
-        "name": "Capuz Macabro",
+        "name": "Costume: Cap of Blindness",
         "viewID": 326
     },
     {
-        "top": true,
-        "mid": true,
-        "name": "Capuz do Coração Gelado",
         "id": 19746,
+        "bot": true,
+        "name": "Costume: Cap Of Blindness",
         "viewID": 326
     },
     {
         "id": 19584,
         "bot": true,
-        "name": "Faca de Pirata",
+        "name": "의상 해적의 대거",
         "viewID": 327
     },
     {
         "id": 15851,
         "top": true,
-        "name": "Coroa Realeza Gelada",
+        "name": "Costume: Freyja Crown",
         "viewID": 328
     },
     {
@@ -2209,34 +2181,32 @@
     {
         "id": 400493,
         "top": true,
-        "name": "Boné de bRO deragem",
+        "name": "Item #400493",
         "viewID": 330
     },
     {
-        "mid": true,
-        "name": "Moicano Estiloso",
         "id": 20337,
         "bot": true,
+        "name": "Item #20337",
         "viewID": 331
     },
     {
         "id": 19812,
         "top": true,
-        "name": "Hibiscus Desabrochado",
+        "name": "Costume: Large Hibiscus",
         "viewID": 333
     },
     {
+        "id": 19748,
         "top": true,
         "mid": true,
-        "name": "Diadema com Rubi",
-        "id": 19748,
+        "name": "Costume: Diadem",
         "viewID": 335
     },
     {
-        "mid": true,
-        "name": "Costume Hockey Mask",
         "id": 20166,
         "bot": true,
+        "name": "Costume Hockey Mask",
         "viewID": 336
     },
     {
@@ -2248,7 +2218,7 @@
     {
         "id": 20236,
         "top": true,
-        "name": "Gorro de ArchAngeling",
+        "name": "[衣装] アークエンジェリング帽",
         "viewID": 341
     },
     {
@@ -2260,13 +2230,13 @@
     {
         "id": 19712,
         "top": true,
-        "name": "Bonequinha Angelical",
+        "name": "Costume: Little Angel Doll",
         "viewID": 344
     },
     {
         "id": 20145,
         "mid": true,
-        "name": "Visor do Ciborgue",
+        "name": "Costume: Sirt Evil Eye",
         "viewID": 345
     },
     {
@@ -2278,7 +2248,7 @@
     {
         "id": 20411,
         "top": true,
-        "name": "Kafra Sofia",
+        "name": "Costume: Glaris Doll Hat",
         "viewID": 355
     },
     {
@@ -2290,13 +2260,13 @@
     {
         "id": 31372,
         "top": true,
-        "name": "Kafra Bianca",
+        "name": "Costume: Drooping Roxie",
         "viewID": 358
     },
     {
         "id": 31148,
         "top": true,
-        "name": "Kafra Deborah",
+        "name": "[Costume] W Doll Hat",
         "viewID": 359
     },
     {
@@ -2306,18 +2276,15 @@
         "viewID": 361
     },
     {
-        "top": true,
-        "mid": true,
-        "name": "Coroa do Diabo",
         "id": 440005,
-        "bot": true,
+        "name": "Item #440005",
         "viewID": 364
     },
     {
+        "id": 19710,
         "top": true,
         "mid": true,
         "name": "Costume Wings Of Victory",
-        "id": 19710,
         "viewID": 365
     },
     {
@@ -2329,7 +2296,7 @@
     {
         "id": 19643,
         "top": true,
-        "name": "Orelhas da Wickebine",
+        "name": "Costume: Wickebine's Black Cat Ears",
         "viewID": 368
     },
     {
@@ -2341,7 +2308,7 @@
     {
         "id": 19606,
         "bot": true,
-        "name": "Pergaminho Místico",
+        "name": "의상 닌자의 두루마리",
         "viewID": 370
     },
     {
@@ -2353,13 +2320,13 @@
     {
         "id": 20160,
         "top": true,
-        "name": "Mini Magnólia",
+        "name": "Costume: Magnolia Hat",
         "viewID": 373
     },
     {
         "id": 31204,
         "top": true,
-        "name": "Chapéu de Gatinho Branco",
+        "name": "[Costume] Drooping White Cat",
         "viewID": 378
     },
     {
@@ -2369,10 +2336,10 @@
         "viewID": 380
     },
     {
+        "id": 31205,
         "top": true,
         "mid": true,
-        "name": "Coroa do Chefe dos Orcs",
-        "id": 31205,
+        "name": "C Big Orc Hero's Helmet",
         "viewID": 381
     },
     {
@@ -2384,7 +2351,7 @@
     {
         "id": 20277,
         "top": true,
-        "name": "Boina Estudantil",
+        "name": "의상 벌룬햇",
         "viewID": 385
     },
     {
@@ -2396,7 +2363,7 @@
     {
         "id": 19682,
         "top": true,
-        "name": "Chapéu de Poring Natalino",
+        "name": "Costume: Santa Poring Hat",
         "viewID": 387
     },
     {
@@ -2408,19 +2375,19 @@
     {
         "id": 20204,
         "top": true,
-        "name": "Boina de Caça",
+        "name": "Costume: Hunter Hat",
         "viewID": 389
     },
     {
         "id": 19702,
         "top": true,
-        "name": "Gorro Natalino Vermelho",
+        "name": "Costume: Twin Pom Santa",
         "viewID": 390
     },
     {
         "id": 20296,
         "top": true,
-        "name": "Yoyo de Estimação",
+        "name": "[衣装] ヨーヨー帽",
         "viewID": 391
     },
     {
@@ -2432,13 +2399,13 @@
     {
         "id": 20146,
         "mid": true,
-        "name": "Máscara da Deusa",
+        "name": "Costume: Angel Spirit",
         "viewID": 394
     },
     {
         "id": 20222,
         "top": true,
-        "name": "Gorro Natalino Azul",
+        "name": "Costume Blue Sheep Santa Hat",
         "viewID": 395
     },
     {
@@ -2450,20 +2417,19 @@
     {
         "id": 400221,
         "top": true,
-        "name": "Diadema de Jasper",
+        "name": "Costume: Jasper Crest",
         "viewID": 399
     },
     {
         "id": 20410,
         "top": true,
-        "name": "Crânio Dracônico",
+        "name": "[Costume] Dragon Skull",
         "viewID": 401
     },
     {
-        "mid": true,
-        "name": "Máscara da ANBU",
         "id": 19801,
         "bot": true,
+        "name": "Costume: Fox Hat J",
         "viewID": 403
     },
     {
@@ -2481,7 +2447,7 @@
     {
         "id": 19691,
         "top": true,
-        "name": "Lacinhos Discretos",
+        "name": "Costume: Blue Ribbon",
         "viewID": 407
     },
     {
@@ -2493,7 +2459,7 @@
     {
         "id": 19809,
         "top": true,
-        "name": "Chapéu de Escrivão",
+        "name": "Costume: Purple Cowboy Hat",
         "viewID": 411
     },
     {
@@ -2511,7 +2477,7 @@
     {
         "id": 400175,
         "top": true,
-        "name": "Chapéu Fogueira",
+        "name": "Costume: Camp Fire Cap",
         "viewID": 416
     },
     {
@@ -2523,7 +2489,7 @@
     {
         "id": 31173,
         "top": true,
-        "name": "Calopsita",
+        "name": "[衣装] オカメインコ",
         "viewID": 419
     },
     {
@@ -2533,11 +2499,9 @@
         "viewID": 420
     },
     {
-        "top": true,
-        "mid": true,
-        "name": "Costume Ifrit Mask",
         "id": 20481,
         "bot": true,
+        "name": "Costume Ifrit Mask",
         "viewID": 421
     },
     {
@@ -2549,13 +2513,13 @@
     {
         "id": 31595,
         "top": true,
-        "name": "Chapéu de Estudante",
+        "name": "Costume: Book of Soyga",
         "viewID": 423
     },
     {
         "id": 31174,
         "top": true,
-        "name": "Saco na Cabeça",
+        "name": "[衣装] あやしいパン袋",
         "viewID": 429
     },
     {
@@ -2573,43 +2537,43 @@
     {
         "id": 20190,
         "top": true,
-        "name": "Cocoricuca",
+        "name": "의상 꼬꼬댁 모자",
         "viewID": 432
     },
     {
         "id": 400492,
         "top": true,
-        "name": "Boné Brasileiro",
+        "name": "Item #400492",
         "viewID": 433
     },
     {
         "id": 20056,
         "top": true,
-        "name": "Grinalda de Noiva",
+        "name": "[衣装] フラワーヴェール",
         "viewID": 437
     },
     {
         "id": 20094,
         "top": true,
-        "name": "Tiara de Laço Verde",
+        "name": "Costume: Cute Green Ribbon",
         "viewID": 439
     },
     {
         "id": 20095,
         "top": true,
-        "name": "Tiara de Laço Vermelho",
+        "name": "Costume: Cute Red Ribbon",
         "viewID": 440
     },
     {
         "id": 20096,
         "top": true,
-        "name": "Tiara de Laço Azul",
+        "name": "Costume: Cute Blue Ribbon",
         "viewID": 441
     },
     {
         "id": 20245,
         "top": true,
-        "name": "Patinha de Doram",
+        "name": "[衣装] 肉球のヘアピン",
         "viewID": 447
     },
     {
@@ -2619,11 +2583,9 @@
         "viewID": 448
     },
     {
-        "top": true,
-        "mid": true,
-        "name": "Costume Solo Play Box2",
         "id": 19951,
         "bot": true,
+        "name": "Costume Solo Play Box2",
         "viewID": 450
     },
     {
@@ -2647,13 +2609,13 @@
     {
         "id": 19947,
         "bot": true,
-        "name": "Lenço Arco-íris da Fortuna",
+        "name": "[Costume] Rainbow Scarf",
         "viewID": 460
     },
     {
         "id": 20020,
         "top": true,
-        "name": "Fantoche da Lady Branca",
+        "name": "[衣装] たれペクソジン",
         "viewID": 461
     },
     {
@@ -2665,7 +2627,7 @@
     {
         "id": 19668,
         "top": true,
-        "name": "Boina Vermelha do Mensageiro",
+        "name": "Costume: Wind's Guide",
         "viewID": 463
     },
     {
@@ -2683,13 +2645,13 @@
     {
         "id": 20148,
         "top": true,
-        "name": "Chapéu do Dartanham",
+        "name": "의상 노블 햇",
         "viewID": 466
     },
     {
         "id": 19877,
         "mid": true,
-        "name": "Olho do Beholder",
+        "name": "Costume: Eyes Of Darkness",
         "viewID": 467
     },
     {
@@ -2711,41 +2673,40 @@
         "viewID": 471
     },
     {
-        "mid": true,
-        "name": "Máscara de Quve",
         "id": 19919,
         "bot": true,
+        "name": "Costume: Cube Mask",
         "viewID": 472
     },
     {
+        "id": 20065,
         "top": true,
         "mid": true,
-        "name": "Cocar das Mil Penas",
-        "id": 20065,
+        "name": "[衣装] グランペコのヘアバンド",
         "viewID": 473
     },
     {
         "id": 400494,
         "top": true,
-        "name": "Bandana Brasileira",
+        "name": "Item #400494",
         "viewID": 474
     },
     {
         "id": 20106,
         "top": true,
-        "name": "Chapéu Dançante",
+        "name": "[衣装] クラシックハット",
         "viewID": 475
     },
     {
         "id": 20080,
         "top": true,
-        "name": "Visual de Plumas e Paetês",
+        "name": "[衣装] シャーマンの髪飾り",
         "viewID": 476
     },
     {
         "id": 19623,
         "top": true,
-        "name": "Pluma Arco-íris",
+        "name": "Costume: Bijofnil Wings",
         "viewID": 477
     },
     {
@@ -2755,18 +2716,15 @@
         "viewID": 478
     },
     {
-        "top": true,
-        "mid": true,
-        "name": "Máscara do Chefão do Mal",
         "id": 20006,
         "bot": true,
+        "name": "[衣装] ダークナイトマスク",
         "viewID": 479
     },
     {
-        "mid": true,
-        "name": "Costume Odin Mask",
         "id": 19924,
         "bot": true,
+        "name": "Costume Odin Mask",
         "viewID": 480
     },
     {
@@ -2778,19 +2736,19 @@
     {
         "id": 31242,
         "top": true,
-        "name": "Elmo Egípcio",
+        "name": "[衣装] アヌビスの帽子(上段)",
         "viewID": 485
     },
     {
         "id": 31169,
         "top": true,
-        "name": "Chapéu do Agreste",
+        "name": "[衣装] 陽気な山賊帽",
         "viewID": 486
     },
     {
         "id": 400195,
         "top": true,
-        "name": "Pizza Tamanho Família com Borda Recheada",
+        "name": "Costume: Pepperoni Pizza",
         "viewID": 487
     },
     {
@@ -2800,17 +2758,17 @@
         "viewID": 488
     },
     {
+        "id": 19598,
         "top": true,
         "mid": true,
-        "name": "Elmo do Rei do Norte",
-        "id": 19598,
+        "name": "Costume: Wondering Wolf Helm",
         "viewID": 490
     },
     {
+        "id": 19819,
         "top": true,
         "mid": true,
-        "name": "Capuz do Mestre Necromante",
-        "id": 19819,
+        "name": "Costume: Necromencer Hood",
         "viewID": 491
     },
     {
@@ -2834,7 +2792,7 @@
     {
         "id": 31310,
         "mid": true,
-        "name": "Orelhas Demoníacas",
+        "name": "[衣装] 六六六式魔族の耳",
         "viewID": 498
     },
     {
@@ -2852,7 +2810,7 @@
     {
         "id": 19873,
         "top": true,
-        "name": "Chapéu Frelldora",
+        "name": "Costume: Carnival Hat",
         "viewID": 502
     },
     {
@@ -2864,39 +2822,38 @@
     {
         "id": 19874,
         "top": true,
-        "name": "Tiara Carnavalesca",
+        "name": "Costume: Carnival Circlet",
         "viewID": 503
     },
     {
         "id": 31054,
         "top": true,
-        "name": "Chapéu do Sting Vitorioso",
+        "name": "Costume: Sting Hat",
         "viewID": 504
     },
     {
+        "id": 20045,
         "top": true,
         "mid": true,
         "name": "Costume Samambaia",
-        "id": 20045,
         "viewID": 508
     },
     {
         "id": 31897,
         "top": true,
-        "name": "Elmo Submarino",
+        "name": "Item #31897",
         "viewID": 512
     },
     {
         "id": 400092,
-        "top": true,
-        "name": "Chifres Luxuosos",
+        "name": "Item #400092",
         "viewID": 513
     },
     {
+        "id": 19540,
         "top": true,
         "mid": true,
         "name": "Costume Rabbit Earplugs",
-        "id": 19540,
         "viewID": 515
     },
     {
@@ -2908,44 +2865,43 @@
     {
         "id": 19758,
         "top": true,
-        "name": "Chapéu do Sapo Rei",
+        "name": "Costume: King Frog Hat",
         "viewID": 522
     },
     {
         "id": 31312,
         "top": true,
-        "name": "Elmo de Hades",
+        "name": "Costume: Hades Helm",
         "viewID": 523
     },
     {
         "id": 19764,
         "bot": true,
-        "name": "Falsa Carta",
+        "name": "Costume: Spare Card",
         "viewID": 526
     },
     {
         "id": 20495,
         "top": true,
-        "name": "Quati Preguiçoso",
+        "name": "Costume: Quati Hat",
         "viewID": 527
     },
     {
         "id": 31182,
         "top": true,
-        "name": "Boina de Marinheiro Aposentado",
+        "name": "Costume: Side Cap",
         "viewID": 529
     },
     {
-        "mid": true,
-        "name": "Máscara de 50 Reais",
         "id": 31256,
         "bot": true,
+        "name": "Costume: Jaguar Mask",
         "viewID": 530
     },
     {
         "id": 19536,
         "top": true,
-        "name": "Tiara de Rosas",
+        "name": "Costume: Rose Corsage",
         "viewID": 533
     },
     {
@@ -2957,119 +2913,115 @@
     {
         "id": 31413,
         "top": true,
-        "name": "Adorno de Touro",
+        "name": "Costume Taurus Crown",
         "viewID": 536
     },
     {
         "id": 31466,
         "top": true,
-        "name": "Ovo das Asas de Anjo",
+        "name": "Costume: Saint Egg Shell",
         "viewID": 537
     },
     {
         "id": 19763,
         "top": true,
-        "name": "Boneco de Gato de Folha",
+        "name": "[衣装] たれリーフキャット",
         "viewID": 539
     },
     {
         "id": 19530,
         "top": true,
-        "name": "Miniatura Selvagem",
+        "name": "Costume: Wild Rose Hat",
         "viewID": 541
     },
     {
         "id": 20414,
         "top": true,
-        "name": "Coroa com Chifres",
+        "name": "Costume: Crown Of Deceit",
         "viewID": 544
     },
     {
-        "mid": true,
-        "name": "Mascára Muta Luta",
         "id": 19563,
         "bot": true,
+        "name": "의상 항룡 나한 가면",
         "viewID": 545
     },
     {
-        "top": true,
-        "mid": true,
-        "name": "Costume Love Rabbit Hood",
         "id": 19875,
         "bot": true,
+        "name": "Costume Love Rabbit Hood",
         "viewID": 549
     },
     {
         "id": 31889,
         "top": true,
-        "name": "Adorno de Gêmeos",
+        "name": "Costume Gemini Crown",
         "viewID": 551
     },
     {
         "id": 20294,
         "top": true,
-        "name": "Maximilian Von Babe XXIX",
+        "name": "[衣装] マクシミリアン・フォン・ベベ29世",
         "viewID": 553
     },
     {
         "id": 20280,
         "bot": true,
-        "name": "Lápis do Ansioso",
+        "name": "[衣装] くわえたえんぴつ",
         "viewID": 555
     },
     {
         "id": 31417,
         "top": true,
-        "name": "Onigiri Saboroso",
+        "name": "의상 머리 위 주먹밥",
         "viewID": 556
     },
     {
         "id": 19770,
         "bot": true,
-        "name": "Caneca de Chá Oriental",
+        "name": "Costume: Japan Winecup",
         "viewID": 557
     },
     {
+        "id": 31415,
         "top": true,
         "mid": true,
-        "name": "Chapéu do Peregrino",
-        "id": 31415,
+        "name": "Costume Wanderer's Sakkat",
         "viewID": 558
     },
     {
         "id": 20023,
         "top": true,
-        "name": "Boina Militar Vermelha",
+        "name": "[衣装] レッドベレー",
         "viewID": 559
     },
     {
         "id": 31414,
         "top": true,
-        "name": "Adorno de Câncer",
+        "name": "Costume Cancer Diadem",
         "viewID": 560
     },
     {
         "id": 400167,
         "top": true,
-        "name": "Chapéu Espanta Mosquitos",
+        "name": "[衣装] 蚊取線香",
         "viewID": 563
     },
     {
         "id": 31411,
         "top": true,
-        "name": "Adorno de Leão",
+        "name": "Costume Leo Diadem",
         "viewID": 566
     },
     {
         "id": 20331,
-        "top": true,
-        "name": "Turbante do Príncipe do Deserto",
+        "name": "[衣装] デザートプリンス",
         "viewID": 567
     },
     {
         "id": 19713,
-        "bot": true,
-        "name": "Trevo Visual de Quatro Folhas",
+        "top": true,
+        "name": "Costume: Four Leaf Clover",
         "viewID": 571
     },
     {
@@ -3087,13 +3039,13 @@
     {
         "id": 31800,
         "top": true,
-        "name": "Lacinhos da Esperança",
+        "name": "Costume: Brazil Twin Ribbon",
         "viewID": 575
     },
     {
         "id": 400430,
         "top": true,
-        "name": "Boina Verde e Amarela",
+        "name": "[衣装] 双子のキャスケット",
         "viewID": 576
     },
     {
@@ -3111,7 +3063,7 @@
     {
         "id": 19745,
         "top": true,
-        "name": "Chapéu de Desfile",
+        "name": "Costume: Holy Marching Hat",
         "viewID": 587
     },
     {
@@ -3139,23 +3091,21 @@
         "viewID": 591
     },
     {
-        "top": true,
-        "mid": true,
-        "name": "Costume Skull hood",
         "id": 20168,
         "bot": true,
+        "name": "Costume Skull hood",
         "viewID": 598
     },
     {
         "id": 20444,
         "top": true,
-        "name": "Cartola Festiva",
+        "name": "[衣装] 怪盗アニバーサリー帽",
         "viewID": 599
     },
     {
         "id": 19670,
         "top": true,
-        "name": "Joia do Sul",
+        "name": "[衣装] サザンクロス",
         "viewID": 601
     },
     {
@@ -3167,26 +3117,26 @@
     {
         "id": 19671,
         "top": true,
-        "name": "Porquinho da Fortuna",
+        "name": "[衣装] ぶたさん貯金箱",
         "viewID": 603
     },
     {
         "id": 31185,
         "top": true,
-        "name": "Chapéu do Maquinista",
+        "name": "Costume: Engineer Cap",
         "viewID": 608
     },
     {
         "id": 31184,
         "mid": true,
-        "name": "Tapa-Olho do Falcão",
+        "name": "Costume: Eye of the Hawk",
         "viewID": 609
     },
     {
+        "id": 19756,
         "top": true,
         "mid": true,
         "name": "Costume Holy Mom Love",
-        "id": 19756,
         "viewID": 610
     },
     {
@@ -3198,19 +3148,19 @@
     {
         "id": 20297,
         "top": true,
-        "name": "Mini Cacto",
+        "name": "[衣装] サボテン帽子",
         "viewID": 615
     },
     {
         "id": 20231,
         "top": true,
-        "name": "Sr. Neves",
+        "name": "Costume: Snowman Hat",
         "viewID": 616
     },
     {
         "id": 31890,
         "top": true,
-        "name": "Adorno de Sagitário",
+        "name": "[衣装] サジタリウスダイアデム",
         "viewID": 618
     },
     {
@@ -3232,10 +3182,10 @@
         "viewID": 624
     },
     {
+        "id": 20392,
         "top": true,
         "mid": true,
         "name": "Costume Sniper Goggle",
-        "id": 20392,
         "viewID": 625
     },
     {
@@ -3253,7 +3203,7 @@
     {
         "id": 19966,
         "top": true,
-        "name": "Costume Minstrel Song\u0027s Hat",
+        "name": "Costume Minstrel Song's Hat",
         "viewID": 628
     },
     {
@@ -3275,10 +3225,9 @@
         "viewID": 631
     },
     {
-        "mid": true,
-        "name": "Costume Silent Executor",
         "id": 20391,
         "bot": true,
+        "name": "Costume Silent Executor",
         "viewID": 632
     },
     {
@@ -3308,19 +3257,19 @@
     {
         "id": 31780,
         "top": true,
-        "name": "Chapéu Preguicinha",
+        "name": "[衣装] ナマケモノ帽子",
         "viewID": 638
     },
     {
         "id": 20164,
         "top": true,
-        "name": "Possessão de Duneyrr",
+        "name": "[衣装] ドゥネイールの兜",
         "viewID": 639
     },
     {
         "id": 19532,
         "top": true,
-        "name": "Orelhas da Lebre Rubra",
+        "name": "Costume: Red Bunny Band",
         "viewID": 640
     },
     {
@@ -3338,31 +3287,30 @@
     {
         "id": 19566,
         "bot": true,
-        "name": "Máscara do Xogum",
+        "name": "Costume: Samurai Mask",
         "viewID": 644
     },
     {
         "id": 19768,
         "top": true,
-        "name": "Tiara de Sakura",
+        "name": "Costume: Sakura Coronet",
         "viewID": 645
     },
     {
         "id": 20233,
         "top": true,
-        "name": "Ídolo Angelical de Ouro",
+        "name": "Costume: Golden Angel",
         "viewID": 646
     },
     {
         "id": 20333,
-        "top": true,
-        "name": "Lembrancinha de Jawaii",
+        "name": "[衣装] 家族の絆",
         "viewID": 650
     },
     {
         "id": 400224,
         "top": true,
-        "name": "Boina Militar",
+        "name": "Costume: Navy Hat",
         "viewID": 652
     },
     {
@@ -3374,21 +3322,19 @@
     {
         "id": 20128,
         "top": true,
-        "name": "Elmo de Bombeiro",
+        "name": "[衣装] リムーバの帽子",
         "viewID": 655
     },
     {
         "id": 20165,
         "top": true,
-        "name": "Capuz de Tendrilion",
+        "name": "[衣装] テンドリルリオン帽",
         "viewID": 658
     },
     {
-        "top": true,
-        "mid": true,
-        "name": "Gálea Dourada",
         "id": 31117,
         "bot": true,
+        "name": "Costume: Hoplite Helmet",
         "viewID": 660
     },
     {
@@ -3410,10 +3356,9 @@
         "viewID": 665
     },
     {
-        "mid": true,
-        "name": "Máscara de Thanatos",
         "id": 20126,
         "bot": true,
+        "name": "[衣装] タナトスの憎悪仮面",
         "viewID": 667
     },
     {
@@ -3425,13 +3370,13 @@
     {
         "id": 20386,
         "top": true,
-        "name": "Coroa Asa da Vitória",
+        "name": "Costume: Emperor of Sun Crown",
         "viewID": 677
     },
     {
         "id": 31321,
         "top": true,
-        "name": "Girassol Brilhante",
+        "name": "Costume: Blazing Sunflower",
         "viewID": 681
     },
     {
@@ -3449,7 +3394,7 @@
     {
         "id": 20373,
         "top": true,
-        "name": "Capacete de Melancia",
+        "name": "Costume Watermelon Hat",
         "viewID": 690
     },
     {
@@ -3459,10 +3404,9 @@
         "viewID": 692
     },
     {
-        "mid": true,
-        "name": "Rosto do Despero",
         "id": 19534,
         "bot": true,
+        "name": "placeholder",
         "viewID": 693
     },
     {
@@ -3480,7 +3424,7 @@
     {
         "id": 19511,
         "mid": true,
-        "name": "Tapa-Olho Estiloso",
+        "name": "Costume: Blue Heart Eye Patch",
         "viewID": 697
     },
     {
@@ -3546,45 +3490,45 @@
     {
         "id": 19772,
         "top": true,
-        "name": "Touca de Abelha",
+        "name": "Costume: Honeybee Hat",
         "viewID": 709
     },
     {
+        "id": 19907,
         "top": true,
         "mid": true,
-        "name": "Máscara do Folião",
-        "id": 19907,
+        "name": "Costume: Beautiful Phantom Mask",
         "viewID": 710
     },
     {
         "id": 19542,
         "mid": true,
-        "name": "Fantasma Travesso",
+        "name": "Costume: Spirit Whispers",
         "viewID": 712
     },
     {
         "id": 19904,
         "top": true,
-        "name": "Boina da Caveira",
+        "name": "Costume: Skull Cap",
         "viewID": 713
     },
     {
         "id": 20075,
         "top": true,
-        "name": "Chapéu do Doram de Botas",
+        "name": "[衣装] リトルフェザーハット",
         "viewID": 715
     },
     {
+        "id": 19673,
         "top": true,
         "mid": true,
-        "name": "Mitra dos Ajudantes",
-        "id": 19673,
+        "name": "의상 박애의 수호",
         "viewID": 716
     },
     {
         "id": 19903,
         "top": true,
-        "name": "Costume: Witch\u0027s Pumpkin Hat",
+        "name": "Costume: Witch's Pumpkin Hat",
         "viewID": 717
     },
     {
@@ -3596,19 +3540,19 @@
     {
         "id": 19771,
         "top": true,
-        "name": "Presilha de Borboleta",
+        "name": "Costume: Butterfly Hairpin",
         "viewID": 723
     },
     {
         "id": 19742,
-        "top": true,
-        "name": "Milagre de Asgard",
+        "mid": true,
+        "name": "Costume: Asgard Bless",
         "viewID": 724
     },
     {
         "id": 400313,
         "top": true,
-        "name": "Tiara Galática",
+        "name": "Costume: Galaxy Circlet",
         "viewID": 725
     },
     {
@@ -3620,19 +3564,19 @@
     {
         "id": 19857,
         "top": true,
-        "name": "Rei Camarão",
+        "name": "Costume: King Prawn Hat",
         "viewID": 728
     },
     {
         "id": 20008,
         "top": true,
-        "name": "Elmo do Conquistador",
+        "name": "의상 장군의 투구",
         "viewID": 729
     },
     {
         "id": 19535,
         "top": true,
-        "name": "Caule de Ginseng",
+        "name": "Costume: Sinsuncho Hat",
         "viewID": 730
     },
     {
@@ -3643,77 +3587,74 @@
     },
     {
         "id": 20022,
-        "bot": true,
-        "name": "Biscoito do Amor",
+        "name": "의상 사랑의 조각",
         "viewID": 734
     },
     {
         "id": 20085,
         "top": true,
-        "name": "Cartola da Fortuna do Genka",
+        "name": "의상 클로버 실크 햇",
         "viewID": 735
     },
     {
         "id": 31327,
         "mid": true,
-        "name": "Nariz de Galho",
+        "name": "Costume: Wood Goblin Nose",
         "viewID": 737
     },
     {
         "id": 400136,
         "top": true,
-        "name": "Adorno dos Mil Ouros",
+        "name": "[Costume] Golden Ornament",
         "viewID": 739
     },
     {
         "id": 31710,
         "top": true,
-        "name": "Chapéu de Florista",
+        "name": "Costume: Lace Flower Crown",
         "viewID": 740
     },
     {
         "id": 20078,
         "top": true,
-        "name": "Boina de Penas",
+        "name": "[衣装] ホワイトフェザー",
         "viewID": 741
     },
     {
+        "id": 19574,
         "top": true,
         "mid": true,
         "name": "Costume Load Of Death",
-        "id": 19574,
         "viewID": 742
     },
     {
-        "top": true,
-        "mid": true,
-        "name": "Caixa Surpresa do Vário",
         "id": 440001,
         "bot": true,
+        "name": "Costume: Wunderkammer",
         "viewID": 743
     },
     {
         "id": 31496,
         "top": true,
-        "name": "Coroa Ramificada",
+        "name": "[衣装] イグドラシルクラウン",
         "viewID": 746
     },
     {
         "id": 31175,
         "top": true,
-        "name": "Moranpéu",
+        "name": "Costume: Strawberry Flavour",
         "viewID": 755
     },
     {
         "id": 19290,
         "top": true,
-        "name": "Chifres Vilanescos",
+        "name": "Costume: Elder Devil Horn",
         "viewID": 757
     },
     {
         "id": 19570,
         "top": true,
-        "name": "Elmo Mercurial",
+        "name": "Costume: Mercury Riser",
         "viewID": 759
     },
     {
@@ -3729,16 +3670,15 @@
         "viewID": 766
     },
     {
-        "mid": true,
-        "name": "Lágrimas Masculinas",
         "id": 21200,
         "bot": true,
+        "name": "[Costume] Tear Drop",
         "viewID": 767
     },
     {
         "id": 15825,
         "top": true,
-        "name": "Quepe Regional Preto",
+        "name": "Costume: Black Musang Hat",
         "viewID": 771
     },
     {
@@ -3750,13 +3690,13 @@
     {
         "id": 19993,
         "bot": true,
-        "name": "Pequeno Onigiri",
+        "name": "의상 입에 무는 주먹밥",
         "viewID": 774
     },
     {
         "id": 20278,
         "top": true,
-        "name": "Costume Man\u0027s Pride",
+        "name": "Costume Man's Pride",
         "viewID": 775
     },
     {
@@ -3768,7 +3708,7 @@
     {
         "id": 400491,
         "top": true,
-        "name": "Faixa Brasileira",
+        "name": "[衣装] シトラスバンダナ",
         "viewID": 778
     },
     {
@@ -3778,22 +3718,21 @@
         "viewID": 780
     },
     {
-        "mid": true,
-        "name": "Falcoelmo",
         "id": 31505,
         "bot": true,
+        "name": "Pack Poring Egg",
         "viewID": 782
     },
     {
         "id": 31664,
         "top": true,
-        "name": "Lobinho de Cabeça",
+        "name": "Costume: Drooping Ernst Von Wolf 11th",
         "viewID": 783
     },
     {
         "id": 31124,
         "top": true,
-        "name": "Chapéu do RagnaChef",
+        "name": "Costume: Ribbon Chef Hat",
         "viewID": 785
     },
     {
@@ -3805,7 +3744,7 @@
     {
         "id": 400405,
         "top": true,
-        "name": "Cartola do Arcanista",
+        "name": "[衣装] ショコラハット",
         "viewID": 794
     },
     {
@@ -3816,14 +3755,13 @@
     },
     {
         "id": 20375,
-        "top": true,
-        "name": "Chapéu do Marechal",
+        "name": "(null)",
         "viewID": 803
     },
     {
         "id": 19884,
         "top": true,
-        "name": "Elmo do Gato Cavaleiro",
+        "name": "Costume: Vanargandr Helm",
         "viewID": 804
     },
     {
@@ -3833,11 +3771,9 @@
         "viewID": 805
     },
     {
-        "top": true,
-        "mid": true,
-        "name": "Costume Secret Bandana",
         "id": 19905,
         "bot": true,
+        "name": "Costume Secret Bandana",
         "viewID": 806
     },
     {
@@ -3849,31 +3785,31 @@
     {
         "id": 15889,
         "top": true,
-        "name": "Chapéu de Boitata",
+        "name": "Costume: Boitata Cap",
         "viewID": 808
     },
     {
         "id": 31706,
         "top": true,
-        "name": "Zanzaelmo",
+        "name": "[衣装] 楯無の兜",
         "viewID": 810
     },
     {
         "id": 31805,
         "top": true,
-        "name": "Boné no Estilo",
+        "name": "Costume: Sunglass Baseball Cap",
         "viewID": 812
     },
     {
         "id": 20108,
         "mid": true,
-        "name": "Óculos Julieta de Quartzo Rubi",
+        "name": "의상 블라인드 글라스",
         "viewID": 813
     },
     {
         "id": 31676,
         "bot": true,
-        "name": "Laranjinha",
+        "name": "Costume: Orange In Mouth",
         "viewID": 814
     },
     {
@@ -3885,13 +3821,13 @@
     {
         "id": 31726,
         "bot": true,
-        "name": "Fronha",
+        "name": "[衣装] くわえたハンカチ",
         "viewID": 818
     },
     {
         "id": 20377,
         "top": true,
-        "name": "Elmo do Visual de Aviador",
+        "name": "[衣装] 飛行帽",
         "viewID": 820
     },
     {
@@ -3903,25 +3839,25 @@
     {
         "id": 31418,
         "bot": true,
-        "name": "Mini Alho-Poró",
+        "name": "[衣装] くわえたネギ",
         "viewID": 824
     },
     {
         "id": 420081,
         "bot": true,
-        "name": "Mini Cenoura",
+        "name": "Costume: Carrot in Mouth",
         "viewID": 829
     },
     {
         "id": 19868,
         "top": true,
-        "name": "Chapéu do Explorador",
+        "name": "Costume: Fancy High Cap",
         "viewID": 830
     },
     {
         "id": 31528,
         "top": true,
-        "name": "Tiara Cósmica",
+        "name": "Costume Stardust Hairband",
         "viewID": 831
     },
     {
@@ -3945,7 +3881,7 @@
     {
         "id": 31446,
         "bot": true,
-        "name": "Seringa de Mentirinha",
+        "name": "Costume: Toy Injector",
         "viewID": 842
     },
     {
@@ -3981,13 +3917,13 @@
     {
         "id": 20156,
         "bot": true,
-        "name": "Leque Portátil",
+        "name": "[衣装] 紅の扇",
         "viewID": 857
     },
     {
         "id": 20179,
         "top": true,
-        "name": "Touca de Yoyo",
+        "name": "Costume: Monkey Fur Hat",
         "viewID": 858
     },
     {
@@ -3999,7 +3935,7 @@
     {
         "id": 19575,
         "top": true,
-        "name": "Costume Black Dragon\u0027s Ascension",
+        "name": "Costume Black Dragon's Ascension",
         "viewID": 863
     },
     {
@@ -4023,19 +3959,19 @@
     {
         "id": 31244,
         "top": true,
-        "name": "Elmo das Falcoeiras de Rapina",
+        "name": "Costume: Pilot Helmet",
         "viewID": 868
     },
     {
         "id": 31722,
         "top": true,
-        "name": "Gorrinho de Sedora",
+        "name": "[衣装] セドラ帽",
         "viewID": 869
     },
     {
         "id": 400166,
         "top": true,
-        "name": "Capacete Aquático",
+        "name": "[衣装] エーギルヘルム",
         "viewID": 870
     },
     {
@@ -4047,43 +3983,43 @@
     {
         "id": 19577,
         "top": true,
-        "name": "Chapéu do 10º Aniversário",
+        "name": "Costume: 10th Anniversary Poring Hat",
         "viewID": 874
     },
     {
         "id": 20136,
         "mid": true,
-        "name": "Orelhas dos 11 Anos e um Segredo",
+        "name": "Costume: 12th Anniversary ElvenEars",
         "viewID": 875
     },
     {
         "id": 31763,
         "mid": true,
-        "name": "Máscara de Fotia",
+        "name": "[衣装] フォティアの仮面",
         "viewID": 876
     },
     {
         "id": 20282,
         "top": true,
-        "name": "Costume White Boy\u0027s Cap",
+        "name": "Costume White Boy's Cap",
         "viewID": 877
     },
     {
         "id": 19800,
         "top": true,
-        "name": "Flores do Amanhecer",
+        "name": "Costume: Carnation Hairband",
         "viewID": 878
     },
     {
         "id": 18740,
         "top": true,
-        "name": "Cabelo de Super Saiadim",
+        "name": "Costume Hair Of The Strong",
         "viewID": 879
     },
     {
         "id": 18741,
         "top": true,
-        "name": "Fogo Esmeralda",
+        "name": "C.Will O Wisp",
         "viewID": 880
     },
     {
@@ -4113,31 +4049,30 @@
     {
         "id": 31665,
         "top": true,
-        "name": "Poring Equilibrista",
+        "name": "Costume: Rich Rich Poring",
         "viewID": 887
     },
     {
         "id": 31668,
         "top": true,
-        "name": "Chifres de Majoruros",
+        "name": "Costume: Majorous Horns",
         "viewID": 888
     },
     {
         "id": 5977,
-        "bot": true,
-        "name": "Ás Surpresa",
+        "name": "Costume: Poker Card In Mouth",
         "viewID": 889
     },
     {
         "id": 19581,
         "top": true,
-        "name": "Chapéu de Camponês",
+        "name": "의상 모험가의 모자",
         "viewID": 891
     },
     {
         "id": 20264,
         "bot": true,
-        "name": "Máscara Vampírica",
+        "name": "의상 블러드 서커",
         "viewID": 893
     },
     {
@@ -4149,7 +4084,8 @@
     {
         "id": 20402,
         "top": true,
-        "name": "Klobuk Sagrado",
+        "mid": true,
+        "name": "[衣装] 聖なるクロブーク",
         "viewID": 895
     },
     {
@@ -4167,13 +4103,13 @@
     {
         "id": 5913,
         "mid": true,
-        "name": "Máscara de Anemos",
+        "name": "[衣装] アネモスの仮面",
         "viewID": 906
     },
     {
         "id": 19894,
         "top": true,
-        "name": "Laço da Donzela do Altar",
+        "name": "의상 성자의 리본",
         "viewID": 908
     },
     {
@@ -4185,13 +4121,13 @@
     {
         "id": 19601,
         "top": true,
-        "name": "Chapéu Monstrinho Aliot",
+        "name": "Costume: Drooping Aliot Doll",
         "viewID": 910
     },
     {
         "id": 19895,
         "top": true,
-        "name": "Touca Lunar",
+        "name": "의상 나이트 캡",
         "viewID": 911
     },
     {
@@ -4203,31 +4139,31 @@
     {
         "id": 19892,
         "top": true,
-        "name": "Chapéu da Amoeba Alada",
+        "name": "Costume: Night Sparrow Hat",
         "viewID": 913
     },
     {
         "id": 31810,
         "top": true,
-        "name": "Tiara Azul de Anjo",
+        "name": "Costume Deep Blue Angel's Headband",
         "viewID": 915
     },
     {
         "id": 400290,
         "top": true,
-        "name": "Tiara Rosa de Anjo",
+        "name": "Costume: Pink Angel Hairband",
         "viewID": 916
     },
     {
         "id": 410098,
         "mid": true,
-        "name": "Máscara de Nero",
+        "name": "Costume: Nero Mask",
         "viewID": 917
     },
     {
         "id": 31940,
         "mid": true,
-        "name": "Máscara de Gaia",
+        "name": "Costume: Flag Mask",
         "viewID": 918
     },
     {
@@ -4239,13 +4175,13 @@
     {
         "id": 19870,
         "top": true,
-        "name": "Cartola do Coelho Mágico",
+        "name": "[衣装] 兎耳帽子(黒)",
         "viewID": 923
     },
     {
         "id": 20077,
         "mid": true,
-        "name": "Óculos Glamorosos",
+        "name": "[衣装] ウイングフレームサングラス",
         "viewID": 925
     },
     {
@@ -4257,25 +4193,25 @@
     {
         "id": 31290,
         "top": true,
-        "name": "Quepe com Asinhas",
+        "name": "Costume: School of Angel Hat",
         "viewID": 929
     },
     {
         "id": 31291,
         "top": true,
-        "name": "Diaboina",
+        "name": "Costume: School of Devil Hat",
         "viewID": 930
     },
     {
         "id": 31594,
         "bot": true,
-        "name": "Lápis de Cor Vermelho",
+        "name": "Costume: Red Pencil in Mouth",
         "viewID": 931
     },
     {
         "id": 31927,
         "bot": true,
-        "name": "Lápis de Cor Azul",
+        "name": "Costume: Blue Pencil in Mouth",
         "viewID": 932
     },
     {
@@ -4293,14 +4229,13 @@
     {
         "id": 5911,
         "mid": true,
-        "name": "Pluma Imperial",
+        "name": "[衣装] インペリアルフェザー",
         "viewID": 935
     },
     {
-        "mid": true,
-        "name": "Máscara da Falência",
         "id": 20230,
         "bot": true,
+        "name": "Costume: Mask Of Bankrupt",
         "viewID": 936
     },
     {
@@ -4312,13 +4247,13 @@
     {
         "id": 5909,
         "top": true,
-        "name": "Bravura dos Einherjar",
+        "name": "의상 발키리의 서클릿",
         "viewID": 940
     },
     {
         "id": 400091,
         "top": true,
-        "name": "Elmo Safira",
+        "name": "[Costume] Sapphire Helm",
         "viewID": 941
     },
     {
@@ -4330,19 +4265,18 @@
     {
         "id": 20279,
         "bot": true,
-        "name": "Apiutube",
+        "name": "의상 응원용 호루라기",
         "viewID": 952
     },
     {
         "id": 18838,
-        "top": true,
-        "name": "Touca de Angeling",
+        "name": "Angeling Woolly Hat [1]",
         "viewID": 953
     },
     {
         "id": 20295,
         "mid": true,
-        "name": "Visor de Quartzo-Poring",
+        "name": "의상 포링 선글래스",
         "viewID": 954
     },
     {
@@ -4354,19 +4288,19 @@
     {
         "id": 20372,
         "top": true,
-        "name": "Chapéu Delicado de Cospobre",
+        "name": "의상 리본 모자",
         "viewID": 956
     },
     {
         "id": 20201,
         "bot": true,
-        "name": "Espírito da Banshee",
+        "name": "Costume: Banshee MasterKiss",
         "viewID": 959
     },
     {
         "id": 20345,
         "mid": true,
-        "name": "Barbatanas de Netuno",
+        "name": "[衣装] 海神の守護",
         "viewID": 960
     },
     {
@@ -4378,7 +4312,7 @@
     {
         "id": 20109,
         "top": true,
-        "name": "Chapéu Jolly Roger",
+        "name": "[衣装] ジョリーロジャー",
         "viewID": 962
     },
     {
@@ -4414,13 +4348,13 @@
     {
         "id": 19703,
         "top": true,
-        "name": "Peruca Afro Blackpower",
+        "name": "Costume: Black Afro Wig",
         "viewID": 969
     },
     {
         "id": 19704,
         "top": true,
-        "name": "Peruca Afro Ruiva",
+        "name": "Costume: Red Afro Wig",
         "viewID": 970
     },
     {
@@ -4432,13 +4366,13 @@
     {
         "id": 31431,
         "top": true,
-        "name": "Chapéu de Curupira",
+        "name": "Costume: Curupira Hat",
         "viewID": 974
     },
     {
         "id": 20281,
         "top": true,
-        "name": "Chapéu Pré-Escolar",
+        "name": "의상 유치원생의 모자",
         "viewID": 977
     },
     {
@@ -4450,26 +4384,25 @@
     {
         "id": 20036,
         "top": true,
-        "name": "Coroa dos Experientes",
+        "name": "Costume: Sword Master Crown",
         "viewID": 981
     },
     {
         "id": 20037,
         "top": true,
-        "name": "Chapelão do Duque Coruja",
+        "name": "Costume: Owlduke Silk Hat",
         "viewID": 982
     },
     {
         "id": 31393,
         "bot": true,
-        "name": "Vajra Dourada",
+        "name": "Costume: Vajra",
         "viewID": 983
     },
     {
-        "mid": true,
-        "name": "Costume Assassin Skull Mask",
         "id": 31118,
         "bot": true,
+        "name": "Costume Assassin Skull Mask",
         "viewID": 984
     },
     {
@@ -4481,13 +4414,13 @@
     {
         "id": 19730,
         "top": true,
-        "name": "Chapéu de Jiboia Albina",
+        "name": "Costume: Snake Hat",
         "viewID": 986
     },
     {
         "id": 19750,
         "top": true,
-        "name": "Lacinho Frufru",
+        "name": "Costume: Saint Frill Ribbon",
         "viewID": 987
     },
     {
@@ -4499,26 +4432,26 @@
     {
         "id": 20312,
         "mid": true,
-        "name": "Olho Maligno do Barão",
+        "name": "[衣装] バロールの魔眼",
         "viewID": 989
     },
     {
         "id": 19752,
         "mid": true,
-        "name": "Asinhas Elegantes",
+        "name": "Costume: Shelter Wing Ears",
         "viewID": 990
     },
     {
         "id": 31845,
         "top": true,
-        "name": "Cartola da Guarda Real",
+        "name": "Costume: Palace Guard Cap",
         "viewID": 991
     },
     {
+        "id": 19760,
         "top": true,
         "mid": true,
-        "name": "Véu do Arco-Íris",
-        "id": 19760,
+        "name": "Costume: Rainbow Veil",
         "viewID": 992
     },
     {
@@ -4542,13 +4475,13 @@
     {
         "id": 31467,
         "top": true,
-        "name": "Ovo das Asas de Demônio",
+        "name": "Costume: Devil Egg Shell",
         "viewID": 999
     },
     {
         "id": 20104,
         "top": true,
-        "name": "Picky Feliz",
+        "name": "[衣装] すっごいピッキ",
         "viewID": 1001
     },
     {
@@ -4566,31 +4499,31 @@
     {
         "id": 20338,
         "top": true,
-        "name": "Chapéu Polvo Arco-Íris",
+        "name": "[衣装] 踊るカラフルなタコ",
         "viewID": 1007
     },
     {
         "id": 31561,
         "mid": true,
-        "name": "Asas de Dragão Sombrio",
+        "name": "Costume: Heavenly Dark Flame",
         "viewID": 1008
     },
     {
         "id": 20321,
         "mid": true,
-        "name": "Nadadeira de Peixe-Leão",
+        "name": "[衣装] 三零七式スキュート",
         "viewID": 1009
     },
     {
         "id": 31821,
         "top": true,
-        "name": "Boné Estileira",
+        "name": "Costume Jeje Cap",
         "viewID": 1011
     },
     {
         "id": 20494,
         "top": true,
-        "name": "Ovning",
+        "name": "Costume Ufo Poring Hat",
         "viewID": 1017
     },
     {
@@ -4602,7 +4535,7 @@
     {
         "id": 31534,
         "mid": true,
-        "name": "Tiara Colorida",
+        "name": "Rainbow Star",
         "viewID": 1019
     },
     {
@@ -4614,31 +4547,31 @@
     {
         "id": 31430,
         "top": true,
-        "name": "Chapéu do Bandalf",
+        "name": "Costume: Seppl Hat",
         "viewID": 1023
     },
     {
         "id": 400271,
         "top": true,
-        "name": "Utensílios de Jardim",
+        "name": "Costume: Shovel Hat",
         "viewID": 1024
     },
     {
         "id": 20235,
         "bot": true,
-        "name": "Rosa Congelada",
+        "name": "[衣装] 凍土の薔薇",
         "viewID": 1025
     },
     {
         "id": 31939,
         "top": true,
-        "name": "Coroa de Rosas",
+        "name": "[Costume] Red Flowers Crown",
         "viewID": 1026
     },
     {
         "id": 20400,
         "bot": true,
-        "name": "Cruz Dourada",
+        "name": "[衣装] イクトゥスのロザリオ",
         "viewID": 1028
     },
     {
@@ -4650,13 +4583,13 @@
     {
         "id": 31248,
         "top": true,
-        "name": "Adereço Vermelho Pontiagudo",
+        "name": "Costume: Isabella Red Ears",
         "viewID": 1030
     },
     {
         "id": 31508,
         "top": true,
-        "name": "Adereço Azul Pontiagudo",
+        "name": "Costume: Isabella's Blue Ear Hat",
         "viewID": 1032
     },
     {
@@ -4667,8 +4600,7 @@
     },
     {
         "id": 5912,
-        "mid": true,
-        "name": "Deviling Companheiro",
+        "name": "의상 악마의 하수인",
         "viewID": 1036
     },
     {
@@ -4680,13 +4612,13 @@
     {
         "id": 19804,
         "top": true,
-        "name": "Cata-vento elegante",
+        "name": "Costume: Red Vane Hairpin",
         "viewID": 1044
     },
     {
         "id": 19805,
-        "bot": true,
-        "name": "Pergaminho dos Selos",
+        "top": true,
+        "name": "Costume: Taboo Curse Scroll",
         "viewID": 1045
     },
     {
@@ -4698,13 +4630,13 @@
     {
         "id": 19807,
         "top": true,
-        "name": "Elmo do Xogum",
+        "name": "Costume: Majestic Helmet",
         "viewID": 1047
     },
     {
         "id": 19815,
         "top": true,
-        "name": "Chapéu da Natureza",
+        "name": "Costume: Lolita Ten Gallon Hat",
         "viewID": 1048
     },
     {
@@ -4722,7 +4654,7 @@
     {
         "id": 20150,
         "bot": true,
-        "name": "Leque da Ventania",
+        "name": "[衣装] 風神の扇",
         "viewID": 1051
     },
     {
@@ -4732,10 +4664,10 @@
         "viewID": 1051
     },
     {
+        "id": 19823,
         "top": true,
         "mid": true,
         "name": "Costume White Cat Hood",
-        "id": 19823,
         "viewID": 1052
     },
     {
@@ -4747,25 +4679,25 @@
     {
         "id": 19825,
         "top": true,
-        "name": "Bandana Curativa",
+        "name": "Costume: Vicious Stop Bandage",
         "viewID": 1054
     },
     {
         "id": 15905,
         "top": true,
-        "name": "Capacete Ecoante",
+        "name": "Costume: Helmet of Siegfried",
         "viewID": 1055
     },
     {
         "id": 400080,
         "top": true,
-        "name": "Coroa do Renascimento",
+        "name": "Item #400080",
         "viewID": 1056
     },
     {
         "id": 400131,
         "top": true,
-        "name": "Diadema do Fogo Azul",
+        "name": "Costume: Diadem of Brunhild",
         "viewID": 1057
     },
     {
@@ -4801,13 +4733,13 @@
     {
         "id": 20376,
         "mid": true,
-        "name": "Presilha dos Amantes",
+        "name": "(null)",
         "viewID": 1072
     },
     {
         "id": 31433,
         "top": true,
-        "name": "Auréola Benevolente",
+        "name": "Costume: Astro Circle",
         "viewID": 1073
     },
     {
@@ -4825,25 +4757,25 @@
     {
         "id": 19935,
         "top": true,
-        "name": "Boné do D Fléchi",
+        "name": "Costume: Hunting Cap Of Gust",
         "viewID": 1076
     },
     {
         "id": 19936,
         "top": true,
-        "name": "Gorro de Lã do Ioxi",
+        "name": "Costume: Knit Cap Of Water",
         "viewID": 1077
     },
     {
         "id": 19937,
         "top": true,
-        "name": "Chapéu da Fauna e Flora",
+        "name": "Costume: Silk Hat of Earth",
         "viewID": 1078
     },
     {
         "id": 400174,
         "top": true,
-        "name": "Chapéu de Sorveja",
+        "name": "Costume: Buyers Hat",
         "viewID": 1079
     },
     {
@@ -4855,41 +4787,38 @@
     {
         "id": 20328,
         "bot": true,
-        "name": "Carpa Dourada de Cospobre",
+        "name": "의상 입에 문 황금 물고기",
         "viewID": 1081
     },
     {
         "id": 20329,
         "top": true,
-        "name": "Bonequinha Preguiçosa",
+        "name": "Costume: Very Cute Doll Hat",
         "viewID": 1084
     },
     {
-        "top": true,
-        "mid": true,
-        "name": "Coelhinho Carinhoso",
         "id": 19881,
         "bot": true,
+        "name": "Costume: Pretty Rabbit Hood",
         "viewID": 1085
     },
     {
-        "mid": true,
-        "name": "Vaso de Planta Anti-Z",
         "id": 19882,
         "bot": true,
+        "name": "Costume: Flowerpot Mask",
         "viewID": 1086
     },
     {
         "id": 19883,
         "top": true,
-        "name": "Gorro da Piamette",
+        "name": "Costume: Piamette Hood",
         "viewID": 1087
     },
     {
+        "id": 20183,
         "top": true,
         "mid": true,
-        "name": "Presença Misteriosa",
-        "id": 20183,
+        "name": "Costume: Floating Ghost",
         "viewID": 1091
     },
     {
@@ -4907,13 +4836,13 @@
     {
         "id": 19910,
         "top": true,
-        "name": "Chapéu de Bruxa Brilhante",
+        "name": "Costume: Halloween Hat",
         "viewID": 1098
     },
     {
         "id": 19911,
         "top": true,
-        "name": "Telhado",
+        "name": "Costume: Triangle Roof Hat",
         "viewID": 1099
     },
     {
@@ -4925,7 +4854,7 @@
     {
         "id": 19914,
         "top": true,
-        "name": "Felrock\u2019s Hat",
+        "name": "Felrock’s Hat",
         "viewID": 1101
     },
     {
@@ -4937,20 +4866,20 @@
     {
         "id": 19915,
         "top": true,
-        "name": "Pequeno Par de Chifres",
+        "name": "[衣装] バフォメットホーン",
         "viewID": 1103
     },
     {
         "id": 20079,
         "top": true,
-        "name": "Tiara Áurea de Anjo",
+        "name": "의상 주천사의 날개 머리띠",
         "viewID": 1104
     },
     {
+        "id": 19928,
         "top": true,
         "mid": true,
         "name": "Costume Gothic Heartwing Hairband",
-        "id": 19928,
         "viewID": 1111
     },
     {
@@ -4974,19 +4903,19 @@
     {
         "id": 20135,
         "top": true,
-        "name": "Coroa do Segredo",
+        "name": "Costume: Crown Of Saint",
         "viewID": 1117
     },
     {
         "id": 31976,
         "top": true,
-        "name": "Boina de Foco",
+        "name": "의상 집중의 베레모",
         "viewID": 1122
     },
     {
         "id": 400587,
         "top": true,
-        "name": "Quepe do Capitão do Mar",
+        "name": "Item #400587",
         "viewID": 1128
     },
     {
@@ -5033,8 +4962,8 @@
     },
     {
         "id": 400425,
-        "top": true,
-        "name": "Flauta de Falcão",
+        "bot": true,
+        "name": "[衣装] 鳥狩の呼子",
         "viewID": 1143
     },
     {
@@ -5046,7 +4975,7 @@
     {
         "id": 19977,
         "top": true,
-        "name": "Sinal dos Apressados",
+        "name": "Costume: Golden Exclamation Mark",
         "viewID": 1145
     },
     {
@@ -5058,25 +4987,25 @@
     {
         "id": 19979,
         "top": true,
-        "name": "Sinal dos Curiosos",
+        "name": "Costume: Golden Question Mark",
         "viewID": 1147
     },
     {
         "id": 19980,
         "top": true,
-        "name": "Sinal dos Esquecidos",
+        "name": "Costume: Silver Question Mark",
         "viewID": 1148
     },
     {
         "id": 31159,
         "top": true,
-        "name": "Chapéu de Jormungand",
+        "name": "Costume Jormungandr Head",
         "viewID": 1149
     },
     {
         "id": 20252,
         "top": true,
-        "name": "Acessório Peculiar",
+        "name": "[衣装] 道士の装飾",
         "viewID": 1150
     },
     {
@@ -5094,19 +5023,19 @@
     {
         "id": 31461,
         "mid": true,
-        "name": "Brincos de Poring Azul",
+        "name": "Costume: Marin Earring",
         "viewID": 1160
     },
     {
         "id": 31462,
         "mid": true,
-        "name": "Brincos de Poring Rosa",
+        "name": "Costume: Cute Poring Earmuffs",
         "viewID": 1162
     },
     {
         "id": 410053,
         "mid": true,
-        "name": "Óculos de Sol Estiloso",
+        "name": "Costume: Exorcist Glasses",
         "viewID": 1169
     },
     {
@@ -5118,37 +5047,36 @@
     {
         "id": 31804,
         "top": true,
-        "name": "Chapéu com Lacinho",
+        "name": "Costume Flower Hat",
         "viewID": 1172
     },
     {
         "id": 31912,
         "top": true,
-        "name": "Véu Obscuro",
+        "name": "Costume: Black Veil",
         "viewID": 1173
     },
     {
         "id": 31038,
         "top": true,
-        "name": "Bandana Xadrez",
+        "name": "[衣装] チェックバンダナ",
         "viewID": 1174
     },
     {
         "id": 20332,
-        "top": true,
-        "name": "Laço de Fita",
+        "name": "[衣装] 純白のリボン",
         "viewID": 1175
     },
     {
         "id": 31728,
         "top": true,
-        "name": "Chapéu da Noviça",
+        "name": "Costume Nobility Hat",
         "viewID": 1181
     },
     {
         "id": 31527,
         "mid": true,
-        "name": "Asas Presilhas",
+        "name": "Costume Radiant Rainbow Wings",
         "viewID": 1186
     },
     {
@@ -5158,23 +5086,21 @@
         "viewID": 1188
     },
     {
-        "top": true,
-        "mid": true,
-        "name": "Costume Horse King",
         "id": 19996,
         "bot": true,
+        "name": "Costume Horse King",
         "viewID": 1189
     },
     {
         "id": 19998,
         "top": true,
-        "name": "Casco de Espinhoso",
+        "name": "Costume: Dragon Turtle Hat",
         "viewID": 1192
     },
     {
         "id": 20003,
         "top": true,
-        "name": "Chapéu do Roedor",
+        "name": "Costume: Mouse Hat",
         "viewID": 1197
     },
     {
@@ -5192,19 +5118,19 @@
     {
         "id": 20012,
         "top": true,
-        "name": "Chapéu Deciduai",
+        "name": "[衣装] ダブルホーンヘルム",
         "viewID": 1200
     },
     {
         "id": 31133,
         "mid": true,
-        "name": "Adesivos do Apostador",
+        "name": "Costume: Mr. Joker",
         "viewID": 1202
     },
     {
         "id": 20435,
         "top": true,
-        "name": "Pingente Lunar",
+        "name": "Costume: Camellia Hair Pin",
         "viewID": 1203
     },
     {
@@ -5222,19 +5148,19 @@
     {
         "id": 20038,
         "top": true,
-        "name": "Capacete do Alfonso",
+        "name": "Haunted Armor Helm",
         "viewID": 1207
     },
     {
         "id": 20018,
         "top": true,
-        "name": "Orelhinhas Atentas",
+        "name": "Long Wolf Ears",
         "viewID": 1208
     },
     {
         "id": 410074,
         "mid": true,
-        "name": "Venda de Sicário",
+        "name": "Costume: Gravekeeper Blinker",
         "viewID": 1210
     },
     {
@@ -5246,7 +5172,7 @@
     {
         "id": 20027,
         "top": true,
-        "name": "Chapéu da Mimosa Rosa",
+        "name": "Costume: Cow Hat",
         "viewID": 1213
     },
     {
@@ -5258,19 +5184,19 @@
     {
         "id": 20032,
         "top": true,
-        "name": "Turbante do Oráculo",
+        "name": "의상 피린트 스카프",
         "viewID": 1216
     },
     {
         "id": 20033,
         "top": true,
-        "name": "Coroa de Dewata",
+        "name": "의상 법사관",
         "viewID": 1217
     },
     {
         "id": 31785,
         "mid": true,
-        "name": "Barbatanas de Tritão",
+        "name": "Costume: Monster Fish Gills",
         "viewID": 1218
     },
     {
@@ -5282,13 +5208,13 @@
     {
         "id": 31042,
         "top": true,
-        "name": "Diadema Delicado",
+        "name": "[衣装] サバイバルサークレット",
         "viewID": 1220
     },
     {
         "id": 19288,
-        "top": true,
-        "name": "Elmo Titânico",
+        "bot": true,
+        "name": "Costume: Giant's Helm",
         "viewID": 1221
     },
     {
@@ -5312,20 +5238,19 @@
     {
         "id": 20063,
         "top": true,
-        "name": "Mente Brilhante",
+        "name": "Costume: Yellow Brain Hat",
         "viewID": 1228
     },
     {
         "id": 20064,
         "top": true,
-        "name": "Mente Criativa",
+        "name": "Costume: Blue Brain Hat",
         "viewID": 1229
     },
     {
-        "top": true,
-        "name": "Coroa da Rainha Scaraba",
         "id": 31325,
         "bot": true,
+        "name": "Costume: Queen Scaraba Helm",
         "viewID": 1231
     },
     {
@@ -5343,7 +5268,7 @@
     {
         "id": 20070,
         "top": true,
-        "name": "Capuz de Alpaca Fofinha",
+        "name": "[衣装] アルパカのフード",
         "viewID": 1234
     },
     {
@@ -5354,14 +5279,13 @@
     },
     {
         "id": 31902,
-        "mid": true,
-        "name": "Óculos das Lentes Vivas",
+        "name": "Costume: Cool Shades",
         "viewID": 1237
     },
     {
         "id": 20098,
         "top": true,
-        "name": "Adorno Vampiresco",
+        "name": "의상 뱀파이어 헤어밴드",
         "viewID": 1238
     },
     {
@@ -5373,25 +5297,25 @@
     {
         "id": 20100,
         "top": true,
-        "name": "Chapéu Ragtoberfest",
+        "name": "[衣装] ボリュームフェザーハット",
         "viewID": 1240
     },
     {
         "id": 20101,
         "mid": true,
-        "name": "Asas de Bragi",
+        "name": "[衣装] ブラギの羽耳",
         "viewID": 1241
     },
     {
         "id": 20086,
         "top": true,
-        "name": "Dragão Ancião",
+        "name": "Costume: Dragon Cintamani Hat",
         "viewID": 1245
     },
     {
         "id": 31183,
         "mid": true,
-        "name": "Asas Grafite",
+        "name": "Costume: Fallen Angel's Blessing",
         "viewID": 1250
     },
     {
@@ -5403,37 +5327,37 @@
     {
         "id": 20113,
         "top": true,
-        "name": "Chapéu do Oráculo",
+        "name": "[衣装] 星詠みの帽子",
         "viewID": 1253
     },
     {
         "id": 20116,
         "mid": true,
-        "name": "Fones de Sereia",
+        "name": "[衣装] マーメイドヘッドフォン",
         "viewID": 1254
     },
     {
         "id": 20115,
         "mid": true,
-        "name": "Óculos do Sabe-Tudo",
+        "name": "의상 언더림 안경",
         "viewID": 1255
     },
     {
         "id": 20112,
         "top": true,
-        "name": "Chapéu de Praia Azul",
+        "name": "의상 아쿠아 텐 갤론 모자",
         "viewID": 1256
     },
     {
         "id": 20117,
         "top": true,
-        "name": "Chapéu do Lorde Mousse",
+        "name": "[衣装] ラズベリームースハット",
         "viewID": 1257
     },
     {
         "id": 20110,
         "top": true,
-        "name": "Chapéu de Sucuri",
+        "name": "Costume: Coiledup Snake",
         "viewID": 1258
     },
     {
@@ -5445,19 +5369,19 @@
     {
         "id": 20130,
         "top": true,
-        "name": "Cartola Sussurrante",
+        "name": "Costume Whisper Tall Hat",
         "viewID": 1265
     },
     {
         "id": 20131,
         "mid": true,
-        "name": "Fone dos Vocalroks",
+        "name": "[衣装] 時計塔管理者のインカム",
         "viewID": 1266
     },
     {
         "id": 20132,
         "bot": true,
-        "name": "Aura Fantasmagórica",
+        "name": "Costume Test Subject Aura",
         "viewID": 1267
     },
     {
@@ -5475,39 +5399,37 @@
     {
         "id": 20139,
         "top": true,
-        "name": "Presilha Cavalinho",
+        "name": "Rental Underneath Thunder P",
         "viewID": 1271
     },
     {
         "id": 20153,
         "top": true,
-        "name": "Quepe Militar",
+        "name": "의상 모노크롬 캡",
         "viewID": 1274
     },
     {
         "id": 20154,
         "mid": true,
-        "name": "Folhas Outonais",
+        "name": "의상 흩날리는 낙엽",
         "viewID": 1275
     },
     {
         "id": 20155,
         "top": true,
-        "name": "Chapéu de Lady Emplumado",
+        "name": "의상 귀부인의 깃털 모자",
         "viewID": 1276
     },
     {
-        "top": true,
-        "mid": true,
-        "name": "Gorro de Carneirinho",
         "id": 20162,
         "bot": true,
+        "name": "Rental Saharic Gladius",
         "viewID": 1277
     },
     {
         "id": 31040,
         "top": true,
-        "name": "Tiara das Plumas Mágicas",
+        "name": "의상 매지컬 페더",
         "viewID": 1279
     },
     {
@@ -5559,22 +5481,20 @@
         "viewID": 1287
     },
     {
-        "mid": true,
-        "name": "Máscara Feliz do Pierrot",
         "id": 20176,
         "bot": true,
+        "name": "[衣装] ハッピーピエロ仮面",
         "viewID": 1288
     },
     {
         "id": 31590,
         "bot": true,
-        "name": "Pincel do Artista",
+        "name": "Costume: Designer's Brush",
         "viewID": 1291
     },
     {
         "id": 20195,
         "bot": true,
-        "mid": true,
         "name": "Costume Scratching Cat",
         "viewID": 1292
     },
@@ -5593,22 +5513,19 @@
     {
         "id": 20198,
         "top": true,
-        "name": "Orelhas Peludinhas",
+        "name": "의상 갈색 고양이 귀 머리띠",
         "viewID": 1295
     },
     {
-        "top": true,
-        "mid": true,
-        "name": "Cocórigorro",
         "id": 20206,
         "bot": true,
+        "name": "Costume: Chicken Hat",
         "viewID": 1296
     },
     {
-        "top": true,
-        "name": "Costume Arabian Veil",
         "id": 20217,
         "bot": true,
+        "name": "Costume Arabian Veil",
         "viewID": 1300
     },
     {
@@ -5624,22 +5541,22 @@
         "viewID": 1302
     },
     {
+        "id": 20220,
         "top": true,
         "mid": true,
         "name": "Costume Dark Night Veil",
-        "id": 20220,
         "viewID": 1303
     },
     {
         "id": 20212,
         "top": true,
-        "name": "Boneco de Loki e Nidhogg",
+        "name": "Costume: Loki & Nidhogg Hat",
         "viewID": 1304
     },
     {
         "id": 31702,
         "top": true,
-        "name": "Capuz de Felino Branco",
+        "name": "[衣装] ドラムなりきりフード",
         "viewID": 1308
     },
     {
@@ -5655,17 +5572,15 @@
         "viewID": 1310
     },
     {
-        "top": true,
-        "mid": true,
-        "name": "Costume Baphomet Hat",
         "id": 20234,
         "bot": true,
+        "name": "Costume Baphomet Hat",
         "viewID": 1311
     },
     {
         "id": 20239,
         "bot": true,
-        "name": "Cachecol de Lutie",
+        "name": "Costume: Large Ribbon Muffler",
         "viewID": 1312
     },
     {
@@ -5707,25 +5622,25 @@
     {
         "id": 20256,
         "top": true,
-        "name": "Chapanquecas",
+        "name": "의상 허니 팬케이크",
         "viewID": 1319
     },
     {
         "id": 20257,
         "top": true,
-        "name": "Capuz com Orelhas de Coelho",
+        "name": "의상 블랙 래빗 보넷",
         "viewID": 1320
     },
     {
         "id": 20259,
         "bot": true,
-        "name": "Trevo Rosa",
+        "name": "의상 핑크 클로버",
         "viewID": 1322
     },
     {
         "id": 400424,
         "top": true,
-        "name": "Cartola do Visconde Coruja",
+        "name": "[衣装] オウルヴァイカウントのシルクハット",
         "viewID": 1323
     },
     {
@@ -5737,7 +5652,7 @@
     {
         "id": 20268,
         "top": true,
-        "name": "Família Eclipse Dorminhoca",
+        "name": "Costume: Sleeping Eclipse Family",
         "viewID": 1326
     },
     {
@@ -5749,7 +5664,7 @@
     {
         "id": 20283,
         "top": true,
-        "name": "Boné Abençoado",
+        "name": "의상 오버프로텍터",
         "viewID": 1329
     },
     {
@@ -5760,14 +5675,14 @@
     },
     {
         "id": 20286,
-        "bot": true,
-        "name": "Óculos da Persona",
+        "mid": true,
+        "name": "Costume: Red Under Rimmed Glasses",
         "viewID": 1332
     },
     {
         "id": 20287,
         "top": true,
-        "name": "Cabeleira do Rei do Rock Saiadim",
+        "name": "의상 금색 남자의 훈장",
         "viewID": 1333
     },
     {
@@ -5779,7 +5694,7 @@
     {
         "id": 31379,
         "top": true,
-        "name": "Gira-Cocuruto",
+        "name": "Costume: Clock Winding Key",
         "viewID": 1335
     },
     {
@@ -5797,28 +5712,25 @@
     {
         "id": 20298,
         "mid": true,
-        "name": "Orelhas Brancas de Lunático",
+        "name": "의상 행복의 늘어진 루나틱 귀",
         "viewID": 1340
     },
     {
-        "mid": true,
-        "name": "Costume Face Crasher",
         "id": 20299,
         "bot": true,
+        "name": "Costume Face Crasher",
         "viewID": 1341
     },
     {
-        "top": true,
-        "mid": true,
-        "name": "Costume Hill Wind Mask",
         "id": 20300,
         "bot": true,
+        "name": "Costume Hill Wind Mask",
         "viewID": 1342
     },
     {
         "id": 20302,
         "top": true,
-        "name": "Coroa do Senhor das Moscas",
+        "name": "의상 베르제브브의 왕관",
         "viewID": 1343
     },
     {
@@ -5829,14 +5741,13 @@
     },
     {
         "id": 5983,
-        "bot": true,
-        "name": "Máscara de Loki",
+        "name": "[衣装] ロキのアサシンマスク",
         "viewID": 1345
     },
     {
         "id": 31087,
         "bot": true,
-        "name": "Barba Viking",
+        "name": "Costume: Dwarf Beard",
         "viewID": 1349
     },
     {
@@ -5878,7 +5789,7 @@
     {
         "id": 31328,
         "top": true,
-        "name": "Casca de Ovo Estilosa",
+        "name": "Costume: Faceworm Egg Shell",
         "viewID": 1356
     },
     {
@@ -5890,13 +5801,13 @@
     {
         "id": 31560,
         "top": true,
-        "name": "Mitra Azul Adornada",
+        "name": "Costume: Clergy Nurse Cap",
         "viewID": 1359
     },
     {
         "id": 31125,
         "top": true,
-        "name": "Chapéu da Realeza Pirata",
+        "name": "Costume: Queen Anz Revenge",
         "viewID": 1360
     },
     {
@@ -5920,25 +5831,25 @@
     {
         "id": 20326,
         "bot": true,
-        "name": "Gola Escolar de Marinheiro",
+        "name": "[衣装] 水兵の襟",
         "viewID": 1364
     },
     {
         "id": 20327,
         "top": true,
-        "name": "Quepe de Grumete",
+        "name": "의상 마린 캡",
         "viewID": 1365
     },
     {
         "id": 15840,
         "mid": true,
-        "name": "Óculos de Bioproteção",
+        "name": "Costume: Bio Protector",
         "viewID": 1366
     },
     {
         "id": 410047,
         "mid": true,
-        "name": "Máscara do Homem de Alumínio",
+        "name": "Costume: Hero Mask",
         "viewID": 1367
     },
     {
@@ -5950,26 +5861,26 @@
     {
         "id": 20340,
         "bot": true,
-        "name": "Rabo de Cavalo Preto",
+        "name": "Costume: Straight Pony Black",
         "viewID": 1371
     },
     {
         "id": 20341,
         "bot": true,
-        "name": "Mecha de Cabelo Preto",
+        "name": "Costume: Buzzy Black",
         "viewID": 1372
     },
     {
         "id": 20342,
         "bot": true,
-        "name": "Maria-Chiquinha Preta",
+        "name": "Costume: Wave Twin Black",
         "viewID": 1373
     },
     {
+        "id": 31255,
         "top": true,
         "mid": true,
         "name": "Costume Sweetie Helmet",
-        "id": 31255,
         "viewID": 1374
     },
     {
@@ -5981,25 +5892,25 @@
     {
         "id": 31562,
         "top": true,
-        "name": "Jirtas Dorminhoca",
+        "name": "Costume: Zealotus Doll",
         "viewID": 1376
     },
     {
         "id": 400168,
         "top": true,
-        "name": "Coroa de Izlude",
+        "name": "[衣装] ギフトオブイズルード",
         "viewID": 1377
     },
     {
         "id": 5915,
         "top": true,
-        "name": "Véu de Anjo",
+        "name": "의상 천사의 베일",
         "viewID": 1379
     },
     {
         "id": 5979,
         "bot": true,
-        "name": "Penas Clampi ®",
+        "name": "Costume: Fluttering Angel's Wing",
         "viewID": 1380
     },
     {
@@ -6011,145 +5922,145 @@
     {
         "id": 20350,
         "bot": true,
-        "name": "Mecha de Cabelo Loiro",
+        "name": "Costume: Buzzy Yellow",
         "viewID": 1382
     },
     {
         "id": 20351,
         "bot": true,
-        "name": "Mecha de Cabelo Verde",
+        "name": "Costume: Buzzy Green",
         "viewID": 1383
     },
     {
         "id": 20352,
         "bot": true,
-        "name": "Mecha de Cabelo Roxo",
+        "name": "Costume: Buzzy Purple",
         "viewID": 1384
     },
     {
         "id": 20353,
         "bot": true,
-        "name": "Mecha de Cabelo Vermelho",
+        "name": "Costume: Buzzy Red",
         "viewID": 1385
     },
     {
         "id": 20354,
         "bot": true,
-        "name": "Mecha de Cabelo Castanho",
+        "name": "Costume: Buzzy Orange",
         "viewID": 1386
     },
     {
         "id": 20355,
         "bot": true,
-        "name": "Mecha de Cabelo Azul",
+        "name": "Costume: Buzzy Blue",
         "viewID": 1387
     },
     {
         "id": 20356,
         "bot": true,
-        "name": "Mecha de Cabelo Branco",
+        "name": "Costume: Buzzy White",
         "viewID": 1388
     },
     {
         "id": 20357,
         "bot": true,
-        "name": "Rabo de Cavalo Loiro",
+        "name": "Costume: Straight Pony Yellow",
         "viewID": 1389
     },
     {
         "id": 20358,
         "bot": true,
-        "name": "Rabo de Cavalo Verde",
+        "name": "Costume: Straight Pony Green",
         "viewID": 1390
     },
     {
         "id": 20359,
         "bot": true,
-        "name": "Rabo de Cavalo Roxo",
+        "name": "Costume: Straight Pony Purple",
         "viewID": 1391
     },
     {
         "id": 20360,
         "bot": true,
-        "name": "Rabo de Cavalo Vermelho",
+        "name": "Costume: Straight Pony Red",
         "viewID": 1392
     },
     {
         "id": 20361,
         "bot": true,
-        "name": "Rabo de Cavalo Castanho",
+        "name": "의상 스트레이트포니 주홍색",
         "viewID": 1393
     },
     {
         "id": 20362,
         "bot": true,
-        "name": "Rabo de Cavalo Azul",
+        "name": "의상 스트레이트포니 파란색",
         "viewID": 1394
     },
     {
         "id": 20363,
         "bot": true,
-        "name": "Rabo de Cavalo Branco",
+        "name": "의상 스트레이트포니 하얀색",
         "viewID": 1395
     },
     {
         "id": 20364,
         "bot": true,
-        "name": "Maria-Chiquinha Loira",
+        "name": "의상 루즈웨이브트윈 노란색",
         "viewID": 1396
     },
     {
         "id": 20365,
         "bot": true,
-        "name": "Maria-Chiquinha Verde",
+        "name": "의상 루즈웨이브트윈 초록색",
         "viewID": 1397
     },
     {
         "id": 20366,
         "bot": true,
-        "name": "Maria-Chiquinha Roxa",
+        "name": "의상 루즈웨이브트윈 보라색",
         "viewID": 1398
     },
     {
         "id": 20367,
         "bot": true,
-        "name": "Maria-Chiquinha Vermelha",
+        "name": "의상 루즈웨이브트윈 빨간색",
         "viewID": 1399
     },
     {
         "id": 20368,
         "bot": true,
-        "name": "Maria-Chiquinha Castanha",
+        "name": "의상 루즈웨이브트윈 주홍색",
         "viewID": 1400
     },
     {
         "id": 20369,
         "bot": true,
-        "name": "Maria-Chiquinha Azul",
+        "name": "의상 루즈웨이브트윈 파란색",
         "viewID": 1401
     },
     {
         "id": 20370,
         "bot": true,
-        "name": "Maria-Chiquinha Branca",
+        "name": "의상 루즈웨이브트윈 하얀색",
         "viewID": 1402
     },
     {
         "id": 420026,
         "bot": true,
-        "name": "Gravata Bombom",
+        "name": "Costume: Piamette Ribbon",
         "viewID": 1403
     },
     {
         "id": 20379,
         "mid": true,
-        "name": "Presilha de Relógio Retrô",
+        "name": "Costume: Pocket Watch Ornament",
         "viewID": 1404
     },
     {
         "id": 20380,
         "top": true,
-        "name": "Tiara com Asas Mecânicas",
+        "name": "의상 기계깃털 헤어밴드",
         "viewID": 1405
     },
     {
@@ -6161,44 +6072,43 @@
     {
         "id": 20382,
         "top": true,
-        "name": "Boneco da Artilharia Caçadora",
+        "name": "[衣装] シルバースナイパー人形",
         "viewID": 1407
     },
     {
         "id": 20383,
         "top": true,
-        "name": "Boneco da Artilharia Arcana",
+        "name": "[衣装] マジックデコイ人形",
         "viewID": 1408
     },
     {
         "id": 31609,
         "mid": true,
-        "name": "Máscara do Aristocrata",
+        "name": "Costume: Noble Mask",
         "viewID": 1409
     },
     {
         "id": 20394,
         "top": true,
-        "name": "Cabeça de Jakk",
+        "name": "의상 펌킨 요리사 모자",
         "viewID": 1411
     },
     {
         "id": 31373,
         "top": true,
-        "name": "Coroa de Ramos Verdejantes",
+        "name": "[衣装] 古王の王冠",
         "viewID": 1412
     },
     {
-        "mid": true,
-        "name": "Costume Jakk",
         "id": 20397,
         "bot": true,
+        "name": "Costume Jakk",
         "viewID": 1415
     },
     {
         "id": 20405,
         "bot": true,
-        "name": "Cachecol do Eremes",
+        "name": "의상 에레메스 가일의 스카프",
         "viewID": 1416
     },
     {
@@ -6220,18 +6130,15 @@
         "viewID": 1419
     },
     {
-        "top": true,
-        "mid": true,
-        "name": "Venda da Justiça",
         "id": 31608,
         "bot": true,
+        "name": "Costume: Magicstone of Grace",
         "viewID": 1420
     },
     {
-        "top": true,
-        "name": "Chapéu de Bicho Papão",
         "id": 31088,
         "bot": true,
+        "name": "Costume: Mad Hatter's Hat",
         "viewID": 1421
     },
     {
@@ -6249,43 +6156,43 @@
     {
         "id": 20491,
         "top": true,
-        "name": "Tiara da Pontaria",
+        "name": "Costume: Laser of Eagle",
         "viewID": 1424
     },
     {
         "id": 20416,
         "bot": true,
-        "name": "Balão Rosa Sinistro",
+        "name": "Item #20416",
         "viewID": 1426
     },
     {
         "id": 20417,
         "bot": true,
-        "name": "Balão Laranja Sinistro",
+        "name": "Item #20417",
         "viewID": 1427
     },
     {
         "id": 20418,
         "bot": true,
-        "name": "Balão Natalino Sinistro",
+        "name": "[衣装] サンタポリンバルーン",
         "viewID": 1428
     },
     {
         "id": 20419,
         "bot": true,
-        "name": "Balão Verde Sinistro",
+        "name": "[衣装] ポポリンバルーン",
         "viewID": 1429
     },
     {
         "id": 20420,
         "bot": true,
-        "name": "Balão Azul Sinistro",
+        "name": "Item #20420",
         "viewID": 1430
     },
     {
         "id": 20421,
         "bot": true,
-        "name": "Balão Metálico Sinistro",
+        "name": "Item #20421",
         "viewID": 1431
     },
     {
@@ -6303,7 +6210,7 @@
     {
         "id": 20427,
         "bot": true,
-        "name": "Balão Aquático Sinistro",
+        "name": "Item #20427",
         "viewID": 1437
     },
     {
@@ -6321,19 +6228,19 @@
     {
         "id": 20432,
         "top": true,
-        "name": "Elmo da Khalitzburg",
+        "name": "Costume: Khalitzburg Helm",
         "viewID": 1442
     },
     {
         "id": 20433,
         "top": true,
-        "name": "Chapéu da Catherine Johnson",
+        "name": "Costume: Louise Red Hat",
         "viewID": 1443
     },
     {
         "id": 20434,
         "top": true,
-        "name": "Guardiã dos Penteados",
+        "name": "Costume: Drooping Gunslinger",
         "viewID": 1444
     },
     {
@@ -6393,13 +6300,13 @@
     {
         "id": 31540,
         "mid": true,
-        "name": "Lentes Gemini",
+        "name": "Costume: Red Gemini Eyes",
         "viewID": 1456
     },
     {
         "id": 31448,
         "top": true,
-        "name": "Lacinho Sting",
+        "name": "Costume: Sting's Silk Ribbon",
         "viewID": 1457
     },
     {
@@ -6421,17 +6328,15 @@
         "viewID": 1461
     },
     {
-        "top": true,
-        "mid": true,
-        "name": "Costume You in ONE",
         "id": 20468,
         "bot": true,
+        "name": "Costume You in ONE",
         "viewID": 1462
     },
     {
         "id": 31786,
         "top": true,
-        "name": "Chapéu de Dragonete Vermelho",
+        "name": "Costume: Red Baby Dragon Hat",
         "viewID": 1463
     },
     {
@@ -6449,7 +6354,7 @@
     {
         "id": 20466,
         "top": true,
-        "name": "Lacinho de Fruto de Mora",
+        "name": "Costume: Crimson Ribbon",
         "viewID": 1468
     },
     {
@@ -6461,7 +6366,7 @@
     {
         "id": 31309,
         "top": true,
-        "name": "Chapéu de Marchinha",
+        "name": "[衣装] 純白なマーチングハット",
         "viewID": 1470
     },
     {
@@ -6519,28 +6424,28 @@
         "viewID": 1480
     },
     {
+        "id": 31028,
         "top": true,
         "mid": true,
         "name": "Costume Black Cat Hoodie",
-        "id": 31028,
         "viewID": 1481
     },
     {
         "id": 31029,
         "bot": true,
-        "name": "Fuça de Porco",
+        "name": "의상 돼지코",
         "viewID": 1482
     },
     {
         "id": 31031,
         "top": true,
-        "name": "Chapéu da Papisa",
+        "name": "의상 늘어진 교황모자(사복)",
         "viewID": 1483
     },
     {
         "id": 31032,
         "top": true,
-        "name": "Boneco de Loomin",
+        "name": "[衣装] たれルーミン",
         "viewID": 1484
     },
     {
@@ -6564,31 +6469,31 @@
     {
         "id": 400277,
         "top": true,
-        "name": "Chapéu de Tarlock",
+        "name": "Felrock's Hat",
         "viewID": 1489
     },
     {
         "id": 31375,
         "mid": true,
-        "name": "Olhos Macabros",
+        "name": "Costume: Eyes of War",
         "viewID": 1490
     },
     {
         "id": 31039,
         "top": true,
-        "name": "Coroa de Folhas do Outono",
+        "name": "Crown of Legendary Outlaw",
         "viewID": 1491
     },
     {
         "id": 31045,
         "bot": true,
-        "name": "Laço Azul Delicado",
+        "name": "[衣装] 蒼のリアリボン",
         "viewID": 1492
     },
     {
         "id": 31046,
         "top": true,
-        "name": "Diadema de Rosas Brancas",
+        "name": "의상 화이트로즈 프린세스",
         "viewID": 1493
     },
     {
@@ -6600,7 +6505,7 @@
     {
         "id": 31048,
         "top": true,
-        "name": "Par de Lírios",
+        "name": "[衣装] ホワイトリリー(黒リボン)",
         "viewID": 1495
     },
     {
@@ -6610,26 +6515,21 @@
         "viewID": 1496
     },
     {
-        "mid": true,
-        "name": "Máscara do Alquimista (Variação)",
         "id": 31578,
         "bot": true,
+        "name": "Costume Alchemist Mask V",
         "viewID": 1497
     },
     {
-        "top": true,
-        "mid": true,
-        "name": "Máscara do Alquimista",
         "id": 31052,
         "bot": true,
+        "name": "Costume: Alchemist Mask",
         "viewID": 1497
     },
     {
-        "top": true,
-        "mid": true,
-        "name": "Elmo Reforçado",
         "id": 31409,
         "bot": true,
+        "name": "[Costume] Barrel Helm",
         "viewID": 1498
     },
     {
@@ -6701,109 +6601,109 @@
     {
         "id": 31071,
         "bot": true,
-        "name": "Serpentinas Azuis",
+        "name": "Costume: Roll Twin(Blue)",
         "viewID": 1511
     },
     {
         "id": 31072,
         "bot": true,
-        "name": "Serpentinas Avermelhadas",
+        "name": "Costume: Roll Twin(Red)",
         "viewID": 1512
     },
     {
         "id": 31073,
         "bot": true,
-        "name": "Serpentinas Amarelas",
+        "name": "Costume: Roll Twin(Yellow)",
         "viewID": 1513
     },
     {
         "id": 31074,
         "bot": true,
-        "name": "Serpentinas Verdes",
+        "name": "Costume: Roll Twin(Green)",
         "viewID": 1514
     },
     {
         "id": 31075,
         "bot": true,
-        "name": "Serpentinas Pretas",
+        "name": "Costume: Roll Twin(Black)",
         "viewID": 1515
     },
     {
         "id": 31076,
         "bot": true,
-        "name": "Serpentinas Brancas",
+        "name": "Costume: Roll Twin(White)",
         "viewID": 1516
     },
     {
         "id": 31077,
         "bot": true,
-        "name": "Serpentinas Marrons",
+        "name": "Costume: Roll Twin(Brown)",
         "viewID": 1517
     },
     {
         "id": 31078,
         "bot": true,
-        "name": "Serpentina Roxa",
+        "name": "Costume: Roll Twin(Purple)",
         "viewID": 1518
     },
     {
         "id": 31079,
         "bot": true,
-        "name": "Aplique Azul",
+        "name": "Costume: Long Pony(Blue)",
         "viewID": 1519
     },
     {
         "id": 31080,
         "bot": true,
-        "name": "Aplique Vermelho",
+        "name": "Costume: Long Pony(Red)",
         "viewID": 1520
     },
     {
         "id": 31081,
         "bot": true,
-        "name": "Aplique Loiro",
+        "name": "Costume: Long Pony(Yellow)",
         "viewID": 1521
     },
     {
         "id": 31082,
         "bot": true,
-        "name": "Aplique Verde",
+        "name": "Costume: Long Pony(Green)",
         "viewID": 1522
     },
     {
         "id": 31083,
         "bot": true,
-        "name": "Aplique Castanho",
+        "name": "Costume: Long Pony(Black)",
         "viewID": 1523
     },
     {
         "id": 31084,
         "bot": true,
-        "name": "Aplique Branco",
+        "name": "Costume: Long Pony(White)",
         "viewID": 1524
     },
     {
         "id": 31085,
         "bot": true,
-        "name": "Aplique Marrom",
+        "name": "Costume: Long Pony(Brown)",
         "viewID": 1525
     },
     {
         "id": 31086,
         "bot": true,
-        "name": "Aplique Roxo",
+        "name": "Costume: Long Pony(Purple)",
         "viewID": 1526
     },
     {
         "id": 400133,
         "top": true,
-        "name": "Visual do Éden",
+        "name": "Costume: Awakened Eden Group Hat",
         "viewID": 1530
     },
     {
         "id": 31093,
         "bot": true,
-        "name": "Lanterna das Fadas",
+        "name": "Costume: Lamp of Fairy",
         "viewID": 1531
     },
     {
@@ -6814,32 +6714,27 @@
     },
     {
         "id": 31108,
-        "top": true,
-        "name": "Balão de Fala (Abraços Grátis)",
+        "name": "Item #31108",
         "viewID": 1542
     },
     {
         "id": 31109,
-        "top": true,
-        "name": "Balão de Fala (Recruto para Clã)",
+        "name": "Item #31109",
         "viewID": 1543
     },
     {
         "id": 31110,
-        "top": true,
-        "name": "Balão de Fala (Procuro Grupo)",
+        "name": "Item #31110",
         "viewID": 1544
     },
     {
         "id": 31111,
-        "top": true,
-        "name": "Balão de Fala (Procuro Membros)",
+        "name": "Item #31111",
         "viewID": 1545
     },
     {
         "id": 31112,
-        "top": true,
-        "name": "Balão de Fala (Hue Hue Br)",
+        "name": "Item #31112",
         "viewID": 1546
     },
     {
@@ -6857,7 +6752,7 @@
     {
         "id": 31122,
         "mid": true,
-        "name": "Bandagem Vermelho Sangue",
+        "name": "Costume: Bloody Vicious Stop Bandage",
         "viewID": 1550
     },
     {
@@ -6869,7 +6764,7 @@
     {
         "id": 31571,
         "top": true,
-        "name": "Chipéu",
+        "name": "Costume: Guardian Processor",
         "viewID": 1552
     },
     {
@@ -6887,7 +6782,7 @@
     {
         "id": 31136,
         "top": true,
-        "name": "Boina da Torre do Relógio",
+        "name": "Costum:e Elestra's Queen Cap",
         "viewID": 1555
     },
     {
@@ -6899,7 +6794,7 @@
     {
         "id": 31139,
         "top": true,
-        "name": "Orelhas do Coelho Branco",
+        "name": "Costume: Hot Bunny",
         "viewID": 1558
     },
     {
@@ -6923,13 +6818,13 @@
     {
         "id": 31149,
         "top": true,
-        "name": "Costume Nidhogg\u0027s White Wig",
+        "name": "Costume Nidhogg's White Wig",
         "viewID": 1563
     },
     {
         "id": 31150,
         "top": true,
-        "name": "Lencinho Encantador",
+        "name": "[衣装] シャルロシーのヘッドドレス",
         "viewID": 1564
     },
     {
@@ -6941,13 +6836,13 @@
     {
         "id": 31152,
         "bot": true,
-        "name": "Lacinho Vermelho da Piamette",
+        "name": "[Costume] Piamette's Red Bow Tie",
         "viewID": 1566
     },
     {
         "id": 31153,
         "top": true,
-        "name": "Mini Cartolinha",
+        "name": "[衣装] 怪盗アニバーサリーⅡ世帽",
         "viewID": 1567
     },
     {
@@ -6987,17 +6882,15 @@
         "viewID": 1575
     },
     {
-        "top": true,
-        "mid": true,
-        "name": "Costume Roast Memory",
         "id": 31172,
         "bot": true,
+        "name": "Costume Roast Memory",
         "viewID": 1576
     },
     {
         "id": 31176,
         "top": true,
-        "name": "Boina de Ursinho",
+        "name": "Costume: Always Watching",
         "viewID": 1577
     },
     {
@@ -7032,8 +6925,8 @@
     },
     {
         "id": 31187,
-        "mid": true,
-        "name": "Laço da Princesa Guerreira",
+        "top": true,
+        "name": "Costume: War Princess Ribbon",
         "viewID": 1583
     },
     {
@@ -7045,19 +6938,19 @@
     {
         "id": 31190,
         "top": true,
-        "name": "Cartolinha das Valquírias",
+        "name": "Costume: Angel's Black Mini Silk Hat",
         "viewID": 1586
     },
     {
         "id": 31506,
         "top": true,
-        "name": "Touca de Malangdo",
+        "name": "Pack Smokie Egg",
         "viewID": 1587
     },
     {
         "id": 31191,
         "top": true,
-        "name": "Orelhas de Doram",
+        "name": "Costume: Golden Kitten Ears",
         "viewID": 1588
     },
     {
@@ -7075,13 +6968,13 @@
     {
         "id": 15847,
         "top": true,
-        "name": "Boné Alado",
+        "name": "[衣装] 未知の羽帽子",
         "viewID": 1597
     },
     {
         "id": 31197,
         "top": true,
-        "name": "Chapéu das Areias",
+        "name": "Costume: Egg Crispinette",
         "viewID": 1598
     },
     {
@@ -7093,7 +6986,7 @@
     {
         "id": 31201,
         "top": true,
-        "name": "Coroa da Grandeza",
+        "name": "Costume: Royal Rabbit Crown",
         "viewID": 1600
     },
     {
@@ -7111,171 +7004,169 @@
     {
         "id": 31208,
         "bot": true,
-        "name": "Cabelo Longo Loiro",
+        "name": "Costume: Straight Long (Yellow)",
         "viewID": 1603
     },
     {
         "id": 31209,
         "bot": true,
-        "name": "Cabelo Longo Branco",
+        "name": "Costume: Straight Long (White)",
         "viewID": 1604
     },
     {
         "id": 31210,
         "bot": true,
-        "name": "Trança de Azulzinha",
+        "name": "Costume: Side Pigtail (Blue)",
         "viewID": 1605
     },
     {
         "id": 31211,
         "bot": true,
-        "name": "Trança de Camélia",
+        "name": "Costume: Side Pigtail (Red)",
         "viewID": 1606
     },
     {
         "id": 31212,
         "bot": true,
-        "name": "Trança de Calêndula",
+        "name": "Costume: Side Pigtail (Yellow)",
         "viewID": 1607
     },
     {
         "id": 31213,
         "bot": true,
-        "name": "Trança de Onze-horas",
+        "name": "Costume: Side Pigtail (Green)",
         "viewID": 1608
     },
     {
         "id": 31214,
         "bot": true,
-        "name": "Trança de Flor Morcego",
+        "name": "Costume: Side Pigtail (Black)",
         "viewID": 1609
     },
     {
         "id": 31215,
         "bot": true,
-        "name": "Trança de Magnólia",
+        "name": "Costume: Side Pigtail (White)",
         "viewID": 1610
     },
     {
         "id": 31216,
         "bot": true,
-        "name": "Trança de Margarida",
+        "name": "Costume: Side Pigtail (Brown)",
         "viewID": 1611
     },
     {
         "id": 31217,
         "bot": true,
-        "name": "Trança de Violeta",
+        "name": "Costume: Side Pigtail (Purple)",
         "viewID": 1612
     },
     {
         "id": 31218,
         "bot": true,
-        "name": "Rabo de Unicórnio Céu",
+        "name": "Costume: Low Pony (Blue)",
         "viewID": 1613
     },
     {
         "id": 31219,
         "bot": true,
-        "name": "Rabo de Unicórnio Rubi",
+        "name": "Costume: Low Pony (Red)",
         "viewID": 1614
     },
     {
         "id": 31220,
         "bot": true,
-        "name": "Rabo de Unicórnio Ouro",
+        "name": "Costume: Low Pony (Yellow)",
         "viewID": 1615
     },
     {
         "id": 31221,
         "bot": true,
-        "name": "Rabo de Unicórnio Limão",
+        "name": "Costume: Low Pony (Green)",
         "viewID": 1616
     },
     {
         "id": 31222,
         "bot": true,
-        "name": "Rabo de Unicórnio Choco",
+        "name": "Costume: Low Pony (Black)",
         "viewID": 1617
     },
     {
         "id": 31223,
         "bot": true,
-        "name": "Rabo de Unicórnio Neve",
+        "name": "Costume: Low Pony (White)",
         "viewID": 1618
     },
     {
         "id": 31224,
         "bot": true,
-        "name": "Rabo de Unicórnio Bronze",
+        "name": "Costume: Low Pony (Brown)",
         "viewID": 1619
     },
     {
         "id": 31225,
         "bot": true,
-        "name": "Rabo de Unicórnio Lilás",
+        "name": "Costume: Low Pony (Purple)",
         "viewID": 1620
     },
     {
         "id": 31226,
         "bot": true,
-        "name": "Peruca Miku Royal",
+        "name": "Costume: Long Twin (Blue)",
         "viewID": 1621
     },
     {
         "id": 31227,
         "bot": true,
-        "name": "Peruca Miku Ruiva",
+        "name": "Costume: Long Twin (Red)",
         "viewID": 1622
     },
     {
         "id": 31228,
         "bot": true,
-        "name": "Peruca Miku Dourada",
+        "name": "Costume: Long Twin (Yellow)",
         "viewID": 1623
     },
     {
         "id": 31229,
         "bot": true,
-        "name": "Peruca Miku Capim",
+        "name": "Costume: Long Twin (Green)",
         "viewID": 1624
     },
     {
         "id": 31230,
         "bot": true,
-        "name": "Peruca Miku Petróleo",
+        "name": "Costume: Long Twin (Black)",
         "viewID": 1625
     },
     {
         "id": 31231,
         "bot": true,
-        "name": "Peruca Miku Platinada",
+        "name": "Costume: Long Twin (White)",
         "viewID": 1626
     },
     {
         "id": 31232,
         "bot": true,
-        "name": "Peruca Miku Castanha",
+        "name": "Costume: Long Twin (Brown)",
         "viewID": 1627
     },
     {
         "id": 31233,
         "bot": true,
-        "name": "Peruca Miku Violeta",
+        "name": "Costume: Long Twin (Purple)",
         "viewID": 1628
     },
     {
         "id": 31559,
         "bot": true,
-        "name": "Símbolo da Proteção",
+        "name": "Costume: Royal Guard Necklace",
         "viewID": 1629
     },
     {
-        "top": true,
-        "mid": true,
-        "name": "Costume Red Horse King",
         "id": 31254,
         "bot": true,
+        "name": "Costume Red Horse King",
         "viewID": 1631
     },
     {
@@ -7287,7 +7178,7 @@
     {
         "id": 31542,
         "mid": true,
-        "name": "Vaso do Poring Saltitante",
+        "name": "Costume: Clay Poring Jar",
         "viewID": 1634
     },
     {
@@ -7299,7 +7190,7 @@
     {
         "id": 31250,
         "mid": true,
-        "name": "Orelhas de Monstrengo",
+        "name": "Costume: Wonderful Beast Ears",
         "viewID": 1636
     },
     {
@@ -7317,7 +7208,7 @@
     {
         "id": 31260,
         "mid": true,
-        "name": "Rastreador Sofisticado",
+        "name": "[Costume] Super Observer",
         "viewID": 1639
     },
     {
@@ -7329,19 +7220,19 @@
     {
         "id": 31597,
         "top": true,
-        "name": "Chapéu de Peixinho",
+        "name": "Costume: Golden Fish Hat",
         "viewID": 1645
     },
     {
         "id": 400426,
         "top": true,
-        "name": "Touca de Transformacento",
+        "name": "Costume: Smokie Transform Hat",
         "viewID": 1646
     },
     {
         "id": 31293,
         "top": true,
-        "name": "Coroa de Pétalas de Lavanda",
+        "name": "[衣装] 古王の王冠(紫)",
         "viewID": 1651
     },
     {
@@ -7359,7 +7250,7 @@
     {
         "id": 31482,
         "mid": true,
-        "name": "Cachecol de Lunático",
+        "name": "Costume: Lunatic Muffler",
         "viewID": 1656
     },
     {
@@ -7443,19 +7334,19 @@
     {
         "id": 31330,
         "bot": true,
-        "name": "Laço Alado",
+        "name": "Costume: Fallen Angel Valletta",
         "viewID": 1674
     },
     {
         "id": 31331,
         "top": true,
-        "name": "Bao-Bao da Donzela Verde",
+        "name": "Costume: Chung E Shinyon Cap",
         "viewID": 1675
     },
     {
         "id": 31332,
         "top": true,
-        "name": "Elmo Negro da Khalitzburg",
+        "name": "Costume: Black Khalitzburg Knight Helm",
         "viewID": 1676
     },
     {
@@ -7467,7 +7358,7 @@
     {
         "id": 31762,
         "bot": true,
-        "name": "Ás de Copas",
+        "name": "Costume: Gambler Card",
         "viewID": 1679
     },
     {
@@ -7485,7 +7376,7 @@
     {
         "id": 31383,
         "bot": true,
-        "name": "Peruca Azul de Waifu",
+        "name": "Costume: Volume Low Twin",
         "viewID": 1683
     },
     {
@@ -7509,7 +7400,7 @@
     {
         "id": 31389,
         "top": true,
-        "name": "Rosas Aladas de Hermes",
+        "name": "White Bird Rose",
         "viewID": 1688
     },
     {
@@ -7540,7 +7431,7 @@
     {
         "id": 31399,
         "bot": true,
-        "name": "Véu da Madrugada",
+        "name": "Costume: Darkness Veil",
         "viewID": 1694
     },
     {
@@ -7552,7 +7443,7 @@
     {
         "id": 31532,
         "mid": true,
-        "name": "Presilha Maravilha",
+        "name": "Costume: Neev Barrette",
         "viewID": 1696
     },
     {
@@ -7564,31 +7455,31 @@
     {
         "id": 31402,
         "top": true,
-        "name": "Coroa de Maçã Verde",
+        "name": "Costume: Green Apple Flavour",
         "viewID": 1698
     },
     {
         "id": 31403,
         "mid": true,
-        "name": "Sinal Japonês",
+        "name": "Costume Wall",
         "viewID": 1699
     },
     {
         "id": 31404,
         "bot": true,
-        "name": "Semaforing",
+        "name": "Costume: Poring's Traffic",
         "viewID": 1700
     },
     {
         "id": 31405,
         "top": true,
-        "name": "Costume Eleanor\u0027s Yellow Wig",
+        "name": "Costume Eleanor's Yellow Wig",
         "viewID": 1701
     },
     {
         "id": 31406,
         "top": true,
-        "name": "Costume Nidhog\u0027s White Wig",
+        "name": "Costume Nidhog's White Wig",
         "viewID": 1702
     },
     {
@@ -7612,13 +7503,12 @@
     {
         "id": 31438,
         "bot": true,
-        "top": true,
         "name": "Costume Fluffy Angel Cape",
         "viewID": 1706
     },
     {
         "id": 31439,
-        "mid": true,
+        "top": true,
         "name": "Costume Fluffy Heart Earmuffs",
         "viewID": 1707
     },
@@ -7631,31 +7521,31 @@
     {
         "id": 31441,
         "top": true,
-        "name": "Chapinguim",
+        "name": "Costume: Penguin Cap",
         "viewID": 1709
     },
     {
         "id": 31445,
         "top": true,
-        "name": "Fedora de Comodo",
+        "name": "Costume: Muzik Hat",
         "viewID": 1710
     },
     {
         "id": 31596,
         "top": true,
-        "name": "Chapéu Biológico",
+        "name": "Costume: Spider Seduction",
         "viewID": 1711
     },
     {
         "id": 31449,
         "mid": true,
-        "name": "Tapa-Olho Floreado",
+        "name": "Costume: Blue Rose Eyepatch",
         "viewID": 1712
     },
     {
         "id": 31450,
         "bot": true,
-        "name": "Peruca Rosa de Waifu",
+        "name": "Costume Lolita Two Side Up",
         "viewID": 1713
     },
     {
@@ -7683,10 +7573,9 @@
         "viewID": 1717
     },
     {
-        "mid": true,
-        "name": "Costume Enchanted Dog",
         "id": 31455,
         "bot": true,
+        "name": "Costume Enchanted Dog",
         "viewID": 1718
     },
     {
@@ -7698,13 +7587,13 @@
     {
         "id": 15841,
         "top": true,
-        "name": "Capacete com Visores",
+        "name": "Costume Goggles Hat",
         "viewID": 1721
     },
     {
         "id": 31465,
         "top": true,
-        "name": "Cartola de Ovos",
+        "name": "Costume: Robin Egg Minihat",
         "viewID": 1722
     },
     {
@@ -7722,19 +7611,19 @@
     {
         "id": 31474,
         "top": true,
-        "name": "Cabelo Longo Preto",
+        "name": "Costume: Straight Long (Black)",
         "viewID": 1725
     },
     {
         "id": 31475,
         "top": true,
-        "name": "Orelhas da Raposa Astuta",
+        "name": "Costume: Black Fox Ear Ribbon",
         "viewID": 1726
     },
     {
         "id": 31476,
         "top": true,
-        "name": "Chapéu do Desabrochar",
+        "name": "Costume Yellow Cherry Blossom Hat",
         "viewID": 1727
     },
     {
@@ -7746,13 +7635,12 @@
     {
         "id": 31732,
         "bot": true,
-        "name": "Balão do Urso Carinhoso",
+        "name": "Costume Teddy Bear Balloon",
         "viewID": 1734
     },
     {
         "id": 400108,
-        "top": true,
-        "name": "Boina de Roleta",
+        "name": "[衣装] 運命のルーレット帽",
         "viewID": 1735
     },
     {
@@ -7764,13 +7652,13 @@
     {
         "id": 31489,
         "top": true,
-        "name": "Chapéu de Ramalhete",
+        "name": "Costume: Bouquet Hat",
         "viewID": 1739
     },
     {
         "id": 31490,
         "bot": true,
-        "name": "Cachecol de Poring",
+        "name": "Costume: Poring Muffler",
         "viewID": 1740
     },
     {
@@ -7782,13 +7670,13 @@
     {
         "id": 31492,
         "bot": true,
-        "name": "Ombreiras Felinas",
+        "name": "Costume: Coffee Cat Ear Cape",
         "viewID": 1742
     },
     {
         "id": 31493,
         "bot": true,
-        "name": "Peruca Branca de Waifu",
+        "name": "Costume: Minty's Hairstyle (Pearl)",
         "viewID": 1743
     },
     {
@@ -7806,13 +7694,13 @@
     {
         "id": 31630,
         "bot": true,
-        "name": "Paraquedas dos Baphomet Jrs.",
+        "name": "[衣装] バフォメットバルーン",
         "viewID": 1746
     },
     {
         "id": 31503,
         "bot": true,
-        "name": "Deviling de Estimação",
+        "name": "Item #31503",
         "viewID": 1750
     },
     {
@@ -7830,7 +7718,7 @@
     {
         "id": 31511,
         "bot": true,
-        "name": "Peruca Longa de Gatinho",
+        "name": "Costume: Long Haired Cat Ears",
         "viewID": 1753
     },
     {
@@ -7848,13 +7736,13 @@
     {
         "id": 31514,
         "mid": true,
-        "name": "Gata de Pelo Curto",
+        "name": "[Costume] American Shorthair Cat",
         "viewID": 1756
     },
     {
         "id": 31515,
         "mid": true,
-        "name": "Gatinho Curioso",
+        "name": "Costume: Bengal Cat",
         "viewID": 1757
     },
     {
@@ -7896,13 +7784,13 @@
     {
         "id": 31524,
         "top": true,
-        "name": "Marmita Equilibrista",
+        "name": "Costume: Hand-made bento hat",
         "viewID": 1766
     },
     {
         "id": 31529,
         "top": true,
-        "name": "Laçarote das Orelhas Pontudas",
+        "name": "Costume: Happy Rabbit Ribbon",
         "viewID": 1769
     },
     {
@@ -7920,13 +7808,13 @@
     {
         "id": 31543,
         "top": true,
-        "name": "Chapéu de Urso",
+        "name": "Costume: Siorava Hat",
         "viewID": 1774
     },
     {
         "id": 31544,
         "bot": true,
-        "name": "Peruca da Piamette",
+        "name": "Costume: Piamette's Curls",
         "viewID": 1775
     },
     {
@@ -7938,7 +7826,7 @@
     {
         "id": 31546,
         "top": true,
-        "name": "Boina do Guia do Relógio",
+        "name": "Costume: Clockwork Cap",
         "viewID": 1777
     },
     {
@@ -7950,29 +7838,24 @@
     {
         "id": 15382,
         "top": true,
-        "name": "Tiara Qixiqué",
+        "name": "Item #15382",
         "viewID": 1780
     },
     {
-        "top": true,
-        "mid": true,
-        "name": "Gálea de Prata",
         "id": 31557,
         "bot": true,
+        "name": "[Costume] Hoplite Helmet Silver",
         "viewID": 1781
     },
     {
-        "top": true,
-        "mid": true,
-        "name": "Gálea de Bronze",
         "id": 31558,
-        "bot": true,
+        "name": "Costume: Hoplite Helmet Black",
         "viewID": 1782
     },
     {
         "id": 31567,
         "mid": true,
-        "name": "Chifres de Ovelhinha",
+        "name": "Costume: Sheep's Horns",
         "viewID": 1783
     },
     {
@@ -7984,7 +7867,7 @@
     {
         "id": 31564,
         "top": true,
-        "name": "Véu do Submundo",
+        "name": "Costume: Variant Veil",
         "viewID": 1785
     },
     {
@@ -8033,7 +7916,7 @@
     {
         "id": 31585,
         "bot": true,
-        "name": "Cachecol de Drops",
+        "name": "Costume: Drops Muffler",
         "viewID": 1796
     },
     {
@@ -8063,13 +7946,13 @@
     {
         "id": 31598,
         "top": true,
-        "name": "Chapéu Natureba",
+        "name": "Costume: Forest Guide",
         "viewID": 1802
     },
     {
         "id": 31599,
         "bot": true,
-        "name": "Peruca Bronze de Waifu",
+        "name": "Costume: Medium Wave",
         "viewID": 1803
     },
     {
@@ -8085,16 +7968,15 @@
         "viewID": 1805
     },
     {
-        "mid": true,
-        "name": "Costume Master Cat",
         "id": 19424,
         "bot": true,
+        "name": "Costume Master Cat",
         "viewID": 1806
     },
     {
         "id": 31602,
         "top": true,
-        "name": "Brasão de Midgard",
+        "name": "Costume: Glory of Rune Midgard",
         "viewID": 1807
     },
     {
@@ -8106,7 +7988,7 @@
     {
         "id": 31814,
         "mid": true,
-        "name": "Balões Lunáticos",
+        "name": "Costume: Lunatic Family Balloon",
         "viewID": 1809
     },
     {
@@ -8118,7 +8000,7 @@
     {
         "id": 31612,
         "top": true,
-        "name": "Coroa Chamativa",
+        "name": "Costume: Great Magician's Ceremonial Crown",
         "viewID": 1811
     },
     {
@@ -8130,7 +8012,7 @@
     {
         "id": 31615,
         "mid": true,
-        "name": "Olhos de Gueixa",
+        "name": "Costume: Geisha Make Up",
         "viewID": 1813
     },
     {
@@ -8142,7 +8024,7 @@
     {
         "id": 31617,
         "mid": true,
-        "name": "Pelúcia de Lady Tanee",
+        "name": "Costume: Lady Tanee",
         "viewID": 1815
     },
     {
@@ -8160,7 +8042,7 @@
     {
         "id": 31721,
         "top": true,
-        "name": "Tambores de Invocação",
+        "name": "Costume Resonate Taego",
         "viewID": 1823
     },
     {
@@ -8178,169 +8060,169 @@
     {
         "id": 15838,
         "top": true,
-        "name": "Proteção de Vesper",
+        "name": "Costume Vesper Headgear",
         "viewID": 1827
     },
     {
         "id": 31911,
         "mid": true,
-        "name": "Jardim Miniatura",
+        "name": "Costume: Little Garden",
         "viewID": 1830
     },
     {
         "id": 31635,
         "bot": true,
-        "name": "Mechas Onduladas Loiras",
+        "name": "Costume: Flowing Long (Blonde)",
         "viewID": 1832
     },
     {
         "id": 31636,
         "bot": true,
-        "name": "Mechas Onduladas Pratas",
+        "name": "Costume: Flowing Long (Silver)",
         "viewID": 1833
     },
     {
         "id": 31637,
         "bot": true,
-        "name": "Penteado Longo Azul",
+        "name": "Costume: Straight Long (Blue)",
         "viewID": 1834
     },
     {
         "id": 31638,
         "bot": true,
-        "name": "Penteado Longo Vermelho",
+        "name": "Costume: Straight Long (Red)",
         "viewID": 1835
     },
     {
         "id": 31639,
         "bot": true,
-        "name": "Penteado Longo Loiro",
+        "name": "Costume: Straight Long (Blonde)",
         "viewID": 1836
     },
     {
         "id": 31640,
         "bot": true,
-        "name": "Penteado Longo Verde",
+        "name": "Costume: Straight Long (Green)",
         "viewID": 1837
     },
     {
         "id": 31641,
         "bot": true,
-        "name": "Penteado Longo Preto",
+        "name": "Costume: Straight Long (Jet Black)",
         "viewID": 1838
     },
     {
         "id": 31642,
         "bot": true,
-        "name": "Penteado Longo Platinado",
+        "name": "Costume: Straight Long (Light Purple)",
         "viewID": 1839
     },
     {
         "id": 31643,
         "bot": true,
-        "name": "Penteado Longo Castanho",
+        "name": "Costume: Straight Long (Brown)",
         "viewID": 1840
     },
     {
         "id": 31644,
         "bot": true,
-        "name": "Penteado Longo Roxo",
+        "name": "Costume: Straight Long (Purple)",
         "viewID": 1841
     },
     {
         "id": 31645,
         "bot": true,
-        "name": "Aplique lateral Safira",
+        "name": "Costume: Side Pony (Blue)",
         "viewID": 1842
     },
     {
         "id": 31646,
         "bot": true,
-        "name": "Aplique lateral Âmbar",
+        "name": "Costume: Side Pony (Red)",
         "viewID": 1843
     },
     {
         "id": 31647,
         "bot": true,
-        "name": "Aplique lateral Citrino",
+        "name": "Costume: Side Pony (Blonde)",
         "viewID": 1844
     },
     {
         "id": 31648,
         "bot": true,
-        "name": "Aplique lateral Peridote",
+        "name": "Costume: Side Pony (Green)",
         "viewID": 1845
     },
     {
         "id": 31649,
         "bot": true,
-        "name": "Aplique lateral Jasper",
+        "name": "Costume: Side Pony (Black)",
         "viewID": 1846
     },
     {
         "id": 31650,
         "bot": true,
-        "name": "Aplique lateral Pérola",
+        "name": "Costume: Side Pony (White)",
         "viewID": 1847
     },
     {
         "id": 31651,
         "bot": true,
-        "name": "Aplique lateral Topaz",
+        "name": "Costume: Side Pony (Brown)",
         "viewID": 1848
     },
     {
         "id": 31652,
         "bot": true,
-        "name": "Aplique lateral Ametista",
+        "name": "Costume: Side Pony (Purple)",
         "viewID": 1849
     },
     {
         "id": 31653,
         "bot": true,
-        "name": "Coque Veraneio Bleu",
+        "name": "Costume: Chignon (Blue)",
         "viewID": 1850
     },
     {
         "id": 31654,
         "bot": true,
-        "name": "Coque Veraneio Rouge",
+        "name": "Costume: Chignon (Red)",
         "viewID": 1851
     },
     {
         "id": 31655,
         "bot": true,
-        "name": "Coque Veraneio Jaune",
+        "name": "Costume: Chignon (Blonde)",
         "viewID": 1852
     },
     {
         "id": 31656,
         "bot": true,
-        "name": "Coque Veraneio Vert",
+        "name": "Costume: Chignon (Green)",
         "viewID": 1853
     },
     {
         "id": 31657,
         "bot": true,
-        "name": "Coque Veraneio Noir",
+        "name": "Costume: Chignon (Black)",
         "viewID": 1854
     },
     {
         "id": 31658,
         "bot": true,
-        "name": "Coque Veraneio Blanc",
+        "name": "Costume: Chignon (White)",
         "viewID": 1855
     },
     {
         "id": 31659,
         "bot": true,
-        "name": "Coque Veraneio Brunne",
+        "name": "Costume: Chignon (Brown)",
         "viewID": 1856
     },
     {
         "id": 31660,
         "bot": true,
-        "name": "Coque Veraneio Violette",
+        "name": "Costume: Chignon (Purple)",
         "viewID": 1857
     },
     {
@@ -8358,7 +8240,7 @@
     {
         "id": 31671,
         "bot": true,
-        "name": "Canhões Gêmeos",
+        "name": "Costume: Twin Cannons",
         "viewID": 1865
     },
     {
@@ -8380,16 +8262,14 @@
         "viewID": 1868
     },
     {
-        "mid": true,
-        "name": "Porquinho",
         "id": 21202,
         "bot": true,
+        "name": "Costume: Eat Coin",
         "viewID": 1869
     },
     {
         "id": 31694,
-        "bot": true,
-        "name": "Cartão Vermelho dos Porings",
+        "name": "Costume: Poring Letter",
         "viewID": 1870
     },
     {
@@ -8413,7 +8293,7 @@
     {
         "id": 31688,
         "mid": true,
-        "name": "Poring de Bolso",
+        "name": "Costume: Poring on Shoulder",
         "viewID": 1877
     },
     {
@@ -8437,7 +8317,7 @@
     {
         "id": 19459,
         "bot": true,
-        "name": "Bebê Lunático",
+        "name": "Costume: Lunatic on Shoulder",
         "viewID": 1881
     },
     {
@@ -8449,7 +8329,7 @@
     {
         "id": 31700,
         "bot": true,
-        "name": "Cachecol dos Corajosos",
+        "name": "Costume Hero Scarf",
         "viewID": 1882
     },
     {
@@ -8461,7 +8341,7 @@
     {
         "id": 31707,
         "top": true,
-        "name": "Peruca de Youkai",
+        "name": "의상 구미호 가발",
         "viewID": 1884
     },
     {
@@ -8479,13 +8359,13 @@
     {
         "id": 31717,
         "bot": true,
-        "name": "Peruca Loira Ondulada",
+        "name": "Costume: Medium Wave (Yellow)",
         "viewID": 1889
     },
     {
         "id": 31719,
         "bot": true,
-        "name": "Dobra de Fogo",
+        "name": "Costume Cons of Fire",
         "viewID": 1890
     },
     {
@@ -8497,13 +8377,13 @@
     {
         "id": 31730,
         "bot": true,
-        "name": "Peruca de Waifu Creme",
+        "name": "Costume: Minty's Hairstyle (Peach)",
         "viewID": 1894
     },
     {
         "id": 31736,
         "top": true,
-        "name": "Peruca de Pipoca",
+        "name": "Costume Blazing Popcorn Hat",
         "viewID": 1895
     },
     {
@@ -8521,31 +8401,31 @@
     {
         "id": 31947,
         "mid": true,
-        "name": "Chifres Rochosos",
+        "name": "Costume: Motaro Horn",
         "viewID": 1898
     },
     {
         "id": 31733,
         "top": true,
-        "name": "Cartola Ilusória",
+        "name": "Costume: Phantom's Mask",
         "viewID": 1899
     },
     {
         "id": 31734,
-        "top": true,
-        "name": "Laço de Frutas",
+        "mid": true,
+        "name": "Costume: Citrus Colored Ribbon",
         "viewID": 1900
     },
     {
         "id": 31735,
         "bot": true,
-        "name": "Gargalheira de Yawata",
+        "name": "Costume: Yawata Seal",
         "viewID": 1901
     },
     {
         "id": 31765,
         "top": true,
-        "name": "Tiara Adornada com Rubi",
+        "name": "Costume: Garnet Tiara",
         "viewID": 1906
     },
     {
@@ -8557,19 +8437,19 @@
     {
         "id": 31787,
         "mid": true,
-        "name": "Porquinho de Ombro",
+        "name": "Costume: Savage Shoulder Bebe",
         "viewID": 1915
     },
     {
         "id": 31788,
         "bot": true,
-        "name": "Peruca Prateada da Piamette",
+        "name": "Costume: Piamette Doll Hair (Silver)",
         "viewID": 1916
     },
     {
         "id": 31884,
         "top": true,
-        "name": "Elmo de Dragão Roxo",
+        "name": "Costume: Magic Helm",
         "viewID": 1917
     },
     {
@@ -8611,7 +8491,7 @@
     {
         "id": 31818,
         "top": true,
-        "name": "O Melhor Jogador",
+        "name": "Costume Top Player",
         "viewID": 1930
     },
     {
@@ -8647,49 +8527,49 @@
     {
         "id": 31832,
         "top": true,
-        "name": "Chapéu da Bruxa Felina",
+        "name": "Costume: Witch's Cat Hat",
         "viewID": 1938
     },
     {
         "id": 31833,
         "bot": true,
-        "name": "Peruca Curta de Gatinha Má",
+        "name": "Costume: Halloween Cat Short",
         "viewID": 1939
     },
     {
         "id": 31834,
         "bot": true,
-        "name": "Penteado Coque Duplo",
+        "name": "의상 할로윈 고양이귀 롱",
         "viewID": 1940
     },
     {
         "id": 31840,
         "top": true,
-        "name": "Fones de Telemarketing",
+        "name": "Costume: DJ Headset",
         "viewID": 1942
     },
     {
         "id": 31841,
         "top": true,
-        "name": "Fone da Curtição",
+        "name": "Costume: OnAir BJ Headset",
         "viewID": 1943
     },
     {
         "id": 31846,
         "bot": true,
-        "name": "Penteado Duplo Laço",
+        "name": "Costume: Hair Ribbon Wig",
         "viewID": 1944
     },
     {
         "id": 31847,
         "mid": true,
-        "name": "Pupilas Azuladas",
+        "name": "Costume: Blinking Blue Eyes",
         "viewID": 1945
     },
     {
         "id": 31848,
         "top": true,
-        "name": "Gorro de Rosas",
+        "name": "Costume: Gothic Rose Bonnet",
         "viewID": 1946
     },
     {
@@ -8701,7 +8581,7 @@
     {
         "id": 31850,
         "top": true,
-        "name": "Chapéu Exuberante",
+        "name": "Costume: Gift of Panagia",
         "viewID": 1948
     },
     {
@@ -8713,7 +8593,7 @@
     {
         "id": 31852,
         "bot": true,
-        "name": "Manto de Lacinho",
+        "name": "Costume: Onpu Witch Cape",
         "viewID": 1950
     },
     {
@@ -8725,121 +8605,121 @@
     {
         "id": 400046,
         "top": true,
-        "name": "Maçã Flechada",
+        "name": "Costume: Pierced Apple",
         "viewID": 1952
     },
     {
         "id": 31855,
         "bot": true,
-        "name": "Penteado Arrumadinho",
+        "name": "Costume: Mushroom Hair",
         "viewID": 1953
     },
     {
         "id": 31856,
         "bot": true,
-        "name": "Peruca da Corte",
+        "name": "Costume: Airy Twin Tails (Blonde)",
         "viewID": 1954
     },
     {
         "id": 31857,
         "bot": true,
-        "name": "Peruca Lilás da Corte",
+        "name": "의상 에어리 투 사이드 업(은발)",
         "viewID": 1955
     },
     {
         "id": 31858,
         "bot": true,
-        "name": "Aplique Duplo Azul",
+        "name": "Costume: Sailor Hairstyle (Navy)",
         "viewID": 1956
     },
     {
         "id": 31859,
         "bot": true,
-        "name": "Aplique Duplo Vermelho",
+        "name": "Costume: Sailor Hairstyle (Rose)",
         "viewID": 1957
     },
     {
         "id": 31860,
         "bot": true,
-        "name": "Aplique Duplo Amarelo",
+        "name": "Costume: Sailor Hairstyle (Cream)",
         "viewID": 1958
     },
     {
         "id": 31861,
         "bot": true,
-        "name": "Aplique Duplo Verde",
+        "name": "Costume: Sailor Hairstyle (Lime)",
         "viewID": 1959
     },
     {
         "id": 31862,
         "bot": true,
-        "name": "Aplique Duplo Preto",
+        "name": "Costume: Sailor Hairstyle (Cacao)",
         "viewID": 1960
     },
     {
         "id": 31863,
         "bot": true,
-        "name": "Aplique Duplo Branco",
+        "name": "Costume: Sailor Hairstyle (Pearl)",
         "viewID": 1961
     },
     {
         "id": 31864,
         "bot": true,
-        "name": "Aplique Duplo Marrom",
+        "name": "Costume: Sailor Hairstyle (Milk Tea)",
         "viewID": 1962
     },
     {
         "id": 31865,
         "bot": true,
-        "name": "Aplique Duplo Roxo",
+        "name": "Costume: Sailor Hairstyle (Taro)",
         "viewID": 1963
     },
     {
         "id": 31866,
         "bot": true,
-        "name": "Tiara de Trança Azul",
+        "name": "Costume: Pretzel Hairstyle (Navy)",
         "viewID": 1964
     },
     {
         "id": 31867,
         "bot": true,
-        "name": "Tiara de Trança Ruiva",
+        "name": "Costume: Pretzel Hairstyle (Rose)",
         "viewID": 1965
     },
     {
         "id": 31868,
         "bot": true,
-        "name": "Tiara de Trança Loira",
+        "name": "Costume: Pretzel Hairstyle (Cream)",
         "viewID": 1966
     },
     {
         "id": 31869,
         "bot": true,
-        "name": "Tiara de Trança Verde",
+        "name": "Costume: Pretzel Hairstyle (Lime)",
         "viewID": 1967
     },
     {
         "id": 31870,
         "bot": true,
-        "name": "Tiara de Trança Preta",
+        "name": "Costume: Pretzel Hairstyle (Cacao)",
         "viewID": 1968
     },
     {
         "id": 31871,
         "bot": true,
-        "name": "Tiara de Trança Branca",
+        "name": "Costume: Pretzel Hairstyle (Pearl)",
         "viewID": 1969
     },
     {
         "id": 31872,
         "bot": true,
-        "name": "Tiara de Trança Marrom",
+        "name": "Costume: Pretzel Hairstyle (Milk Tea)",
         "viewID": 1970
     },
     {
         "id": 31873,
         "bot": true,
-        "name": "Tiara de Trança Roxa",
+        "name": "Costume: Pretzel Hairstyle (Taro)",
         "viewID": 1971
     },
     {
@@ -8891,11 +8771,9 @@
         "viewID": 1979
     },
     {
-        "top": true,
-        "mid": true,
-        "name": "Felina Cauda-Longa",
         "id": 440002,
         "bot": true,
+        "name": "Costume: Happy Cat",
         "viewID": 1980
     },
     {
@@ -8913,25 +8791,25 @@
     {
         "id": 31905,
         "bot": true,
-        "name": "Peruca das Asinhas Celestes",
+        "name": "Costume Ice Tails",
         "viewID": 1983
     },
     {
         "id": 31906,
         "top": true,
-        "name": "Gorro do Gatinho Amoroso",
+        "name": "Costume: Cat's Paw Knit Hat",
         "viewID": 1984
     },
     {
         "id": 31907,
         "top": true,
-        "name": "Capuz Felino",
+        "name": "Costume: Cat's Paw Knit Hat (Brown)",
         "viewID": 1985
     },
     {
         "id": 31915,
         "bot": true,
-        "name": "Peruca Espiralizada",
+        "name": "Costume: Sweet Coronet",
         "viewID": 1987
     },
     {
@@ -8942,13 +8820,12 @@
     },
     {
         "id": 400057,
-        "bot": true,
-        "name": "Peruca da Lótus Vermelha",
+        "top": true,
+        "name": "Costume: Red Lotus Demon Wig",
         "viewID": 1989
     },
     {
         "id": 400056,
-        "top": true,
         "bot": true,
         "name": "Costume Blue Wavy Hair",
         "viewID": 1990
@@ -8956,19 +8833,19 @@
     {
         "id": 31950,
         "top": true,
-        "name": "Cabeção de Esquilo",
+        "name": "Costume: Alvin's Chipmunk",
         "viewID": 1991
     },
     {
         "id": 31921,
         "bot": true,
-        "name": "Peruca Natural",
+        "name": "Costume: Choa Hairstyle (Peach)",
         "viewID": 1992
     },
     {
         "id": 31922,
         "bot": true,
-        "name": "Cabelo Ondulado Lilás",
+        "name": "C Fluffy Semi-Long Hair(Silver)",
         "viewID": 1993
     },
     {
@@ -8985,7 +8862,6 @@
     },
     {
         "id": 410005,
-        "top": true,
         "mid": true,
         "name": "Costume Magic Heir",
         "viewID": 1996
@@ -8993,7 +8869,7 @@
     {
         "id": 410006,
         "top": true,
-        "name": "?? ???",
+        "name": "Costume: Rolling Money",
         "viewID": 1997
     },
     {
@@ -9005,7 +8881,7 @@
     {
         "id": 400073,
         "top": true,
-        "name": "Pétalas de Rosa",
+        "name": "Costume: Romantic Rose",
         "viewID": 1999
     },
     {
@@ -9023,7 +8899,7 @@
     {
         "id": 31931,
         "mid": true,
-        "name": "Lentes Intelectuais",
+        "name": "Costume: Supreme Glasses",
         "viewID": 2001
     },
     {
@@ -9041,7 +8917,7 @@
     {
         "id": 31934,
         "mid": true,
-        "name": "Pupilas Púrpuras",
+        "name": "Costume: Flashing Purple Eyes",
         "viewID": 2004
     },
     {
@@ -9053,7 +8929,7 @@
     {
         "id": 31938,
         "bot": true,
-        "name": "Peruca de Trança Dupla",
+        "name": "Costume: Long Twin Braids",
         "viewID": 2007
     },
     {
@@ -9065,19 +8941,19 @@
     {
         "id": 400093,
         "top": true,
-        "name": "Chapéu de 18 Anos",
+        "name": "Item #400093",
         "viewID": 2015
     },
     {
         "id": 31952,
         "top": true,
-        "name": "Chapéu das Mil Dimensões",
+        "name": "Costume: Gates of Netherworld",
         "viewID": 2016
     },
     {
         "id": 31953,
         "mid": true,
-        "name": "Fone de Ouvido Brilhante",
+        "name": "Costume: Core Headset",
         "viewID": 2017
     },
     {
@@ -9089,7 +8965,7 @@
     {
         "id": 400115,
         "top": true,
-        "name": "Boina Mágica de Angeling",
+        "name": "Costume: Angeling Bread Hat",
         "viewID": 2019
     },
     {
@@ -9107,7 +8983,7 @@
     {
         "id": 15843,
         "top": true,
-        "name": "Resto de Caça",
+        "name": "Costume Hunter's Feast",
         "viewID": 2024
     },
     {
@@ -9131,157 +9007,157 @@
     {
         "id": 420034,
         "bot": true,
-        "name": "Cacheado Loiro",
+        "name": "의상 롱 웨이브(금발)",
         "viewID": 2029
     },
     {
         "id": 420035,
         "bot": true,
-        "name": "Cacheado Prata",
+        "name": "의상 롱 웨이브(은발)",
         "viewID": 2030
     },
     {
         "id": 420036,
         "bot": true,
-        "name": "Cabelo Ondulado Cerúleo",
+        "name": "C Fluffy Semi-Long Hair(Light Blue)",
         "viewID": 2031
     },
     {
         "id": 420037,
         "bot": true,
-        "name": "Cabelo Ondulado Quartzo",
+        "name": "C Fluffy Semi-Long Hair(Cherry Blossom)",
         "viewID": 2032
     },
     {
         "id": 420038,
         "bot": true,
-        "name": "Cabelo Ondulado Loiro",
+        "name": "C Fluffy Semi-Long Hair(Yellow)",
         "viewID": 2033
     },
     {
         "id": 420039,
         "bot": true,
-        "name": "Cabelo Ondulado Coral",
+        "name": "C Fluffy Semi-Long Hair(Turquoise)",
         "viewID": 2034
     },
     {
         "id": 420040,
         "bot": true,
-        "name": "Cabelo Ondulado Castanho ",
+        "name": "C Fluffy Semi-Long Hair(Jet Black)",
         "viewID": 2035
     },
     {
         "id": 420041,
         "bot": true,
-        "name": "Cabelo Ondulado Platinado",
+        "name": "C Fluffy Semi-Long Hair(White)",
         "viewID": 2036
     },
     {
         "id": 420042,
         "bot": true,
-        "name": "Cabelo Ondulado Caramelo",
+        "name": "C Fluffy Semi-Long Hair(Orange)",
         "viewID": 2037
     },
     {
         "id": 420043,
         "bot": true,
-        "name": "Cabelo Ondulado Ametista",
+        "name": "C Fluffy Semi-Long Hair(Light Purple)",
         "viewID": 2038
     },
     {
         "id": 410030,
         "mid": true,
-        "name": "Trancinhas Azuis",
+        "name": "[衣装] カントリーテール(青)",
         "viewID": 2039
     },
     {
         "id": 410031,
         "mid": true,
-        "name": "Trancinhas Vermelhas",
+        "name": "[衣装] カントリーテール(赤)",
         "viewID": 2040
     },
     {
         "id": 410032,
         "mid": true,
-        "name": "Trancinhas Amarelas",
+        "name": "[衣装] カントリーテール(黄)",
         "viewID": 2041
     },
     {
         "id": 410033,
         "mid": true,
-        "name": "Trancinhas Verdes",
+        "name": "[衣装] カントリーテール(緑)",
         "viewID": 2042
     },
     {
         "id": 410034,
         "mid": true,
-        "name": "Trancinhas Pretas",
+        "name": "[衣装] カントリーテール(黒)",
         "viewID": 2043
     },
     {
         "id": 410035,
         "mid": true,
-        "name": "Trancinhas Brancas",
+        "name": "[衣装] カントリーテール(白)",
         "viewID": 2044
     },
     {
         "id": 410036,
         "mid": true,
-        "name": "Trancinhas Marrons",
+        "name": "[衣装] カントリーテール(紅)",
         "viewID": 2045
     },
     {
         "id": 410037,
         "mid": true,
-        "name": "Trancinhas Roxas",
+        "name": "[衣装] カントリーテール(紫)",
         "viewID": 2046
     },
     {
         "id": 410038,
         "mid": true,
-        "name": "Trançado Azulado",
+        "name": "[衣装] 三つ編みハーフアップ(青)",
         "viewID": 2047
     },
     {
         "id": 410039,
         "mid": true,
-        "name": "Trançado Avermelhado",
+        "name": "[衣装] 三つ編みハーフアップ(赤)",
         "viewID": 2048
     },
     {
         "id": 410040,
         "mid": true,
-        "name": "Trançado Amarelado",
+        "name": "[衣装] 三つ編みハーフアップ(黄)",
         "viewID": 2049
     },
     {
         "id": 410041,
         "mid": true,
-        "name": "Trançado Esverdejado",
+        "name": "[衣装] 三つ編みハーフアップ(緑)",
         "viewID": 2050
     },
     {
         "id": 410042,
         "mid": true,
-        "name": "Trançado Escurecido",
+        "name": "[衣装] 三つ編みハーフアップ(黒)",
         "viewID": 2051
     },
     {
         "id": 410043,
         "mid": true,
-        "name": "Trançado Branquinho",
+        "name": "[衣装] 三つ編みハーフアップ(白)",
         "viewID": 2052
     },
     {
         "id": 410044,
         "mid": true,
-        "name": "Trançado Bronzeado",
+        "name": "[衣装] 三つ編みハーフアップ(紅)",
         "viewID": 2053
     },
     {
         "id": 410045,
         "mid": true,
-        "name": "Trançado Roxinho",
+        "name": "[衣装] 三つ編みハーフアップ(紫)",
         "viewID": 2054
     },
     {
@@ -9293,13 +9169,13 @@
     {
         "id": 420029,
         "bot": true,
-        "name": "Glória Imperial",
+        "name": "Costume: Imperial Glory",
         "viewID": 2056
     },
     {
         "id": 15846,
         "top": true,
-        "name": "Selo do Artista de Verdade",
+        "name": "[衣装] アーティストのシルクハット",
         "viewID": 2057
     },
     {
@@ -9329,43 +9205,43 @@
     {
         "id": 31959,
         "bot": true,
-        "name": "Cabeleira Preta",
+        "name": "Costume: Wave Perm (Black)",
         "viewID": 2062
     },
     {
         "id": 31960,
         "bot": true,
-        "name": "Cabeleira Azul",
+        "name": "Costume: Wave Perm (Blue)",
         "viewID": 2063
     },
     {
         "id": 31961,
         "bot": true,
-        "name": "Cabeleira Verde",
+        "name": "Costume: Wave Perm (Green)",
         "viewID": 2064
     },
     {
         "id": 31962,
         "bot": true,
-        "name": "Cabeleira Bege",
+        "name": "Costume: Wave Perm (Brown)",
         "viewID": 2065
     },
     {
         "id": 31963,
         "bot": true,
-        "name": "Cabeleira Rosa",
+        "name": "Costume: Wave Perm (Pink)",
         "viewID": 2066
     },
     {
         "id": 31964,
         "bot": true,
-        "name": "Cabeleira Roxa",
+        "name": "Costume: Wave Perm (Purple)",
         "viewID": 2067
     },
     {
         "id": 31965,
         "bot": true,
-        "name": "Cabeleira Ruiva",
+        "name": "Costume: Wave Perm (Red)",
         "viewID": 2068
     },
     {
@@ -9377,7 +9253,7 @@
     {
         "id": 31967,
         "bot": true,
-        "name": "Cabeleira Loira",
+        "name": "[Costume] Wave Perm Hair - Yellow",
         "viewID": 2070
     },
     {
@@ -9400,8 +9276,8 @@
     },
     {
         "id": 21207,
-        "mid": true,
-        "name": "Máscara de Minorous",
+        "bot": true,
+        "name": "Costume: Bull Head",
         "viewID": 2078
     },
     {
@@ -9420,13 +9296,13 @@
     {
         "id": 410054,
         "mid": true,
-        "name": "Laçarote Gigantesco",
+        "name": "Long Ribbon",
         "viewID": 2083
     },
     {
         "id": 420050,
         "bot": true,
-        "name": "Peruca com Bao-Bao",
+        "name": "Hair Bun Wave",
         "viewID": 2084
     },
     {
@@ -9450,26 +9326,26 @@
     {
         "id": 15881,
         "top": true,
-        "name": "Crispinette de Rosas",
+        "name": "의상 로제 크리스피넷",
         "viewID": 2091
     },
     {
         "id": 410059,
         "mid": true,
-        "name": "Máscara de Carniçal",
+        "name": "[Costume] Ghoul Mask",
         "viewID": 2092
     },
     {
         "id": 410060,
         "mid": true,
-        "name": "Aura de Morceguinhos",
+        "name": "[Costume] Ghost Bat",
         "viewID": 2093
     },
     {
+        "id": 430001,
         "top": true,
         "mid": true,
         "name": "Costume Helm of Amon Ra",
-        "id": 430001,
         "viewID": 2094
     },
     {
@@ -9493,13 +9369,13 @@
     {
         "id": 400429,
         "top": true,
-        "name": "Elmo de Montanhista",
+        "name": "[衣装] 山岳ヘルメット",
         "viewID": 2098
     },
     {
         "id": 400143,
         "top": true,
-        "name": "Asas de Asgard",
+        "name": "Costume: Crimson Valkyrie Circlet",
         "viewID": 2100
     },
     {
@@ -9541,13 +9417,13 @@
     {
         "id": 410063,
         "mid": true,
-        "name": "Laços Docinhos",
+        "name": "Cherry Ribbon",
         "viewID": 2112
     },
     {
         "id": 400157,
         "top": true,
-        "name": "Chapéu Mágico",
+        "name": "Costume: Astrologer's Cap",
         "viewID": 2125
     },
     {
@@ -9571,19 +9447,19 @@
     {
         "id": 420071,
         "bot": true,
-        "name": "Cachecol com Tiras",
+        "name": "Costume: Feather Stola",
         "viewID": 2130
     },
     {
         "id": 400314,
         "top": true,
-        "name": "Joia do Norte",
+        "name": "Costume: Northern Cross",
         "viewID": 2132
     },
     {
         "id": 400158,
         "top": true,
-        "name": "Coroa do Mal",
+        "name": "Costume: Demon Crown",
         "viewID": 2135
     },
     {
@@ -9613,21 +9489,19 @@
     {
         "id": 400176,
         "top": true,
-        "name": "Cesta de Guloseimas",
+        "name": "Costume: Fishbowl Parfait Hat",
         "viewID": 2145
     },
     {
-        "top": true,
-        "mid": true,
-        "name": "Costume Bear Head",
         "id": 440010,
         "bot": true,
+        "name": "Costume Bear Head",
         "viewID": 2147
     },
     {
         "id": 410128,
         "mid": true,
-        "name": "Microfone de Mecânico",
+        "name": "Costume: Power Mic",
         "viewID": 2148
     },
     {
@@ -9675,31 +9549,31 @@
     {
         "id": 420082,
         "bot": true,
-        "name": "Penteado Estiloso Azul",
+        "name": "Costume: Side Roll Pony",
         "viewID": 2164
     },
     {
         "id": 420083,
         "bot": true,
-        "name": "Cachecol com Laço Creme",
+        "name": "Costume: Large Ribbon Muffler (White)",
         "viewID": 2165
     },
     {
         "id": 420084,
         "bot": true,
-        "name": "Peruca Sereia Suave",
+        "name": "Costume Mermaid Wig (Peach)",
         "viewID": 2166
     },
     {
         "id": 420085,
         "bot": true,
-        "name": "Peruca Kururinpa Platinada",
+        "name": "[Costume] Half-Braided Hair - Blonde",
         "viewID": 2167
     },
     {
         "id": 420086,
         "bot": true,
-        "name": "Cacheado Marrom",
+        "name": "Costume: Long Wave (Brown)",
         "viewID": 2168
     },
     {
@@ -9723,49 +9597,49 @@
     {
         "id": 400188,
         "top": true,
-        "name": "Faixa Ragnarök",
+        "name": "Costume Ragnarok Hairband",
         "viewID": 2179
     },
     {
         "id": 420091,
         "bot": true,
-        "name": "Peruca Sedosa Loira",
+        "name": "[衣装] シルキーロング(ブロンド)",
         "viewID": 2180
     },
     {
         "id": 420092,
         "bot": true,
-        "name": "Peruca Sedosa Prateada",
+        "name": "의상 실키 롱(실버)",
         "viewID": 2181
     },
     {
         "id": 410111,
         "mid": true,
-        "name": "Mecha Azul",
+        "name": "[衣装] インテーク(青)",
         "viewID": 2182
     },
     {
         "id": 410112,
         "mid": true,
-        "name": "Mecha Vermelha",
+        "name": "[Costume] Intake - Red",
         "viewID": 2183
     },
     {
         "id": 410113,
         "mid": true,
-        "name": "Mecha Loira",
+        "name": "[Costume] Intake - Yellow",
         "viewID": 2184
     },
     {
         "id": 410114,
         "mid": true,
-        "name": "Mecha Verde",
+        "name": "[衣装] インテーク(緑)",
         "viewID": 2185
     },
     {
         "id": 410115,
         "mid": true,
-        "name": "Mecha Castanho Escuro",
+        "name": "[衣装] インテーク(黒)",
         "viewID": 2186
     },
     {
@@ -9777,61 +9651,61 @@
     {
         "id": 410117,
         "mid": true,
-        "name": "Mecha Castanho Claro",
+        "name": "[衣装] インテーク(紅)",
         "viewID": 2188
     },
     {
         "id": 410118,
         "mid": true,
-        "name": "Mecha Lilás",
+        "name": "[Costume] Intake - Purple",
         "viewID": 2189
     },
     {
         "id": 400205,
         "top": true,
-        "name": "Aplique de Coque Celeste",
+        "name": "[Visual] Coque Lateral Duplo (Azul)",
         "viewID": 2190
     },
     {
         "id": 400206,
         "top": true,
-        "name": "Aplique de Coque Cereja",
+        "name": "[Visual] Coque Lateral Duplo (Ruivo)",
         "viewID": 2191
     },
     {
         "id": 400207,
         "top": true,
-        "name": "Aplique de Coque Loiro",
+        "name": "[Visual] Coque Lateral Duplo (Loiro)",
         "viewID": 2192
     },
     {
         "id": 400208,
         "top": true,
-        "name": "Aplique de Coque Verde",
+        "name": "[Visual] Coque Lateral Duplo (Verde)",
         "viewID": 2193
     },
     {
         "id": 400209,
         "top": true,
-        "name": "Aplique de Coque Preto",
+        "name": "[Visual] Coque Lateral Duplo (Moreno)",
         "viewID": 2194
     },
     {
         "id": 400210,
         "top": true,
-        "name": "Aplique de Coque Platinado",
+        "name": "[Visual] Coque Lateral Duplo (Branco)",
         "viewID": 2195
     },
     {
         "id": 400211,
         "top": true,
-        "name": "Aplique de Coque Marrom",
+        "name": "[Visual] Coque Lateral Duplo (Castanho)",
         "viewID": 2196
     },
     {
         "id": 400212,
         "top": true,
-        "name": "Aplique de Coque Lilás",
+        "name": "[Visual] Coque Lateral Duplo (Lilás)",
         "viewID": 2197
     },
     {
@@ -9849,7 +9723,7 @@
     {
         "id": 410122,
         "mid": true,
-        "name": "Piscadela Rosa",
+        "name": "Costume: Blinking Small Eyes",
         "viewID": 2201
     },
     {
@@ -9879,19 +9753,19 @@
     {
         "id": 400258,
         "bot": true,
-        "name": "Peruca Ondulada de Jade",
+        "name": "Costume: Wanderer Curl",
         "viewID": 2224
     },
     {
         "id": 420212,
         "bot": true,
-        "name": "Cachecol Infernal",
+        "name": "Costume Red Protective Cloth",
         "viewID": 2227
     },
     {
         "id": 420113,
         "bot": true,
-        "name": "Penteado Estiloso Moreno",
+        "name": "의상 사이드 롤 포니(블랙)",
         "viewID": 2228
     },
     {
@@ -9939,49 +9813,49 @@
     {
         "id": 420121,
         "bot": true,
-        "name": "Peruca Longa Selvagem Preta",
+        "name": "의상 와일드 롱 헤어(검정)",
         "viewID": 2236
     },
     {
         "id": 420122,
         "bot": true,
-        "name": "Peruca Longa Selvagem Verde",
+        "name": "Costume Wild Long Hair (Green)",
         "viewID": 2237
     },
     {
         "id": 420123,
         "bot": true,
-        "name": "Peruca Longa Selvagem Castanha",
+        "name": "의상 와일드 롱 헤어(갈색)",
         "viewID": 2238
     },
     {
         "id": 420124,
         "bot": true,
-        "name": "Peruca Longa Selvagem Rosa",
+        "name": "Costume: Wild Long Hair (Pink)",
         "viewID": 2239
     },
     {
         "id": 420125,
         "bot": true,
-        "name": "Peruca Longa Selvagem Roxa",
+        "name": "의상 와일드 롱 헤어(보라)",
         "viewID": 2240
     },
     {
         "id": 420126,
         "bot": true,
-        "name": "Peruca Longa Selvagem Ruiva",
+        "name": "의상 와일드 롱 헤어(빨강)",
         "viewID": 2241
     },
     {
         "id": 420127,
         "bot": true,
-        "name": "Peruca Longa Selvagem Branca",
+        "name": "Costume Wild Long Hair (White)",
         "viewID": 2242
     },
     {
         "id": 420128,
         "bot": true,
-        "name": "Peruca Longa Selvagem Loira",
+        "name": "의상 와일드 롱 헤어(노랑)",
         "viewID": 2243
     },
     {
@@ -10005,7 +9879,7 @@
     {
         "id": 420133,
         "bot": true,
-        "name": "Peruca Colorida Estelar",
+        "name": "Costume: Dreaming Rose",
         "viewID": 2247
     },
     {
@@ -10029,7 +9903,7 @@
     {
         "id": 420156,
         "bot": true,
-        "name": "Peruca Florida",
+        "name": "Costume: Flower Knitting",
         "viewID": 2261
     },
     {
@@ -10041,13 +9915,13 @@
     {
         "id": 410156,
         "mid": true,
-        "name": "Buquê Colorido",
+        "name": "Costume: Bouquet Valletta",
         "viewID": 2263
     },
     {
         "id": 410217,
         "mid": true,
-        "name": "Cartas Mágicas",
+        "name": "Costume: Mystic Arts",
         "viewID": 2264
     },
     {
@@ -10083,13 +9957,13 @@
     {
         "id": 420151,
         "bot": true,
-        "name": "Aura da Luz e Escuridão",
+        "name": "의상 빛과 어둠의 마스터(귀속)",
         "viewID": 2273
     },
     {
         "id": 420150,
         "bot": true,
-        "name": "Peruca Duas Cores",
+        "name": "Costume: Twinkle Twin (Blue)",
         "viewID": 2274
     },
     {
@@ -10107,7 +9981,7 @@
     {
         "id": 400327,
         "bot": true,
-        "name": "Peruca Estilosa Rosa",
+        "name": "Costume: Sleek Pink Half-Updo",
         "viewID": 2278
     },
     {
@@ -10137,7 +10011,7 @@
     {
         "id": 410234,
         "mid": true,
-        "name": "Relógio Insurgente",
+        "name": "의상 검은 회중시계 머리 장식",
         "viewID": 2289
     },
     {
@@ -10149,7 +10023,7 @@
     {
         "id": 420170,
         "bot": true,
-        "name": "Peruca Sedosa Morena",
+        "name": "Costume: Silky Long Hair (Black)",
         "viewID": 2295
     },
     {
@@ -10161,7 +10035,7 @@
     {
         "id": 15954,
         "bot": true,
-        "name": "Espaguete \u0026 Lasanha",
+        "name": "Costume Wichienmaat and Bangkaew",
         "viewID": 2297
     },
     {
@@ -10179,7 +10053,7 @@
     {
         "id": 420172,
         "bot": true,
-        "name": "Peruca Anil de Trancinhas",
+        "name": "[Costume] Three-Braid Hair Ring",
         "viewID": 2300
     },
     {
@@ -10196,7 +10070,6 @@
     },
     {
         "id": 410202,
-        "top": true,
         "mid": true,
         "name": "Costume Ragnarok Go Go",
         "viewID": 2303
@@ -10210,19 +10083,19 @@
     {
         "id": 400354,
         "top": true,
-        "name": "Elmo de Vanargandr",
+        "name": "Costume: Gold Helm of Vanagandr",
         "viewID": 2312
     },
     {
         "id": 400355,
         "top": true,
-        "name": "Gorro Bufante",
+        "name": "Costume: Classical Balloon Hat",
         "viewID": 2313
     },
     {
         "id": 400356,
         "top": true,
-        "name": "Quepe do Pô Pai",
+        "name": "Costume: Denim Ignis Cap",
         "viewID": 2314
     },
     {
@@ -10240,7 +10113,7 @@
     {
         "id": 400370,
         "top": true,
-        "name": "Chapéu de Bruxa com Orelhas",
+        "name": "[衣装] 紫の猫耳魔女帽子",
         "viewID": 2323
     },
     {
@@ -10250,41 +10123,40 @@
         "viewID": 2324
     },
     {
+        "id": 430005,
         "top": true,
         "mid": true,
-        "name": "Óculos do Tigre Branco",
-        "id": 430005,
+        "name": "Costume: White Tiger Glasses",
         "viewID": 2325
     },
     {
         "id": 480271,
-        "bot": true,
-        "name": "Peruca Angelical Loira",
+        "garment": true,
+        "name": "의상 엔젤릭 롱(블론드)",
         "viewID": 2328
     },
     {
         "id": 480272,
-        "bot": true,
-        "name": "Peruca Angelical Brilhante",
+        "garment": true,
+        "name": "Costume Angelic Long (Royal Blond)",
         "viewID": 2329
     },
     {
         "id": 480273,
-        "bot": true,
-        "name": "Peruca Angelical Prateada",
+        "garment": true,
+        "name": "의상 엔젤릭 롱(실버)",
         "viewID": 2330
     },
     {
         "id": 480274,
         "bot": true,
         "name": "Costume Angelic Long Hair (Royal Silver)",
-        "viewID": 2331,
-        "garment": true
+        "viewID": 2331
     },
     {
         "id": 420191,
         "bot": true,
-        "name": "Penteado Coelho das Neves",
+        "name": "Costume: Snow Rabbit Hair",
         "viewID": 2333
     },
     {
@@ -10308,7 +10180,7 @@
     {
         "id": 420193,
         "bot": true,
-        "name": "Cachecol com Lacinho",
+        "name": "Costume: Large Ribbon Muffler (Blue)",
         "viewID": 2340
     },
     {
@@ -10338,19 +10210,19 @@
     {
         "id": 410201,
         "mid": true,
-        "name": "Caveiras Místicas",
+        "name": "Costume Haunting Skull",
         "viewID": 2363
     },
     {
         "id": 420207,
         "bot": true,
-        "name": "Peruca da Rosa Eterna",
+        "name": "Costume: Eternal Rose",
         "viewID": 2365
     },
     {
         "id": 400431,
         "top": true,
-        "name": "Chapéu Floral de Druida",
+        "name": "Costume: Sakura Witch Hat",
         "viewID": 2366
     },
     {
@@ -10362,25 +10234,25 @@
     {
         "id": 420208,
         "bot": true,
-        "name": "Peruca Trançada de Chocolate",
+        "name": "Costume: Chocolate Rabbit Hair",
         "viewID": 2369
     },
     {
         "id": 420209,
         "bot": true,
-        "name": "Fita da Confeiteira Mágica",
+        "name": "Costume Cookie Ribbon",
         "viewID": 2370
     },
     {
         "id": 400435,
         "top": true,
-        "name": "Chapéu do Chapeleiro",
+        "name": "[衣装] マッドハッターの帽子",
         "viewID": 2376
     },
     {
         "id": 400436,
         "top": true,
-        "name": "Orelhonas de Piamette",
+        "name": "Costume: Overfit Piamette's Hood",
         "viewID": 2377
     },
     {
@@ -10392,13 +10264,13 @@
     {
         "id": 420218,
         "bot": true,
-        "name": "Peruca Ondulada de Platina",
+        "name": "[衣装] ワンダラーカール(白)",
         "viewID": 2379
     },
     {
         "id": 400448,
         "top": true,
-        "name": "Chapéu Juan",
+        "name": "Costume: Juan Hat",
         "viewID": 2387
     },
     {
@@ -10416,13 +10288,13 @@
     {
         "id": 400450,
         "top": true,
-        "name": "Leão Rei",
+        "name": "Costume: Lion Crown",
         "viewID": 2390
     },
     {
         "id": 400462,
         "top": true,
-        "name": "Quepe Náutico",
+        "name": "Costume: Sailor Cap",
         "viewID": 2398
     },
     {
@@ -10434,7 +10306,7 @@
     {
         "id": 420305,
         "bot": true,
-        "name": "Mini Tentáculo",
+        "name": "C Octopus Leg In Mouth",
         "viewID": 2401
     },
     {
@@ -10446,13 +10318,13 @@
     {
         "id": 400480,
         "top": true,
-        "name": "Gatopéu de Palha",
+        "name": "Costume: Nyan Straw Hat",
         "viewID": 2413
     },
     {
         "id": 420237,
         "bot": true,
-        "name": "Cachecol Tigroso",
+        "name": "Costume: Tiger Muffler",
         "viewID": 2417
     },
     {
@@ -10463,14 +10335,14 @@
     },
     {
         "id": 420340,
-        "garment": true,
+        "bot": true,
         "name": "Costume Kitchen Car",
         "viewID": 2534
     },
     {
         "id": 420352,
         "bot": true,
-        "name": "Costume Poring Pool",
+        "name": "Costume Pool",
         "viewID": 2566
     },
     {
@@ -10481,19 +10353,19 @@
     },
     {
         "id": 420384,
-        "garment": true,
+        "bot": true,
         "name": "Costume DJ Booth",
         "viewID": 2597
     },
     {
         "id": 420501,
-        "garment": true,
+        "bot": true,
         "name": "Costume Hot Spring",
         "viewID": 2684
     },
     {
         "id": 420516,
-        "garment": true,
+        "bot": true,
         "name": "Costume Forest Friends",
         "viewID": 2699
     },
@@ -10608,7 +10480,7 @@
     {
         "id": 480393,
         "garment": true,
-        "name": "Costume Blue Moon Loli Ruri\u0027s Crescent Moon",
+        "name": "Costume Blue Moon Loli Ruri's Crescent Moon",
         "viewID": 199
     },
     {
@@ -10620,7 +10492,7 @@
     {
         "id": 480407,
         "garment": true,
-        "name": "Costume Leticia\u0027s Wings",
+        "name": "Costume Leticia's Wings",
         "viewID": 203
     },
     {
@@ -10764,7 +10636,7 @@
     {
         "id": 480517,
         "garment": true,
-        "name": "Costume The Dragon Warrior\u0027s Manteau \u0026 Staff",
+        "name": "Costume The Dragon Warrior's Manteau & Staff",
         "viewID": 254
     },
     {
@@ -10799,7 +10671,7 @@
     },
     {
         "id": 480596,
-        "garment": true,
+        "top": true,
         "name": "Costume Toothless Hood",
         "viewID": 2696
     },
@@ -10896,13 +10768,13 @@
     {
         "id": 480772,
         "garment": true,
-        "name": "Costume Angel\u0027s Gift",
+        "name": "Costume Angel's Gift",
         "viewID": 302
     },
     {
         "id": 480608,
         "garment": true,
-        "name": "Costume Beelzebub\u0027s Wings",
+        "name": "Costume Beelzebub's Wings",
         "viewID": 271
     },
     {
@@ -10925,7 +10797,7 @@
     },
     {
         "id": 420855,
-        "garment": true,
+        "bot": true,
         "name": "Costume Cultivation Pod",
         "viewID": 2844
     },
@@ -10980,7 +10852,7 @@
     {
         "id": 480747,
         "garment": true,
-        "name": "Costume Knight Order Sword \u0026 Shield",
+        "name": "Costume Knight Order Sword & Shield",
         "viewID": 300
     },
     {
@@ -11064,24 +10936,18 @@
     {
         "id": 440014,
         "bot": true,
-        "mid": true,
-        "top": true,
-        "name": "Costume 1st Runner\u00a0Up of ROS 2024",
+        "name": "Costume 1st Runner Up of ROS 2024",
         "viewID": 2552
     },
     {
         "id": 440015,
         "bot": true,
-        "mid": true,
-        "top": true,
         "name": "Costume 2nd Runner Up of ROS 2024",
         "viewID": 2553
     },
     {
         "id": 440016,
         "bot": true,
-        "mid": true,
-        "top": true,
         "name": "Costume 3rd Runner Up of ROS 2024",
         "viewID": 2554
     },
@@ -11117,8 +10983,8 @@
     },
     {
         "id": 19837,
-        "mid": true,
         "top": true,
+        "mid": true,
         "name": "Costume Asara Fairy Hat",
         "viewID": 492
     },
@@ -11251,8 +11117,6 @@
     {
         "id": 19850,
         "bot": true,
-        "mid": true,
-        "top": true,
         "name": "Costume Bongun Hat",
         "viewID": 139
     },
@@ -11343,8 +11207,6 @@
     {
         "id": 440012,
         "bot": true,
-        "mid": true,
-        "top": true,
         "name": "Costume Dr. Eggman Mask",
         "viewID": 2434
     },
@@ -11447,8 +11309,6 @@
     {
         "id": 19838,
         "bot": true,
-        "mid": true,
-        "top": true,
         "name": "Costume Fox Hat",
         "viewID": 403
     },
@@ -11467,7 +11327,7 @@
     {
         "id": 19015,
         "top": true,
-        "name": "Costume Gemma\u0027s Hairband",
+        "name": "Costume Gemma's Hairband",
         "viewID": 564
     },
     {
@@ -11497,8 +11357,6 @@
     {
         "id": 440043,
         "bot": true,
-        "mid": true,
-        "top": true,
         "name": "Costume Golden Baseball Cap",
         "viewID": 263
     },
@@ -11547,8 +11405,6 @@
     {
         "id": 440018,
         "bot": true,
-        "mid": true,
-        "top": true,
         "name": "Costume Helm of Galaxia",
         "viewID": 2587
     },
@@ -11573,8 +11429,6 @@
     {
         "id": 20102,
         "bot": true,
-        "mid": true,
-        "top": true,
         "name": "Costume Horse King",
         "viewID": 1189
     },
@@ -11604,15 +11458,15 @@
     },
     {
         "id": 430029,
-        "mid": true,
         "top": true,
+        "mid": true,
         "name": "Costume Jinpei the Swallow",
         "viewID": 2800
     },
     {
         "id": 430027,
-        "mid": true,
         "top": true,
+        "mid": true,
         "name": "Costume Joe the Condor",
         "viewID": 2798
     },
@@ -11624,8 +11478,8 @@
     },
     {
         "id": 430028,
-        "mid": true,
         "top": true,
+        "mid": true,
         "name": "Costume Jun the Swan",
         "viewID": 2799
     },
@@ -11643,8 +11497,8 @@
     },
     {
         "id": 430026,
-        "mid": true,
         "top": true,
+        "mid": true,
         "name": "Costume Ken the Eagle",
         "viewID": 2797
     },
@@ -11668,8 +11522,8 @@
     },
     {
         "id": 430025,
-        "mid": true,
         "top": true,
+        "mid": true,
         "name": "Costume Leader of Galactor",
         "viewID": 2804
     },
@@ -11772,8 +11626,6 @@
     {
         "id": 19689,
         "bot": true,
-        "mid": true,
-        "top": true,
         "name": "Costume Outfit Ati Atihan",
         "viewID": 303
     },
@@ -11905,8 +11757,8 @@
     },
     {
         "id": 430030,
-        "mid": true,
         "top": true,
+        "mid": true,
         "name": "Costume Ryu the Owl",
         "viewID": 2801
     },
@@ -11997,8 +11849,6 @@
     {
         "id": 20152,
         "bot": true,
-        "mid": true,
-        "top": true,
         "name": "Costume Straw Rice Bag",
         "viewID": 1273
     },
@@ -12029,15 +11879,13 @@
     {
         "id": 440013,
         "bot": true,
-        "mid": true,
-        "top": true,
         "name": "Costume The Winner of ROS 2024",
         "viewID": 2551
     },
     {
         "id": 31161,
-        "mid": true,
         "top": true,
+        "mid": true,
         "name": "Costume Tiger Mask",
         "viewID": 181
     },
@@ -12056,7 +11904,7 @@
     {
         "id": 400909,
         "top": true,
-        "name": "Costume Variant Devil\u2019s Horn",
+        "name": "Costume Variant Devil’s Horn",
         "viewID": 2690
     },
     {
@@ -12098,8 +11946,6 @@
     {
         "id": 19610,
         "bot": true,
-        "mid": true,
-        "top": true,
         "name": "Costume Whisper Mask",
         "viewID": 321
     },
@@ -12183,7 +12029,6 @@
     },
     {
         "id": 19114,
-        "top": true,
         "name": "Sting Silk Ribbon [1]",
         "viewID": 1457
     },
@@ -12257,7 +12102,6 @@
     {
         "id": 436007,
         "bot": true,
-        "mid": true,
         "name": "Costume Awin Winter Headgear",
         "viewID": 2143
     },
@@ -12367,7 +12211,6 @@
     {
         "id": 31207,
         "bot": true,
-        "mid": true,
         "name": "Costume Dokkebi Mask",
         "viewID": 689
     },
@@ -12489,7 +12332,6 @@
     {
         "id": 436008,
         "bot": true,
-        "mid": true,
         "name": "Costume Hwa Ho Jom Jong",
         "viewID": 2216
     },
@@ -12538,7 +12380,6 @@
     {
         "id": 19615,
         "bot": true,
-        "mid": true,
         "name": "Costume Loki Mask",
         "viewID": 346
     },
@@ -12581,7 +12422,6 @@
     {
         "id": 21206,
         "bot": true,
-        "mid": true,
         "name": "Costume Nut Cracker",
         "viewID": 1991
     },
@@ -12630,7 +12470,6 @@
     {
         "id": 436006,
         "bot": true,
-        "mid": true,
         "name": "Costume Rgan Disguise Tool",
         "viewID": 2144
     },
@@ -12673,7 +12512,6 @@
     {
         "id": 436010,
         "bot": true,
-        "mid": true,
         "name": "Costume Spiding",
         "viewID": 2315
     },
@@ -12692,7 +12530,6 @@
     {
         "id": 31030,
         "bot": true,
-        "mid": true,
         "name": "Costume Tiger Face",
         "viewID": 483
     },
@@ -13484,13 +13321,11 @@
     },
     {
         "id": 19391,
-        "bot": true,
         "name": "Eyes of Illusion",
         "viewID": 1779
     },
     {
         "id": 19207,
-        "bot": true,
         "name": "Pecopeco Hairband",
         "viewID": 314
     },
