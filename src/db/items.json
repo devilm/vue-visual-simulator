@@ -13334,5 +13334,11 @@
         "mid": true,
         "name": "Costume: Scuba Mask",
         "viewID": 400
+    },
+    {
+        "id": 480477,
+        "garment": true,
+        "name": "Costume Poring Tube",
+        "viewID": 235
     }
 ]
