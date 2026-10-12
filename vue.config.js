@@ -7,6 +7,13 @@ module.exports = defineConfig({
     publicPath: process.env.NODE_ENV === 'production' ? `/${repoName}/` : '/',
     outputDir: 'docs',
 
+    chainWebpack: config => {
+      config.module
+        .rule('ragnarok-sprite-files')
+        .test(/\.(act|spr)$/i)
+        .type('asset/resource')
+    },
+
     pluginOptions: {
       i18n: {
         locale: 'en',

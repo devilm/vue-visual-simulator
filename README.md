@@ -5,6 +5,15 @@ It's very easy to use, just select the equipments that you want to test.
 
 Access: http://visualrag.com/
 
+## SPR/ACT rendering POC
+
+The character panel currently opens with a local preview of the sample `.spr`
+and `.act` files in `src/data/sprite/로브/`. Use the ACT selector to preview
+its available actions. The button in the panel switches back to the existing
+API-rendered character. This POC renders the supplied sprite files directly in
+the browser; composing a complete character from multiple sprite sets is not
+implemented yet.
+
 # Technologies
 - Vue.js
 - Bootstrap 5

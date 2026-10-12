@@ -206,7 +206,19 @@
                           <div
                             class="character-box d-flex flex-column justify-content-center align-items-center"
                           >
-                            <Character />
+                            <Character v-if="!showSpritePoc" />
+                            <CharacterSpritePoc v-else />
+                            <button
+                              class="btn btn-sm btn-light character-mode-toggle"
+                              type="button"
+                              @click="showSpritePoc = !showSpritePoc"
+                            >
+                              {{
+                                showSpritePoc
+                                  ? $t("showApiCharacter")
+                                  : $t("showSpritePoc")
+                              }}
+                            </button>
                           </div>
                           <div
                             class="mb-3 d-flex flex-column align-items-center"
@@ -290,6 +302,7 @@ import ItemListHeadMid from "@/components/character/ItemListHeadMid.vue";
 import ItemListGarmet from "@/components/character/ItemListGarmet.vue";
 import ItemListHeadBottom from "@/components/character/ItemListHeadBottom.vue";
 import Character from "@/components/character/Character.vue";
+import CharacterSpritePoc from "@/components/character/CharacterSpritePoc.vue";
 import TurnCharacter from "@/components/character/TurnCharacter.vue";
 import ActionList from "@/components/character/ActionList.vue";
 import ClearCharacterButton from "@/components/character/ClearCharacterButton.vue";
@@ -310,6 +323,7 @@ export default {
       item_garmet_src:
         "https://static.divine-pride.net/images/items/item/20571.png",
       searchItemQuery: "",
+      showSpritePoc: true,
     };
   },
   components: {
@@ -323,6 +337,7 @@ export default {
     ItemListHeadBottom,
     ItemListGarmet,
     Character,
+    CharacterSpritePoc,
     TurnCharacter,
     ActionList,
     ClearCharacterButton,
@@ -539,8 +554,17 @@ export default {
 }
 
 .character-box {
+  position: relative;
   width: 100%;
   height: 200px;
+}
+
+.character-mode-toggle {
+  position: absolute;
+  top: 0.25rem;
+  right: 0.25rem;
+  z-index: 1;
+  font-size: 0.7rem;
 }
 
 .container-character {

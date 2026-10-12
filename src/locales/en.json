@@ -20,5 +20,7 @@
     "resetCharacter": "Character",
     "mount": "Mount",
     "regularMount": "Job Mount",
-    "cashMount": "Cash Mount"
+    "cashMount": "Cash Mount",
+    "showSpritePoc": "Preview SPR/ACT",
+    "showApiCharacter": "Back to character"
 }

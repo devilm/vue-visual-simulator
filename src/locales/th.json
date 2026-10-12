@@ -20,5 +20,7 @@
     "resetCharacter": "ทั้งหมด",
     "mount": "พาหนะ",
     "regularMount": "พาหนะประจำอาชีพ",
-    "cashMount": "พาหนะ Cash"
+    "cashMount": "พาหนะ Cash",
+    "showSpritePoc": "ทดลองแสดง SPR/ACT",
+    "showApiCharacter": "กลับไปแสดงตัวละคร"
 }
