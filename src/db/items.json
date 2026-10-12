@@ -1,87 +1,9 @@
 [
     {
-        "id": 410231,
-        "mid": true,
-        "name": "Costume Wonderland Tea Party",
-        "viewID": 0
-    },
-    {
-        "id": 20551,
-        "garment": true,
-        "name": "Costume Light Blue Energy",
-        "viewID": 0
-    },
-    {
-        "id": 20552,
-        "top": true,
-        "name": "Costume: Green Energy",
-        "viewID": 0
-    },
-    {
-        "id": 20550,
-        "garment": true,
-        "name": "Costume Aura of Violet",
-        "viewID": 0
-    },
-    {
-        "id": 20549,
-        "garment": true,
-        "name": "Costume Aura of the Sea Glow",
-        "viewID": 0
-    },
-    {
-        "id": 20548,
-        "garment": true,
-        "name": "Costume Popping Poring Aura",
-        "viewID": 0
-    },
-    {
-        "id": 19576,
-        "top": true,
-        "name": "Costume: Pope Doll",
-        "viewID": 0
-    },
-    {
-        "id": 20553,
-        "garment": true,
-        "name": "Costume Aura of Pink",
-        "viewID": 0
-    },
-    {
-        "id": 20950,
-        "garment": true,
-        "name": "Costume: 175LV Sura Orange",
-        "viewID": 0
-    },
-    {
-        "id": 20554,
-        "top": true,
-        "name": "Costume: Aura of Sanctity",
-        "viewID": 0
-    },
-    {
         "id": 19587,
         "top": true,
         "name": "Costume King Poring Hat",
         "viewID": 905
-    },
-    {
-        "id": 19602,
-        "top": true,
-        "name": "Costume Invisible Cap",
-        "viewID": 0
-    },
-    {
-        "id": 20547,
-        "garment": true,
-        "name": "Costume: Whisper's Blessing",
-        "viewID": 0
-    },
-    {
-        "id": 20538,
-        "garment": true,
-        "name": "Costume: Magic Circle Rainbow",
-        "viewID": 0
     },
     {
         "id": 31089,
@@ -95,35 +17,6 @@
         "name": "Costume: Full Bloom Cherry Tree",
         "viewID": 0,
         "effect": "나뭇잎_완성"
-    },
-    {
-        "id": 31091,
-        "top": true,
-        "name": "Costume: Show Me The Zeny",
-        "viewID": 0
-    },
-    {
-        "id": 20515,
-        "garment": true,
-        "name": "Costume Magic Circle",
-        "viewID": 0
-    },
-    {
-        "id": 24422,
-        "name": "Costume: Fury Energy",
-        "viewID": 0
-    },
-    {
-        "id": 20522,
-        "garment": true,
-        "name": "Costume Blessings of Soul",
-        "viewID": 0
-    },
-    {
-        "id": 480203,
-        "garment": true,
-        "name": "Costume Blue Magic Circle",
-        "viewID": 0
     },
     {
         "id": 20524,
@@ -156,196 +49,16 @@
         "textureOffsetY": 40
     },
     {
-        "id": 19603,
-        "mid": true,
-        "name": "Costume Invisible Sunglasses",
-        "viewID": 0
-    },
-    {
-        "id": 20555,
-        "top": true,
-        "name": "Costume: Silver Energy",
-        "viewID": 0
-    },
-    {
-        "id": 20565,
-        "top": true,
-        "name": "Costume: Aura of Thunder",
-        "viewID": 0
-    },
-    {
         "id": 19701,
         "top": true,
         "name": "Costume Red Bonnet",
         "viewID": 190
     },
     {
-        "id": 20601,
-        "garment": true,
-        "name": "Costume Aura of Red",
-        "viewID": 0
-    },
-    {
-        "id": 20564,
-        "garment": true,
-        "name": "Costume Aura of Flamingo",
-        "viewID": 0
-    },
-    {
-        "id": 20563,
-        "garment": true,
-        "name": "Aura of Razer (3rd Anniversary)",
-        "viewID": 0
-    },
-    {
-        "id": 20566,
-        "top": true,
-        "name": "Costume: Silver Aura",
-        "viewID": 0
-    },
-    {
-        "id": 20567,
-        "garment": true,
-        "name": "Costume Aura of Darkness",
-        "viewID": 0
-    },
-    {
-        "id": 19917,
-        "top": true,
-        "name": "Costume: Gloomy Pumpkin Hat",
-        "viewID": 0
-    },
-    {
-        "id": 20568,
-        "top": true,
-        "name": "Costume: Gold Aura",
-        "viewID": 0
-    },
-    {
-        "id": 20583,
-        "garment": true,
-        "name": "[衣装] イリュージョンクリスタル",
-        "viewID": 0
-    },
-    {
-        "id": 19604,
-        "bot": true,
-        "name": "Costume Invisible Mask",
-        "viewID": 0
-    },
-    {
-        "id": 20562,
-        "top": true,
-        "name": "Costume: Light Blue Aura",
-        "viewID": 0
-    },
-    {
-        "id": 20560,
-        "garment": true,
-        "name": "Costume Aura of the Depths",
-        "viewID": 0
-    },
-    {
-        "id": 20611,
-        "garment": true,
-        "name": "Costume: Gray Aura",
-        "viewID": 0
-    },
-    {
-        "id": 20557,
-        "top": true,
-        "name": "Costume: Gold Energy",
-        "viewID": 0
-    },
-    {
-        "id": 20556,
-        "garment": true,
-        "name": "Costume Aura of Night",
-        "viewID": 0
-    },
-    {
-        "id": 20561,
-        "garment": true,
-        "name": "Costume Aura of Orchid",
-        "viewID": 0
-    },
-    {
-        "id": 20610,
-        "garment": true,
-        "name": "Costume Gray Energy",
-        "viewID": 0
-    },
-    {
-        "id": 20608,
-        "garment": true,
-        "name": "Costume Midnight Blue Energy",
-        "viewID": 0
-    },
-    {
-        "id": 20609,
-        "garment": true,
-        "name": "Costume: Dark Blue Aura",
-        "viewID": 0
-    },
-    {
-        "id": 20559,
-        "garment": true,
-        "name": "Costume Aura of Scarlet",
-        "viewID": 0
-    },
-    {
-        "id": 20558,
-        "garment": true,
-        "name": "Costume Aura of Yellow Green",
-        "viewID": 0
-    },
-    {
-        "id": 20506,
-        "garment": true,
-        "name": "Costume Invisible Manteau",
-        "viewID": 0
-    },
-    {
-        "id": 20569,
-        "garment": true,
-        "name": "Costume Aura of Shamrock",
-        "viewID": 0
-    },
-    {
         "id": 31391,
         "mid": true,
         "name": "Costume Floating Sage Stone",
         "viewID": 1230
-    },
-    {
-        "id": 31435,
-        "top": true,
-        "name": "Costume: Magician Knit Hat",
-        "viewID": 0
-    },
-    {
-        "id": 31289,
-        "bot": true,
-        "name": "[衣装] 保護する者の黒い翼(下段)",
-        "viewID": 0
-    },
-    {
-        "id": 31264,
-        "bot": true,
-        "name": "[衣装] 保護する者の翼(下段)",
-        "viewID": 0
-    },
-    {
-        "id": 20202,
-        "bot": true,
-        "name": "Costume: Deviruchi Balloon",
-        "viewID": 0
-    },
-    {
-        "id": 480296,
-        "garment": true,
-        "name": "Costume: Sakura Fubuki",
-        "viewID": 0
     },
     {
         "id": 20393,
@@ -367,12 +80,6 @@
         "viewID": 1331
     },
     {
-        "id": 20439,
-        "mid": true,
-        "name": "Costume Glow Of New Year",
-        "viewID": 0
-    },
-    {
         "id": 20251,
         "top": true,
         "name": "Costume Rose Cascade",
@@ -386,70 +93,16 @@
         "effect": "ef_snow"
     },
     {
-        "id": 20062,
-        "top": true,
-        "name": "Costume Angel Stairs",
-        "viewID": 0
-    },
-    {
-        "id": 31199,
-        "bot": true,
-        "name": "Costume: Weird Beard",
-        "viewID": 0
-    },
-    {
         "id": 31316,
         "bot": true,
         "name": "Costume Black Swallowtail Wings",
         "viewID": 1665
     },
     {
-        "id": 440008,
-        "top": true,
-        "name": "[衣装] Master",
-        "viewID": 0
-    },
-    {
-        "id": 5914,
-        "bot": true,
-        "name": "Costume Flutter Butterfly Wings",
-        "viewID": 0
-    },
-    {
-        "id": 20346,
-        "top": true,
-        "name": "[衣装] たれパーメットタートル",
-        "viewID": 0
-    },
-    {
         "id": 31193,
         "top": true,
         "name": "Costume Ahat Doll",
         "viewID": 1590
-    },
-    {
-        "id": 19944,
-        "top": true,
-        "name": "[衣装] 勝利の女神（紫）",
-        "viewID": 0
-    },
-    {
-        "id": 19918,
-        "bot": true,
-        "name": "Costume: Lude Mask",
-        "viewID": 0
-    },
-    {
-        "id": 19920,
-        "bot": true,
-        "name": "Costume: Adv Whisper Mask",
-        "viewID": 0
-    },
-    {
-        "id": 410127,
-        "mid": true,
-        "name": "Costume Spotlight",
-        "viewID": 0
     },
     {
         "id": 20404,
@@ -1171,12 +824,6 @@
         "viewID": 93
     },
     {
-        "id": 20990,
-        "garment": true,
-        "name": "Costume Rotating Gears",
-        "viewID": 0
-    },
-    {
         "id": 20992,
         "garment": true,
         "name": "Costume New Year Fairy of Eden",
@@ -1446,12 +1093,6 @@
         "top": true,
         "name": "Costume: Striped Hairband",
         "viewID": 133
-    },
-    {
-        "id": 480205,
-        "garment": true,
-        "name": "Costume Astra Blessing",
-        "viewID": 0
     },
     {
         "id": 31713,
@@ -10411,18 +10052,6 @@
         "viewID": 140
     },
     {
-        "id": 480286,
-        "garment": true,
-        "name": "Costume Serpent Shadow",
-        "viewID": 0
-    },
-    {
-        "id": 480298,
-        "garment": true,
-        "name": "Costume Magic Wonderland",
-        "viewID": 0
-    },
-    {
         "id": 480318,
         "garment": true,
         "name": "Costume Divine Phoenix",
@@ -10583,12 +10212,6 @@
         "garment": true,
         "name": "Costume Ragdoll Face Bag",
         "viewID": 228
-    },
-    {
-        "id": 480470,
-        "garment": true,
-        "name": "Costume Summer Beach",
-        "viewID": 0
     },
     {
         "id": 480472,
@@ -10787,12 +10410,6 @@
         "garment": true,
         "name": "Costume Call of the Deep Sea Octopus",
         "viewID": 238
-    },
-    {
-        "id": 410287,
-        "garment": true,
-        "name": "Costume Cosmic Connection",
-        "viewID": 0
     },
     {
         "id": 480648,
@@ -11132,12 +10749,6 @@
         "viewID": 1027
     },
     {
-        "id": 19287,
-        "top": true,
-        "name": "Costume Cat Poring Balloon",
-        "viewID": 0
-    },
-    {
         "id": 19472,
         "top": true,
         "name": "Costume Circlet of Time",
@@ -11262,12 +10873,6 @@
         "top": true,
         "name": "Costume Ear Of Black Cat",
         "viewID": 141
-    },
-    {
-        "id": 31499,
-        "top": true,
-        "name": "Costume Easter Egg Shell",
-        "viewID": 0
     },
     {
         "id": 400557,
@@ -12263,12 +11868,6 @@
         "viewID": 2568
     },
     {
-        "id": 31056,
-        "mid": true,
-        "name": "Costume Flaming Blast Wave",
-        "viewID": 0
-    },
-    {
         "id": 410328,
         "mid": true,
         "name": "Costume Fluffy Bakery",
@@ -12570,12 +12169,6 @@
         "viewID": 1336
     },
     {
-        "id": 410295,
-        "mid": true,
-        "name": "Costume Winter Night Bells",
-        "viewID": 0
-    },
-    {
         "id": 410171,
         "mid": true,
         "name": "Costume Wishing Tree",
@@ -12612,12 +12205,6 @@
         "viewID": 2028
     },
     {
-        "id": 420337,
-        "bot": true,
-        "name": "Costume Ancient Runes",
-        "viewID": 0
-    },
-    {
         "id": 420346,
         "bot": true,
         "name": "Costume Angel Berry Wig",
@@ -12640,12 +12227,6 @@
         "bot": true,
         "name": "Costume Aura of Amon Ra",
         "viewID": 2094
-    },
-    {
-        "id": 420512,
-        "bot": true,
-        "name": "Costume Aurora On Clouds",
-        "viewID": 0
     },
     {
         "id": 420357,
@@ -12759,18 +12340,6 @@
         "viewID": 363
     },
     {
-        "id": 420552,
-        "bot": true,
-        "name": "Costume Divine Invitation",
-        "viewID": 0
-    },
-    {
-        "id": 420731,
-        "bot": true,
-        "name": "Costume Dr.Nambu's Emergency Transmission",
-        "viewID": 0
-    },
-    {
         "id": 420702,
         "bot": true,
         "name": "Costume Eclipse Muffler",
@@ -12867,18 +12436,6 @@
         "viewID": 2563
     },
     {
-        "id": 420430,
-        "bot": true,
-        "name": "Costume Guardian's Letter",
-        "viewID": 0
-    },
-    {
-        "id": 420429,
-        "bot": true,
-        "name": "Costume Guide's Letter",
-        "viewID": 0
-    },
-    {
         "id": 420282,
         "bot": true,
         "name": "Costume Guillotine Cross Hair (Black)",
@@ -12933,28 +12490,10 @@
         "viewID": 2435
     },
     {
-        "id": 420423,
-        "bot": true,
-        "name": "Costume Ink Painting (Day)",
-        "viewID": 0
-    },
-    {
-        "id": 420424,
-        "bot": true,
-        "name": "Costume Ink Painting (Night)",
-        "viewID": 0
-    },
-    {
         "id": 420204,
         "bot": true,
         "name": "Costume Juncea Wig",
         "viewID": 2361
-    },
-    {
-        "id": 420338,
-        "bot": true,
-        "name": "Costume Lazy Cat Luke",
-        "viewID": 0
     },
     {
         "id": 420069,
@@ -13011,34 +12550,10 @@
         "viewID": 2508
     },
     {
-        "id": 410280,
-        "bot": true,
-        "name": "Costume Niflheim Night Sky",
-        "viewID": 0
-    },
-    {
-        "id": 420304,
-        "bot": true,
-        "name": "Costume Night Sky of Lutie",
-        "viewID": 0
-    },
-    {
-        "id": 420576,
-        "bot": true,
-        "name": "Costume Nightmare Chain",
-        "viewID": 0
-    },
-    {
         "id": 400767,
         "bot": true,
         "name": "Costume Oriental Style Wig",
         "viewID": 2661
-    },
-    {
-        "id": 420511,
-        "bot": true,
-        "name": "Costume Over Cloud",
-        "viewID": 0
     },
     {
         "id": 31428,
