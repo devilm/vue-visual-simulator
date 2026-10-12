@@ -1,4 +1,4 @@
-.PHONY: build
+.PHONY: build run
 
 GH_PAGES_REPO ?= vue-visual-simulator
 export GH_PAGES_REPO
@@ -13,3 +13,6 @@ endif
 
 build:
 	$(NPM) run build:docs
+
+run:
+	$(NPM) run serve

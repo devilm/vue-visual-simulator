@@ -23,6 +23,11 @@ npm install
 npm run serve
 ```
 
+You can also start the development server with:
+```
+make run
+```
+
 ### Compiles and minifies for production
 ```
 npm run build
