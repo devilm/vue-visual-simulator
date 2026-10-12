@@ -12,6 +12,16 @@
                 </p>
             </section>
 
+            <a
+                class="donate-link"
+                href="https://easydonate.app/emutochannel"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <span class="donate-powered">powered by EmutoChannel</span>
+                <span class="donate-message">สนับสนุนค่ากาแฟคลิกเลย ☕</span>
+            </a>
+
             <div class="footer-meta">
                 <small class="project-credit">&copy; {{ projectName }} 2026</small>
                 <nav class="footer-links" aria-label="Project links">
@@ -75,6 +85,40 @@ export default {
     color: rgba(255, 239, 215, 0.76);
     font-size: 0.8rem;
     line-height: 1.6;
+}
+
+.donate-link {
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.15rem;
+    margin: 1.1rem auto 0;
+    padding: 0.55rem 1.15rem;
+    border: 1px solid rgba(240, 214, 163, 0.4);
+    border-radius: 0.5rem;
+    background: rgba(240, 214, 163, 0.08);
+    color: #f0d6a3;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.donate-link:hover,
+.donate-link:focus-visible {
+    border-color: #f0d6a3;
+    background: rgba(240, 214, 163, 0.16);
+    color: #ffe8bb;
+}
+
+.donate-powered {
+    color: rgba(255, 239, 215, 0.62);
+    font-size: 0.7rem;
+}
+
+.donate-message {
+    font-size: 0.85rem;
+    font-weight: 600;
 }
 
 .footer-meta {
