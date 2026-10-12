@@ -265,6 +265,17 @@
       </div>
     </div>
   </div>
+  <aside class="donate-prompt" aria-label="สนับสนุนโปรเจกต์">
+    <span class="donate-powered">powered by EmutoChannel</span>
+    <a
+      class="donate-link"
+      href="https://easydonate.app/emutochannel"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      สนับสนุนค่ากาแฟคลิกเลย ☕
+    </a>
+  </aside>
 </template>
 
 <script>
@@ -534,6 +545,41 @@ export default {
 
 .container-character {
   min-height: 90vh;
+}
+
+.donate-prompt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.6rem;
+  margin: -1.5rem auto 2rem;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.donate-powered {
+  color: rgba(255, 239, 215, 0.82);
+  font-size: 0.75rem;
+}
+
+.donate-link {
+  display: inline-block;
+  padding: 0.35rem 0.8rem;
+  border: 1px solid rgba(201, 166, 105, 0.8);
+  border-radius: 999px;
+  background: rgba(24, 24, 28, 0.88);
+  color: #f0d6a3;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+
+.donate-link:hover,
+.donate-link:focus-visible {
+  background: #f0d6a3;
+  color: #24242a;
 }
 
 .btn-tab-item {
