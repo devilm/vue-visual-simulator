@@ -12882,7 +12882,7 @@
     },
     {
         "id": 31852,
-        "top": true,
+        "bot": true,
         "name": "Costume Witch's Cloak",
         "viewID": 1950
     }
