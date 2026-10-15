@@ -12873,5 +12873,17 @@
         "texture": "texture\\effect\\efst_ros_2026_1st\\mc1_3.str",
         "textureOffsetX": -4,
         "textureOffsetY": 50
+    },
+    {
+        "id": 19893,
+        "top": true,
+        "name": "Costume Ordinary Black Magician Hat",
+        "viewID": 912
+    },
+    {
+        "id": 31852,
+        "top": true,
+        "name": "Costume Witch's Cloak",
+        "viewID": 1950
     }
 ]
