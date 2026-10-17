@@ -72,40 +72,24 @@ export default createStore({
       state.garment_item = item;
     },
     SAVE_CHARACTER_POSITION(state, side) {
-      if (side == "left") {
-        let action = (state.character.action + 1) % 8;
-        if (action == 0) {
-          state.character.action -= 7;
-        } else {
-          state.character.action++;
-        }
-      } else {
-        let action = state.character.action % 8;
-        if (action == 0) {
-          state.character.action += 7;
-        } else {
-          state.character.action--;
-        }
-      }
+      const action = Number(state.character.action);
+      const actionBase = Math.floor(action / 8) * 8;
+      const direction = action % 8;
+      const directionStep = side === "left" ? 1 : -1;
+      state.character.action =
+        actionBase + (direction + directionStep + 8) % 8;
     },
     SAVE_CHARACTER_HEAD(state, side) {
-      let positions = [1, 0, 2];
-      let current_head_position = state.character.headdir;
-      let index = positions.findIndex(
-        (index) => index == current_head_position
-      );
-      if (side == "right") {
-        if (index > 0) index--;
-        state.character.headdir = positions[index];
-      } else {
-        if (index < 2) index++;
-        state.character.headdir = positions[index];
-      }
+      const positions = [1, 0, 2];
+      let index = positions.indexOf(Number(state.character.headdir));
+      if (index < 0) index = 1;
+      const direction = side === "right" ? -1 : 1;
+      index = Math.max(0, Math.min(positions.length - 1, index + direction));
+      state.character.headdir = positions[index];
     },
     SAVE_ACTION(state, id) {
-      let action = (state.character.action + 1) % 8;
-      state.character.action = id + action - 1;
-      if (state.character.action < 0) state.character.action = 0;
+      const direction = Number(state.character.action) % 8;
+      state.character.action = Number(id) + direction;
     },
     SAVE_OUTFIT(state, checked) {
       if (checked) {

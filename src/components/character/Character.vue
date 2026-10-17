@@ -7,7 +7,13 @@
     >
       {{ previewError }}
     </p>
-    <CharacterCanvas :image-src="img_src" @render-error="handleRenderError" />
+    <CharacterCanvas
+      :image-src="img_src"
+      :sprite-sources="usingLocalNovicePreview ? localNoviceSpriteSources : null"
+      :sprite-action="Number(character.action)"
+      :head-direction="Number(character.headdir)"
+      @render-error="handleRenderError"
+    />
   </div>
 </template>
 
@@ -17,6 +23,12 @@ import CharacterCanvas from './CharacterCanvas.vue'
 import itemsJson from '../../db/items.json';
 
 const renderCacheName = "character-renders-v1";
+const localNoviceActionGroups = new Set([0, 1, 2, 3, 4, 5, 6, 8, 10, 11, 12]);
+const localNoviceBodySpriteSources = {
+    bodySpr: `${process.env.BASE_URL}local-assets/novice/body.spr`,
+    bodyAct: `${process.env.BASE_URL}local-assets/novice/body.act`,
+    bodyImf: `${process.env.BASE_URL}local-assets/novice/body.imf`,
+};
 
 async function getRenderCacheKey(url, payload) {
     if (
@@ -62,6 +74,7 @@ export default {
             const jobId = Array.isArray(characterState.job)
                 ? characterState.job[0]
                 : characterState.job;
+            const action = Number(characterState.action);
             const equippedItemIds = [
                 this.$store.state.headgear_top_item,
                 this.$store.state.headgear_mid_item,
@@ -72,16 +85,28 @@ export default {
             return (
                 Number(jobId) === 0 &&
                 Number(characterState.gender) === 1 &&
-                Number(characterState.head) === 1 &&
-                Number(characterState.headPalette) === 1 &&
-                Number(characterState.bodyPalette) === 0 &&
-                Number(characterState.action) === 0 &&
-                Number(characterState.headdir) === 0 &&
+                Number.isInteger(Number(characterState.head)) &&
+                Number(characterState.head) >= 1 &&
+                Number(characterState.head) <= 42 &&
+                Number.isInteger(Number(characterState.headPalette)) &&
+                Number(characterState.headPalette) >= 0 &&
+                Number(characterState.headPalette) <= 8 &&
+                Number.isInteger(Number(characterState.bodyPalette)) &&
+                Number(characterState.bodyPalette) >= 0 &&
+                Number(characterState.bodyPalette) <= 7 &&
+                Number.isInteger(action) &&
+                action >= 0 &&
+                localNoviceActionGroups.has(Math.floor(action / 8)) &&
+                Number.isInteger(Number(characterState.headdir)) &&
+                Number(characterState.headdir) >= 0 &&
+                Number(characterState.headdir) <= 2 &&
                 Number(characterState.outfit) === 0 &&
                 Number(characterState.garment) === 0 &&
                 Array.isArray(characterState.headgear) &&
                 characterState.headgear.every((viewId) => Number(viewId) === 0) &&
-                equippedItemIds.every((item) => !Number(item?.id))
+                equippedItemIds.every((item) => !Number(item?.id)) &&
+                !this.$store.state.regular_mount_checked &&
+                !this.$store.state.cash_mount_checked
             );
         },
         requestCharacter: async function (characterState = this.character) {
@@ -92,7 +117,10 @@ export default {
             this.usingLocalNovicePreview = this.supportsLocalNovicePreview(characterState);
 
             if (this.usingLocalNovicePreview) {
-                this.img_src = `${process.env.BASE_URL}local-assets/novice-default.png`;
+                if (this.img_src.startsWith("blob:")) {
+                    URL.revokeObjectURL(this.img_src);
+                }
+                this.img_src = "";
                 return;
             }
 
@@ -233,6 +261,20 @@ export default {
         ...mapState({
             character: state => state.character,
         }),
+        localNoviceSpriteSources() {
+            const hairStyle = Number(this.character.head);
+            const hairColor = Number(this.character.headPalette);
+            const hairPath = `${process.env.BASE_URL}local-assets/novice/hair/${hairStyle}`;
+            const bodyPalette = Number(this.character.bodyPalette);
+
+            return {
+                ...localNoviceBodySpriteSources,
+                bodyPalette: `${process.env.BASE_URL}local-assets/novice/body_${bodyPalette}.pal`,
+                headSpr: `${hairPath}.spr`,
+                headAct: `${hairPath}.act`,
+                headPalette: `${hairPath}_${hairColor}.pal`,
+            };
+        },
         renderKey() {
             return JSON.stringify({
                 character: this.character,
@@ -242,6 +284,10 @@ export default {
                     this.$store.state.headgear_bottom_item,
                     this.$store.state.garment_item,
                 ].map((item) => item?.id),
+                mounts: [
+                    this.$store.state.regular_mount_checked,
+                    this.$store.state.cash_mount_checked,
+                ],
             })
         },
     },

@@ -10,6 +10,11 @@
 </template>
 
 <script>
+import {
+  loadRagnarokSpriteSet,
+  renderRagnarokCharacter,
+} from "../../utils/ragnarokSprite";
+
 const imageCache = new Map();
 
 function loadImage(src) {
@@ -46,6 +51,18 @@ export default {
       type: Array,
       default: () => [],
     },
+    spriteSources: {
+      type: Object,
+      default: null,
+    },
+    spriteAction: {
+      type: Number,
+      default: 0,
+    },
+    headDirection: {
+      type: Number,
+      default: 0,
+    },
     width: {
       type: Number,
       default: 200,
@@ -59,13 +76,31 @@ export default {
   data() {
     return {
       renderId: 0,
+      animationFrame: 0,
+      animationTimer: null,
     };
   },
   mounted() {
     this.renderCanvas();
+    this.restartSpriteAnimation();
+  },
+  beforeUnmount() {
+    clearInterval(this.animationTimer);
   },
   watch: {
     imageSrc() {
+      this.renderCanvas();
+    },
+    spriteSources() {
+      this.renderCanvas();
+      this.restartSpriteAnimation();
+    },
+    spriteAction() {
+      this.animationFrame = 0;
+      this.renderCanvas();
+      this.restartSpriteAnimation();
+    },
+    headDirection() {
       this.renderCanvas();
     },
     layers: {
@@ -82,9 +117,56 @@ export default {
     },
   },
   methods: {
+    restartSpriteAnimation() {
+      clearInterval(this.animationTimer);
+      this.animationTimer = null;
+
+      if (!this.spriteSources) return;
+      const actionGroup = Math.floor(this.spriteAction / 8);
+      if (actionGroup === 0 || actionGroup === 2) return;
+
+      this.animationTimer = setInterval(() => {
+        this.animationFrame += 1;
+        this.renderCanvas();
+      }, 120);
+    },
     async renderCanvas() {
       const renderId = (this.renderId || 0) + 1;
       this.renderId = renderId;
+
+      if (this.spriteSources) {
+        try {
+          const spriteSet = await loadRagnarokSpriteSet(this.spriteSources);
+          if (renderId !== this.renderId) return;
+
+          const canvas = this.$refs.canvas;
+          const context = canvas?.getContext("2d");
+          if (!context) {
+            throw new Error("Canvas 2D context is unavailable.");
+          }
+
+          const pixelRatio = window.devicePixelRatio || 1;
+          canvas.width = Math.round(this.width * pixelRatio);
+          canvas.height = Math.round(this.height * pixelRatio);
+          canvas.style.width = `${this.width}px`;
+          canvas.style.height = `${this.height}px`;
+          context.setTransform(pixelRatio, 0, 0, pixelRatio, 0, 0);
+          renderRagnarokCharacter(
+            context,
+            spriteSet,
+            this.spriteAction,
+            this.headDirection,
+            this.width,
+            this.height,
+            this.animationFrame
+          );
+        } catch (error) {
+          if (renderId === this.renderId) {
+            this.$emit("render-error", error);
+          }
+        }
+        return;
+      }
 
       const layers = this.layers.length
         ? this.layers

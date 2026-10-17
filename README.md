@@ -2,37 +2,32 @@
 This page was developed in order to allow you to simulate your character costume using a render [API](https://github.com/zhad3/zrenderer).
 
 Character previews are drawn in a client-side Canvas 2D view. The default male
-Novice idle frame is generated locally as a PNG and does not call the render
-API. Other character configurations still use the existing renderer API.
+Novice uses browser-side SPR/ACT decoding for all eight idle directions and
+does not call the render API. Other character configurations still use the
+existing renderer API.
 
 ## Canvas renderer migration
 
-The migration is being developed as a static asset subset; the full extracted
-game data is too large to include in this repository. The first vertical slice
-targets the default male Novice, head 1, idle frame, and default palettes.
+The migration uses a static asset subset; the full extracted game data is too
+large to include in this repository. The browser decoder currently targets the default male Novice, all 42
+hairstyles, nine hair colors, eight clothing colors, and 11 selectable actions.
 
-Generate the local Novice preview on Windows using a compatible
-[`zrenderer` release](https://github.com/zhad3/zrenderer/releases) and an
-extracted resource directory whose `data` folder contains the required
-Ragnarok resources:
+Prepare the local Novice SPR/ACT assets on Windows from an extracted resource
+directory whose `data` folder contains the required Ragnarok resources:
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File .\tools\render-novice-preview.ps1 `
-  -RendererPath "C:\path\to\zrenderer.exe" `
+powershell -ExecutionPolicy Bypass -File .\tools\prepare-novice-assets.ps1 `
   -ResourceRoot "C:\path\to\extracted-resources"
 ```
 
-The generated `public/local-assets/novice-default.png` is intentionally
-git-ignored. It is used for local development and must not be committed or
-deployed unless you have the rights to redistribute that game asset.
+The generated `public/local-assets/novice/` files are intentionally
+git-ignored. They are loaded by the browser at runtime; do not commit or deploy
+them unless you have the rights to redistribute those game assets.
 
-1. Convert supported `.SPR`/`.ACT` data and required metadata into browser
-   assets and frame/layer descriptions.
-2. Load curated static assets in the browser and composite them with Canvas 2D.
-3. Add directions, palettes, headgear, garments, and other jobs incrementally,
-   comparing output with the current renderer.
-4. Remove the render API request only after the supported character options
-   render correctly without it.
+The browser decodes indexed/RLE SPR images, ACT sprite placement, animation
+frames and transforms, and IMF layer priorities before compositing the body
+and selected hairstyle on Canvas 2D. Other character configurations continue
+to use the existing renderer API.
 
 Do not add the full extracted game data to the repository. Only the curated
 assets needed by the supported simulator options should be deployed as static
