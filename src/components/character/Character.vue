@@ -1,9 +1,19 @@
 <template>
-    <img :src="img_src" alt="character" />
+  <div class="character-preview">
+    <p
+      v-if="previewError"
+      class="character-preview-error"
+      role="alert"
+    >
+      {{ previewError }}
+    </p>
+    <CharacterCanvas :image-src="img_src" @render-error="handleRenderError" />
+  </div>
 </template>
 
 <script>
 import { mapState } from 'vuex'
+import CharacterCanvas from './CharacterCanvas.vue'
 import itemsJson from '../../db/items.json';
 
 const renderCacheName = "character-renders-v1";
@@ -30,16 +40,62 @@ async function getRenderCacheKey(url, payload) {
 
 export default {
     name: "Character",
+    components: {
+        CharacterCanvas,
+    },
     data() {
         return {
             img_src: "",
             renderRequestId: 0,
+            previewError: "",
+            usingLocalNovicePreview: false,
         }
     },
     methods: {
+        handleRenderError(error) {
+            console.error("Unable to draw character on canvas:", error);
+            this.previewError = this.usingLocalNovicePreview
+                ? this.$t("novicePreviewMissing")
+                : this.$t("characterPreviewError");
+        },
+        supportsLocalNovicePreview(characterState) {
+            const jobId = Array.isArray(characterState.job)
+                ? characterState.job[0]
+                : characterState.job;
+            const equippedItemIds = [
+                this.$store.state.headgear_top_item,
+                this.$store.state.headgear_mid_item,
+                this.$store.state.headgear_bottom_item,
+                this.$store.state.garment_item,
+            ];
+
+            return (
+                Number(jobId) === 0 &&
+                Number(characterState.gender) === 1 &&
+                Number(characterState.head) === 1 &&
+                Number(characterState.headPalette) === 1 &&
+                Number(characterState.bodyPalette) === 0 &&
+                Number(characterState.action) === 0 &&
+                Number(characterState.headdir) === 0 &&
+                Number(characterState.outfit) === 0 &&
+                Number(characterState.garment) === 0 &&
+                Array.isArray(characterState.headgear) &&
+                characterState.headgear.every((viewId) => Number(viewId) === 0) &&
+                equippedItemIds.every((item) => !Number(item?.id))
+            );
+        },
         requestCharacter: async function (characterState = this.character) {
             const renderRequestId = ++this.renderRequestId;
             const character = JSON.stringify(characterState)
+            localStorage.setItem('character', character);
+            this.previewError = "";
+            this.usingLocalNovicePreview = this.supportsLocalNovicePreview(characterState);
+
+            if (this.usingLocalNovicePreview) {
+                this.img_src = `${process.env.BASE_URL}local-assets/novice-default.png`;
+                return;
+            }
+
             const equippedViewIds = new Set(
                 [...characterState.headgear, characterState.garment].map(Number)
             )
@@ -171,7 +227,6 @@ export default {
             } catch (error) {
                 console.error('There has been a problem with character fetch operation: ' + error.message);
             }
-            localStorage.setItem('character', character);
         }
     },
     computed: {
@@ -202,4 +257,16 @@ export default {
 </script>
 
 <style>
+.character-preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.character-preview-error {
+    margin: 0 0 0.5rem;
+    color: #a94442;
+    font-size: 0.8rem;
+    text-align: center;
+}
 </style>

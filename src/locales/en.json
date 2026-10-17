@@ -20,5 +20,7 @@
     "resetCharacter": "Character",
     "mount": "Mount",
     "regularMount": "Job Mount",
-    "cashMount": "Cash Mount"
+    "cashMount": "Cash Mount",
+    "novicePreviewMissing": "Local Novice preview is missing. Generate it with the instructions in README.md.",
+    "characterPreviewError": "Unable to display the character preview. See the browser console for details."
 }
