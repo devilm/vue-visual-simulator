@@ -30,10 +30,17 @@ import itemsJson from '../../db/items.json';
 const renderCacheName = "character-renders-v1";
 const localSupportedActionGroups = new Set([0, 1, 2, 3, 4, 5, 6, 8, 10, 11, 12]);
 const localSpriteManifestRequests = new Map();
+const configuredAssetBaseUrl = process.env.VUE_APP_ASSET_BASE_URL?.replace(/\/+$/, "");
+
+function getJobAssetUrl(path) {
+    return configuredAssetBaseUrl
+        ? `${configuredAssetBaseUrl}/jobs/${path}`
+        : `${process.env.BASE_URL}local-assets/jobs/${path}`;
+}
 
 function loadLocalJobManifest() {
     if (!localSpriteManifestRequests.has("jobs")) {
-        const source = `${process.env.BASE_URL}local-assets/jobs/manifest.json`;
+        const source = getJobAssetUrl("manifest.json");
         const request = fetch(source)
             .then((response) => {
                 if (!response.ok) {
@@ -60,14 +67,14 @@ function loadLocalJobManifest() {
 function loadLocalJobSpriteViewIds(spriteType, gender) {
     return loadLocalSpriteViewIdsFrom(
         `jobs:${spriteType}:${gender}`,
-        `local-assets/jobs/equipment/${spriteType}/${gender}/manifest.json`,
+        `equipment/${spriteType}/${gender}/manifest.json`,
         spriteType
     );
 }
 
 function loadLocalSpriteViewIdsFrom(requestKey, sourcePath, spriteType) {
     if (!localSpriteManifestRequests.has(requestKey)) {
-        const source = `${process.env.BASE_URL}${sourcePath}`;
+        const source = getJobAssetUrl(sourcePath);
         const request = fetch(source)
             .then((response) => {
                 if (!response.ok) {
@@ -136,9 +143,12 @@ export default {
     methods: {
         handleRenderError(error) {
             console.error("Unable to draw character on canvas:", error);
-            this.previewError = this.usingLocalCharacterPreview
-                ? this.$t("localPreviewMissing")
-                : this.$t("characterPreviewError");
+            if (this.usingLocalCharacterPreview) {
+                this.usingLocalCharacterPreview = false;
+                this.requestCharacter(this.character, { skipLocalPreview: true });
+                return;
+            }
+            this.previewError = this.$t("characterPreviewError");
         },
         supportsLocalCharacterPreview(
             characterState,
@@ -212,53 +222,60 @@ export default {
                 !this.$store.state.cash_mount_checked
             );
         },
-        requestCharacter: async function (characterState = this.character) {
+        requestCharacter: async function (
+            characterState = this.character,
+            { skipLocalPreview = false } = {}
+        ) {
             const renderRequestId = ++this.renderRequestId;
             const character = JSON.stringify(characterState)
             localStorage.setItem('character', character);
             this.previewError = "";
-            let localHeadgearViewIds;
-            let localJobManifest;
-            const requests = [
-                loadLocalJobManifest().then((manifest) => {
-                    localJobManifest = manifest;
-                }),
-            ];
-            if (
-                Array.isArray(characterState.headgear) &&
-                characterState.headgear.some((viewId) => Number(viewId) !== 0)
-            ) {
-                requests.push(
-                    loadLocalJobSpriteViewIds(
-                        "headgear",
-                        Number(characterState.gender)
-                    ).then((viewIds) => {
-                        localHeadgearViewIds = viewIds;
-                    })
-                );
-            }
-            try {
-                await Promise.all(requests);
-            } catch (error) {
-                console.warn(
-                    "Local character assets are unavailable; using the renderer API.",
-                    error
-                );
-            }
-            if (renderRequestId !== this.renderRequestId) return;
-            this.localJobManifest = localJobManifest || null;
-            this.usingLocalCharacterPreview = this.supportsLocalCharacterPreview(
-                characterState,
-                localJobManifest,
-                localHeadgearViewIds
-            );
-
-            if (this.usingLocalCharacterPreview) {
-                if (this.img_src.startsWith("blob:")) {
-                    URL.revokeObjectURL(this.img_src);
+            if (!skipLocalPreview) {
+                let localHeadgearViewIds;
+                let localJobManifest;
+                const requests = [
+                    loadLocalJobManifest().then((manifest) => {
+                        localJobManifest = manifest;
+                    }),
+                ];
+                if (
+                    Array.isArray(characterState.headgear) &&
+                    characterState.headgear.some((viewId) => Number(viewId) !== 0)
+                ) {
+                    requests.push(
+                        loadLocalJobSpriteViewIds(
+                            "headgear",
+                            Number(characterState.gender)
+                        ).then((viewIds) => {
+                            localHeadgearViewIds = viewIds;
+                        })
+                    );
                 }
-                this.img_src = "";
-                return;
+                try {
+                    await Promise.all(requests);
+                } catch (error) {
+                    console.warn(
+                        "Local character assets are unavailable; using the renderer API.",
+                        error
+                    );
+                }
+                if (renderRequestId !== this.renderRequestId) return;
+                this.localJobManifest = localJobManifest || null;
+                this.usingLocalCharacterPreview = this.supportsLocalCharacterPreview(
+                    characterState,
+                    localJobManifest,
+                    localHeadgearViewIds
+                );
+
+                if (this.usingLocalCharacterPreview) {
+                    if (this.img_src.startsWith("blob:")) {
+                        URL.revokeObjectURL(this.img_src);
+                    }
+                    this.img_src = "";
+                    return;
+                }
+            } else {
+                this.usingLocalCharacterPreview = false;
             }
 
             const equippedViewIds = new Set(
@@ -391,6 +408,9 @@ export default {
                 }
             } catch (error) {
                 console.error('There has been a problem with character fetch operation: ' + error.message);
+                if (renderRequestId === this.renderRequestId) {
+                    this.previewError = this.$t("characterPreviewError");
+                }
             }
         }
     },
@@ -406,8 +426,8 @@ export default {
             const localJob = this.localJobManifest?.jobs?.[jobId]?.[gender];
             if (!localJob) return null;
 
-            const assetBase = `${process.env.BASE_URL}local-assets/jobs/${jobId}/${gender}`;
-            const hairBase = `${process.env.BASE_URL}local-assets/jobs/hair/${localJob.race}/${gender}/${Number(this.character.head)}`;
+            const assetBase = getJobAssetUrl(`${jobId}/${gender}`);
+            const hairBase = getJobAssetUrl(`hair/${localJob.race}/${gender}/${Number(this.character.head)}`);
 
             const hairStyle = Number(this.character.head);
             const hairColor = Number(this.character.headPalette);
@@ -420,11 +440,11 @@ export default {
                 bodyPalette: `${assetBase}/body_${bodyPalette}.pal`,
                 headSpr: `${hairBase}.spr`,
                 headAct: `${hairBase}.act`,
-                headPalette: `${process.env.BASE_URL}local-assets/jobs/hair/${localJob.race}/${gender}/${hairStyle}_${hairColor}.pal`,
+                headPalette: getJobAssetUrl(`hair/${localJob.race}/${gender}/${hairStyle}_${hairColor}.pal`),
                 headgear: this.character.headgear.map((viewId) => {
                     const id = Number(viewId);
                     if (!id) return null;
-                    const headgearPath = `${process.env.BASE_URL}local-assets/jobs/equipment/headgear/${gender}/${id}`;
+                    const headgearPath = getJobAssetUrl(`equipment/headgear/${gender}/${id}`);
                     return {
                         spr: `${headgearPath}.spr`,
                         act: `${headgearPath}.act`,

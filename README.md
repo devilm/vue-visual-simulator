@@ -44,6 +44,14 @@ forward. The Giant Shark costume is drawn between the hairstyle and body layers,
 so it covers overlapping hair without obscuring the character. Other equipment
 without matching prepared assets continues to use the existing renderer API.
 
+To load job assets from an external host such as Cloudflare R2, set
+`VUE_APP_ASSET_BASE_URL` to the public base URL without the `/jobs` suffix.
+The app requests manifests and sprites under `<base-url>/jobs/`; if this
+setting is empty, it uses `public/local-assets/jobs/`. Configure bucket CORS
+to allow GET requests from the app's development and deployed origins. If an
+individual sprite fails to load or decode, the preview falls back to the
+renderer API.
+
 The prepared headgear and garment subset can be large. Generated assets are
 git-ignored; do not add the full extracted game data to the repository or
 deploy assets unless you have the rights to redistribute those game assets.
