@@ -78,4 +78,20 @@ for ($hairStyle = 1; $hairStyle -le 42; $hairStyle++) {
     }
 }
 
-Write-Output "Prepared body sprites, eight clothing colors, and 42 Novice hairstyles with nine hair colors in $outputDirectory"
+$jobAssetPreparer = Join-Path $PSScriptRoot "prepare-local-job-assets.js"
+$jobOutputDirectory = Join-Path $projectRoot "public\local-assets\jobs"
+$jobListPath = Join-Path $projectRoot "src\components\character\JobList.vue"
+& node $jobAssetPreparer $resources $jobOutputDirectory $jobListPath
+if ($LASTEXITCODE -ne 0) {
+    throw "Local job asset preparation failed."
+}
+
+$equipmentPreparer = Join-Path $PSScriptRoot "prepare-novice-equipment-assets.js"
+$itemsPath = Join-Path $projectRoot "src\db\items.json"
+$jobManifestPath = Join-Path $jobOutputDirectory "manifest.json"
+& node $equipmentPreparer $resources $outputDirectory $itemsPath $jobManifestPath
+if ($LASTEXITCODE -ne 0) {
+    throw "Local equipment asset preparation failed."
+}
+
+Write-Output "Prepared Novice equipment in $outputDirectory and all available job/gender assets in $jobOutputDirectory"

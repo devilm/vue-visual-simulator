@@ -2,6 +2,7 @@
 node_modules
 /dist
 /public/local-assets/novice/
+/public/local-assets/jobs/
 
 
 # local env files

@@ -9,9 +9,14 @@
     </p>
     <CharacterCanvas
       :image-src="img_src"
-      :sprite-sources="usingLocalNovicePreview ? localNoviceSpriteSources : null"
+      :sprite-sources="usingLocalCharacterPreview ? localCharacterSpriteSources : null"
       :sprite-action="Number(character.action)"
       :head-direction="Number(character.headdir)"
+      :garment-draw-on-top="
+        Number(character.garment) !== 0 &&
+        Number(character.garment) !== 109
+      "
+      :garment-covers-hair="Number(character.garment) === 109"
       @render-error="handleRenderError"
     />
   </div>
@@ -23,12 +28,76 @@ import CharacterCanvas from './CharacterCanvas.vue'
 import itemsJson from '../../db/items.json';
 
 const renderCacheName = "character-renders-v1";
-const localNoviceActionGroups = new Set([0, 1, 2, 3, 4, 5, 6, 8, 10, 11, 12]);
-const localNoviceBodySpriteSources = {
-    bodySpr: `${process.env.BASE_URL}local-assets/novice/body.spr`,
-    bodyAct: `${process.env.BASE_URL}local-assets/novice/body.act`,
-    bodyImf: `${process.env.BASE_URL}local-assets/novice/body.imf`,
-};
+const localSupportedActionGroups = new Set([0, 1, 2, 3, 4, 5, 6, 8, 10, 11, 12]);
+const localSpriteManifestRequests = new Map();
+
+function loadLocalJobManifest() {
+    if (!localSpriteManifestRequests.has("jobs")) {
+        const source = `${process.env.BASE_URL}local-assets/jobs/manifest.json`;
+        const request = fetch(source)
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error(`Unable to load ${source}: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then((manifest) => {
+                if (!manifest.jobs || typeof manifest.jobs !== "object") {
+                    throw new Error("Local job manifest has an invalid format.");
+                }
+                return manifest;
+            })
+            .catch((error) => {
+                localSpriteManifestRequests.delete("jobs");
+                throw error;
+            });
+        localSpriteManifestRequests.set("jobs", request);
+    }
+
+    return localSpriteManifestRequests.get("jobs");
+}
+
+function loadLocalJobSpriteViewIds(spriteType, gender) {
+    return loadLocalSpriteViewIdsFrom(
+        `jobs:${spriteType}:${gender}`,
+        `local-assets/jobs/equipment/${spriteType}/${gender}/manifest.json`,
+        spriteType
+    );
+}
+
+function loadLocalSpriteViewIdsFrom(requestKey, sourcePath, spriteType) {
+    if (!localSpriteManifestRequests.has(requestKey)) {
+        const source = `${process.env.BASE_URL}${sourcePath}`;
+        const request = fetch(source)
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error(`Unable to load ${source}: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then((manifest) => {
+                if (!Array.isArray(manifest.viewIds)) {
+                    throw new Error(`Local ${spriteType} manifest has an invalid format.`);
+                }
+                const viewIds = manifest.viewIds.map(Number);
+                if (
+                    viewIds.some(
+                        (viewId) => !Number.isInteger(viewId) || viewId <= 0
+                    )
+                ) {
+                    throw new Error(`Local ${spriteType} manifest contains an invalid view ID.`);
+                }
+                return new Set(viewIds);
+            })
+            .catch((error) => {
+                localSpriteManifestRequests.delete(requestKey);
+                throw error;
+            });
+        localSpriteManifestRequests.set(requestKey, request);
+    }
+
+    return localSpriteManifestRequests.get(requestKey);
+}
 
 async function getRenderCacheKey(url, payload) {
     if (
@@ -60,51 +129,85 @@ export default {
             img_src: "",
             renderRequestId: 0,
             previewError: "",
-            usingLocalNovicePreview: false,
+            localJobManifest: null,
+            usingLocalCharacterPreview: false,
         }
     },
     methods: {
         handleRenderError(error) {
             console.error("Unable to draw character on canvas:", error);
-            this.previewError = this.usingLocalNovicePreview
-                ? this.$t("novicePreviewMissing")
+            this.previewError = this.usingLocalCharacterPreview
+                ? this.$t("localPreviewMissing")
                 : this.$t("characterPreviewError");
         },
-        supportsLocalNovicePreview(characterState) {
+        supportsLocalCharacterPreview(
+            characterState,
+            localJobManifest,
+            localHeadgearViewIds
+        ) {
             const jobId = Array.isArray(characterState.job)
                 ? characterState.job[0]
                 : characterState.job;
+            const numericJobId = Number(jobId);
+            const gender = Number(characterState.gender);
+            const localJob = localJobManifest?.jobs?.[numericJobId]?.[gender];
             const action = Number(characterState.action);
-            const equippedItemIds = [
+            const hairPalettes =
+                localJob?.hairstyles?.[Number(characterState.head)] || [];
+            const equippedHeadgearItems = [
+                this.$store.state.headgear_bottom_item,
                 this.$store.state.headgear_top_item,
                 this.$store.state.headgear_mid_item,
-                this.$store.state.headgear_bottom_item,
-                this.$store.state.garment_item,
             ];
+            const garmentItem = this.$store.state.garment_item;
+            const localJobGarmentViewIds = new Set(
+                localJob?.garmentViewIds || []
+            );
+            const hasHeadgear =
+                (Array.isArray(characterState.headgear) &&
+                    characterState.headgear.some((viewId) => Number(viewId) !== 0)) ||
+                equippedHeadgearItems.some((item) => Boolean(Number(item?.id)));
+            const hasGarment =
+                Boolean(Number(characterState.garment)) ||
+                Boolean(Number(garmentItem?.id));
 
             return (
-                Number(jobId) === 0 &&
-                Number(characterState.gender) === 1 &&
-                Number.isInteger(Number(characterState.head)) &&
-                Number(characterState.head) >= 1 &&
-                Number(characterState.head) <= 42 &&
+                Boolean(localJob) &&
+                Array.isArray(localJob.bodyPalettes) &&
+                localJob.bodyPalettes.includes(Number(characterState.bodyPalette)) &&
+                Array.isArray(hairPalettes) &&
+                hairPalettes.includes(Number(characterState.headPalette)) &&
                 Number.isInteger(Number(characterState.headPalette)) &&
-                Number(characterState.headPalette) >= 0 &&
-                Number(characterState.headPalette) <= 8 &&
+                Number.isInteger(Number(characterState.head)) &&
                 Number.isInteger(Number(characterState.bodyPalette)) &&
-                Number(characterState.bodyPalette) >= 0 &&
-                Number(characterState.bodyPalette) <= 7 &&
                 Number.isInteger(action) &&
                 action >= 0 &&
-                localNoviceActionGroups.has(Math.floor(action / 8)) &&
+                localSupportedActionGroups.has(Math.floor(action / 8)) &&
                 Number.isInteger(Number(characterState.headdir)) &&
                 Number(characterState.headdir) >= 0 &&
                 Number(characterState.headdir) <= 2 &&
                 Number(characterState.outfit) === 0 &&
-                Number(characterState.garment) === 0 &&
-                Array.isArray(characterState.headgear) &&
-                characterState.headgear.every((viewId) => Number(viewId) === 0) &&
-                equippedItemIds.every((item) => !Number(item?.id)) &&
+                (!hasHeadgear ||
+                    (Array.isArray(characterState.headgear) &&
+                        characterState.headgear.every(
+                            (viewId) =>
+                                Number(viewId) === 0 ||
+                                localHeadgearViewIds?.has(Number(viewId))
+                        ) &&
+                        equippedHeadgearItems.every(
+                            (item) =>
+                                !Number(item?.id) ||
+                                localHeadgearViewIds?.has(Number(item.viewID))
+                        ))) &&
+                (!hasGarment ||
+                    ((Number(characterState.garment) === 0 ||
+                        localJobGarmentViewIds.has(Number(characterState.garment))) &&
+                        (!Number(garmentItem?.id) ||
+                            (!garmentItem.effect &&
+                                !garmentItem.texture &&
+                                garmentItem.textureOffsetX == null &&
+                                garmentItem.textureOffsetY == null &&
+                                localJobGarmentViewIds.has(Number(garmentItem.viewID)))))) &&
                 !this.$store.state.regular_mount_checked &&
                 !this.$store.state.cash_mount_checked
             );
@@ -114,9 +217,43 @@ export default {
             const character = JSON.stringify(characterState)
             localStorage.setItem('character', character);
             this.previewError = "";
-            this.usingLocalNovicePreview = this.supportsLocalNovicePreview(characterState);
+            let localHeadgearViewIds;
+            let localJobManifest;
+            const requests = [
+                loadLocalJobManifest().then((manifest) => {
+                    localJobManifest = manifest;
+                }),
+            ];
+            if (
+                Array.isArray(characterState.headgear) &&
+                characterState.headgear.some((viewId) => Number(viewId) !== 0)
+            ) {
+                requests.push(
+                    loadLocalJobSpriteViewIds(
+                        "headgear",
+                        Number(characterState.gender)
+                    ).then((viewIds) => {
+                        localHeadgearViewIds = viewIds;
+                    })
+                );
+            }
+            try {
+                await Promise.all(requests);
+            } catch (error) {
+                console.warn(
+                    "Local character assets are unavailable; using the renderer API.",
+                    error
+                );
+            }
+            if (renderRequestId !== this.renderRequestId) return;
+            this.localJobManifest = localJobManifest || null;
+            this.usingLocalCharacterPreview = this.supportsLocalCharacterPreview(
+                characterState,
+                localJobManifest,
+                localHeadgearViewIds
+            );
 
-            if (this.usingLocalNovicePreview) {
+            if (this.usingLocalCharacterPreview) {
                 if (this.img_src.startsWith("blob:")) {
                     URL.revokeObjectURL(this.img_src);
                 }
@@ -261,18 +398,44 @@ export default {
         ...mapState({
             character: state => state.character,
         }),
-        localNoviceSpriteSources() {
+        localCharacterSpriteSources() {
+            const jobId = Array.isArray(this.character.job)
+                ? Number(this.character.job[0])
+                : Number(this.character.job);
+            const gender = Number(this.character.gender);
+            const localJob = this.localJobManifest?.jobs?.[jobId]?.[gender];
+            if (!localJob) return null;
+
+            const assetBase = `${process.env.BASE_URL}local-assets/jobs/${jobId}/${gender}`;
+            const hairBase = `${process.env.BASE_URL}local-assets/jobs/hair/${localJob.race}/${gender}/${Number(this.character.head)}`;
+
             const hairStyle = Number(this.character.head);
             const hairColor = Number(this.character.headPalette);
-            const hairPath = `${process.env.BASE_URL}local-assets/novice/hair/${hairStyle}`;
             const bodyPalette = Number(this.character.bodyPalette);
 
             return {
-                ...localNoviceBodySpriteSources,
-                bodyPalette: `${process.env.BASE_URL}local-assets/novice/body_${bodyPalette}.pal`,
-                headSpr: `${hairPath}.spr`,
-                headAct: `${hairPath}.act`,
-                headPalette: `${hairPath}_${hairColor}.pal`,
+                bodySpr: `${assetBase}/body.spr`,
+                bodyAct: `${assetBase}/body.act`,
+                bodyImf: localJob.hasImf ? `${assetBase}/body.imf` : null,
+                bodyPalette: `${assetBase}/body_${bodyPalette}.pal`,
+                headSpr: `${hairBase}.spr`,
+                headAct: `${hairBase}.act`,
+                headPalette: `${process.env.BASE_URL}local-assets/jobs/hair/${localJob.race}/${gender}/${hairStyle}_${hairColor}.pal`,
+                headgear: this.character.headgear.map((viewId) => {
+                    const id = Number(viewId);
+                    if (!id) return null;
+                    const headgearPath = `${process.env.BASE_URL}local-assets/jobs/equipment/headgear/${gender}/${id}`;
+                    return {
+                        spr: `${headgearPath}.spr`,
+                        act: `${headgearPath}.act`,
+                    };
+                }),
+                garment: Number(this.character.garment)
+                    ? {
+                          spr: `${assetBase}/garment/${Number(this.character.garment)}.spr`,
+                          act: `${assetBase}/garment/${Number(this.character.garment)}.act`,
+                      }
+                    : null,
             };
         },
         renderKey() {

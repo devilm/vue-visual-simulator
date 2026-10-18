@@ -63,6 +63,14 @@ export default {
       type: Number,
       default: 0,
     },
+    garmentDrawOnTop: {
+      type: Boolean,
+      default: false,
+    },
+    garmentCoversHair: {
+      type: Boolean,
+      default: false,
+    },
     width: {
       type: Number,
       default: 200,
@@ -101,6 +109,12 @@ export default {
       this.restartSpriteAnimation();
     },
     headDirection() {
+      this.renderCanvas();
+    },
+    garmentDrawOnTop() {
+      this.renderCanvas();
+    },
+    garmentCoversHair() {
       this.renderCanvas();
     },
     layers: {
@@ -158,7 +172,9 @@ export default {
             this.headDirection,
             this.width,
             this.height,
-            this.animationFrame
+            this.animationFrame,
+            this.garmentDrawOnTop,
+            this.garmentCoversHair
           );
         } catch (error) {
           if (renderId === this.renderId) {

@@ -338,6 +338,36 @@ function decodeImf(buffer) {
 export function loadRagnarokSpriteSet(sources) {
   const cacheKey = JSON.stringify(sources);
   if (!spriteSetCache.has(cacheKey)) {
+    const headgearRequests = (sources.headgear || []).map((headgear) =>
+      headgear
+        ? Promise.all([
+            loadDecoded(
+              decodedSprCache,
+              headgear.spr,
+              async () => decodeSpr(await loadBuffer(headgear.spr, sprCache))
+            ),
+            loadDecoded(
+              decodedActCache,
+              headgear.act,
+              async () => decodeAct(await loadBuffer(headgear.act, actCache))
+            ),
+          ]).then(([spr, act]) => ({ spr, act }))
+        : Promise.resolve(null)
+    );
+    const garmentRequest = sources.garment
+      ? Promise.all([
+          loadDecoded(
+            decodedSprCache,
+            sources.garment.spr,
+            async () => decodeSpr(await loadBuffer(sources.garment.spr, sprCache))
+          ),
+          loadDecoded(
+            decodedActCache,
+            sources.garment.act,
+            async () => decodeAct(await loadBuffer(sources.garment.act, actCache))
+          ),
+        ]).then(([spr, act]) => ({ spr, act }))
+      : Promise.resolve(null);
     const request = Promise.all([
       loadDecoded(
         decodedSprCache,
@@ -353,11 +383,13 @@ export function loadRagnarokSpriteSet(sources) {
         sources.bodyAct,
         async () => decodeAct(await loadBuffer(sources.bodyAct, actCache))
       ),
-      loadDecoded(
-        decodedImfCache,
-        sources.bodyImf,
-        async () => decodeImf(await loadBuffer(sources.bodyImf, imfCache))
-      ),
+      sources.bodyImf
+        ? loadDecoded(
+            decodedImfCache,
+            sources.bodyImf,
+            async () => decodeImf(await loadBuffer(sources.bodyImf, imfCache))
+          )
+        : Promise.resolve(null),
       loadDecoded(
         decodedSprCache,
         `${sources.headSpr}\n${sources.headPalette}`,
@@ -372,12 +404,23 @@ export function loadRagnarokSpriteSet(sources) {
         sources.headAct,
         async () => decodeAct(await loadBuffer(sources.headAct, actCache))
       ),
-    ]).then(([bodySpr, bodyAct, bodyImf, headSpr, headAct]) => ({
+      ...headgearRequests,
+      garmentRequest,
+    ]).then(([
       bodySpr,
       bodyAct,
       bodyImf,
       headSpr,
       headAct,
+      ...loadedSprites
+    ]) => ({
+      bodySpr,
+      bodyAct,
+      bodyImf,
+      headSpr,
+      headAct,
+      headgear: loadedSprites.slice(0, headgearRequests.length),
+      garment: loadedSprites[headgearRequests.length],
     }));
     spriteSetCache.set(
       cacheKey,
@@ -456,7 +499,9 @@ export function renderRagnarokCharacter(
   headDirection,
   width,
   height,
-  animationFrame = 0
+  animationFrame = 0,
+  garmentDrawOnTop = false,
+  garmentCoversHair = false
 ) {
   const direction = action % 8;
   const actionGroup = Math.floor(action / 8);
@@ -478,18 +523,94 @@ export function renderRagnarokCharacter(
   const headAnchor = headFrame.attachPoints[0] || { x: 0, y: 0 };
   const headOffsetX = bodyAnchor.x - headAnchor.x;
   const headOffsetY = bodyAnchor.y - headAnchor.y;
-  const imfPriority = spriteSet.bodyImf[1]?.[action]?.[bodyFrameIndex];
-  const drawHeadBehindBody = direction >= 2 && direction <= 5 && imfPriority === 1;
+  const imfPriority = spriteSet.bodyImf?.[1]?.[action]?.[bodyFrameIndex];
+  const drawHeadBehindBody =
+    direction >= 2 &&
+    direction <= 5 &&
+    (imfPriority == null || imfPriority === 1);
 
   context.clearRect(0, 0, width, height);
   context.imageSmoothingEnabled = false;
   const originX = width / 2;
   const originY = height * 0.75;
+  const drawGarment = () => {
+    if (!spriteSet.garment) return;
+
+    const garmentAction = spriteSet.garment.act.actions[action];
+    if (!garmentAction?.frames.length) {
+      throw new Error(`Garment ACT has no renderable action ${action}.`);
+    }
+    const garmentFrameIndex = isHeadDirectionPose
+      ? Math.floor((headDirection * garmentAction.frames.length) / 3)
+      : animationFrame % garmentAction.frames.length;
+    const garmentFrame = getFrame(
+      { garmentAct: spriteSet.garment.act },
+      action,
+      garmentFrameIndex,
+      "garment"
+    );
+    const garmentOffsetX = direction >= 2 && direction <= 6 ? -2 : 0;
+    drawFrame(
+      context,
+      garmentFrame,
+      spriteSet.garment.spr.images,
+      originX + garmentOffsetX,
+      originY
+    );
+  };
+  const drawGarmentOverBody =
+    garmentDrawOnTop && direction >= 2 && direction <= 6;
+  if (!drawGarmentOverBody && !garmentCoversHair) drawGarment();
+  const drawHeadgear = () => {
+    spriteSet.headgear.forEach((headgear) => {
+      if (!headgear) return;
+
+      const accessoryAction = headgear.act.actions[action];
+      if (!accessoryAction?.frames.length) {
+        throw new Error(`Headgear ACT has no renderable action ${action}.`);
+      }
+      const accessoryFrameIndex = isHeadDirectionPose
+        ? Math.floor(
+            (headDirection * accessoryAction.frames.length) / 3
+          )
+        : animationFrame % accessoryAction.frames.length;
+      const accessoryFrame = getFrame(
+        { accessoryAct: headgear.act },
+        action,
+        accessoryFrameIndex,
+        "accessory"
+      );
+      const accessoryAnchor = accessoryFrame.attachPoints[0] || { x: 0, y: 0 };
+      drawFrame(
+        context,
+        accessoryFrame,
+        headgear.spr.images,
+        originX + bodyAnchor.x - accessoryAnchor.x,
+        originY + bodyAnchor.y - accessoryAnchor.y
+      );
+    });
+  };
+  if (garmentCoversHair) {
+    drawFrame(
+      context,
+      headFrame,
+      spriteSet.headSpr.images,
+      originX + headOffsetX,
+      originY + headOffsetY
+    );
+    drawGarment();
+    drawFrame(context, bodyFrame, spriteSet.bodySpr.images, originX, originY);
+    drawHeadgear();
+    return;
+  }
   if (drawHeadBehindBody) {
     drawFrame(context, headFrame, spriteSet.headSpr.images, originX + headOffsetX, originY + headOffsetY);
     drawFrame(context, bodyFrame, spriteSet.bodySpr.images, originX, originY);
+    if (drawGarmentOverBody) drawGarment();
   } else {
     drawFrame(context, bodyFrame, spriteSet.bodySpr.images, originX, originY);
+    if (drawGarmentOverBody) drawGarment();
     drawFrame(context, headFrame, spriteSet.headSpr.images, originX + headOffsetX, originY + headOffsetY);
   }
+  drawHeadgear();
 }

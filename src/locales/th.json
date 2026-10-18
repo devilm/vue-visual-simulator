@@ -21,6 +21,6 @@
     "mount": "พาหนะ",
     "regularMount": "พาหนะประจำอาชีพ",
     "cashMount": "พาหนะ Cash",
-    "novicePreviewMissing": "ไม่พบภาพ Novice ในเครื่อง กรุณาสร้างตามขั้นตอนใน README.md",
+    "localPreviewMissing": "ไม่พบไฟล์ภาพตัวละครในเครื่อง กรุณาสร้างตามขั้นตอนใน README.md",
     "characterPreviewError": "ไม่สามารถแสดงภาพตัวละครได้ กรุณาตรวจสอบรายละเอียดใน browser console"
 }
