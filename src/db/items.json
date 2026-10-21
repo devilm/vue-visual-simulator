@@ -12879,5 +12879,47 @@
         "bot": true,
         "name": "Costume Witch's Cloak",
         "viewID": 1950
+    },
+    {
+        "id": 420842,
+        "bot": true,
+        "name": "Costume Water Deity",
+        "viewID": 2842
+    },
+    {
+        "id": 401572,
+        "top": true,
+        "name": "Costume Eleanor's Black Wig",
+        "viewID": 2352
+    },
+    {
+        "id": 420909,
+        "bot": true,
+        "name": "Costume Decorated Aqua Marin",
+        "viewID": 2866
+    },
+    {
+        "id": 410680,
+        "mid": true,
+        "name": "Costume Angler Dream",
+        "viewID": 2868
+    },
+    {
+        "id": 480895,
+        "garment": true,
+        "name": "Costume Tuna Fishing",
+        "viewID": 2868
+    },
+    {
+        "id": 480431,
+        "garment": true,
+        "name": "Costume Sweet Flower Garden",
+        "viewID": 214
+    },
+    {
+        "id": 401472,
+        "top": true,
+        "name": "Costume Deepsea Pearls Hat",
+        "viewID": 2869
     }
 ]
