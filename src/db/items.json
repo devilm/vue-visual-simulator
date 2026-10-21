@@ -12921,5 +12921,11 @@
         "top": true,
         "name": "Costume Deepsea Pearls Hat",
         "viewID": 2869
+    },
+    {
+        "id": 19713,
+        "bot": true,
+        "name": "Costume Four Leaf Clover",
+        "viewID": 571
     }
 ]
