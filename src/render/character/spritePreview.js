@@ -168,6 +168,18 @@ export async function loadCharacterParts(resolvedAssets, character) {
 
   const imf = await loadImf(resolvedAssets.imfPathCandidates);
 
+  // Headgear shares the head's ACT layout (same actions/motions) and is drawn together with the head layer.
+  const headgearSheets = headSheet.ok
+    ? (
+        await Promise.all(
+          (resolvedAssets.headgear || []).map(async (entry) => ({
+            entry,
+            sheet: await loadSpriteSheet(entry.spritePathCandidates, entry.actPathCandidates),
+          }))
+        )
+      ).filter(({ sheet }) => sheet.ok)
+    : [];
+
   const frameCount = isStaticPose ? 1 : bodyAction.motions.length;
   const frames = [];
   let headOk = false;
@@ -194,6 +206,25 @@ export async function loadCharacterParts(resolvedAssets, character) {
           y: offset.y + headImf.y,
         });
         headOk = true;
+
+        for (const { sheet } of headgearSheets) {
+          const gearMotion = resolveMotion(sheet, actionIndex, isStaticPose ? headTurn : frameIndex);
+          if (!gearMotion) {
+            continue;
+          }
+          // Same attachment rule as the head: align the headgear anchor with the body anchor.
+          const gearAnchor = gearMotion.anchors[0];
+          const gearOffset =
+            bodyAnchor && gearAnchor
+              ? { x: bodyAnchor.x - gearAnchor.x, y: bodyAnchor.y - gearAnchor.y }
+              : offset;
+          layerParts[HEAD_LAYER].push(
+            ...motionToParts(sheet, gearMotion, {
+              x: gearOffset.x + headImf.x,
+              y: gearOffset.y + headImf.y,
+            })
+          );
+        }
       }
     }
 
@@ -219,6 +250,7 @@ export async function loadCharacterParts(resolvedAssets, character) {
       bodyMotionIndex,
       headMotionIndex,
       headOk,
+      headgearCount: headgearSheets.length,
       imfLoaded: Boolean(imf),
       bodyActVersion: bodySheet.act.version,
       bodySprVersion: bodySheet.spr.version,
