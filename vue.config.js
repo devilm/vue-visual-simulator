@@ -1,4 +1,5 @@
 const { defineConfig } = require('@vue/cli-service')
+const path = require('path')
 
 const repoName = process.env.GH_PAGES_REPO || 'vue-visual-simulator'
 
@@ -6,6 +7,13 @@ module.exports = defineConfig({
     transpileDependencies: true,
     publicPath: process.env.NODE_ENV === 'production' ? `/${repoName}/` : '/',
     outputDir: 'docs',
+    devServer: {
+      static: {
+        directory: path.resolve(__dirname, 'data'),
+        publicPath: '/data',
+        watch: false,
+      },
+    },
 
     pluginOptions: {
       i18n: {
