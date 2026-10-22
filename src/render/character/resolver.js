@@ -144,9 +144,21 @@ function resolveGarmentAssets(character, sprite, manifest) {
     return `/data/sprite/${robeRoot}/${robe}/${gender}/${name}_${gender}.${extension}`;
   };
 
+  // Many robes ship a single shared SPR at 로브/<folder>/<folder>[_doram].spr instead of one per job
+  // (e.g. wing_of_angel_move_rd); a per-job SPR, when present, still takes priority.
+  const createSharedSprPaths = (stem, form) =>
+    `/data/sprite/${normalizeSegment(ROBE_FOLDER, form)}/${normalizeSegment(folder, form)}/${normalizeSegment(stem, form)}.spr`;
+  const sharedStems =
+    sprite.race === RACE_DORAM ? [`${folder}${DORAM_SUFFIX}`, folder] : [folder, `${folder}${DORAM_SUFFIX}`];
+
+  const spritePathCandidates = [
+    ...createPathCandidates((form) => createPath("spr", form)),
+    ...sharedStems.flatMap((stem) => createPathCandidates((form) => createSharedSprPaths(stem, form))),
+  ];
+
   return {
     viewId,
-    spritePathCandidates: createPathCandidates((form) => createPath("spr", form)),
+    spritePathCandidates: [...new Set(spritePathCandidates)],
     actPathCandidates: createPathCandidates((form) => createPath("act", form)),
   };
 }
