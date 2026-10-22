@@ -1,5 +1,5 @@
-import { createNoviceTemplate } from "./novice";
+import { createJobTemplate } from "./job";
 
 export async function createCharacterTemplate(character) {
-  return createNoviceTemplate(character);
+  return createJobTemplate(character);
 }

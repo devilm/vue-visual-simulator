@@ -1,15 +1,21 @@
+import { RACE_DORAM, resolveJobSprite } from "./jobs";
+
 const GENDER_SUFFIX = {
   male: "남",
   female: "여",
 };
 
-const JOB_NAME_BY_ID = {
-  0: "초보자",
+const RACE_FOLDER = {
+  human: "인간족",
+  doram: "도람족",
 };
-
-const HUMAN_RACE_FOLDER = "인간족";
 const BODY_FOLDER = "몸통";
 const HEAD_FOLDER = "머리통";
+
+const MAX_HEAD_ID = {
+  human: 42,
+  doram: 10,
+};
 
 function normalizeSegment(value, form) {
   return String(value).normalize(form);
@@ -35,55 +41,54 @@ export function toSpriteGenderSuffix(gender) {
   return GENDER_SUFFIX[normalizedGender];
 }
 
-export function resolveJobName(jobId) {
-  return JOB_NAME_BY_ID[Number(jobId)] || "";
-}
-
-export function resolveNoviceAssetPaths(character) {
-  const normalizedGender = normalizeGender(character.gender);
-  const genderSuffix = toSpriteGenderSuffix(character.gender);
-  const jobName = JOB_NAME_BY_ID[0];
+export function resolveCharacterAssetPaths(character) {
+  const sprite = resolveJobSprite(character.job, normalizeGender(character.gender));
+  const genderSuffix = GENDER_SUFFIX[sprite.gender];
+  const raceFolder = RACE_FOLDER[sprite.race];
+  const headId = Math.min(MAX_HEAD_ID[sprite.race], Math.max(1, Number(character.head) || 1));
 
   const createBodyPath = (extension, form) => {
-    const race = normalizeSegment(HUMAN_RACE_FOLDER, form);
+    const race = normalizeSegment(raceFolder, form);
     const body = normalizeSegment(BODY_FOLDER, form);
     const gender = normalizeSegment(genderSuffix, form);
-    const job = normalizeSegment(jobName, form);
+    const name = normalizeSegment(sprite.name, form);
 
-    return `/data/sprite/${race}/${body}/${gender}/${job}_${gender}.${extension}`;
+    return `/data/sprite/${race}/${body}/${gender}/${name}_${gender}.${extension}`;
   };
 
-  const createImfPath = (form) => {
-    const job = normalizeSegment(jobName, form);
+  const createImfPaths = (form) => {
     const gender = normalizeSegment(genderSuffix, form);
-
-    return `/data/imf/${job}_${gender}.imf`;
+    return sprite.imfNames.map((imfName) => `/data/imf/${normalizeSegment(imfName, form)}_${gender}.imf`);
   };
 
   const createHeadPath = (extension, form) => {
-    const race = normalizeSegment(HUMAN_RACE_FOLDER, form);
+    const race = normalizeSegment(raceFolder, form);
     const head = normalizeSegment(HEAD_FOLDER, form);
     const gender = normalizeSegment(genderSuffix, form);
-    const headId = Math.max(1, Number(character.head) || 1);
 
     return `/data/sprite/${race}/${head}/${gender}/${headId}_${gender}.${extension}`;
   };
 
-  const headSpriteCandidates = createPathCandidates((form) => createHeadPath("spr", form));
-  const headActCandidates = createPathCandidates((form) => createHeadPath("act", form));
-  const bodySpriteCandidates = createPathCandidates((form) => createBodyPath("spr", form));
-  const bodyActCandidates = createPathCandidates((form) => createBodyPath("act", form));
-  const imfCandidates = createPathCandidates(createImfPath);
+  const imfCandidates = [];
+  for (const form of ["NFD", "NFC"]) {
+    for (const path of createImfPaths(form)) {
+      if (!imfCandidates.includes(path)) {
+        imfCandidates.push(path);
+      }
+    }
+  }
 
   return {
     characterType: "player",
-    jobId: 0,
-    jobName,
-    gender: normalizedGender,
+    jobId: sprite.jobId,
+    jobName: sprite.name,
+    race: sprite.race,
+    isDoram: sprite.race === RACE_DORAM,
+    gender: sprite.gender,
     imfPathCandidates: imfCandidates,
-    bodySpritePathCandidates: bodySpriteCandidates,
-    bodyActPathCandidates: bodyActCandidates,
-    headSpritePathCandidates: headSpriteCandidates,
-    headActPathCandidates: headActCandidates,
+    bodySpritePathCandidates: createPathCandidates((form) => createBodyPath("spr", form)),
+    bodyActPathCandidates: createPathCandidates((form) => createBodyPath("act", form)),
+    headSpritePathCandidates: createPathCandidates((form) => createHeadPath("spr", form)),
+    headActPathCandidates: createPathCandidates((form) => createHeadPath("act", form)),
   };
 }

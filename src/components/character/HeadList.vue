@@ -49,6 +49,7 @@
 
 <script>
 import { mapState, mapMutations } from 'vuex'
+import { isDoramJob } from '@/render/character/jobs'
 
 export default {
     name: 'HeadList',
@@ -79,14 +80,15 @@ export default {
         },
         changeHeadList: function () {
             this.human_male = this.human_female = this.doram_male = this.doram_female = false
+            const doram = isDoramJob(this.character.job)
             if (this.character.gender) {
-                if (parseInt(this.character.job[0]) == 4218 || parseInt(this.character.job[0]) == 4308) {
+                if (doram) {
                     this.doram_male = true
                 } else {
                     this.human_male = true
                 }
             } else {
-                if (parseInt(this.character.job[0]) == 4218 || parseInt(this.character.job[0]) == 4308) {
+                if (doram) {
                     this.doram_female = true
                 } else {
                     this.human_female = true
