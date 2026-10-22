@@ -12,7 +12,7 @@ function withRelativeFallback(path) {
   return relative === path ? [path] : [path, relative];
 }
 
-async function fetchArrayBuffer(pathCandidates) {
+async function fetchArrayBuffer(pathCandidates, { accept = isBinaryData } = {}) {
   for (const pathCandidate of pathCandidates) {
     for (const candidate of withRelativeFallback(pathCandidate)) {
       try {
@@ -21,9 +21,7 @@ async function fetchArrayBuffer(pathCandidates) {
           continue;
         }
         const buffer = await response.arrayBuffer();
-        // Dev server may return index.html for missing files; ensure it is binary data.
-        const head = new Uint8Array(buffer, 0, Math.min(2, buffer.byteLength));
-        if (head.length < 2 || head[0] === 0x3c) {
+        if (!accept(buffer)) {
           continue;
         }
         return { ok: true, path: candidate, buffer };
@@ -35,10 +33,46 @@ async function fetchArrayBuffer(pathCandidates) {
   return { ok: false, path: pathCandidates[0], buffer: null };
 }
 
+// Dev server may return index.html for missing files; ensure it is binary data.
+function isBinaryData(buffer) {
+  const head = new Uint8Array(buffer, 0, Math.min(2, buffer.byteLength));
+  return head.length >= 2 && head[0] !== 0x3c;
+}
+
+const PALETTE_BYTE_LENGTH = 1024;
+const paletteCache = new Map();
+
+// Loads the first available .pal (256 * RGBA) from the candidates; null means "keep the SPR's own palette".
+export async function loadPalette(paletteCandidates) {
+  if (!paletteCandidates || paletteCandidates.length === 0) {
+    return null;
+  }
+  const cacheKey = paletteCandidates.join("|");
+  if (paletteCache.has(cacheKey)) {
+    return paletteCache.get(cacheKey);
+  }
+
+  const promise = (async () => {
+    const result = await fetchArrayBuffer(paletteCandidates, {
+      // Raw palettes have no signature, so they are validated by length instead.
+      accept: (buffer) => buffer.byteLength === PALETTE_BYTE_LENGTH,
+    });
+    if (!result.ok) {
+      return null;
+    }
+    return { path: result.path, bytes: new Uint8Array(result.buffer) };
+  })();
+
+  paletteCache.set(cacheKey, promise);
+  return promise;
+}
+
 const sheetCache = new Map();
 
-export async function loadSpriteSheet(sprCandidates, actCandidates) {
-  const cacheKey = `${sprCandidates[0]}|${actCandidates[0]}`;
+// `paletteCandidates` (optional) recolours the indexed frames; the first existing file wins.
+export async function loadSpriteSheet(sprCandidates, actCandidates, paletteCandidates = []) {
+  const palette = await loadPalette(paletteCandidates);
+  const cacheKey = `${sprCandidates[0]}|${actCandidates[0]}|${palette ? palette.path : ""}`;
   if (sheetCache.has(cacheKey)) {
     return sheetCache.get(cacheKey);
   }
@@ -57,7 +91,7 @@ export async function loadSpriteSheet(sprCandidates, actCandidates) {
     }
 
     try {
-      const spr = decodeSpr(sprResult.buffer);
+      const spr = decodeSpr(sprResult.buffer, { paletteBytes: palette ? palette.bytes : null });
       const act = decodeAct(actResult.buffer);
       return { ok: true, sprPath: sprResult.path, actPath: actResult.path, spr, act };
     } catch (error) {
@@ -149,12 +183,35 @@ function motionToParts(sheet, motion, offset, { skipHidden = false } = {}) {
 
 // Builds a flat list of drawable parts (body + head) for the requested pose.
 export async function loadCharacterParts(resolvedAssets, character) {
-  const bodySheet = await loadSpriteSheet(
-    resolvedAssets.bodySpritePathCandidates,
-    resolvedAssets.bodyActPathCandidates
-  );
+  // Body sources in priority order (outfit sprites first, regular body last); the first one that loads wins.
+  const bodyVariants = resolvedAssets.bodyVariants?.length
+    ? resolvedAssets.bodyVariants
+    : [
+        {
+          spritePathCandidates: resolvedAssets.bodySpritePathCandidates,
+          actPathCandidates: resolvedAssets.bodyActPathCandidates,
+          palettePathCandidates: [],
+          imfPathCandidates: resolvedAssets.imfPathCandidates,
+        },
+      ];
 
-  if (!bodySheet.ok) {
+  let bodySheet = null;
+  let bodyVariant = null;
+  for (const variant of bodyVariants) {
+    const sheet = await loadSpriteSheet(
+      variant.spritePathCandidates,
+      variant.actPathCandidates,
+      variant.palettePathCandidates
+    );
+    if (sheet.ok) {
+      bodySheet = sheet;
+      bodyVariant = variant;
+      break;
+    }
+    bodySheet = sheet;
+  }
+
+  if (!bodyVariant) {
     return { ok: false, reason: bodySheet.reason, parts: [] };
   }
 
@@ -173,10 +230,11 @@ export async function loadCharacterParts(resolvedAssets, character) {
 
   const headSheet = await loadSpriteSheet(
     resolvedAssets.headSpritePathCandidates,
-    resolvedAssets.headActPathCandidates
+    resolvedAssets.headActPathCandidates,
+    resolvedAssets.headPalettePathCandidates
   );
 
-  const imf = await loadImf(resolvedAssets.imfPathCandidates);
+  const imf = await loadImf(bodyVariant.imfPathCandidates);
 
   // Headgear shares the head's ACT layout (same actions/motions) and is drawn together with the head layer.
   const headgearSheets = headSheet.ok
@@ -296,6 +354,7 @@ export async function loadCharacterParts(resolvedAssets, character) {
       headgearCount: headgearSheets.length,
       garmentLoaded: Boolean(garmentSheet),
       imfLoaded: Boolean(imf),
+      outfit: bodyVariant.outfit || 0,
       bodyActVersion: bodySheet.act.version,
       bodySprVersion: bodySheet.spr.version,
     },

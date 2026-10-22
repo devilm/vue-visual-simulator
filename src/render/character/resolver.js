@@ -1,4 +1,4 @@
-import { RACE_DORAM, resolveJobSprite } from "./jobs";
+import { RACE_DORAM, getPaletteNames, resolveJobSprite } from "./jobs";
 
 const GENDER_SUFFIX = {
   male: "남",
@@ -15,6 +15,17 @@ const ACCESSORY_FOLDER = "악세사리";
 const ROBE_FOLDER = "로브";
 const DORAM_SUFFIX = "_doram";
 
+// Outfit sprites live in data/sprite/<race>/몸통/<gender>/costume_<n>/, their palettes in data/palette/몸/costume_<n>/.
+const OUTFIT_FOLDER_PREFIX = "costume_";
+const MAX_OUTFIT = 1;
+
+// Palette files: <root>/<name>_<gender>_<index>.pal (body), 머리<head id>_<gender>_<index>.pal (head).
+// Index 0 is the default colour and is already embedded in the SPR, so it is never fetched.
+const PALETTE_ROOT = {
+  human: { body: "몸", head: "머리" },
+  doram: { body: "도람족/body", head: "도람족/머리" },
+};
+
 // character.headgear holds view ids as [bottom, top, mid]. Draw order is bottom -> mid -> top.
 const HEADGEAR_SLOTS = [
   { slot: "bottom", index: 0 },
@@ -29,6 +40,19 @@ const MAX_HEAD_ID = {
 
 function normalizeSegment(value, form) {
   return String(value).normalize(form);
+}
+
+// Normalizes every segment of a slash separated path.
+function normalizePath(path, form) {
+  return path
+    .split("/")
+    .map((segment) => normalizeSegment(segment, form))
+    .join("/");
+}
+
+function toPaletteIndex(value) {
+  const index = Math.floor(Number(value));
+  return Number.isFinite(index) && index > 0 ? index : 0;
 }
 
 function createPathCandidates(pathBuilder) {
@@ -133,18 +157,26 @@ export function resolveCharacterAssetPaths(character, { headgear: headgearManife
   const raceFolder = RACE_FOLDER[sprite.race];
   const headId = Math.min(MAX_HEAD_ID[sprite.race], Math.max(1, Number(character.head) || 1));
 
-  const createBodyPath = (extension, form) => {
-    const race = normalizeSegment(raceFolder, form);
-    const body = normalizeSegment(BODY_FOLDER, form);
-    const gender = normalizeSegment(genderSuffix, form);
-    const name = normalizeSegment(sprite.name, form);
+  const outfit = Math.min(MAX_OUTFIT, Math.max(0, Math.floor(Number(character.outfit)) || 0));
+  const bodyPaletteIndex = toPaletteIndex(character.bodyPalette);
+  const headPaletteIndex = toPaletteIndex(character.headPalette);
+  const paletteRoot = PALETTE_ROOT[sprite.race];
 
-    return `/data/sprite/${race}/${body}/${gender}/${name}_${gender}.${extension}`;
+  const createImfPaths = (imfNames, form) => {
+    const gender = normalizeSegment(genderSuffix, form);
+    return imfNames.map((imfName) => `/data/imf/${normalizeSegment(imfName, form)}_${gender}.imf`);
   };
 
-  const createImfPaths = (form) => {
-    const gender = normalizeSegment(genderSuffix, form);
-    return sprite.imfNames.map((imfName) => `/data/imf/${normalizeSegment(imfName, form)}_${gender}.imf`);
+  const createImfCandidates = (imfNames) => {
+    const candidates = [];
+    for (const form of ["NFD", "NFC"]) {
+      for (const path of createImfPaths(imfNames, form)) {
+        if (!candidates.includes(path)) {
+          candidates.push(path);
+        }
+      }
+    }
+    return candidates;
   };
 
   const createHeadPath = (extension, form) => {
@@ -155,14 +187,87 @@ export function resolveCharacterAssetPaths(character, { headgear: headgearManife
     return `/data/sprite/${race}/${head}/${gender}/${headId}_${gender}.${extension}`;
   };
 
-  const imfCandidates = [];
-  for (const form of ["NFD", "NFC"]) {
-    for (const path of createImfPaths(form)) {
-      if (!imfCandidates.includes(path)) {
-        imfCandidates.push(path);
+  // One body sprite source. `outfitIndex` 0 is the regular body; otherwise the sprite sits in costume_<n>/.
+  // `stemSuffix` is appended to "<name>_<gender>" (outfit sprites are usually "<name>_<gender>_<n>").
+  const createBodyVariant = ({ name, outfitIndex = 0, stemSuffix = "", paletteNames, imfNames }) => {
+    const createPath = (extension, form) => {
+      const segments = [
+        normalizeSegment(raceFolder, form),
+        normalizeSegment(BODY_FOLDER, form),
+        normalizeSegment(genderSuffix, form),
+      ];
+      if (outfitIndex > 0) {
+        segments.push(`${OUTFIT_FOLDER_PREFIX}${outfitIndex}`);
       }
+      segments.push(`${normalizeSegment(name, form)}_${normalizeSegment(genderSuffix, form)}${stemSuffix}.${extension}`);
+      return `/data/sprite/${segments.join("/")}`;
+    };
+
+    const createPalettePath = (paletteName, form) => {
+      const folders = outfitIndex > 0 ? `${paletteRoot.body}/${OUTFIT_FOLDER_PREFIX}${outfitIndex}` : paletteRoot.body;
+      const outfitSuffix = outfitIndex > 0 ? `_${outfitIndex}` : "";
+      return normalizePath(
+        `/data/palette/${folders}/${paletteName}_${genderSuffix}_${bodyPaletteIndex}${outfitSuffix}.pal`,
+        form
+      );
+    };
+
+    return {
+      outfit: outfitIndex,
+      name,
+      spritePathCandidates: createPathCandidates((form) => createPath("spr", form)),
+      actPathCandidates: createPathCandidates((form) => createPath("act", form)),
+      palettePathCandidates:
+        bodyPaletteIndex > 0
+          ? paletteNames.flatMap((paletteName) => createPathCandidates((form) => createPalettePath(paletteName, form)))
+          : [],
+      imfPathCandidates: createImfCandidates([...new Set([...imfNames, ...sprite.imfNames])]),
+    };
+  };
+
+  const regularImfNames = sprite.imfNames;
+  const regularBody = createBodyVariant({
+    name: sprite.name,
+    paletteNames: getPaletteNames(sprite.name),
+    imfNames: regularImfNames,
+  });
+
+  // Outfit sources in priority order. A 4th class (or mount) uses the costume of its 3rd class counterpart;
+  // jobs without a costume sprite fall through to the regular body.
+  const bodyVariants = [];
+  if (outfit > 0 && sprite.race !== RACE_DORAM) {
+    if (sprite.outfitBaseName) {
+      bodyVariants.push(
+        createBodyVariant({
+          name: sprite.outfitBaseName,
+          outfitIndex: outfit,
+          stemSuffix: `_${outfit}`,
+          paletteNames: getPaletteNames(sprite.outfitBaseName),
+          imfNames: [sprite.outfitBaseName],
+        })
+      );
     }
+    const ownPaletteNames = getPaletteNames(sprite.name);
+    bodyVariants.push(
+      createBodyVariant({
+        name: sprite.name,
+        outfitIndex: outfit,
+        stemSuffix: `_${outfit}`,
+        paletteNames: ownPaletteNames,
+        imfNames: regularImfNames,
+      }),
+      createBodyVariant({
+        name: sprite.name,
+        outfitIndex: outfit,
+        paletteNames: ownPaletteNames,
+        imfNames: regularImfNames,
+      })
+    );
   }
+  bodyVariants.push(regularBody);
+
+  const createHeadPalettePath = (form) =>
+    normalizePath(`/data/palette/${paletteRoot.head}/머리${headId}_${genderSuffix}_${headPaletteIndex}.pal`, form);
 
   return {
     characterType: "player",
@@ -171,12 +276,14 @@ export function resolveCharacterAssetPaths(character, { headgear: headgearManife
     race: sprite.race,
     isDoram: sprite.race === RACE_DORAM,
     gender: sprite.gender,
-    imfPathCandidates: imfCandidates,
+    imfPathCandidates: createImfCandidates(regularImfNames),
     headgear: resolveHeadgearAssets(character, sprite, headgearManifest),
     garment: resolveGarmentAssets(character, sprite, garmentManifest),
-    bodySpritePathCandidates: createPathCandidates((form) => createBodyPath("spr", form)),
-    bodyActPathCandidates: createPathCandidates((form) => createBodyPath("act", form)),
+    bodyVariants,
+    bodySpritePathCandidates: regularBody.spritePathCandidates,
+    bodyActPathCandidates: regularBody.actPathCandidates,
     headSpritePathCandidates: createPathCandidates((form) => createHeadPath("spr", form)),
     headActPathCandidates: createPathCandidates((form) => createHeadPath("act", form)),
+    headPalettePathCandidates: headPaletteIndex > 0 ? createPathCandidates(createHeadPalettePath) : [],
   };
 }

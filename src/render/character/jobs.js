@@ -328,6 +328,69 @@ const JOBS = {
   4316: human("sky_emperor2"),
 };
 
+// Outfit (costume_1) sprites only exist for 3rd class jobs (plus a few costumes). A 4th class wearing the
+// outfit uses the costume sprite of its 3rd class counterpart: sprite name -> 3rd class sprite name.
+const OUTFIT_BASE_NAME = {
+  dragon_knight: "룬나이트",
+  meister: "미케닉",
+  shadow_cross: "길로틴크로스",
+  arch_mage: "워록",
+  cardinal: "아크비숍",
+  windhawk: "레인져",
+  imperial_guard: "가드",
+  biolo: "제네릭",
+  abyss_chaser: "쉐도우체이서",
+  elemetal_master: "소서러",
+  inquisitor: "슈라",
+  troubadour: "민스트럴",
+  trouvere: "원더러",
+  shinkiro: "kagerou",
+  shiranui: "oboro",
+
+  // Cash mounts.
+  dragon_knight_riding: "사자룬나이트",
+  meister_riding: "미케닉멧돼지",
+  shadow_cross_riding: "켈베로스길로틴크로스",
+  arch_mage_riding: "여우워록",
+  cardinal_riding: "아크비숍알파카",
+  windhawk_riding: "타조레인져",
+  imperial_guard_riding: "사자로얄가드",
+  biolo_riding: "제네릭멧돼지",
+  abyss_chaser_riding: "켈베로스쉐도우체이서",
+  elemetal_master_riding: "여우소서러",
+  inquisitor_riding: "슈라알파카",
+  troubadour_riding: "타조민스트럴",
+  trouvere_riding: "타조원더러",
+
+  // Regular mounts.
+  dragon_knight_chicken: "룬나이트쁘띠",
+  imperial_guard_chicken: "그리폰가드",
+  wolf_windhawk: "레인져늑대",
+  meister_madogear1: "마도기어",
+};
+
+// Palette files are not always named after the sprite: sprite name -> alternative palette names (tried in order
+// after the sprite name itself).
+const PALETTE_ALIASES = {
+  "클라운": ["크라운"],
+  "레인져": ["레인저"],
+  "레인져늑대": ["울프레인저"],
+  "룬나이트쁘띠": ["룬드래곤"],
+  "가드": ["로얄가드"],
+  "마도기어": ["미케닉_마도기어"],
+  "산타": ["santa"],
+  "여름": ["summer"],
+  "여름2": ["summer2"],
+  "한복": ["hanbok"],
+  "옥토버패스트": ["oktoberfest"],
+  summoner: ["묘족"],
+  cart_summoner: ["고양이카트"],
+};
+
+export function getPaletteNames(spriteName) {
+  return [spriteName, ...(PALETTE_ALIASES[spriteName] || [])];
+}
+
 export const DORAM_JOB_IDS = Object.keys(JOBS)
   .map(Number)
   .filter((id) => JOBS[id].race === RACE_DORAM);
@@ -363,6 +426,7 @@ export function resolveJobSprite(job, gender) {
     race: entry.race,
     name: entry.name,
     imfNames,
+    outfitBaseName: OUTFIT_BASE_NAME[entry.name] || null,
     gender: resolvedGender,
   };
 }

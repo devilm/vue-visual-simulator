@@ -7,7 +7,7 @@ export default createStore({
       gender: 1,
       job: ["0"],
       head: 1,
-      headPalette: 1,
+      headPalette: 0,
       headdir: 0,
       headgear: [0, 0, 0],
       garment: 0,
@@ -132,7 +132,7 @@ export default createStore({
       state.character.gender = 1;
       state.character.job = ["0"];
       state.character.head = 1;
-      state.character.headPalette = 1;
+      state.character.headPalette = 0;
       state.character.headgear = [0, 0, 0];
       state.character.garment = 0;
       state.character.bodyPalette = 0;
