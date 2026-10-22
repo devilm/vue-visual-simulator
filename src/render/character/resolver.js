@@ -12,6 +12,7 @@ const RACE_FOLDER = {
 const BODY_FOLDER = "몸통";
 const HEAD_FOLDER = "머리통";
 const ACCESSORY_FOLDER = "악세사리";
+const ROBE_FOLDER = "로브";
 const DORAM_SUFFIX = "_doram";
 
 // character.headgear holds view ids as [bottom, top, mid]. Draw order is bottom -> mid -> top.
@@ -101,7 +102,32 @@ function resolveHeadgearAssets(character, sprite, manifest) {
   return resolved;
 }
 
-export function resolveCharacterAssetPaths(character, headgearManifest = null) {
+// `manifest` maps garment view id -> robe folder under data/sprite/로브 (see db/garmentSprites.json).
+// Robe files follow the body naming: 로브/<folder>/<gender>/<job sprite name>_<gender>.{spr,act}.
+function resolveGarmentAssets(character, sprite, manifest) {
+  const viewId = Number(character.garment) || 0;
+  const folder = viewId > 0 && manifest ? manifest[viewId] : null;
+  if (!folder) {
+    return null;
+  }
+
+  const genderSuffix = GENDER_SUFFIX[sprite.gender];
+  const createPath = (extension, form) => {
+    const robeRoot = normalizeSegment(ROBE_FOLDER, form);
+    const robe = normalizeSegment(folder, form);
+    const gender = normalizeSegment(genderSuffix, form);
+    const name = normalizeSegment(sprite.name, form);
+    return `/data/sprite/${robeRoot}/${robe}/${gender}/${name}_${gender}.${extension}`;
+  };
+
+  return {
+    viewId,
+    spritePathCandidates: createPathCandidates((form) => createPath("spr", form)),
+    actPathCandidates: createPathCandidates((form) => createPath("act", form)),
+  };
+}
+
+export function resolveCharacterAssetPaths(character, { headgear: headgearManifest = null, garment: garmentManifest = null } = {}) {
   const sprite = resolveJobSprite(character.job, normalizeGender(character.gender));
   const genderSuffix = GENDER_SUFFIX[sprite.gender];
   const raceFolder = RACE_FOLDER[sprite.race];
@@ -147,6 +173,7 @@ export function resolveCharacterAssetPaths(character, headgearManifest = null) {
     gender: sprite.gender,
     imfPathCandidates: imfCandidates,
     headgear: resolveHeadgearAssets(character, sprite, headgearManifest),
+    garment: resolveGarmentAssets(character, sprite, garmentManifest),
     bodySpritePathCandidates: createPathCandidates((form) => createBodyPath("spr", form)),
     bodyActPathCandidates: createPathCandidates((form) => createBodyPath("act", form)),
     headSpritePathCandidates: createPathCandidates((form) => createHeadPath("spr", form)),

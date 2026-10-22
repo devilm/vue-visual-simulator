@@ -4,6 +4,8 @@ import { decodeImf, getImfDrawOrder, getImfFrame } from "./imfDecoder";
 
 const BODY_LAYER = 0;
 const HEAD_LAYER = 1;
+// Action direction (action % 8): 0 S, 1 SW, 2 W, 3 NW, 4 N, 5 NE, 6 E, 7 SE.
+const GARMENT_OVER_BODY_DIRECTIONS = new Set([3, 4, 5]);
 
 function withRelativeFallback(path) {
   const relative = path.startsWith("/") ? path.slice(1) : path;
@@ -112,10 +114,18 @@ function resolveMotion(sheet, actionIndex, motionIndex) {
   return action.motions[motionIndex % action.motions.length] || action.motions[0];
 }
 
-function motionToParts(sheet, motion, offset) {
+// Headgear ACTs hide a layer for views where the hat should not show (e.g. facing away) by moving it
+// far below the character (y ~ 235-300). Headgear never legitimately sits that far under the feet.
+const HIDDEN_LAYER_MIN_Y = 150;
+const HIDDEN_LAYER_MIN_X = 200;
+
+function motionToParts(sheet, motion, offset, { skipHidden = false } = {}) {
   const parts = [];
   for (const layer of motion.layers) {
     if (layer.sprIndex < 0) {
+      continue;
+    }
+    if (skipHidden && (layer.y >= HIDDEN_LAYER_MIN_Y || Math.abs(layer.x) >= HIDDEN_LAYER_MIN_X)) {
       continue;
     }
     const frames = layer.sprType === 1 ? sheet.spr.rgbaFrames : sheet.spr.indexedFrames;
@@ -180,6 +190,15 @@ export async function loadCharacterParts(resolvedAssets, character) {
       ).filter(({ sheet }) => sheet.ok)
     : [];
 
+  const garmentAssets = resolvedAssets.garment;
+  const garmentLoaded = garmentAssets
+    ? await loadSpriteSheet(garmentAssets.spritePathCandidates, garmentAssets.actPathCandidates)
+    : null;
+  const garmentSheet = garmentLoaded?.ok ? garmentLoaded : null;
+  // Robes hang behind the body when the character faces the camera and cover it when facing away
+  // (NW/N/NE). The ACT shares the body's origin and anchors, so only the body IMF offset applies.
+  const garmentOnTop = GARMENT_OVER_BODY_DIRECTIONS.has(direction);
+
   const frameCount = isStaticPose ? 1 : bodyAction.motions.length;
   const frames = [];
   let headOk = false;
@@ -219,10 +238,15 @@ export async function loadCharacterParts(resolvedAssets, character) {
               ? { x: bodyAnchor.x - gearAnchor.x, y: bodyAnchor.y - gearAnchor.y }
               : offset;
           layerParts[HEAD_LAYER].push(
-            ...motionToParts(sheet, gearMotion, {
-              x: gearOffset.x + headImf.x,
-              y: gearOffset.y + headImf.y,
-            })
+            ...motionToParts(
+              sheet,
+              gearMotion,
+              {
+                x: gearOffset.x + headImf.x,
+                y: gearOffset.y + headImf.y,
+              },
+              { skipHidden: true }
+            )
           );
         }
       }
@@ -231,7 +255,26 @@ export async function loadCharacterParts(resolvedAssets, character) {
     // Back-to-front order from IMF priority (without IMF: body first, head on top).
     const layerIds = Object.keys(layerParts).map(Number);
     const drawOrder = imf ? getImfDrawOrder(imf, layerIds, actionIndex, frameIndex) : layerIds;
-    frames.push(drawOrder.flatMap((layerId) => layerParts[layerId]));
+    const frameParts = drawOrder.flatMap((layerId) => layerParts[layerId]);
+
+    if (garmentSheet) {
+      const garmentMotion = resolveMotion(garmentSheet, actionIndex, frameIndex);
+      if (garmentMotion) {
+        const garmentParts = motionToParts(
+          garmentSheet,
+          garmentMotion,
+          { x: bodyImf.x, y: bodyImf.y },
+          { skipHidden: true }
+        );
+        if (garmentOnTop) {
+          frameParts.push(...garmentParts);
+        } else {
+          frameParts.unshift(...garmentParts);
+        }
+      }
+    }
+
+    frames.push(frameParts);
   }
 
   const parts = frames[0];
@@ -251,6 +294,7 @@ export async function loadCharacterParts(resolvedAssets, character) {
       headMotionIndex,
       headOk,
       headgearCount: headgearSheets.length,
+      garmentLoaded: Boolean(garmentSheet),
       imfLoaded: Boolean(imf),
       bodyActVersion: bodySheet.act.version,
       bodySprVersion: bodySheet.spr.version,

@@ -17,11 +17,31 @@ function loadHeadgearManifest() {
   return headgearManifestPromise;
 }
 
+let garmentManifestPromise = null;
+
+// Small manifest (garment view id -> robe folder), also loaded lazily on first use.
+function loadGarmentManifest() {
+  if (!garmentManifestPromise) {
+    garmentManifestPromise = import(/* webpackChunkName: "garment-sprites" */ "@/db/garmentSprites.json")
+      .then((module) => module.default || module)
+      .catch((error) => {
+        garmentManifestPromise = null;
+        console.warn("[garment] manifest failed to load:", error);
+        return null;
+      });
+  }
+  return garmentManifestPromise;
+}
+
 export async function createJobTemplate(character) {
   const hasHeadgear = Array.isArray(character.headgear) && character.headgear.some((viewId) => Number(viewId) > 0);
-  const manifest = hasHeadgear ? await loadHeadgearManifest() : null;
+  const hasGarment = Number(character.garment) > 0;
+  const [headgear, garment] = await Promise.all([
+    hasHeadgear ? loadHeadgearManifest() : null,
+    hasGarment ? loadGarmentManifest() : null,
+  ]);
 
-  const resolvedAssets = resolveCharacterAssetPaths(character, manifest);
+  const resolvedAssets = resolveCharacterAssetPaths(character, { headgear, garment });
   const rendered = await loadCharacterParts(resolvedAssets, character);
 
   if (!rendered.ok) {
