@@ -23,7 +23,9 @@ function getFrameTexture(frame) {
   context.putImageData(new ImageData(frame.rgbaPixels, frame.width, frame.height), 0, 0);
 
   texture = Texture.from(canvas);
-  texture.source.scaleMode = "nearest";
+  // The game client samples sprites with bilinear filtering; "nearest" at non-integer ratios gives
+  // the blocky, uneven pixels seen in the old render.
+  texture.source.scaleMode = "linear";
   textureCache.set(frame, texture);
   return texture;
 }
@@ -122,7 +124,7 @@ export function renderCharacterTemplate(scene, template, viewSize = { width: 200
   });
   // Locked scale and anchor: the sprite origin (feet) sits at the horizontal centre, a fixed distance
   // above the bottom edge, so equipping headgear/garment never rescales or shifts the character.
-  content.scale.set(Math.max(1, Math.round(CHARACTER_SCALE * resolution)) / resolution);
+  content.scale.set(CHARACTER_SCALE);
   content.position.set(toDevice(viewWidth / 2), toDevice(viewHeight - FEET_BOTTOM_MARGIN));
   scene.addChild(content);
 

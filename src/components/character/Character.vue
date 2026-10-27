@@ -72,7 +72,6 @@ export default {
         // Without this the canvas renders at 1x and the browser upscales it on HiDPI screens (blurry).
         resolution: window.devicePixelRatio || 1,
         autoDensity: true,
-        roundPixels: true,
       });
 
       root.appendChild(app.canvas);
@@ -126,6 +125,5 @@ export default {
 /* Size comes from Pixi (autoDensity); forcing 100% would stretch the backing store by a fractional factor. */
 .character-render-root :deep(canvas) {
   display: block;
-  image-rendering: pixelated;
 }
 </style>
