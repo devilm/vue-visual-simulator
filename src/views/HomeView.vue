@@ -540,7 +540,8 @@ export default {
 
 .character-box {
   width: 100%;
-  height: 240px;
+  height: 220px;
+  overflow: visible;
 }
 
 .container-character {

@@ -12,7 +12,7 @@ function withRelativeFallback(path) {
   return relative === path ? [path] : [path, relative];
 }
 
-async function fetchArrayBuffer(pathCandidates, { accept = isBinaryData } = {}) {
+export async function fetchArrayBuffer(pathCandidates, { accept = isBinaryData } = {}) {
   for (const pathCandidate of pathCandidates) {
     for (const candidate of withRelativeFallback(pathCandidate)) {
       try {
