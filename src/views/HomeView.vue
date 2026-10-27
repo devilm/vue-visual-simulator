@@ -540,7 +540,7 @@ export default {
 
 .character-box {
   width: 100%;
-  height: 200px;
+  height: 240px;
 }
 
 .container-character {

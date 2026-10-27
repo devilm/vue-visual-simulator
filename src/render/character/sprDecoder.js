@@ -1,7 +1,7 @@
 // Ragnarok Online SPR decoder.
 // Header: "SP", minor(u8), major(u8), indexedCount(u16), [rgbaCount(u16) if version >= 2.0]
 // Indexed frames: width(u16), height(u16), [compressedLength(u16) if version >= 2.1] data
-// RGBA frames (ABGR byte order): width(u16), height(u16), w*h*4 bytes
+// RGBA frames (ABGR byte order, rows stored bottom-up): width(u16), height(u16), w*h*4 bytes
 // Palette: 256 * RGBA (1024 bytes) at end of file when version >= 1.1
 
 function decodeRle(compressedBytes, pixelCount) {
@@ -47,14 +47,20 @@ function indexedToRgba(indexedPixels, paletteBytes) {
   return rgbaPixels;
 }
 
-function abgrToRgba(source, pixelCount) {
-  const rgbaPixels = new Uint8ClampedArray(pixelCount * 4);
-  for (let pixelIndex = 0; pixelIndex < pixelCount; pixelIndex += 1) {
-    const offset = pixelIndex * 4;
-    rgbaPixels[offset] = source[offset + 3];
-    rgbaPixels[offset + 1] = source[offset + 2];
-    rgbaPixels[offset + 2] = source[offset + 1];
-    rgbaPixels[offset + 3] = source[offset];
+// RGBA frames are stored bottom-up (like a BMP), so rows are flipped while converting ABGR -> RGBA.
+function abgrToRgba(source, width, height) {
+  const rgbaPixels = new Uint8ClampedArray(width * height * 4);
+  for (let row = 0; row < height; row += 1) {
+    const sourceRowOffset = (height - 1 - row) * width * 4;
+    const targetRowOffset = row * width * 4;
+    for (let column = 0; column < width; column += 1) {
+      const sourceOffset = sourceRowOffset + column * 4;
+      const targetOffset = targetRowOffset + column * 4;
+      rgbaPixels[targetOffset] = source[sourceOffset + 3];
+      rgbaPixels[targetOffset + 1] = source[sourceOffset + 2];
+      rgbaPixels[targetOffset + 2] = source[sourceOffset + 1];
+      rgbaPixels[targetOffset + 3] = source[sourceOffset];
+    }
   }
   return rgbaPixels;
 }
@@ -117,7 +123,7 @@ export function decodeSpr(arrayBuffer, options = {}) {
     const byteCount = width * height * 4;
     const source = new Uint8Array(arrayBuffer, cursor, byteCount);
     cursor += byteCount;
-    rgbaFrames.push({ width, height, rgbaPixels: abgrToRgba(source, width * height) });
+    rgbaFrames.push({ width, height, rgbaPixels: abgrToRgba(source, width, height) });
   }
 
   return {

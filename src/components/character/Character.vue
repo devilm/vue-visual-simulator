@@ -69,7 +69,10 @@ export default {
         resizeTo: root,
         backgroundAlpha: 0,
         antialias: false,
+        // Without this the canvas renders at 1x and the browser upscales it on HiDPI screens (blurry).
+        resolution: window.devicePixelRatio || 1,
         autoDensity: true,
+        roundPixels: true,
       });
 
       root.appendChild(app.canvas);
@@ -106,6 +109,7 @@ export default {
       renderCharacterTemplate(this.scene, this.lastTemplate, {
         width: this.app.screen.width,
         height: this.app.screen.height,
+        resolution: this.app.renderer.resolution,
       });
     },
   },
@@ -119,9 +123,9 @@ export default {
   min-height: 200px;
 }
 
+/* Size comes from Pixi (autoDensity); forcing 100% would stretch the backing store by a fractional factor. */
 .character-render-root :deep(canvas) {
   display: block;
-  width: 100%;
-  height: 100%;
+  image-rendering: pixelated;
 }
 </style>

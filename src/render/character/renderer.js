@@ -1,7 +1,10 @@
 import { Container, Graphics, Sprite, Texture, Ticker } from "pixi.js";
 
-const MAX_SCALE = 2;
-const VIEW_PADDING = 16;
+// Fixed render scale: native sprites are ~90-100px tall (feet to top of head/headgear); the in-game
+// character appears ~144px tall, i.e. ~1.5x. The scale never depends on equipped headgear/garment.
+const CHARACTER_SCALE = 1;
+// Distance between the character's feet (sprite origin) and the bottom edge of the view.
+const FEET_BOTTOM_MARGIN = 24;
 const SHADOW_RADIUS_X = 14;
 const SHADOW_RADIUS_Y = 5;
 
@@ -35,9 +38,17 @@ function drawParts(container, parts) {
   for (const part of parts) {
     const sprite = new Sprite(getFrameTexture(part.frame));
     sprite.anchor.set(0.5);
-    sprite.position.set(part.x, part.y);
     sprite.scale.set(part.xScale * (part.mirror ? -1 : 1), part.yScale);
     sprite.angle = part.rotation;
+    if (part.rotation === 0) {
+      // ACT layer coordinates are sprite centres, so odd sizes land on half pixels. Snap the top-left
+      // corner to the pixel grid (like the game client) so texels map 1:1 and edges stay crisp.
+      const width = part.frame.width * Math.abs(part.xScale);
+      const height = part.frame.height * Math.abs(part.yScale);
+      sprite.position.set(Math.round(part.x - width / 2) + width / 2, Math.round(part.y - height / 2) + height / 2);
+    } else {
+      sprite.position.set(part.x, part.y);
+    }
     sprite.tint = (part.color[0] << 16) | (part.color[1] << 8) | part.color[2];
     sprite.alpha = part.color[3] / 255;
     container.addChild(sprite);
@@ -48,40 +59,6 @@ function drawFallback(container) {
   const fallback = new Graphics();
   fallback.roundRect(-12, -50, 24, 34, 6).fill({ color: 0xcc4455 });
   container.addChild(fallback);
-}
-
-// Union of the shadow and every part of every frame, in content-local coordinates.
-function computeContentBounds(frames) {
-  let minX = -SHADOW_RADIUS_X;
-  let maxX = SHADOW_RADIUS_X;
-  let minY = -SHADOW_RADIUS_Y;
-  let maxY = SHADOW_RADIUS_Y;
-
-  if (frames.length === 0) {
-    // Fallback placeholder rectangle.
-    minX = -12;
-    maxX = 12;
-    minY = -50;
-    maxY = Math.max(maxY, -16);
-  }
-
-  for (const parts of frames) {
-    for (const part of parts) {
-      const halfWidth = (part.frame.width * Math.abs(part.xScale)) / 2;
-      const halfHeight = (part.frame.height * Math.abs(part.yScale)) / 2;
-      const radians = (part.rotation * Math.PI) / 180;
-      const cos = Math.abs(Math.cos(radians));
-      const sin = Math.abs(Math.sin(radians));
-      const extentX = halfWidth * cos + halfHeight * sin;
-      const extentY = halfWidth * sin + halfHeight * cos;
-      minX = Math.min(minX, part.x - extentX);
-      maxX = Math.max(maxX, part.x + extentX);
-      minY = Math.min(minY, part.y - extentY);
-      maxY = Math.max(maxY, part.y + extentY);
-    }
-  }
-
-  return { x: minX, y: minY, width: maxX - minX, height: maxY - minY };
 }
 
 function stopAnimation(scene) {
@@ -116,6 +93,9 @@ function startAnimation(scene, frameContainers, interval) {
 
 export function renderCharacterTemplate(scene, template, viewSize = { width: 200, height: 200 }) {
   stopAnimation(scene);
+  const resolution = Math.max(viewSize.resolution || 1, 1);
+  // Snap to whole device pixels so every texel covers an integer number of screen pixels (no uneven stretching).
+  const toDevice = (value) => Math.round(value * resolution) / resolution;
   scene.removeChildren().forEach((child) => child.destroy({ children: true }));
   const viewWidth = Math.max(viewSize.width, 1);
   const viewHeight = Math.max(viewSize.height, 1);
@@ -137,23 +117,13 @@ export function renderCharacterTemplate(scene, template, viewSize = { width: 200
     drawFallback(content);
   }
 
-  // Fit the whole character using the union of all frames so the scale stays stable while animating.
-  // Bounds come from the part data (not Container.getLocalBounds on a live node), and the transform
-  // is applied before the content is attached to the scene.
-  const bounds = computeContentBounds(rendered?.ok ? rendered.frames || [rendered.parts] : []);
   frameContainers.forEach((frameContainer, index) => {
     frameContainer.visible = index === 0;
   });
-  const scale = Math.min(
-    MAX_SCALE,
-    (viewWidth - VIEW_PADDING * 2) / Math.max(bounds.width, 1),
-    (viewHeight - VIEW_PADDING * 2) / Math.max(bounds.height, 1)
-  );
-  content.scale.set(scale);
-  content.position.set(
-    Math.round(viewWidth / 2 - (bounds.x + bounds.width / 2) * scale),
-    Math.round(viewHeight / 2 - (bounds.y + bounds.height / 2) * scale)
-  );
+  // Locked scale and anchor: the sprite origin (feet) sits at the horizontal centre, a fixed distance
+  // above the bottom edge, so equipping headgear/garment never rescales or shifts the character.
+  content.scale.set(Math.max(1, Math.round(CHARACTER_SCALE * resolution)) / resolution);
+  content.position.set(toDevice(viewWidth / 2), toDevice(viewHeight - FEET_BOTTOM_MARGIN));
   scene.addChild(content);
 
   startAnimation(scene, frameContainers, rendered?.interval || 96);
