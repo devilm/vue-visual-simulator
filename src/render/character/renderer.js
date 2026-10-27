@@ -187,13 +187,17 @@ export function renderCharacterTemplate(scene, template, viewSize = { width: 200
   const content = new Container();
   drawShadow(content);
 
-  // Texture effects (item.texture .str) are drawn entirely behind the character.
+  // Texture effects (item.texture .str) follow the client's isRenderBeforeCharacter flag (item.effectBehind):
+  // flagged effects are drawn behind the character, the rest on top of it.
   const effectsBehind = new Container();
+  const effectsFront = new Container();
   // Garment effects (e.g. ROS) are drawn first so every other equipped effect stays visible on top of them.
   const orderedEffects = [...(template.textureEffects || [])].sort(
     (a, b) => Number(Boolean(b.garment)) - Number(Boolean(a.garment))
   );
-  const effectRunners = orderedEffects.map((effect) => createStrEffectRunner(effect, effectsBehind));
+  const effectRunners = orderedEffects.map((effect) =>
+    createStrEffectRunner(effect, effect.behind ? effectsBehind : effectsFront)
+  );
   content.addChild(effectsBehind);
 
   const rendered = template.rendered;
@@ -209,6 +213,7 @@ export function renderCharacterTemplate(scene, template, viewSize = { width: 200
   } else {
     drawFallback(content);
   }
+  content.addChild(effectsFront);
 
   frameContainers.forEach((frameContainer, index) => {
     frameContainer.visible = index === 0;

@@ -10,6 +10,8 @@ const STR_SIGNATURE = 0x4d525453; // "STRM" read as little endian
 const HEADER_SIZE = 36;
 const TEXTURE_NAME_LENGTH = 128;
 const KEY_SIZE = 124;
+// CP949 is a superset of EUC-KR; plain ASCII names decode unchanged.
+const TEXTURE_NAME_DECODER = new TextDecoder("euc-kr");
 
 export function decodeStr(arrayBuffer) {
   const view = new DataView(arrayBuffer);
@@ -54,14 +56,16 @@ export function decodeStr(arrayBuffer) {
 
     const textures = [];
     for (let textureIndex = 0; textureIndex < textureCount; textureIndex += 1) {
-      let name = "";
+      const nameBytes = [];
       for (let index = 0; index < TEXTURE_NAME_LENGTH; index += 1) {
         const code = view.getUint8(cursor + index);
         if (code === 0) {
           break;
         }
-        name += String.fromCharCode(code);
+        nameBytes.push(code);
       }
+      // Some names are Korean (CP949): decoding byte by byte would produce unusable file names.
+      const name = TEXTURE_NAME_DECODER.decode(new Uint8Array(nameBytes));
       cursor += TEXTURE_NAME_LENGTH;
       textures.push(name);
     }

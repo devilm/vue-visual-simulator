@@ -2,11 +2,14 @@ import { decodeStr } from "./strDecoder";
 import { decodeEffectTexture } from "./textureDecoder";
 import { fetchArrayBuffer } from "./spritePreview";
 
-// STR coordinates are authored for a 640x480 client view. An item's textureOffsetX/Y shifts the effect
-// from the origin below onto the character's feet:
-//   offset from feet = (pos.x - STR_ORIGIN_X + textureOffsetX, pos.y - STR_ORIGIN_Y + textureOffsetY)
+// STR coordinates are authored for a 640x480 client view. The effect is moved from the origin below onto
+// the character's feet using the client's own per-item values (HatEffectInfo lua: hatEffectPos/hatEffectPosX):
+//   offset from feet = (pos.x - STR_ORIGIN_X + posX * HAT_EFFECT_UNIT, pos.y - STR_ORIGIN_Y - posY * HAT_EFFECT_UNIT)
 export const STR_ORIGIN_X = 320;
 export const STR_ORIGIN_Y = 290;
+// Screen pixels per lua position unit. The lua does not document the unit; 5 was calibrated so that the
+// ROS 2026 ground ring (posY = -10) lands where a hand-tuned 50px offset put it (centred just below the feet).
+export const HAT_EFFECT_UNIT = 5;
 // Angles are stored in 1/1024ths of a full turn.
 const ANGLE_UNITS_PER_DEGREE = 1024 / 360;
 // D3D blend factors: 2 = ONE, 7 = DESTALPHA (the client's back buffer is opaque, so both add light).
@@ -96,10 +99,12 @@ export async function loadTextureEffects(items) {
       return {
         itemId: item.id,
         garment: Boolean(item.garment),
+        // hatEffectPos is the client's vertical offset (negative = lower); isRenderBeforeCharacter -> effectBehind.
+        behind: Boolean(item.effectBehind),
         str: effect.str,
         textures: effect.textures,
-        offsetX: Number(item.textureOffsetX) || 0,
-        offsetY: Number(item.textureOffsetY) || 0,
+        offsetX: (Number(item.hatEffectPosX) || 0) * HAT_EFFECT_UNIT,
+        offsetY: -(Number(item.hatEffectPos) || 0) * HAT_EFFECT_UNIT,
       };
     })
   );
