@@ -1,20 +1,16 @@
 import { decodeSpr } from "./sprDecoder";
 import { decodeAct } from "./actDecoder";
 import { decodeImf, getImfDrawOrder, getImfFrame } from "./imfDecoder";
+import { toFetchCandidates } from "./dataUrl";
 
 const BODY_LAYER = 0;
 const HEAD_LAYER = 1;
 // Action direction (action % 8): 0 S, 1 SW, 2 W, 3 NW, 4 N, 5 NE, 6 E, 7 SE.
 const GARMENT_OVER_BODY_DIRECTIONS = new Set([3, 4, 5]);
 
-function withRelativeFallback(path) {
-  const relative = path.startsWith("/") ? path.slice(1) : path;
-  return relative === path ? [path] : [path, relative];
-}
-
 export async function fetchArrayBuffer(pathCandidates, { accept = isBinaryData } = {}) {
   for (const pathCandidate of pathCandidates) {
-    for (const candidate of withRelativeFallback(pathCandidate)) {
+    for (const candidate of toFetchCandidates(pathCandidate)) {
       try {
         const response = await fetch(candidate);
         if (!response.ok) {

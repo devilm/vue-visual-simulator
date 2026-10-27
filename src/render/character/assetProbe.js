@@ -1,14 +1,8 @@
-function withRelativeFallback(path) {
-  const relative = path.startsWith("/") ? path.slice(1) : path;
-  if (relative === path) {
-    return [path];
-  }
-  return [path, relative];
-}
+import { toFetchCandidates } from "./dataUrl";
 
 async function tryFetchFirstSuccess(pathCandidates) {
   for (const pathCandidate of pathCandidates) {
-    const fetchCandidates = withRelativeFallback(pathCandidate);
+    const fetchCandidates = toFetchCandidates(pathCandidate);
 
     for (const candidate of fetchCandidates) {
       try {
