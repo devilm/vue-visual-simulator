@@ -896,12 +896,6 @@
         "viewID": 103
     },
     {
-        "id": 480108,
-        "garment": true,
-        "name": "Costume: Poring Basket",
-        "viewID": 103
-    },
-    {
         "id": 480107,
         "garment": true,
         "name": "Costume Kings Twin Sword",
@@ -1013,12 +1007,6 @@
         "viewID": 118
     },
     {
-        "id": 480137,
-        "garment": true,
-        "name": "Costume: Filir Bag",
-        "viewID": 118
-    },
-    {
         "id": 480152,
         "garment": true,
         "name": "Costume: Fork Spoon Set",
@@ -1077,22 +1065,10 @@
         "viewID": 127
     },
     {
-        "id": 480177,
-        "garment": true,
-        "name": "Costume: Clutch Bouquet",
-        "viewID": 128
-    },
-    {
         "id": 480181,
         "garment": true,
         "name": "Costume Dragon Backpack",
         "viewID": 129
-    },
-    {
-        "id": 480187,
-        "garment": true,
-        "name": "Costume: Wedding Ribbon",
-        "viewID": 130
     },
     {
         "id": 480189,
@@ -1244,12 +1220,6 @@
         "garment": true,
         "name": "Costume Mystic Wing",
         "viewID": 156
-    },
-    {
-        "id": 480237,
-        "garment": true,
-        "name": "C Tengu's Katana",
-        "viewID": 158
     },
     {
         "id": 19781,
@@ -9802,24 +9772,6 @@
         "mid": true,
         "name": "Costume: White Tiger Glasses",
         "viewID": 2325
-    },
-    {
-        "id": 480271,
-        "garment": true,
-        "name": "의상 엔젤릭 롱(블론드)",
-        "viewID": 2328
-    },
-    {
-        "id": 480272,
-        "garment": true,
-        "name": "Costume Angelic Long (Royal Blond)",
-        "viewID": 2329
-    },
-    {
-        "id": 480273,
-        "garment": true,
-        "name": "의상 엔젤릭 롱(실버)",
-        "viewID": 2330
     },
     {
         "id": 480274,
