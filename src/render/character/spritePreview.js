@@ -258,16 +258,20 @@ export async function loadCharacterParts(resolvedAssets, character) {
   let headOk = false;
 
   for (let frameIndex = 0; frameIndex < frameCount; frameIndex += 1) {
-    const bodyMotion = resolveMotion(bodySheet, actionIndex, frameIndex);
-    const bodyImf = getImfFrame(imf, BODY_LAYER, actionIndex, frameIndex);
+    // Idle/sit ACTs store the head turn (front/right/left) as motions 0/1/2 on EVERY layer: the body, head,
+    // headgear, garment and IMF entries all shift together. The body must use the same motion as the head,
+    // otherwise the head anchor no longer matches the body anchor and the neck looks detached.
+    const motionIndex = isStaticPose ? headTurn : frameIndex;
+    const bodyMotion = resolveMotion(bodySheet, actionIndex, motionIndex);
+    const bodyImf = getImfFrame(imf, BODY_LAYER, actionIndex, motionIndex);
     const layerParts = {
       [BODY_LAYER]: motionToParts(bodySheet, bodyMotion, { x: bodyImf.x, y: bodyImf.y }),
     };
 
     if (headSheet.ok) {
-      const headMotion = resolveMotion(headSheet, actionIndex, isStaticPose ? headTurn : frameIndex);
+      const headMotion = resolveMotion(headSheet, actionIndex, motionIndex);
       if (headMotion) {
-        const headImf = getImfFrame(imf, HEAD_LAYER, actionIndex, frameIndex);
+        const headImf = getImfFrame(imf, HEAD_LAYER, actionIndex, motionIndex);
         const bodyAnchor = bodyMotion.anchors[0];
         const headAnchor = headMotion.anchors[0];
         const offset =
@@ -281,7 +285,7 @@ export async function loadCharacterParts(resolvedAssets, character) {
         headOk = true;
 
         for (const { sheet } of headgearSheets) {
-          const gearMotion = resolveMotion(sheet, actionIndex, isStaticPose ? headTurn : frameIndex);
+          const gearMotion = resolveMotion(sheet, actionIndex, motionIndex);
           if (!gearMotion) {
             continue;
           }
@@ -308,11 +312,11 @@ export async function loadCharacterParts(resolvedAssets, character) {
 
     // Back-to-front order from IMF priority (without IMF: body first, head on top).
     const layerIds = Object.keys(layerParts).map(Number);
-    const drawOrder = imf ? getImfDrawOrder(imf, layerIds, actionIndex, frameIndex) : layerIds;
+    const drawOrder = imf ? getImfDrawOrder(imf, layerIds, actionIndex, motionIndex) : layerIds;
     const frameParts = drawOrder.flatMap((layerId) => layerParts[layerId]);
 
     if (garmentSheet) {
-      const garmentMotion = resolveMotion(garmentSheet, actionIndex, frameIndex);
+      const garmentMotion = resolveMotion(garmentSheet, actionIndex, motionIndex);
       if (garmentMotion) {
         const garmentParts = motionToParts(
           garmentSheet,
@@ -332,7 +336,7 @@ export async function loadCharacterParts(resolvedAssets, character) {
   }
 
   const parts = frames[0];
-  const bodyMotionIndex = 0;
+  const bodyMotionIndex = isStaticPose ? headTurn : 0;
   const headMotionIndex = isStaticPose ? headTurn : 0;
 
   return {
