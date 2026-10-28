@@ -12939,5 +12939,11 @@
         "bot": true,
         "name": "Costume Four Leaf Clover",
         "viewID": 571
+    },
+    {
+        "id": 480879,
+        "garment": true,
+        "name": "Costume Wings of Arrogant Thanatos",
+        "viewID": 323
     }
 ]
