@@ -1,7 +1,7 @@
 import { decodeSpr } from "./sprDecoder";
 import { decodeAct } from "./actDecoder";
 import { decodeImf, getImfDrawOrder, getImfFrame } from "./imfDecoder";
-import { toFetchCandidates } from "./dataUrl";
+import { orderPathCandidates, toFetchCandidates } from "./dataUrl";
 
 const BODY_LAYER = 0;
 const HEAD_LAYER = 1;
@@ -9,7 +9,7 @@ const HEAD_LAYER = 1;
 const GARMENT_OVER_BODY_DIRECTIONS = new Set([3, 4, 5]);
 
 export async function fetchArrayBuffer(pathCandidates, { accept = isBinaryData } = {}) {
-  for (const pathCandidate of pathCandidates) {
+  for (const pathCandidate of orderPathCandidates(pathCandidates)) {
     for (const candidate of toFetchCandidates(pathCandidate)) {
       try {
         const response = await fetch(candidate);

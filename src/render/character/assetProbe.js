@@ -1,7 +1,7 @@
-import { toFetchCandidates } from "./dataUrl";
+import { orderPathCandidates, toFetchCandidates } from "./dataUrl";
 
 async function tryFetchFirstSuccess(pathCandidates) {
-  for (const pathCandidate of pathCandidates) {
+  for (const pathCandidate of orderPathCandidates(pathCandidates)) {
     const fetchCandidates = toFetchCandidates(pathCandidate);
 
     for (const candidate of fetchCandidates) {
