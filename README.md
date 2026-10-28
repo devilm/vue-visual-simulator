@@ -15,8 +15,10 @@ Access: http://visualrag.com/
 
 ## Project setup
 ```
-npm install
+make install
 ```
+This installs the project dependencies. The equivalent npm command is
+`npm install`.
 
 ### Compiles and hot-reloads for development
 ```

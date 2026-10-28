@@ -1,4 +1,4 @@
-.PHONY: build run
+.PHONY: install build run
 
 GH_PAGES_REPO ?= vue-visual-simulator
 export GH_PAGES_REPO
@@ -10,6 +10,9 @@ NPM ?= npm.cmd
 else
 NPM ?= npm
 endif
+
+install:
+	$(NPM) install
 
 build:
 	$(NPM) run build:docs
