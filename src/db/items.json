@@ -12951,5 +12951,13 @@
         "mid": true,
         "name": "Costume Cons of Emoji",
         "viewID": 2852
+    },
+    {
+        "id": 401424,
+        "top": true,
+        "name": "Costume Ancient Giant Helm",
+        "viewID": 1221,
+        "texture": "texture\\effect\\c_released_ground\\ki.str",
+        "effectBehind": true
     }
 ]
