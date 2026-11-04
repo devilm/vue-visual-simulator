@@ -114,7 +114,7 @@ export default {
         width: this.app.screen.width,
         height: this.app.screen.height,
         resolution: this.app.renderer.resolution,
-      });
+      }, this.app.ticker);
     },
   },
 };

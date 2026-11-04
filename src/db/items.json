@@ -12970,5 +12970,15 @@
         "hatEffectPos": -11,
         "hatEffectPosX": 0,
         "effectBehind": true
+    },
+    {
+        "id": 480298,
+        "garment": true,
+        "name": "Costume Magic Wonderland",
+        "viewID": 0,
+        "texture": "texture\\effect\\efst_rabbit_aura\\toto.str",
+        "hatEffectPos": -11,
+        "hatEffectPosX": 0,
+        "effectBehind": true
     }
 ]

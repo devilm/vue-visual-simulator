@@ -140,12 +140,13 @@ function createStrEffectRunner(effect, container) {
 
 function stopAnimation(scene) {
   if (scene.__animationTick) {
-    Ticker.shared.remove(scene.__animationTick);
+    scene.__animationTicker.remove(scene.__animationTick);
     scene.__animationTick = null;
+    scene.__animationTicker = null;
   }
 }
 
-function startAnimation(scene, frameContainers, interval, effectRunners = []) {
+function startAnimation(scene, ticker, frameContainers, interval, effectRunners = []) {
   if (frameContainers.length < 2 && effectRunners.length === 0) {
     return;
   }
@@ -174,10 +175,16 @@ function startAnimation(scene, frameContainers, interval, effectRunners = []) {
   };
 
   scene.__animationTick = tick;
-  Ticker.shared.add(tick);
+  scene.__animationTicker = ticker;
+  ticker.add(tick);
 }
 
-export function renderCharacterTemplate(scene, template, viewSize = { width: 200, height: 200 }) {
+export function renderCharacterTemplate(
+  scene,
+  template,
+  viewSize = { width: 200, height: 200 },
+  ticker = Ticker.shared
+) {
   stopAnimation(scene);
   const resolution = Math.max(viewSize.resolution || 1, 1);
   // Snap to whole device pixels so every texel covers an integer number of screen pixels (no uneven stretching).
@@ -226,7 +233,7 @@ export function renderCharacterTemplate(scene, template, viewSize = { width: 200
   content.position.set(toDevice(viewWidth / 2), toDevice(viewHeight - FEET_BOTTOM_MARGIN));
   scene.addChild(content);
 
-  startAnimation(scene, frameContainers, rendered?.interval || 96, effectRunners);
+  startAnimation(scene, ticker, frameContainers, rendered?.interval || 96, effectRunners);
 }
 
 export function disposeCharacterScene(scene) {

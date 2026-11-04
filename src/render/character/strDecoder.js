@@ -10,6 +10,7 @@ const STR_SIGNATURE = 0x4d525453; // "STRM" read as little endian
 const HEADER_SIZE = 36;
 const TEXTURE_NAME_LENGTH = 128;
 const KEY_SIZE = 124;
+const FRAME_HEADER_MARKER = 0x6d617246; // "Fram" as a little-endian uint32.
 // CP949 is a superset of EUC-KR; plain ASCII names decode unchanged.
 const TEXTURE_NAME_DECODER = new TextDecoder("euc-kr");
 
@@ -44,7 +45,8 @@ export function decodeStr(arrayBuffer) {
 
   const version = readUint();
   const fps = readUint() || 60;
-  const maxKey = readUint();
+  const maxKeyValue = readUint();
+  const hasFrameHeader = maxKeyValue === FRAME_HEADER_MARKER;
   const layerCount = readUint();
   cursor += 16;
 
@@ -94,6 +96,13 @@ export function decodeStr(arrayBuffer) {
 
     layers.push({ textures, keys });
   }
+
+  const maxKey = hasFrameHeader
+    ? layers.reduce(
+        (maximum, layer) => layer.keys.reduce((layerMaximum, key) => Math.max(layerMaximum, key.frame), maximum),
+        1
+      )
+    : maxKeyValue;
 
   return { version, fps, maxKey, layers };
 }
