@@ -12961,5 +12961,15 @@
         "hatEffectPos": -11,
         "hatEffectPosX": 0,
         "effectBehind": true
+    },
+    {
+        "id": 420831,
+        "bot": true,
+        "name": "Costume Gold Imperial Glory",
+        "viewID": 2715,
+        "texture": "texture\\effect\\2020rtc_01\\mcgold.str",
+        "hatEffectPos": -11,
+        "hatEffectPosX": 0,
+        "effectBehind": true
     }
 ]
