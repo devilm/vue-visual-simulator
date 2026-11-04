@@ -12027,8 +12027,7 @@
         "id": 410368,
         "mid": true,
         "name": "Costume Permafrost Oblivion",
-        "viewID": 0,
-        "effect": "perm_frost_oblivion"
+        "viewID": 2595
     },
     {
         "id": 410636,

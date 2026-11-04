@@ -75,7 +75,8 @@ export function toSpriteGenderSuffix(gender) {
   return GENDER_SUFFIX[normalizedGender];
 }
 
-// `manifest` maps headgear view id -> [male, female, male doram, female doram] sprite stems (see db/headgearSprites.json).
+// `manifest` maps headgear view id -> [male, female, male doram, female doram] sprite stems or
+// `sprite/...` paths relative to data/ (see db/headgearSprites.json).
 // Doram characters prefer the doram sprite and fall back to the regular one (same ACT layout and anchors).
 function resolveHeadgearAssets(character, sprite, manifest) {
   if (!manifest) {
@@ -106,10 +107,15 @@ function resolveHeadgearAssets(character, sprite, manifest) {
     }
 
     const createPath = (variant, extension, form) => {
+      const stem = String(variant.stem).replace(/\\/g, "/");
+      if (stem.startsWith("sprite/")) {
+        return `/data/${normalizePath(stem, form)}.${extension}`;
+      }
+
       const accessory = normalizeSegment(ACCESSORY_FOLDER, form);
       const folder = normalizeSegment(variant.folder, form);
-      const stem = normalizeSegment(variant.stem, form);
-      return `/data/sprite/${accessory}/${folder}/${stem}.${extension}`;
+      const name = normalizeSegment(stem, form);
+      return `/data/sprite/${accessory}/${folder}/${name}.${extension}`;
     };
 
     const collect = (extension) =>
