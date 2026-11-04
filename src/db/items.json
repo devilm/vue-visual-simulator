@@ -12945,5 +12945,11 @@
         "garment": true,
         "name": "Costume Wings of Arrogant Thanatos",
         "viewID": 323
+    },
+    {
+        "id": 410665,
+        "mid": true,
+        "name": "Costume Cons of Emoji",
+        "viewID": 2852
     }
 ]
