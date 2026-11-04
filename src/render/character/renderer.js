@@ -59,10 +59,12 @@ function drawParts(container, parts) {
     sprite.angle = part.rotation;
     if (part.rotation === 0) {
       // ACT layer coordinates are sprite centres, so odd sizes land on half pixels. Snap the top-left
-      // corner to the pixel grid (like the game client) so texels map 1:1 and edges stay crisp.
+      // corner to the pixel grid so texels map 1:1 and edges stay crisp. A half pixel must round DOWN
+      // (top-left = pos - ceil(size / 2)): that is how the head/body ACT anchors were authored, and
+      // rounding up shifts every odd-sized sprite (most hairstyles) 1px away from the body.
       const width = part.frame.width * Math.abs(part.xScale);
       const height = part.frame.height * Math.abs(part.yScale);
-      sprite.position.set(Math.round(part.x - width / 2) + width / 2, Math.round(part.y - height / 2) + height / 2);
+      sprite.position.set(Math.floor(part.x - width / 2) + width / 2, Math.floor(part.y - height / 2) + height / 2);
     } else {
       sprite.position.set(part.x, part.y);
     }
