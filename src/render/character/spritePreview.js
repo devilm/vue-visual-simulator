@@ -144,6 +144,14 @@ function resolveMotion(sheet, actionIndex, motionIndex) {
   return action.motions[motionIndex % action.motions.length] || action.motions[0];
 }
 
+// Idle/sit ACTs hold one motion group per head turn (front/right/left). Attachments such as animated headgear
+// or garments store several frames inside each group, so a group size of N means frames [turn * N, turn * N + N).
+function getStaticGroupSize(sheet, actionIndex) {
+  const action = sheet.act.actions[actionIndex] || sheet.act.actions[0];
+  const motionCount = action?.motions.length || 0;
+  return motionCount >= 3 ? Math.floor(motionCount / 3) : 1;
+}
+
 // Headgear ACTs hide a layer for views where the hat should not show (e.g. facing away) by moving it
 // far below the character (y ~ 235-300). Headgear never legitimately sits that far under the feet.
 const HIDDEN_LAYER_MIN_Y = 150;
@@ -253,7 +261,21 @@ export async function loadCharacterParts(resolvedAssets, character) {
   // (NW/N/NE). The ACT shares the body's origin and anchors, so only the body IMF offset applies.
   const garmentOnTop = GARMENT_OVER_BODY_DIRECTIONS.has(direction);
 
-  const frameCount = isStaticPose ? 1 : bodyAction.motions.length;
+  // Static poses keep the body and head on the head-turn motion, but animated headgear/garment cycle through
+  // their own frames within that turn, so the frame count follows the longest attachment cycle.
+  const staticAttachmentSheets = [
+    ...headgearSheets.map(({ sheet }) => sheet),
+    ...(garmentSheet ? [garmentSheet] : []),
+  ];
+  const staticFrameCount = Math.max(1, ...staticAttachmentSheets.map((sheet) => getStaticGroupSize(sheet, actionIndex)));
+  const frameCount = isStaticPose ? staticFrameCount : bodyAction.motions.length;
+  const attachmentMotionIndex = (sheet, frameIndex) => {
+    if (!isStaticPose) {
+      return frameIndex;
+    }
+    const groupSize = getStaticGroupSize(sheet, actionIndex);
+    return headTurn * groupSize + (frameIndex % groupSize);
+  };
   const frames = [];
   let headOk = false;
 
@@ -285,7 +307,7 @@ export async function loadCharacterParts(resolvedAssets, character) {
         headOk = true;
 
         for (const { sheet } of headgearSheets) {
-          const gearMotion = resolveMotion(sheet, actionIndex, motionIndex);
+          const gearMotion = resolveMotion(sheet, actionIndex, attachmentMotionIndex(sheet, frameIndex));
           if (!gearMotion) {
             continue;
           }
@@ -316,7 +338,7 @@ export async function loadCharacterParts(resolvedAssets, character) {
     const frameParts = drawOrder.flatMap((layerId) => layerParts[layerId]);
 
     if (garmentSheet) {
-      const garmentMotion = resolveMotion(garmentSheet, actionIndex, motionIndex);
+      const garmentMotion = resolveMotion(garmentSheet, actionIndex, attachmentMotionIndex(garmentSheet, frameIndex));
       if (garmentMotion) {
         const garmentParts = motionToParts(
           garmentSheet,
