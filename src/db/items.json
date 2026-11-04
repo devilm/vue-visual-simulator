@@ -12958,6 +12958,8 @@
         "name": "Costume Ancient Giant Helm",
         "viewID": 1221,
         "texture": "texture\\effect\\c_released_ground\\ki.str",
+        "hatEffectPos": -11,
+        "hatEffectPosX": 0,
         "effectBehind": true
     }
 ]
