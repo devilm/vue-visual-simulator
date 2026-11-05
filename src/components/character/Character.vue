@@ -35,6 +35,7 @@ export default {
         this.$store.state.headgear_mid_item,
         this.$store.state.headgear_bottom_item,
         this.$store.state.garment_item,
+        ...Object.values(this.$store.state.effect_headgear_items || {}),
       ];
     },
   },

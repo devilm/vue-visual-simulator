@@ -12971,7 +12971,7 @@
         "hatEffectPosX": 0,
         "effectBehind": true,
         "aura": {
-            "path": "sprite/이팩트/subject_aura/subject_aura",
+            "path": "sprite\\이팩트\\subject_aura\\subject_aura",
             "action": 2,
             "offsetX": 0,
             "offsetY": -60,
@@ -12984,8 +12984,20 @@
         "name": "Costume Magic Wonderland",
         "viewID": 0,
         "texture": "texture\\effect\\efst_rabbit_aura\\toto.str",
-        "hatEffectPos": -11,
+        "hatEffectPos": -9,
         "hatEffectPosX": 0,
         "effectBehind": true
+    },
+    {
+        "id":20547,
+        "garment": true,
+        "name":"Costume: Whisper's Blessing",
+        "viewID": 0,
+        "aura": {
+            "path": "sprite\\이팩트\\soul_explosion\\soul_explosion",
+            "offsetX": 0,
+            "offsetY": -11,
+            "behind": false
+        }
     }
 ]

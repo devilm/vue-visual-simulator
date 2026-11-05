@@ -26,6 +26,11 @@ export default createStore({
     headgear_mid_item: {},
     headgear_bottom_item: {},
     garment_item: {},
+    effect_headgear_items: {
+      top: {},
+      mid: {},
+      bot: {},
+    },
     cash_mount_checked: 0,
     regular_mount_checked: 0,
   },
@@ -70,6 +75,9 @@ export default createStore({
     },
     SAVE_GARMENT_ITEM(state, item) {
       state.garment_item = item;
+    },
+    SAVE_EFFECT_HEADGEAR_ITEM(state, { slot, item }) {
+      state.effect_headgear_items[slot] = item;
     },
     SAVE_CHARACTER_POSITION(state, side) {
       if (side == "left") {
@@ -139,6 +147,7 @@ export default createStore({
       state.character.action = 0;
       state.character.outfit = 0;
       state.character.headdir = 0;
+      state.effect_headgear_items = { top: {}, mid: {}, bot: {} };
     },
     SAVE_CHARACTER(state, character) {
       state.character = character;

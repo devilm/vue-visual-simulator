@@ -120,6 +120,20 @@
                             </button>
                             <button
                               class="nav-link btn-tab-item"
+                              id="v-pills-effect-tab"
+                              data-bs-toggle="pill"
+                              data-bs-target="#v-pills-effect"
+                              type="button"
+                              role="tab"
+                              aria-controls="v-pills-effect"
+                              aria-selected="false"
+                            >
+                              <i class="fas fa-wand-magic-sparkles" aria-hidden="true"></i>
+                              <label>{{ $t("effectHeadgear") }}</label>
+                              <span>FX</span>
+                            </button>
+                            <button
+                              class="nav-link btn-tab-item"
                               id="v-pills-garment-tab"
                               data-bs-toggle="pill"
                               data-bs-target="#v-pills-garment"
@@ -163,6 +177,16 @@
                               aria-labelledby="v-pills-bot-tab"
                             >
                               <ItemListHeadBottom
+                                :item_filter="searchItemQuery"
+                              />
+                            </div>
+                            <div
+                              class="tab-pane tab-pane-items fade"
+                              id="v-pills-effect"
+                              role="tabpanel"
+                              aria-labelledby="v-pills-effect-tab"
+                            >
+                              <EffectHeadgearSelector
                                 :item_filter="searchItemQuery"
                               />
                             </div>
@@ -289,6 +313,7 @@ import ItemListHeadTop from "@/components/character/ItemListHeadTop.vue";
 import ItemListHeadMid from "@/components/character/ItemListHeadMid.vue";
 import ItemListGarmet from "@/components/character/ItemListGarmet.vue";
 import ItemListHeadBottom from "@/components/character/ItemListHeadBottom.vue";
+import EffectHeadgearSelector from "@/components/character/EffectHeadgearSelector.vue";
 import Character from "@/components/character/Character.vue";
 import TurnCharacter from "@/components/character/TurnCharacter.vue";
 import ActionList from "@/components/character/ActionList.vue";
@@ -321,6 +346,7 @@ export default {
     ItemListHeadTop,
     ItemListHeadMid,
     ItemListHeadBottom,
+    EffectHeadgearSelector,
     ItemListGarmet,
     Character,
     TurnCharacter,
@@ -600,6 +626,16 @@ export default {
 
 .btn-tab-item img {
   width: 25px;
+}
+
+.btn-tab-item > i {
+  margin: 0.3rem 0;
+  color: #77599c;
+  font-size: 1.15rem;
+}
+
+.btn-tab-item.active > i {
+  color: #fff;
 }
 
 .btn-tab-item label {

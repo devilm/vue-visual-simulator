@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1003031,
+        "name": "Red Flame Effect",
+        "top": true,
+        "texture": "texture\\effect\\efst_c_ros2023_cape_1\\ros2023_1st.str",
+        "hatEffectPos": -10,
+        "hatEffectPosX": 0,
+        "effectBehind": true
+    },
+    {
+        "id": 1002193,
+        "name": "Blue Spirit Effect",
+        "mid": true,
+        "texture": "texture\\effect\\efst_ros_bluespirit\\kiaura2.str",
+        "hatEffectPos": -10,
+        "hatEffectPosX": 0,
+        "effectBehind": true
+    }
+]

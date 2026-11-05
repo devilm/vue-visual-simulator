@@ -53,6 +53,21 @@
     >
       {{ $t("garment") }}
     </button>
+    <button
+      v-for="slot in effectHeadgearSlots"
+      :key="slot.id"
+      type="button"
+      :class="{
+        'btn-outline-danger': Boolean(
+          $store.state.effect_headgear_items?.[slot.id]?.id
+        ),
+      }"
+      :disabled="!$store.state.effect_headgear_items?.[slot.id]?.id"
+      class="btn btn-sm m-2"
+      @click="resetEffectHeadgear(slot.id)"
+    >
+      {{ $t(slot.label) }}
+    </button>
   </div>
 </template>
 
@@ -62,6 +77,15 @@ import { mapMutations } from "vuex";
 export default {
   name: "ClearCharacterButton",
 
+  computed: {
+    effectHeadgearSlots() {
+      return [
+        { id: "top", label: "resetEffectTop" },
+        { id: "mid", label: "resetEffectMid" },
+        { id: "bot", label: "resetEffectBot" },
+      ];
+    },
+  },
   methods: {
     ...mapMutations([
       "RESET_CHARACTER",
@@ -73,6 +97,7 @@ export default {
       "SAVE_HEADGEAR_BOTTOM_ITEM",
       "SAVE_GARMENT",
       "SAVE_GARMENT_ITEM",
+      "SAVE_EFFECT_HEADGEAR_ITEM",
     ]),
     resetCharacter: function () {
       this.RESET_CHARACTER(null);
@@ -80,6 +105,9 @@ export default {
       this.resetHeadgearMid();
       this.resetHeadgearBot();
       this.resetGarment();
+    },
+    resetEffectHeadgear(slot) {
+      this.SAVE_EFFECT_HEADGEAR_ITEM({ slot, item: {} });
     },
     clickResetHeadgearTop: function (item) {
       const item_fortmat = JSON.parse(JSON.stringify(item));
