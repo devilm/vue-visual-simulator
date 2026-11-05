@@ -12999,5 +12999,15 @@
             "offsetY": -11,
             "behind": false
         }
+    },
+    {
+        "id": 420337,
+        "bot": true,
+        "name": "Costume Ancient Runes",
+        "viewID": 0,
+        "texture": "texture\\effect\\efst_c_ancient_rune\\sangorunic1.str",
+        "hatEffectPos": -9,
+        "hatEffectPosX": 0,
+        "effectBehind": true
     }
 ]
