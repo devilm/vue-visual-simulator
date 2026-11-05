@@ -51,25 +51,29 @@ function drawShadow(container) {
   container.addChild(shadow);
 }
 
+function applyPartTransform(sprite, part) {
+  sprite.scale.set(part.xScale * (part.mirror ? -1 : 1), part.yScale);
+  sprite.angle = part.rotation;
+  if (part.rotation === 0) {
+    // ACT layer coordinates are sprite centres, so odd sizes land on half pixels. Snap the top-left
+    // corner to the pixel grid so texels map 1:1 and edges stay crisp. A half pixel must round DOWN
+    // (top-left = pos - ceil(size / 2)): that is how the head/body ACT anchors were authored, and
+    // rounding up shifts every odd-sized sprite (most hairstyles) 1px away from the body.
+    const width = part.frame.width * Math.abs(part.xScale);
+    const height = part.frame.height * Math.abs(part.yScale);
+    sprite.position.set(Math.floor(part.x - width / 2) + width / 2, Math.floor(part.y - height / 2) + height / 2);
+  } else {
+    sprite.position.set(part.x, part.y);
+  }
+  sprite.tint = (part.color[0] << 16) | (part.color[1] << 8) | part.color[2];
+  sprite.alpha = part.color[3] / 255;
+}
+
 function drawParts(container, parts) {
   for (const part of parts) {
     const sprite = new Sprite(getFrameTexture(part.frame));
     sprite.anchor.set(0.5);
-    sprite.scale.set(part.xScale * (part.mirror ? -1 : 1), part.yScale);
-    sprite.angle = part.rotation;
-    if (part.rotation === 0) {
-      // ACT layer coordinates are sprite centres, so odd sizes land on half pixels. Snap the top-left
-      // corner to the pixel grid so texels map 1:1 and edges stay crisp. A half pixel must round DOWN
-      // (top-left = pos - ceil(size / 2)): that is how the head/body ACT anchors were authored, and
-      // rounding up shifts every odd-sized sprite (most hairstyles) 1px away from the body.
-      const width = part.frame.width * Math.abs(part.xScale);
-      const height = part.frame.height * Math.abs(part.yScale);
-      sprite.position.set(Math.floor(part.x - width / 2) + width / 2, Math.floor(part.y - height / 2) + height / 2);
-    } else {
-      sprite.position.set(part.x, part.y);
-    }
-    sprite.tint = (part.color[0] << 16) | (part.color[1] << 8) | part.color[2];
-    sprite.alpha = part.color[3] / 255;
+    applyPartTransform(sprite, part);
     container.addChild(sprite);
   }
 }
@@ -132,6 +136,56 @@ function createStrEffectRunner(effect, container) {
       sprite.alpha = state.color[3] / 255;
       sprite.blendMode = asLight ? "add" : "normal";
     }
+  };
+
+  update(0);
+  return { update };
+}
+
+// Plays one ACT action of an aura sprite. Each motion is one animation frame lasting the action's interval;
+// every layer of that motion is drawn at the item's offset from the feet, like equipped body parts are.
+function createAuraRunner(aura, container) {
+  const { sheet, action, offsetX, offsetY } = aura;
+  const actionData = sheet.act.actions[action] || sheet.act.actions[0];
+  const motions = actionData?.motions || [];
+  if (motions.length === 0) {
+    return null;
+  }
+  const interval = actionData.interval || 96;
+
+  const sprites = [];
+  const poolSize = Math.max(...motions.map((motion) => motion.layers.length));
+  for (let index = 0; index < poolSize; index += 1) {
+    const sprite = new Sprite();
+    sprite.anchor.set(0.5);
+    sprite.visible = false;
+    container.addChild(sprite);
+    sprites.push(sprite);
+  }
+
+  const update = (elapsedMs) => {
+    const motion = motions[Math.floor(elapsedMs / interval) % motions.length];
+    sprites.forEach((sprite, index) => {
+      const layer = motion.layers[index];
+      const frames = layer?.sprType === 1 ? sheet.spr.rgbaFrames : sheet.spr.indexedFrames;
+      const frame = layer && layer.sprIndex >= 0 ? frames[layer.sprIndex] : null;
+      if (!frame || frame.width === 0 || frame.height === 0) {
+        sprite.visible = false;
+        return;
+      }
+      sprite.visible = true;
+      sprite.texture = getFrameTexture(frame);
+      applyPartTransform(sprite, {
+        frame,
+        x: layer.x + offsetX,
+        y: layer.y + offsetY,
+        mirror: layer.mirror,
+        xScale: layer.xScale,
+        yScale: layer.yScale,
+        rotation: layer.rotation,
+        color: layer.color,
+      });
+    });
   };
 
   update(0);
@@ -207,6 +261,13 @@ export function renderCharacterTemplate(
   const effectRunners = orderedEffects.map((effect) =>
     createStrEffectRunner(effect, effect.behind ? effectsBehind : effectsFront)
   );
+  // Auras are ACT/SPR animations (item.aura) and follow the same behind/front split as STR effects.
+  for (const aura of template.auraEffects || []) {
+    const runner = createAuraRunner(aura, aura.behind ? effectsBehind : effectsFront);
+    if (runner) {
+      effectRunners.push(runner);
+    }
+  }
   content.addChild(effectsBehind);
 
   const rendered = template.rendered;

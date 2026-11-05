@@ -97,8 +97,10 @@ export default {
         return;
       }
 
-      // Equipped items may carry an animated STR texture effect (item.texture).
-      const textureItems = this.equippedItems.filter((item) => item?.texture).map((item) => ({ ...item }));
+      // Equipped items may carry an animated STR texture effect (item.texture) or an ACT/SPR aura (item.aura).
+      const textureItems = this.equippedItems
+        .filter((item) => item?.texture || item?.aura)
+        .map((item) => ({ ...item }));
       const template = await createCharacterTemplate(characterState, { textureItems });
       if (requestId !== this.renderRequestId) {
         return;

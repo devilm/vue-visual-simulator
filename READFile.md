@@ -18,3 +18,22 @@ Dark Knight Cloak (480783) ผูกกับ HAT_EF_C_Dark_Lord_Cloak ซึ่
 ROS 2026 (480866) ผูกกับ HAT_EF_C_Qualifier26_1st ซึ่งชี้ไปที่ MC1_3.str เดียวกัน
 ถ้าอยากให้เป๊ะ 100% ต้องมี iteminfo ของ client ถ้าคุณมีไฟล์นี้ ผมเทียบซ้ำให้ได้
 
+## Aura (ACT/SPR) ของไอเทม
+
+ไอเทมที่มี `aura` จะวาด animation จากไฟล์ `.act` + `.spr` ทับไปที่ตัวละคร โดยไม่ต้องมี `texture` (.str) ก็ได้
+
+```json
+"aura": {
+    "path": "sprite/이팩트/subject_aura/subject_aura",
+    "action": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "behind": true
+}
+```
+
+- `path`: path ใต้โฟลเดอร์ `data/` **ไม่ต้องใส่นามสกุล** ระบบจะโหลด `.act` และ `.spr` ให้เอง
+- `action`: index ของ action ใน `.act` เริ่มนับจาก 0 (`2` คือ action ที่ 3 ในการนับแบบปกติ)
+- `offsetX` / `offsetY`: เลื่อนตำแหน่งจากเท้าตัวละคร (หน่วยเป็น pixel ของ ACT)
+- `behind`: `true` วาดอยู่หลังตัวละคร, `false` วาดอยู่หน้าตัวละคร
+

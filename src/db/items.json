@@ -12969,7 +12969,14 @@
         "texture": "texture\\effect\\2020rtc_01\\mcgold.str",
         "hatEffectPos": -11,
         "hatEffectPosX": 0,
-        "effectBehind": true
+        "effectBehind": true,
+        "aura": {
+            "path": "sprite/이팩트/subject_aura/subject_aura",
+            "action": 2,
+            "offsetX": 0,
+            "offsetY": -60,
+            "behind": false
+        }
     },
     {
         "id": 480298,

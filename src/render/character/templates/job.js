@@ -1,6 +1,6 @@
 import { resolveCharacterAssetPaths } from "../resolver";
 import { loadCharacterParts } from "../spritePreview";
-import { loadTextureEffects } from "../strEffect";
+import { loadAuraEffects, loadTextureEffects } from "../strEffect";
 
 let headgearManifestPromise = null;
 
@@ -34,14 +34,16 @@ function loadGarmentManifest() {
   return garmentManifestPromise;
 }
 
-// `options.textureItems` are the equipped items; those carrying a `texture` (.str) add an animated effect.
+// `options.textureItems` are the equipped items; those carrying a `texture` (.str) add an animated effect and
+// those carrying an `aura` (.act/.spr) add an animated sprite.
 export async function createJobTemplate(character, { textureItems = [] } = {}) {
   const hasHeadgear = Array.isArray(character.headgear) && character.headgear.some((viewId) => Number(viewId) > 0);
   const hasGarment = Number(character.garment) > 0;
-  const [headgear, garment, textureEffects] = await Promise.all([
+  const [headgear, garment, textureEffects, auraEffects] = await Promise.all([
     hasHeadgear ? loadHeadgearManifest() : null,
     hasGarment ? loadGarmentManifest() : null,
     loadTextureEffects(textureItems),
+    loadAuraEffects(textureItems),
   ]);
 
   const resolvedAssets = resolveCharacterAssetPaths(character, { headgear, garment });
@@ -58,5 +60,6 @@ export async function createJobTemplate(character, { textureItems = [] } = {}) {
     resolvedAssets,
     rendered,
     textureEffects,
+    auraEffects,
   };
 }

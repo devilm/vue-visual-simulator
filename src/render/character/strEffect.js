@@ -1,6 +1,6 @@
 import { decodeStr } from "./strDecoder";
 import { decodeEffectTexture } from "./textureDecoder";
-import { fetchArrayBuffer } from "./spritePreview";
+import { fetchArrayBuffer, loadSpriteSheet } from "./spritePreview";
 
 // STR coordinates are authored for a 640x480 client view. The effect is moved from the origin below onto
 // the character's feet using the client's own per-item values (HatEffectInfo lua: hatEffectPos/hatEffectPosX):
@@ -105,6 +105,43 @@ export async function loadTextureEffects(items) {
         textures: effect.textures,
         offsetX: (Number(item.hatEffectPosX) || 0) * HAT_EFFECT_UNIT,
         offsetY: -(Number(item.hatEffectPos) || 0) * HAT_EFFECT_UNIT,
+      };
+    })
+  );
+  return effects.filter(Boolean);
+}
+
+// `items` with an `aura` object (ACT/SPR animation) get an aura entry. `aura.path` is relative to `data/`
+// without an extension, e.g. "sprite/이팩트/subject_aura/subject_aura" -> .act + .spr.
+export async function loadAuraEffects(items) {
+  const unique = new Map();
+  for (const item of items || []) {
+    if (item?.aura?.path && !unique.has(item.id)) {
+      unique.set(item.id, item);
+    }
+  }
+
+  const effects = await Promise.all(
+    [...unique.values()].map(async (item) => {
+      const { path, action = 0, offsetX = 0, offsetY = 0, behind = false } = item.aura;
+      const relative = String(path).replace(/\\/g, "/").replace(/^\/+/, "");
+      // Korean names are NFD on macOS disks but NFC in source text; try both forms.
+      const bases = [...new Set([relative.normalize("NFC"), relative.normalize("NFD")])].map((name) => `/data/${name}`);
+      const sheet = await loadSpriteSheet(
+        bases.map((base) => `${base}.spr`),
+        bases.map((base) => `${base}.act`)
+      );
+      if (!sheet.ok) {
+        console.warn(`[aura ${item.id}] failed:`, sheet.reason);
+        return null;
+      }
+      return {
+        itemId: item.id,
+        sheet,
+        action: Math.max(0, Number(action) || 0),
+        behind: Boolean(behind),
+        offsetX: Number(offsetX) || 0,
+        offsetY: Number(offsetY) || 0,
       };
     })
   );
