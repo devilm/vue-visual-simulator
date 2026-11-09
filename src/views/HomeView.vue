@@ -1,9 +1,30 @@
 <template>
   <div class="container-character">
     <div class="container">
+      <aside class="donate-prompt" aria-label="สนับสนุนโปรเจกต์">
+        <span class="donate-powered">powered by EmutoChannel</span>
+        <button
+          type="button"
+          class="donate-link"
+          :aria-expanded="showDonationQr"
+          aria-controls="donation-qr-dialog"
+          @click="showDonationQr = !showDonationQr"
+        >
+          สนับสนุนค่ากาแฟคลิกเลย ☕
+        </button>
+        <button
+          v-if="showDonationQr"
+          type="button"
+          class="donate-link donate-close-link"
+          aria-label="ปิดรูป QR"
+          @click="showDonationQr = false"
+        >
+          ปิดรูป
+        </button>
+      </aside>
       <div class="row">
         <div
-          class="col-md-12 bg-gradient-ragnarok bg-gradient-ragnarok-border my-5"
+          class="col-md-12 bg-gradient-ragnarok bg-gradient-ragnarok-border mt-0 mb-5"
         >
           <div class="col-md-12 card ragnarok-card">
             <div class="row">
@@ -289,21 +310,35 @@
       </div>
     </div>
   </div>
-  <aside class="donate-prompt" aria-label="สนับสนุนโปรเจกต์">
-    <span class="donate-powered">powered by EmutoChannel</span>
-    <a
-      class="donate-link"
-      href="https://easydonate.app/emutochannel"
-      target="_blank"
-      rel="noopener noreferrer"
+  <div
+    v-if="showDonationQr"
+    id="donation-qr-dialog"
+    class="donation-qr-backdrop"
+    role="presentation"
+    @click.self="showDonationQr = false"
+  >
+    <section
+      class="donation-qr-dialog"
+      role="dialog"
+      aria-modal="true"
+      aria-label="QR สำหรับสนับสนุนค่ากาแฟ"
     >
-      สนับสนุนค่ากาแฟคลิกเลย ☕
-    </a>
-  </aside>
+      <button
+        type="button"
+        class="donation-qr-close"
+        aria-label="ปิดรูป QR"
+        @click="showDonationQr = false"
+      >
+        &times;
+      </button>
+      <img :src="donationQrSrc" alt="QR สำหรับสนับสนุนค่ากาแฟ" />
+    </section>
+  </div>
 </template>
 
 <script>
 import { mapMutations } from "vuex";
+import donationQrSrc from "@/assets/img/qr/qr.jpg";
 import GenderList from "@/components/character/GenderList.vue";
 import HairColorList from "@/components/character/HairColorList.vue";
 import HeadList from "@/components/character/HeadList.vue";
@@ -335,6 +370,8 @@ export default {
       item_garmet_src:
         "https://static.divine-pride.net/images/items/item/20571.png",
       searchItemQuery: "",
+      showDonationQr: false,
+      donationQrSrc,
     };
   },
   components: {
@@ -566,7 +603,7 @@ export default {
 
 .character-box {
   width: 100%;
-  height: 220px;
+  height: 300px;
   overflow: visible;
 }
 
@@ -580,7 +617,7 @@ export default {
   justify-content: center;
   flex-wrap: wrap;
   gap: 0.25rem 0.6rem;
-  margin: -1.5rem auto 2rem;
+  margin: 0.5rem auto 1rem;
   padding: 0 1rem;
   text-align: center;
 }
@@ -597,10 +634,50 @@ export default {
   border-radius: 999px;
   background: rgba(24, 24, 28, 0.88);
   color: #f0d6a3;
+  cursor: pointer;
   font-size: 0.8rem;
   font-weight: 600;
   text-decoration: none;
   transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+
+.donation-qr-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1050;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.donation-qr-dialog {
+  position: relative;
+  max-width: min(90vw, 480px);
+  max-height: 90vh;
+  padding: 2.5rem 1rem 1rem;
+  border-radius: 0.5rem;
+  background: #fff;
+}
+
+.donation-qr-dialog img {
+  display: block;
+  max-width: 100%;
+  max-height: calc(90vh - 3.5rem);
+  object-fit: contain;
+}
+
+.donation-qr-close {
+  position: absolute;
+  top: 0.35rem;
+  right: 0.65rem;
+  border: 0;
+  background: transparent;
+  color: #333;
+  cursor: pointer;
+  font-size: 1.75rem;
+  line-height: 1;
 }
 
 .donate-link:hover,

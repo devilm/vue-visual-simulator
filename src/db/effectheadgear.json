@@ -16,5 +16,14 @@
         "hatEffectPos": -10,
         "hatEffectPosX": 0,
         "effectBehind": true
+    },
+    {
+        "id": 1001799,
+        "name": "Kiel Effect",
+        "bot": true,
+        "texture": "texture\\effect\\efst_kyel_hyre_ulti_tw\\tentakaiser.str",
+        "hatEffectPos": -16,
+        "hatEffectPosX": 0,
+        "effectBehind": true
     }
 ]

@@ -261,14 +261,14 @@ function fadeEdgeAlpha(rgbaPixels, width, height) {
 // Converts a texture meant for additive blending into one that stays correct on a transparent canvas.
 // The client draws such layers onto an opaque back buffer, so black simply adds nothing. Pixi's additive
 // blend also accumulates alpha, which would turn black texels into opaque black boxes on our transparent
-// canvas. Here the light a texel contributes (rgb * alpha) becomes the new alpha instead, so black is
-// fully transparent and bright texels keep their colour.
-export function toLightTexture(image) {
+// canvas. The selected source blend factor determines whether texture alpha weights the light contribution.
+// The contribution becomes output alpha, so black is fully transparent and bright texels keep their colour.
+export function toLightTexture(image, useSourceAlpha = true) {
   const { width, height, rgbaPixels } = image;
   const light = new Uint8ClampedArray(rgbaPixels.length);
 
   for (let offset = 0; offset < rgbaPixels.length; offset += 4) {
-    const weight = rgbaPixels[offset + 3] / 255;
+    const weight = useSourceAlpha ? rgbaPixels[offset + 3] / 255 : 1;
     const red = rgbaPixels[offset] * weight;
     const green = rgbaPixels[offset + 1] * weight;
     const blue = rgbaPixels[offset + 2] * weight;

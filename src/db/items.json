@@ -10526,5 +10526,35 @@
         "hatEffectPos": -9,
         "hatEffectPosX": 0,
         "effectBehind": true
+    },
+    {
+        "id": 410280,
+        "bot": true,
+        "name": "Costume Niflheim Night Sky",
+        "viewID": 0,
+        "texture": "texture\\effect\\efst_niflheim_night_sky\\halloween.str",
+        "hatEffectPos": -9,
+        "hatEffectPosX": 0,
+        "effectBehind": true
+    },
+    {
+        "id": 420424,
+        "bot": true,
+        "name": "Costume Ink Painting (Night)",
+        "viewID": 0,
+        "texture": "texture\\effect\\efst_inkpainting_night\\bushinkpaint2.str",
+        "hatEffectPos": -9,
+        "hatEffectPosX": 0,
+        "effectBehind": true
+    },
+    {
+        "id": 420423,
+        "bot": true,
+        "name": "Costume Ink Painting (Day)",
+        "viewID": 0,
+        "texture": "texture\\effect\\efst_inkpainting_day\\bushinkpaint1.str",
+        "hatEffectPos": -9,
+        "hatEffectPosX": 0,
+        "effectBehind": true
     }
 ]

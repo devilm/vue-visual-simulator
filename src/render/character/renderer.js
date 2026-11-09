@@ -36,13 +36,17 @@ function getFrameTexture(frame) {
 const lightImageCache = new WeakMap();
 
 // Additive layers are drawn from a "light" copy (black -> transparent); see toLightTexture().
-function getLightImage(image) {
-  let light = lightImageCache.get(image);
-  if (!light) {
-    light = toLightTexture(image);
-    lightImageCache.set(image, light);
+function getAdditiveFrameImage(image, sourceAlphaBlend) {
+  let variants = lightImageCache.get(image);
+  if (!variants) {
+    variants = new Map();
+    lightImageCache.set(image, variants);
   }
-  return light;
+  const cacheKey = sourceAlphaBlend ? "source-alpha" : "one";
+  if (!variants.has(cacheKey)) {
+    variants.set(cacheKey, toLightTexture(image, sourceAlphaBlend));
+  }
+  return variants.get(cacheKey);
 }
 
 function drawShadow(container) {
@@ -86,7 +90,7 @@ function drawFallback(container) {
 
 // Builds the display objects of one STR effect. `update(elapsedMs)` advances every layer to the matching key.
 function createStrEffectRunner(effect, container) {
-  const { str, textures, offsetX, offsetY } = effect;
+  const { str, textures, offsetX, offsetY, textureAlpha } = effect;
   const keyCount = Math.max(str.maxKey, 1);
 
   const layers = [];
@@ -126,14 +130,16 @@ function createStrEffectRunner(effect, container) {
       // Additive layers and textures without alpha (BMP) rely on black being invisible, so they are drawn
       // from a brightness-as-alpha copy; everything else keeps its own alpha channel.
       const asLight = state.additive || !image.hasAlpha;
-      sprite.texture = getFrameTexture(asLight ? getLightImage(image) : image);
+      sprite.texture = getFrameTexture(
+        asLight ? getAdditiveFrameImage(image, state.sourceAlphaBlend) : image
+      );
       sprite.position.set((state.minX + state.maxX) / 2, (state.minY + state.maxY) / 2);
       sprite.scale.set(
         ((state.maxX - state.minX) / image.width) * (state.flipX ? -1 : 1),
         ((state.maxY - state.minY) / image.height) * (state.flipY ? -1 : 1)
       );
       sprite.tint = (Math.round(state.color[0]) << 16) | (Math.round(state.color[1]) << 8) | Math.round(state.color[2]);
-      sprite.alpha = state.color[3] / 255;
+      sprite.alpha = (state.color[3] / 255) * textureAlpha;
       sprite.blendMode = asLight ? "add" : "normal";
     }
   };

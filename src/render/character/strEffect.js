@@ -12,8 +12,9 @@ export const STR_ORIGIN_Y = 290;
 export const HAT_EFFECT_UNIT = 5;
 // Angles are stored in 1/1024ths of a full turn.
 const ANGLE_UNITS_PER_DEGREE = 1024 / 360;
-// D3D blend factors: 2 = ONE, 7 = DESTALPHA (the client's back buffer is opaque, so both add light).
+// D3D blend factors: 2 = ONE, 5 = SRCALPHA, 7 = DESTALPHA.
 const ADDITIVE_DEST_BLENDS = new Set([2, 7]);
+const ADDITIVE_SOURCE_BLENDS = new Set([2, 5]);
 
 function toDataPath(path) {
   const normalized = String(path).replace(/\\/g, "/").replace(/^\/+/, "");
@@ -83,10 +84,27 @@ export function loadStrEffect(texturePath) {
 // `items` are equipped item records; those with a `texture` (.str path) get an effect entry.
 export async function loadTextureEffects(items) {
   const unique = new Map();
+  const hasTextureAlpha = (item) =>
+    item.textureAlpha !== undefined &&
+    item.textureAlpha !== null &&
+    Number.isFinite(Number(item.textureAlpha));
+
   for (const item of items || []) {
-    if (item?.texture && !unique.has(item.id)) {
-      unique.set(item.id, item);
+    if (!item?.texture) {
+      continue;
     }
+
+    const path = toDataPath(item.texture).toLowerCase();
+    const existing = unique.get(path);
+    if (!existing) {
+      unique.set(path, { ...item });
+      continue;
+    }
+
+    if (!hasTextureAlpha(existing) && hasTextureAlpha(item)) {
+      existing.textureAlpha = item.textureAlpha;
+    }
+    existing.garment = Boolean(existing.garment || item.garment);
   }
 
   const effects = await Promise.all(
@@ -101,6 +119,12 @@ export async function loadTextureEffects(items) {
         garment: Boolean(item.garment),
         // hatEffectPos is the client's vertical offset (negative = lower); isRenderBeforeCharacter -> effectBehind.
         behind: Boolean(item.effectBehind),
+        textureAlpha:
+          item.textureAlpha !== undefined &&
+          item.textureAlpha !== null &&
+          Number.isFinite(Number(item.textureAlpha))
+            ? Math.min(1, Math.max(0, Number(item.textureAlpha)))
+            : 1,
         str: effect.str,
         textures: effect.textures,
         offsetX: (Number(item.hatEffectPosX) || 0) * HAT_EFFECT_UNIT,
@@ -216,6 +240,9 @@ export function sampleStrLayer(layer, keyIndex) {
     flipY: ys[0] > ys[3],
     color,
     textureIndex: wrapIndex(frame, textures.length),
-    additive: ADDITIVE_DEST_BLENDS.has(from.destBlend),
+    additive:
+      ADDITIVE_DEST_BLENDS.has(from.destBlend) &&
+      ADDITIVE_SOURCE_BLENDS.has(from.srcBlend),
+    sourceAlphaBlend: from.srcBlend === 5,
   };
 }

@@ -130,7 +130,7 @@ export default {
    must not swallow clicks. */
 .character-render-root {
   width: max(100%, 280px);
-  height: 220px;
+  height: 300px;
   flex: 0 0 auto;
   pointer-events: none;
 }
