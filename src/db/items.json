@@ -9,7 +9,13 @@
         "id": 31089,
         "mid": true,
         "name": "Costume Exploding Wave Sca",
-        "viewID": 1500
+        "viewID": 0,
+        "aura": {
+            "path": "sprite\\이팩트\\bakuretsu_hadou\\bakuretsu_hadou",
+            "offsetX": 0,
+            "offsetY": -11,
+            "behind": false
+        }
     },
     {
         "id": 20519,
@@ -41,7 +47,12 @@
         "garment": true,
         "name": "Costume: Digital Space",
         "viewID": 0,
-        "effect": "digital_space"
+        "aura": {
+            "path": "sprite\\이팩트\\digital_space\\digital_space",
+            "offsetX": 0,
+            "offsetY": 0,
+            "behind": true
+        }
     },
     {
         "id": 480131,
@@ -9259,7 +9270,12 @@
         "mid": true,
         "name": "Costume Black Thunder",
         "viewID": 0,
-        "effect": "black_thunder"
+        "aura": {
+            "path": "sprite\\이팩트\\black_thunder\\black_thunder",
+            "offsetX": 0,
+            "offsetY": -11,
+            "behind": false
+        }
     },
     {
         "id": 410278,
