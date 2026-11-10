@@ -8,6 +8,32 @@ function isColorKey(red, green, blue) {
   return red >= 248 && green <= 8 && blue >= 248;
 }
 
+// The client keys out pure black in some STR textures even on alpha-blended layers (roBrowser mirrors
+// this by discarding black fragments). Kiel Effect's tentacles are solid black with an alpha mask: in-game
+// only their grey rims, highlights and eyes show, while the black body lets the ground through. Items opt
+// in with `keyBlack: true`. Texels are faded in over a short brightness band so the near-black noise
+// around the body drops out like it does in the client instead of leaving speckles.
+const BLACK_KEY_FADE_START = 4;
+const BLACK_KEY_FADE_END = 16;
+
+export function toBlackKeyedTexture(image) {
+  const { width, height, rgbaPixels, hasAlpha } = image;
+  const keyed = new Uint8ClampedArray(rgbaPixels);
+  for (let offset = 0; offset < keyed.length; offset += 4) {
+    const alpha = keyed[offset + 3];
+    if (alpha === 0) {
+      continue;
+    }
+    const peak = Math.max(keyed[offset], keyed[offset + 1], keyed[offset + 2]);
+    if (peak >= BLACK_KEY_FADE_END) {
+      continue;
+    }
+    const t = Math.max(0, (peak - BLACK_KEY_FADE_START) / (BLACK_KEY_FADE_END - BLACK_KEY_FADE_START));
+    keyed[offset + 3] = Math.round(alpha * t * t * (3 - 2 * t));
+  }
+  return { width, height, rgbaPixels: keyed, hasAlpha };
+}
+
 export function decodeTga(arrayBuffer) {
   const bytes = new Uint8Array(arrayBuffer);
   if (bytes.length < 18) {

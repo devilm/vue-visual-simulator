@@ -1,6 +1,6 @@
 import { Container, Graphics, Sprite, Texture, Ticker } from "pixi.js";
 import { STR_ORIGIN_X, STR_ORIGIN_Y, sampleStrLayer } from "./strEffect";
-import { toLightTexture } from "./textureDecoder";
+import { toBlackKeyedTexture, toLightTexture } from "./textureDecoder";
 
 // Fixed render scale: native sprites are ~90-100px tall (feet to top of head/headgear); the in-game
 // character appears ~144px tall, i.e. ~1.5x. The scale never depends on equipped headgear/garment.
@@ -49,6 +49,18 @@ function getAdditiveFrameImage(image, sourceAlphaBlend) {
   return variants.get(cacheKey);
 }
 
+const blackKeyedImageCache = new WeakMap();
+
+// Alpha-blended layers of items flagged `keyBlack` draw from a copy whose black texels are transparent.
+function getBlackKeyedFrameImage(image) {
+  let keyed = blackKeyedImageCache.get(image);
+  if (!keyed) {
+    keyed = toBlackKeyedTexture(image);
+    blackKeyedImageCache.set(image, keyed);
+  }
+  return keyed;
+}
+
 function drawShadow(container) {
   const shadow = new Graphics();
   shadow.ellipse(0, 0, SHADOW_RADIUS_X, SHADOW_RADIUS_Y).fill({ color: 0x000000, alpha: 0.25 });
@@ -90,7 +102,7 @@ function drawFallback(container) {
 
 // Builds the display objects of one STR effect. `update(elapsedMs)` advances every layer to the matching key.
 function createStrEffectRunner(effect, container) {
-  const { str, textures, offsetX, offsetY, textureAlpha } = effect;
+  const { str, textures, offsetX, offsetY, textureAlpha, keyBlack } = effect;
   const keyCount = Math.max(str.maxKey, 1);
 
   const layers = [];
@@ -128,11 +140,16 @@ function createStrEffectRunner(effect, container) {
       node.angle = state.angleDegrees;
 
       // Additive layers and textures without alpha (BMP) rely on black being invisible, so they are drawn
-      // from a brightness-as-alpha copy; everything else keeps its own alpha channel.
+      // from a brightness-as-alpha copy; everything else keeps its own alpha channel (minus black texels
+      // when the item is flagged keyBlack).
       const asLight = state.additive || !image.hasAlpha;
-      sprite.texture = getFrameTexture(
-        asLight ? getAdditiveFrameImage(image, state.sourceAlphaBlend) : image
-      );
+      let frameImage = image;
+      if (asLight) {
+        frameImage = getAdditiveFrameImage(image, state.sourceAlphaBlend);
+      } else if (keyBlack) {
+        frameImage = getBlackKeyedFrameImage(image);
+      }
+      sprite.texture = getFrameTexture(frameImage);
       sprite.position.set((state.minX + state.maxX) / 2, (state.minY + state.maxY) / 2);
       sprite.scale.set(
         ((state.maxX - state.minX) / image.width) * (state.flipX ? -1 : 1),
@@ -260,9 +277,9 @@ export function renderCharacterTemplate(
   // flagged effects are drawn behind the character, the rest on top of it.
   const effectsBehind = new Container();
   const effectsFront = new Container();
-  // Garment effects (e.g. ROS) are drawn first so every other equipped effect stays visible on top of them.
+  // Within each behind/front group, garment effects (e.g. ROS) draw last, on top of other texture effects.
   const orderedEffects = [...(template.textureEffects || [])].sort(
-    (a, b) => Number(Boolean(b.garment)) - Number(Boolean(a.garment))
+    (a, b) => Number(Boolean(a.garment)) - Number(Boolean(b.garment))
   );
   const effectRunners = orderedEffects.map((effect) =>
     createStrEffectRunner(effect, effect.behind ? effectsBehind : effectsFront)

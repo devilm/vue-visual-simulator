@@ -105,6 +105,7 @@ export async function loadTextureEffects(items) {
       existing.textureAlpha = item.textureAlpha;
     }
     existing.garment = Boolean(existing.garment || item.garment);
+    existing.keyBlack = Boolean(existing.keyBlack || item.keyBlack);
   }
 
   const effects = await Promise.all(
@@ -119,6 +120,9 @@ export async function loadTextureEffects(items) {
         garment: Boolean(item.garment),
         // hatEffectPos is the client's vertical offset (negative = lower); isRenderBeforeCharacter -> effectBehind.
         behind: Boolean(item.effectBehind),
+        // keyBlack: pure black texels of alpha-blended layers are drawn transparent, as the client does
+        // for this item (see toBlackKeyedTexture).
+        keyBlack: Boolean(item.keyBlack),
         textureAlpha:
           item.textureAlpha !== undefined &&
           item.textureAlpha !== null &&

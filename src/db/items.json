@@ -881,7 +881,8 @@
         "texture": "texture\\effect\\efst_kyel_hyre_ulti_tw\\tentakaiser.str",
         "hatEffectPos": -16,
         "hatEffectPosX": 0,
-        "effectBehind": true
+        "effectBehind": true,
+        "keyBlack": true
     },
     {
         "id": 19796,
