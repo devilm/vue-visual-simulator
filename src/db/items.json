@@ -10573,5 +10573,17 @@
         "hatEffectPos": -9,
         "hatEffectPosX": 0,
         "effectBehind": true
+    },
+    {
+        "id": 420826,
+        "bot": true,
+        "name": "Costume Golden Weapon Aura",
+        "viewID": 2935
+    },
+    {
+        "id": 480900,
+        "garment": true,
+        "name": "Costume ROS 2026 Legendary Champion",
+        "viewID": 325
     }
 ]
