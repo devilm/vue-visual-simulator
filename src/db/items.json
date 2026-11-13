@@ -3884,7 +3884,7 @@
     {
         "id": 31561,
         "mid": true,
-        "name": "Costume: Heavenly Dark Flame",
+        "name": "Costume Celestial Dark Flame",
         "viewID": 1008
     },
     {
@@ -9083,6 +9083,8 @@
     },
     {
         "id": 19610,
+        "top": true,
+        "mid": true,
         "bot": true,
         "name": "Costume Whisper Mask",
         "viewID": 321
@@ -10585,5 +10587,17 @@
         "garment": true,
         "name": "Costume ROS 2026 Legendary Champion",
         "viewID": 325
+    },
+    {
+        "id": 480473,
+        "garment": true,
+        "name": "Costume: Hibram Evil Spirit",
+        "viewID": 233
+    },
+    {
+        "id": 31669,
+        "mid": true,
+        "name": "Costume: Evolved Whisper Mask",
+        "viewID": 458
     }
 ]
