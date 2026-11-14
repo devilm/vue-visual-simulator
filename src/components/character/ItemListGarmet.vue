@@ -48,13 +48,20 @@ export default {
       "SAVE_HEADGEAR_MID_ITEM",
       "SAVE_HEADGEAR_BOTTOM",
       "SAVE_HEADGEAR_BOTTOM_ITEM",
+      "REMOVE_EQUIPPED_ITEM",
     ]),
     clickItem: function (event) {
-      this.SAVE_GARMENT(parseInt(event.target.getAttribute("viewID")));
-      this.validGarment();
+      const target = event.currentTarget;
+      const item = JSON.parse(target.getAttribute("item"));
+      if (Number(this.$store.state.garment_item?.id) === Number(item.id)) {
+        this.REMOVE_EQUIPPED_ITEM(item.id);
+        return;
+      }
+
+      this.SAVE_GARMENT(parseInt(target.getAttribute("viewID")));
+      this.validGarment(item);
     },
-    validGarment: function () {
-      const item_fortmat = JSON.parse(event.target.getAttribute("item"));
+    validGarment: function (item_fortmat) {
       // validar interseções
       const state_fortmat =  JSON.parse(JSON.stringify(this.$store.state));
 

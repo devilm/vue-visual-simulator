@@ -10599,5 +10599,11 @@
         "mid": true,
         "name": "Costume: Evolved Whisper Mask",
         "viewID": 458
+    },
+    {
+        "id": 420449,
+        "bot": true,
+        "name": "Costume Abyssal Hair",
+        "viewID": 2671
     }
 ]

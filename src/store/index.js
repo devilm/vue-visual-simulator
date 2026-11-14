@@ -76,6 +76,25 @@ export default createStore({
     SAVE_GARMENT_ITEM(state, item) {
       state.garment_item = item;
     },
+    REMOVE_EQUIPPED_ITEM(state, itemId) {
+      const slots = [
+        { item: "headgear_top_item", view: 1 },
+        { item: "headgear_mid_item", view: 2 },
+        { item: "headgear_bottom_item", view: 0 },
+        { item: "garment_item", garment: true },
+      ];
+
+      slots.forEach((slot) => {
+        if (Number(state[slot.item]?.id) !== Number(itemId)) return;
+
+        state[slot.item] = {};
+        if (slot.garment) {
+          state.character.garment = 0;
+        } else {
+          state.character.headgear[slot.view] = 0;
+        }
+      });
+    },
     SAVE_EFFECT_HEADGEAR_ITEM(state, { slot, item }) {
       state.effect_headgear_items[slot] = item;
     },

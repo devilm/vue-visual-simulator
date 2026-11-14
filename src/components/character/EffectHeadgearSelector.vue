@@ -80,6 +80,14 @@ export default {
   },
   methods: {
     selectItem(item) {
+      if (Number(this.selectedItem.id) === Number(item.id)) {
+        this.$store.commit("SAVE_EFFECT_HEADGEAR_ITEM", {
+          slot: this.activeSlot,
+          item: {},
+        });
+        return;
+      }
+
       this.$store.commit("SAVE_EFFECT_HEADGEAR_ITEM", {
         slot: this.activeSlot,
         item,
