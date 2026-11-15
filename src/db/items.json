@@ -6932,10 +6932,9 @@
         "viewID": 2093
     },
     {
-        "id": 430001,
-        "top": true,
-        "mid": true,
-        "name": "Costume Helm of Amon Ra",
+        "id": 420371,
+        "bot": true,
+        "name": "Costume Aura of Amon Ra",
         "viewID": 2094,
         "texture": "texture\\effect\\c_helm_of_ra\\helmofsun3.str",
         "hatEffectPos": -12,
@@ -9762,12 +9761,6 @@
         "bot": true,
         "name": "Costume Atokwe Poenitentia",
         "viewID": 2594
-    },
-    {
-        "id": 420371,
-        "bot": true,
-        "name": "Costume Aura of Amon Ra",
-        "viewID": 2094
     },
     {
         "id": 420357,
