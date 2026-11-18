@@ -7619,6 +7619,12 @@
         null,
         null
     ],
+    "2490": [
+        "남_c_meer_hair",
+        "여_c_meer_hair",
+        null,
+        null
+    ],
     "2491": [
         "남_c_one_sho_bottle",
         "여_c_one_sho_bottle",
@@ -8201,6 +8207,12 @@
         null,
         null
     ],
+    "2717": [
+        "남_c_2508_salt_hat",
+        "여_c_2508_salt_hat",
+        null,
+        null
+    ],
     "2720": [
         "남_c_summer_sunglasses",
         "여_c_summer_sunglasses",
@@ -8393,6 +8405,12 @@
         null,
         null
     ],
+    "2831": [
+        "남_two_side_wing",
+        "여_two_side_wing",
+        null,
+        null
+    ],
     "2833": [
         "남_c_clb_bs_head",
         "여_c_clb_bs_head",
@@ -8494,6 +8512,12 @@
         "여_c_deepsea_pearls_hat",
         null,
         null
+    ],
+    "2885": [
+        "남_c_pitaya_ramen_stall",
+        "여_c_pitaya_ramen_stall",
+        "남_c_pitaya_ramen_stall",
+        "여_c_pitaya_ramen_stall"
     ],
     "2935": [
         "남_primordial_weapons",

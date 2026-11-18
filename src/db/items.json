@@ -10472,7 +10472,13 @@
         "id": 480879,
         "garment": true,
         "name": "Costume Wings of Arrogant Thanatos",
-        "viewID": 323
+        "viewID": 323,
+        "aura": {
+            "path": "sprite\\이팩트\\c_s_thanatos_wing\\c_s_thanatos_wing",
+            "offsetX": 0,
+            "offsetY": -105,
+            "behind": false
+        }
     },
     {
         "id": 410665,
@@ -10598,5 +10604,41 @@
         "bot": true,
         "name": "Costume Abyssal Hair",
         "viewID": 2671
+    },
+    {
+        "id": 410707,
+        "mid": true,
+        "name": "Costume Pitaya Ramen Stall",
+        "viewID": 2885
+    },
+    {
+        "id": 410629,
+        "mid": true,
+        "name": "Costume Two Side Wing",
+        "viewID": 2831
+    },
+    {
+        "id": 480922,
+        "garment": true,
+        "name": "Costume Cat Flyingpan",
+        "viewID": 331
+    },
+    {
+        "id": 480921,
+        "garment": true,
+        "name": "Costume Smokie Basket",
+        "viewID": 330
+    },
+    {
+        "id": 420307,
+        "bot": true,
+        "name": "Costume Twin Wave Roll Hair",
+        "viewID": 2490
+    },
+    {
+        "id": 400951,
+        "top": true,
+        "name": "Costume Sodium Salt Hat",
+        "viewID": 2717
     }
 ]
