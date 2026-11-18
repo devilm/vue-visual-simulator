@@ -9397,7 +9397,12 @@
         "mid": true,
         "name": "Costume Eye of Necromancer",
         "viewID": 2809,
-        "effect": "c_eye_of_necromancer"
+        "aura": {
+            "path": "sprite\\이팩트\\c_eye_of_necromancer\\c_eye_of_necromancer",
+            "offsetX": 0,
+            "offsetY": 0,
+            "behind": false
+        }
     },
     {
         "id": 410353,
