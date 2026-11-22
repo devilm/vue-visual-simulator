@@ -30,12 +30,15 @@ export default {
       });
     },
     equippedItems() {
+      const effectHeadgear = this.$store.state.effect_headgear_items || {};
       return [
         this.$store.state.headgear_top_item,
         this.$store.state.headgear_mid_item,
         this.$store.state.headgear_bottom_item,
         this.$store.state.garment_item,
-        ...Object.values(this.$store.state.effect_headgear_items || {}),
+        effectHeadgear.bot,
+        effectHeadgear.mid,
+        effectHeadgear.top,
       ];
     },
   },

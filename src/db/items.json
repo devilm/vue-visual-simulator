@@ -10645,5 +10645,21 @@
         "top": true,
         "name": "Costume Sodium Salt Hat",
         "viewID": 2717
+    },
+    {
+        "id": 420798,
+        "bot": true,
+        "name": "Costume Azure Flame Muffler",
+        "viewID": 2752
+    },
+    {
+        "id": 420576,
+        "bot": true,
+        "name": "Costume Nightmare Chain",
+        "viewID": 0,
+        "texture": "texture\\effect\\efst_c_nightmare_chain\\rrrooo2.str",
+        "hatEffectPos": -9,
+        "hatEffectPosX": 0,
+        "effectBehind": true
     }
 ]
