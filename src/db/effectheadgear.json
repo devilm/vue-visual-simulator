@@ -26,5 +26,32 @@
         "hatEffectPosX": 0,
         "effectBehind": true,
         "keyBlack": true
+    },
+    {
+        "id": 1001927,
+        "name": "Melody Notes Effect",
+        "bot": true,
+        "texture": "texture\\effect\\efst_magiccirclerainbow\\mcr.str",
+        "hatEffectPos": -10,
+        "hatEffectPosX": 0,
+        "effectBehind": true
+    },
+    {
+        "id": 1000319,
+        "name": "Angel Blessing Effect",
+        "mid": true,
+        "texture": "texture\\effect\\efst_blessing_of_angels\\tensi3.str",
+        "hatEffectPos": -10,
+        "hatEffectPosX": 0,
+        "effectBehind": true
+    },
+    {
+        "id": 1000319,
+        "name": "Firework Effect",
+        "top": true,
+        "texture": "texture\\effect\\efst_firework\\firework.str",
+        "hatEffectPos": 0,
+        "hatEffectPosX": 0,
+        "effectBehind": true
     }
 ]

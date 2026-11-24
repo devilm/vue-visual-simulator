@@ -10661,5 +10661,15 @@
         "hatEffectPos": -9,
         "hatEffectPosX": 0,
         "effectBehind": true
+    },
+    {
+        "id": 20548,
+        "garment": true,
+        "name": "Costume: Popping Poring Aura",
+        "viewID": 0,
+        "texture": "texture\\effect\\efst_c_popping_poring_aura\\c_popping_poring_aura.str",
+        "hatEffectPos": -9,
+        "hatEffectPosX": 0,
+        "effectBehind": true
     }
 ]
