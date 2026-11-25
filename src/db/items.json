@@ -10671,5 +10671,41 @@
         "hatEffectPos": -9,
         "hatEffectPosX": 0,
         "effectBehind": true
+    },
+    {
+        "id": 31383,
+        "bot": true,
+        "name": "Costume Volume Low Twin",
+        "viewID": 1683
+    },
+    {
+        "id": 420354,
+        "bot": true,
+        "name": "Costume Candle Set",
+        "viewID": 2569
+    },
+    {
+        "id": 5979,
+        "bot": true,
+        "name": "Costume Angel Fluttering",
+        "viewID": 1380
+    },
+    {
+        "id": 410776,
+        "mid": true,
+        "name": "Costume Riko Minimi",
+        "viewID": 2951
+    },
+    {
+        "id": 410777,
+        "mid": true,
+        "name": "Costume Vera Minimi",
+        "viewID": 2952
+    },
+    {
+        "id": 421062 ,
+        "bot": true,
+        "name": "Costume Cold Rose Dice",
+        "viewID": 2953
     }
 ]
