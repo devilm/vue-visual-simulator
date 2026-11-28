@@ -1,30 +1,16 @@
 <template>
   <div class="container-character">
     <div class="container">
-      <aside class="donate-prompt" aria-label="สนับสนุนโปรเจกต์">
-        <span class="donate-powered">powered by EmutoChannel</span>
-        <button
-          type="button"
-          class="donate-link"
-          :aria-expanded="showDonationQr"
-          aria-controls="donation-qr-dialog"
-          @click="showDonationQr = !showDonationQr"
-        >
-          สนับสนุนค่ากาแฟคลิกเลย ☕
-        </button>
-        <button
-          v-if="showDonationQr"
-          type="button"
-          class="donate-link donate-close-link"
-          aria-label="ปิดรูป QR"
-          @click="showDonationQr = false"
-        >
-          ปิดรูป
-        </button>
-      </aside>
+      <router-link
+        to="/sponsor"
+        class="sponsor-bar"
+        aria-label="สนใจลงโฆษณากับเรา"
+      >
+        📢 สนใจลงโฆษณากับเรา? เข้าถึงผู้เล่น Ragnarok Online ทุกวัน
+      </router-link>
       <div class="row">
         <div
-          class="col-md-12 bg-gradient-ragnarok bg-gradient-ragnarok-border mt-0 mb-5"
+          class="col-md-12 bg-gradient-ragnarok bg-gradient-ragnarok-border mt-0 mb-3"
         >
           <div class="col-md-12 card ragnarok-card">
             <div class="row">
@@ -308,6 +294,27 @@
           </div>
         </div>
       </div>
+      <aside class="donate-prompt" aria-label="สนับสนุนโปรเจกต์">
+        <span class="donate-powered">powered by EmutoChannel</span>
+        <button
+          type="button"
+          class="donate-link"
+          :aria-expanded="showDonationQr"
+          aria-controls="donation-qr-dialog"
+          @click="showDonationQr = !showDonationQr"
+        >
+          สนับสนุนค่ากาแฟคลิกเลย ☕
+        </button>
+        <button
+          v-if="showDonationQr"
+          type="button"
+          class="donate-link donate-close-link"
+          aria-label="ปิดรูป QR"
+          @click="showDonationQr = false"
+        >
+          ปิดรูป
+        </button>
+      </aside>
     </div>
   </div>
   <div
@@ -609,6 +616,28 @@ export default {
 
 .container-character {
   min-height: 90vh;
+}
+
+.sponsor-bar {
+  display: flex;
+  min-height: 3.5rem;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem auto 1rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid rgba(201, 166, 105, 0.65);
+  border-radius: 0.5rem;
+  background: rgba(24, 24, 28, 0.72);
+  color: #f0d6a3;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+}
+
+.sponsor-bar:hover,
+.sponsor-bar:focus-visible {
+  border-color: #f0d6a3;
+  background: rgba(24, 24, 28, 0.9);
 }
 
 .donate-prompt {
