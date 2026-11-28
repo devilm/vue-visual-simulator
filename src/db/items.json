@@ -9765,7 +9765,11 @@
         "id": 420382,
         "bot": true,
         "name": "Costume Atokwe Poenitentia",
-        "viewID": 2594
+        "viewID": 2594,
+        "texture": "texture\\effect\\efst_atque_poenitentia2\\caeffect.str",
+        "hatEffectPos": -9,
+        "hatEffectPosX": 0,
+        "effectBehind": true
     },
     {
         "id": 420357,
